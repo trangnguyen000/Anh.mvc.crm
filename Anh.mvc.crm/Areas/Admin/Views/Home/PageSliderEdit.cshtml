@@ -1,0 +1,92 @@
+﻿
+
+@{
+    ViewBag.Title = "Cập nhật Banner";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using Module.BusinessLogic.Helper;
+@section scripts {
+    <script src="~/Assets/Js/bTinTucEdit.js"></script>
+}
+@Html.Hidden("NewsID", (int?)ViewBag.newsId)
+@Html.Hidden("TypePage", (int)CommonHelper.TypePage.Silder)
+<div class="row form-body-edit" id="forTinTucEdit" v-cloak>
+    <div class="content-header  col-md-12">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-9">
+                    <h1 class="m-0 title-head">{{title}} Banner</h1>
+                </div><!-- /.col -->
+                <div class="col-md-3">
+                    <button type="button" class="btn  bg-gradient-primary btn-customCommon btn-save " v-on:click="save()">
+                        <i class="fas fa-save"></i> Lưu
+                    </button>
+                    <button type="button" class="btn  btn-default btn-custom btn-save " v-on:click="back()">
+                        <i class="fas fa-undo"></i> Quay lại
+                    </button>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="col-12 ">
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group-edit">
+                                            <label>Tiêu đề </label>
+                                            <div class="form-detail">
+                                                <input type="text" v-model="modelEdit.TieuDe"
+                                                       name="tieude" class="form-control" placeholder="Nhập tiêu đề" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group-edit">
+                                            <label>Mô tả ngắn</label>
+                                            <div class="form-detail">
+                                                <textarea v-model="modelEdit.MoTa" name="mota" rows="7" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group-edit">
+
+                                            <div class="my-custom-file">
+                                                <input type="file" class="custom-file-input d-none" id="exampleInputFile">
+                                                <label class="label-file-form" for="exampleInputFile" style="height: 400px; width: 100%; cursor: pointer ">
+                                                    <i class="fas fa-image" style="font-size: 50px" v-if="!modelEdit.Anh"></i>
+                                                    <img v-if="modelEdit.Anh" v-bind:src="modelEdit.Anh" style="height: 400px; width: 100%; " class="img-thumbnail">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" hidden>
+                            <div class="form-group form-group-edit">
+                                <label>Nội dung</label>
+                                <div class="form-detail">
+                                    <textarea id="description" v-model="modelEdit.NoiDung" name="noidung"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+
+
+        </div>
+
+        <!-- /.card -->
+    </div>
+</div>

@@ -1,0 +1,260 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section scripts {
+    <script src="~/Assets/Js/bUser.js"></script>
+
+}
+@using Anh.mvc.crm.Helper;
+@using Module.BusinessLogic.Helper;
+
+@using Module.Data.Helper;
+
+<div class="row" id="formuser" v-cloak>
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12">
+                    <h1 class="m-0 title-head">Nhân sự</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="col-12">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="col-md-12 form-head">
+                    <div class="col-md-9 form-head_Left">
+                        <input class="form-control" type="text" placeholder="Tìm kiếm nhân sự" v-model="search" v-on:keyup="keymonitor">
+                    </div>
+                    <div class="col-md-3 form-head_right">
+                        @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_Create))
+                        {
+                            <button type="button" class="btn btn-block bg-gradient-primary btn-custom btn-filter" v-on:click="showEdit('#modal-lg')">
+                                <i class="fas fa-plus"></i>Thêm mới
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table class="table table-bordered table-hover   table-custom">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px" class="text-center">STT</th>
+                            <th class="text-center">Tài khoản</th>
+                            <th class="text-center">Họ tên</th>
+                            <th class="text-center">Số điện thoại</th>
+                            <th class="text-center">Email</th>
+                            <th class="text-center">Trạng thái</th>
+                            <th class="text-center" style="width: 140px">#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(item, index) in data">
+                            <td>{{index + 1}}</td>
+                            <td>{{item.UserName}}</td>
+                            <td>{{item.FullName}}</td>
+                            <td class="text-center">{{item.PhoneNumber}}</td>
+                            <td>{{item.EmailAddress}}</td>
+                            <td class="text-center">
+                                {{item.IsActive?'Hoạt động':'Ngừng hoạt động'}}
+                            </td>
+                            <td>
+                                @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_Edit))
+                                {
+                                    <a class="btn btn-info btn-sm btn-edit" href="javascript:void(0)" v-on:click="showEdit('#modal-lg',item)">
+                                        <i class="fas fa-pencil-alt">
+                                        </i>
+                                        Sửa
+                                    </a>
+                                }
+                                @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_DeLete))
+                                {
+                                    <a class="btn btn-danger btn-sm btn-edit" href="javascript:void(0)" v-on:click="deleteUser(item)">
+                                        <i class="fas fa-trash">
+                                        </i>
+                                        Xóa
+                                    </a>
+                                }
+                            </td>
+                        </tr>
+                        <tr v-if="data.length == 0">
+                            <td class="text-center" colspan="8">Không có dữ liệu </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer clearfix">
+                <span>
+                    Hiển thị {{data.length}} / {{total}} vai trò
+                </span>
+                <div class="float-lg-right">
+                    <v-pagination v-model="currentPage" :page-count="numberPage"
+                                  :classes="bootstrapPaginationClasses"
+                                  :labels="paginationAnchorTexts"></v-pagination>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-lg">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">{{ titleModal}}</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body card-body-modal">
+                            <div class="card card-primary card-outline card-outline-tabs">
+                                <div class="card-header p-0 pt-1 border-bottom-0">
+                                    <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true">Thông tin chung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Vai trò</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content" id="custom-tabs-three-tabContent">
+                                        <div class="tab-pane fade active show" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+                                            <div class="row">
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Họ và tên <span style="color:red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Họ và tên"
+                                                               v-bind:class="{ 'validate-error': !modelEdit.FullName &&  submit }" v-model="modelEdit.FullName">
+                                                        <span class="error invalid-error" v-if="!modelEdit.FullName &&  submit">Vui lòng nhập họ và tên</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Tài khoản  <span style="color:red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Tài khoản"
+                                                               v-bind:class="{ 'validate-error': !modelEdit.UserName &&  submit }" v-model="modelEdit.UserName">
+                                                        <span class="error invalid-error" v-if="!modelEdit.UserName &&  submit">Vui lòng nhập tài khản</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Mật khẩu  <span style="color:red">*</span></label>
+                                                        <input type="password" class="form-control" placeholder="Mật khẩu"
+                                                               v-bind:class="{ 'validate-error': (!modelEdit.Id || isValidatePasswordEdit()) && !modelEdit.Password &&  submit }" v-model="modelEdit.Password">
+                                                        <span class="error invalid-error" v-if="(!modelEdit.Id || isValidatePasswordEdit()) && !modelEdit.Password &&  submit">Vui lòng nhập mật khẩu</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Gõ lại mật khẩu  <span style="color:red">*</span></label>
+                                                        <input type="password" class="form-control" placeholder="nhập lại mật khẩu"
+                                                               v-bind:class="{ 'validate-error': (((!modelEdit.Id || isValidatePasswordEdit() ) && !modelEdit.PasswordAgain)  || isValidatePassword) &&  submit }" v-model="modelEdit.PasswordAgain">
+                                                        <span class="error invalid-error" v-if="((!modelEdit.Id ||isValidatePasswordEdit()) && !modelEdit.PasswordAgain)  &&  submit">Vui lòng nhập lại mật khẩu</span>
+                                                        <span class="error invalid-error" v-if=" isValidatePassword  &&  submit">Mật khẩu nhập lại không đúng</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Số điện thoại  <span style="color:red">*</span></label>
+
+                                                        <div class="input-group" v-bind:class="{ 'validate-error': !isValidatePhone  &&  submit }">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                            </div>
+                                                            <input type="text" class="form-control" v-model="modelEdit.PhoneNumber">
+                                                        </div>
+                                                        <span class="error invalid-error" v-if="!isValidatePhone &&  submit">Vui lòng nhập số điện thoại</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Ngày sinh</label>
+
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    <i class="far fa-calendar-alt"></i>
+                                                                </span>
+                                                            </div>
+                                                            <input type="text" class="form-control float-right" id="reservation">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="lb-normal">Email  </label>
+                                                        <div class="input-group ">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                            </div>
+                                                            <input type="email" class="form-control" placeholder="Email" v-model="modelEdit.EmailAddress"
+                                                                   v-bind:class="{ 'validate-error':( modelEdit.EmailAddress && !validateEmail(modelEdit.EmailAddress) ) &&  submit }">
+                                                        </div>
+
+                                                        @*<span class="error invalid-error" v-if="!modelEdit.EmailAddress  &&  submit">Vui lòng nhập email</span>*@
+                                                        <span class="error invalid-error" v-if="modelEdit.EmailAddress && !validateEmail(modelEdit.EmailAddress)   &&  submit">Email không hợp lệ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="icheck-primary d-inline icheck-custom">
+                                                        <input type="checkbox" id="checkboxPrimary1" v-model="modelEdit.IsActive">
+                                                        <label for="checkboxPrimary1" class="lb-normal">
+                                                            Kích hoạt
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+                                            <ul class="tree col-md-12">
+                                                <li v-for="(item, index) in dataRole" class="col-md-4">
+                                                    <div class="icheck-primary d-inline icheck-custom">
+                                                        <input type="checkbox" v-bind:id="converKeyCheckbox(index)" v-model="item.IsChecked">
+                                                        <label v-bind:for="converKeyCheckbox(index)" class="lb-normal">
+                                                            {{item.DisplayName}}
+                                                        </label>
+
+                                                    </div>
+
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-footer-custom justify-content-between ">
+                        <button type="button" class="btn btn-primary float-right btn-custom" v-on:click="save()"> <i class="far fa-save"></i>Lưu</button>
+
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>

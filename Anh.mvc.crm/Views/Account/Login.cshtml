@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Đặp nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="left-main">
+    <div class="row">
+        <div style=" padding:40px ;justify-content: center;align-items: center; flex-direction: column;    display: flex;">
+            <form style="width: 400px;"  action="/login" method="post">
+                <div class="form-group">
+                    <label for="inputEmail">Tài khoản</label>
+                    <input type="text" class="form-control" id="inputEmail" value="@ViewBag.UserName" name="UserName" placeholder="Tài khoản">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Mật khẩu</label>
+                    <input type="password" class="form-control" id="inputPassword" value="@ViewBag.PassWord" name="Password" placeholder="Mật khẩu">
+                    <span style="color:red">@ViewBag.Error</span><br />
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="right-main">
+    @{
+        Html.RenderAction("_MainRight", "Home");
+    }
+</div>

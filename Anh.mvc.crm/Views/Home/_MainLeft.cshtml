@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+@model  List<Module.Data.DataAccess.AppTinTuc>
+
+<span class="d-block f-600">CÁC BÀI VIẾT GẦN NHẤT</span>
+@foreach (var item in Model)
+{
+    <div class="card-content-newest row mt-4">
+        <div class="col-4 px-0">
+            <img class="img-activities-page-right" src="@item.Anh">
+        </div>
+        <div class="col-8 content-page-activities">
+            <div class="title-content-left truncate-multi-line" title="  @item.TieuDe">
+                @item.TieuDe
+            </div>
+            @*<div class="content-right-des pt-2">Chương trình diễn ra với các hoạt động giao lưu văn hóa - thể thao - nghệ thuật như:
+                trình diễn Taekwondo, giao hữu bóng rổ, nhảy dây, tặng quà lưu niệm,...
+                Học sinh hai trường đã có khoảng thời gian đáng nhớ trong buổi sáng vừa qua. </div>*@
+            <div class="show-more pt-3">  <a class="" href="@item.Link"> >> Xem thêm </a></div>
+        </div>
+    </div>
+
+}

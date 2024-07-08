@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "Cài đặt";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@section scripts {
+    <script>
+        var app = new Vue({
+            el: '#forDanhMuc',
+            data: {
+                title: '',
+                search: '',
+                submit: false,
+                currentPage: 1,
+                keyDanhMuc: 'KeyLinkThuDienTu',
+                modelEdit: {
+                    Id: null,
+                    DisplayName: '',
+                    GroupCode: '',
+                    GhiChu: ''
+                },
+                modelBackUp: {
+                    Id: null,
+                    ValueKey:'BackUp',
+                    DisplayName: '',
+                    GroupCode: 'KeyConfig',
+                    GhiChu: ''
+                }
+            },
+            methods: {
+
+
+                getData: function () {
+                    var self = this;
+                    $.ajax({
+                        url: '/api/ApiBusiness/GetDanhMuc?key=' + self.keyDanhMuc + '&filter=' + self.search + '&page=' + self.currentPage,
+                        contentType: "application/json; charset=utf-8",
+                        method: 'GET',
+                        success: function (result) {
+                            console.log(result);
+                            self.data = result.Data;
+                            if (result.Data && result.Data.length > 0) {
+                                self.modelEdit = result.Data[0];
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.log(xhr);
+                        }
+                    });
+                },
+                getConfig: function () {
+                    var self = this;
+                    $.ajax({
+                        url: '/api/ApiBusiness/GetConfig?key=KeyConfig',
+                        contentType: "application/json; charset=utf-8",
+                        method: 'GET',
+                        success: function (result) {
+                            if (result.Data && result.Data.length > 0) {
+                                self.modelBackUp = result.Data[0];
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.log(xhr);
+                        }
+                    });
+                },
+                save: function () {
+                    var self = this;
+                    self.submit = true; 
+                    self.modelEdit.GroupCode = self.keyDanhMuc;
+                    self.modelEdit.DisplayName = 'Link thư điện tử';
+                    $.ajax({
+                        url: '/api/ApiBusiness/SaveDanhMuc',
+                        method: 'POST',
+                        data: self.modelEdit,
+                        success: function (result) {
+                            self.submit = false; 
+                            if (result == 1) {
+                                self.Toast.fire({
+                                    icon: 'success',
+                                    title: 'Thành công!'
+                                });
+                            }
+                            else {
+                                self.Toast.fire({
+                                    icon: 'error',
+                                    title: "Đã xảy ra lỗi"
+                                })
+                            }
+                        }
+                    });
+                },
+                saveBackUp: function () {
+                    var self = this;
+                    self.submit = true; 
+                    self.modelBackUp.DisplayName = 'Backup dữ liệu';
+                    $.ajax({
+                        url: '/api/ApiBusiness/SaveDanhMuc',
+                        method: 'POST',
+                        data: self.modelBackUp,
+                        success: function (result) {
+                        }
+                    });
+
+                    $.ajax({
+                        url: '/api/ApiBusiness/BackUpData',
+                        method: 'POST',
+                        data: self.modelBackUp,
+                        success: function (result) {
+                            console.log(result)
+                                self.Toast.fire({
+                                    icon: 'success',
+                                    title: 'Thành công!'
+                                });
+                            self.submit = false; 
+                        }
+                    });
+                }
+
+
+            },
+            computed: {
+                Toast: {
+                    get: function () {
+                        return Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000
+                        })
+                    }
+                },
+                numberPage: {
+                    get: function () {
+                        return this.total % 10 == 0 ? this.total / 10 : parseInt(this.total / 10) + 1;
+                    }
+                },
+            },
+            beforeMount() {
+                this.getData();
+                this.getConfig();
+            },
+        });
+
+        $("#target").click(function () {
+            $('#selectFile').click();
+        });
+        function browseResult(e) {
+            var fileselector = document.getElementById('fileselector');
+            console.log(fileselector.value);
+        }
+    </script>
+
+}
+<div class="row" id="forDanhMuc" v-cloak>
+    <div class="content-header  col-md-12">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-9">
+                    <h1 class="m-0 title-head">Cài đặt</h1>
+                </div><!-- /.col -->
+
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="col-12">
+        <div class="card card-custom">
+            <!-- /.card-header -->
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="inputEmail3" class=" col-form-label" style="width:150px">Link thư điện tử</label>
+                    <div style="width:450px">
+                        <input type="text" class="form-control" placeholder="Link" v-model="modelEdit.GhiChu">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary float-right btn-custom"
+                                v-on:click="save()" v-bind:disabled="submit">
+                        <i class="far fa-save"></i>Lưu</button>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class=" col-form-label" style="width:150px">Backup dữ liệu</label>
+                    <div style="width:450px">
+                        <input type="text" class="form-control" placeholder="Folder lưu trữ" v-model="modelBackUp.GhiChu">
+                    </div>
+                    <div>
+                        @*<input type="file" onchange="browseResult(event)" webkitdirectory directory multiple="false"   class="form-control" hidden id="selectFile">*@
+                        <button type="button" class="btn btn-primary float-right btn-custom" v-on:click="saveBackUp()" v-bind:disabled="submit">
+                        <i class="fas fa-coins"></i>Backup</button>
+                        @*<button type="button" class="btn btn-outline-info btn-custom" id="target"><i class="far fa-folder"></i>Chọn thư mục lưu</button>*@
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+
+        </div>
+
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

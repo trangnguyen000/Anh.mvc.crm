@@ -1,0 +1,104 @@
+﻿
+@{
+    Layout = null;
+}
+@using Anh.mvc.crm.Helper;
+@using Module.BusinessLogic.Helper;
+@using Module.Data.Helper;
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column nav-legacy nav-child-indent nav-sidebar-custom" data-widget="treeview" role="menu" data-accordion="false">
+
+        @if (CurrentUser.CheckRoleUser(Permissions.Admin_Slider_View))
+        {
+
+            <li class="nav-item nav-item-parent  @Html.SetClassOpen("/Admin/Home/PageSlider,/Admin/Home/PageSliderEdit")">
+                <a href="#" class="nav-link nav-link-parent @Html.SetClassActive("/Admin/Home/PageSlider,/Admin/Home/PageSliderEdit")">
+                    <i class="nav-icon fas fa-sliders-h"></i>
+                    <p>
+                        Quản lý Banner
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview nav-treeview-child">
+                    <li class="nav-item @Html.SetClassActive("/Admin/Home/PageSliderEdit")">
+                        <a href="/Admin/Home/PageSliderEdit" class="nav-link   @Html.SetClassActive("/Admin/Home/PageSliderEdit")">
+                            <p>Thêm mới</p>
+                        </a>
+                    </li>
+                    <li class="nav-item @Html.SetClassActive("/Admin/Home/PageSlider")">
+                        <a href="/Admin/Home/PageSlider" class="nav-link   @Html.SetClassActive("/Admin/Home/PageSlider")">
+                            <p>Danh sách</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </li>
+        }
+
+        @if (CurrentUser.CheckRoleUser(Permissions.Admin_TinTuc_View))
+        {
+
+            <li class="nav-item nav-item-parent  @Html.SetClassOpen("/Admin/Home/TinTuc,/Admin/Home/EditTinTuc,/Admin/Home/DanhMuc/" + @KeyCodeDictionary.ChuyenMucTinTuc)">
+                <a href="#" class="nav-link nav-link-parent @Html.SetClassActive("/Admin/Home/TinTuc,/Admin/Home/EditTinTuc,/Admin/Home/DanhMuc/" + @KeyCodeDictionary.ChuyenMucTinTuc)">
+                    <i class="nav-icon fas fa-newspaper"></i>
+                    <p>
+                        Tin tức và sự kiện
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview nav-treeview-child">
+                    <li class="nav-item @Html.SetClassActive("/Admin/Home/EditTinTuc")">
+                        <a href="/Admin/Home/EditTinTuc" class="nav-link   @Html.SetClassActive("/Admin/Home/EditTinTuc")">
+                            <p>Thêm mới</p>
+                        </a>
+                    </li>
+                    <li class="nav-item @Html.SetClassActive("/Admin/Home/TinTuc")">
+                        <a href="/Admin/Home/TinTuc" class="nav-link   @Html.SetClassActive("/Admin/Home/TinTuc")">
+                            <p>Danh sách</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @Html.SetClassActive("/Admin/Home/DanhMuc/" + @KeyCodeDictionary.ChuyenMucTinTuc)">
+                        <a href="/Admin/Home/DanhMuc/@KeyCodeDictionary.ChuyenMucTinTuc" class="nav-link   @Html.SetClassActive("/Admin/Home/DanhMuc/" + @KeyCodeDictionary.ChuyenMucTinTuc)">
+                            <p>Chuyên mục</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        }
+
+
+        @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_View) || CurrentUser.CheckRoleUser(Permissions.Admin_Role_View))
+        {
+            <li class="nav-item nav-item-parent @Html.SetClassOpen("/Admin/User/Index,/Admin/User/VaiTro")">
+                <a href="#" class="nav-link nav-link-parent @Html.SetClassActive("/Admin/User/Index,/Admin/User/VaiTro")">
+                    <i class="nav-icon fas fa-users-cog"></i>
+                    <p>
+                        Quản trị
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview nav-treeview-child">
+                    @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_View))
+                    {
+                        <li class="nav-item @Html.SetClassActive("/Admin/User/Index")">
+                            <a href="/Admin/User/Index" class="nav-link @Html.SetClassActive("/Admin/User/Index")">
+                                <p>Nhân sự</p>
+                            </a>
+                        </li>
+                    }
+                    @if (CurrentUser.CheckRoleUser(Permissions.Admin_Role_View))
+                    {
+                        <li class="nav-item @Html.SetClassActive("/Admin/User/VaiTro")">
+                            <a href="/Admin/User/VaiTro" class="nav-link  @Html.SetClassActive("/Admin/User/VaiTro")">
+                                <p>Vai trò</p>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</nav>

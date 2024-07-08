@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "Danh sách tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using Module.BusinessLogic.Helper;
+
+@section scripts {
+    <script src="~/Assets/Js/bTinTuc.js"></script>
+
+}
+@Html.Hidden("TypePage", (int)CommonHelper.TypePage.News)
+<div class="row" id="forTinTuc" v-cloak>
+    <div class="content-header  col-md-12">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-9">
+                    <h1 class="m-0 title-head">Danh sách tin tức</h1>
+                </div><!-- /.col -->
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-block bg-gradient-primary btn-custom btn-filter" v-on:click="showEdit()">
+                        <i class="fas fa-plus"></i>Thêm mới
+                    </button>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="col-12">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="col-md-12 form-head">
+                    <div class="col-md-5 form-head_Left">
+                        <input id="searchnews" autocomplete="off" class="form-control" type="text" placeholder="Tìm kiếm tin tức" v-model="search" v-on:keyup="keymonitor" />
+                    </div>
+                    <div class="col-md-3 form-head_right">
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table class="table table-bordered table-hover   table-custom">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px" class="text-center">STT</th>
+                            <th class="text-center" style="width:80px">Ảnh</th>
+                            <th class="text-left">Link</th>
+                            <th class="text-left">Tiêu đề</th>
+                            <th class="text-left" style="width:200px">Chuyên mục</th>
+                            <th class="text-center" style="width:100px">Ngày tạo</th>
+                            <th class="text-center" style="width: 140px">#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(item, index) in data">
+                            <td>
+                                {{ ((currentPage - 1) *10) +index+1 }}
+                            </td>
+                            <td>
+                                <img v-bind:src="item.Anh" width="80" height="60" />
+                            </td>
+                            <td>
+                                <a v-bind:href="item.Link" target="_blank">{{ item.Link }}</a>
+                            </td>
+                            <td>
+                                {{ item.TieuDe }}
+                            </td>
+                            <td>
+                                {{ item.TenChuyenMuc }}
+                            </td>
+                            <td>
+                                {{ item.CreationTimeText }}
+                            </td>
+                            <td>
+                                <a class="btn btn-info btn-sm btn-edit" href="javascript:void(0)" v-on:click="showEdit(item.Id)">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+                                    Sửa
+                                </a>
+                                <a class="btn btn-danger btn-sm btn-edit" href="javascript:void(0)" v-on:click="deleteTinTuc(item)">
+                                    <i class="fas fa-trash">
+                                    </i>
+                                    Xóa
+                                </a>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer clearfix">
+                <span>
+                    Hiển thị {{data.length}} / {{total}} tin
+                </span>
+                <div class="float-lg-right">
+                    <v-pagination v-model="currentPage" :page-count="numberPage"
+                                  :classes="bootstrapPaginationClasses"
+                                  :labels="paginationAnchorTexts"></v-pagination>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /.card -->
+    </div>
+
+</div>

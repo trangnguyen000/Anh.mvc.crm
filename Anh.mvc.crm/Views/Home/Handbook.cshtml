@@ -1,0 +1,1388 @@
+﻿
+
+@{
+    ViewBag.Title = "Cẩm nang du học";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+    <script>
+        document.getElementById('card-content-letter').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+
+            if (e.target.tagName === 'A') {
+                var targetId = e.target.getAttribute('href').substring(1); // Get the ID of the target content section
+                var targetElement = document.getElementById(targetId); // Find the target content section
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target content section smoothly
+                }
+            }
+        });
+
+    </script>
+}
+
+<link href="~/Theme-FrontEnd/assets/css/header.css" rel="stylesheet" />
+<div class="header-detail" data-aos="fade-up">
+    <span class="title-header-detail animated slideInDown" style="animation-delay: 1s">@Resources.SharedResource.TitleHeader</span>
+    <span class="des-header-detail animated fadeInUp" style="animation-delay: 2s">@Resources.SharedResource.DesHeader</span>
+</div>
+<div class="study-abroad-high-school row" data-aos="fade-up">
+    <div class="left-high-school">
+        <div class="card-content-letter" id="card-content-letter">
+            <div class="title-left-link f-600">Nội dung</div>
+            <ul class="pt-3 style-type-none">
+                <li><a href="#section1" class="a-link-page d-block">@Resources.SharedResource.HandbookMenu1</a></li>
+                <li>
+                    <a href="#section2" class="a-link-page d-block">
+                        @Resources.SharedResource.HandbookMenu2
+                    </a>
+                </li>
+                <li>
+                    <a href="#section3" class="a-link-page d-block">
+                        3. @Resources.SharedResource.HandbookMenu2Title4
+                    </a>
+                </li>
+                <li><a href="#section4" class="a-link-page d-block">4. @Resources.SharedResource.HandbookMenu2Title5</a></li>
+                <li><a href="#section5" class="a-link-page d-block">II. @Resources.SharedResource.HandbookMenu3</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center-high-school mt-5">
+        <div class="Introduce-progame ">
+            <span class="title-page d-block ">@Resources.SharedResource.Handbook</span>
+        </div>
+        <div id="section1">
+            <div class="line-20 pt-3 order-number-title f-600">@Resources.SharedResource.HandbookMenu1</div>
+            <div class="content-section">
+                <span class="d-block">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu1Info1 </span>@Resources.SharedResource.HandbookMenu1Info2
+                </span>
+                <img class="img-page d-block pt-3" src="~/Theme-FrontEnd/assets/Content/shop.png">
+                <span class="d-block span-des-image">@Resources.SharedResource.Image</span>
+                <span class="d-block line-20"><span class="f-600">@Resources.SharedResource.HandbookMenu1Info1List1 </span>@Resources.SharedResource.HandbookMenu1Info1List1Subject</span>
+                <span class="d-block line-20">
+                    <span class="f-600">@Resources.SharedResource.HandbookMenu1Info1List2 </span>@Resources.SharedResource.HandbookMenu1Info1List2Subject
+                </span>
+                <span class="d-block line-20 f-600">@Resources.SharedResource.HandbookMenu1Info1List3</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List3Subject1</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List3Subject2</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List3Subject3</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List3Subject4</span>
+                <span class="d-block line-20 f-600">@Resources.SharedResource.HandbookMenu1Info1List4 </span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List4Subject1</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List4Subject2</span>
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu1Info1List5
+                </span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject1</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject2</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject3</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject4</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject5</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject6</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject7</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject8</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject9</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject10</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu1Info1List5Subject11</span>
+
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu1Info1List6
+                </span>
+                <span class="d-block line-20 f-600">👉 @Resources.SharedResource.HandbookMenu1Info1List6Subject1</span>
+                <span class="d-block">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu1Info1List6Subject1.1 </span>@Resources.SharedResource.HandbookMenu1Info1List6Subject1_2
+                </span>
+                <span class="d-block line-20 f-600">👉 @Resources.SharedResource.HandbookMenu1Info1List6Subject2 </span>
+                <span class="d-block">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu1Info1List6Subject2_1 </span>@Resources.SharedResource.HandbookMenu1Info1List6Subject2_2
+                </span>
+                <span class="d-block line-20 f-600">👉 @Resources.SharedResource.HandbookMenu1Info1List6Subject3 </span>
+                <span class="d-block line-20 f-600">@Resources.SharedResource.HandbookMenu1Info1List6Subject3_1 </span>
+                <a class="d-block ml-50">http://jobkorea.co.kr/</a>
+                <a class="d-block ml-50">https://www.albamon.com/</a>
+                <a class="d-block ml-50">http://www.work.go.kr/</a>
+                <a class="d-block ml-50">http://careers.samsung.co.kr/</a>
+                <a class="d-block ml-50">http://www.saramin.co.kr/zf_user/</a>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="line-20 pt-3 order-number-title f-600">@Resources.SharedResource.HandbookMenu2</div>
+            <div class="content-section pt-2">
+                <span class="d-block line-20 ml-50"><span class="f-600">@Resources.SharedResource.HandbookMenu2Info1_1 </span>@Resources.SharedResource.HandbookMenu2Info1_2</span>
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu2Title1
+                </span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title1Info1</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title1Info2</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title1Info3</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title1Info4</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title1Info5</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title1Info6</span>
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu2Title2
+                </span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title2Info1</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title2Info2</span>
+                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title2Info3</span>
+                <span class="d-block line-20 ml-50">
+                    @Resources.SharedResource.HandbookMenu2Title2Info4
+                </span>
+                <img class="img-page d-block pt-3" src="~/Theme-FrontEnd/assets/Content/heath.jpg">
+                <span class="d-block span-des-image">@Resources.SharedResource.Image</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title2Note </span>
+                <span class="d-block line-20 ml-50"> @Resources.SharedResource.HandbookMenu2Title2NoteInfo1</span>
+                <span class="d-block line-20 ml-50"> @Resources.SharedResource.HandbookMenu2Title2NoteInfo2</span>
+                <span class="d-block line-20 ml-50"> @Resources.SharedResource.HandbookMenu2Title2NoteInfo3 </span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3 </span>
+                <span class="ml-4">@Resources.SharedResource.HandbookMenu2Title3Info </span>
+
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3Area1 </span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3University</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area1University1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area1University1_2</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area1University2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area1University2_1</span>
+                <span class="d-block line-20 ml-50"> 3.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area1University3_1</span> @Resources.SharedResource.HandbookMenu2Title3Area1University3_1 </span>
+                <span class="d-block line-20 ml-50"> 4.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area1University4_1</span> @Resources.SharedResource.HandbookMenu2Title3Area1University4_1 </span>
+
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3Area2 </span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3University</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University1_1 </span> @Resources.SharedResource.HandbookMenu2Title3Area2University1_2</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University2_2.</span>
+                <span class="d-block line-20 ml-50"> 3.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University3_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University3_2. </span>
+                <span class="d-block line-20 ml-50"> 4.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University4_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University4_2.</span>
+                <span class="d-block line-20 ml-50"> 5.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University5_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University5_2.</span>
+                <span class="d-block line-20 ml-50"> 6.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University6_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University6_2.</span>
+                <span class="d-block line-20 ml-50"> 7.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University7_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University7_2.</span>
+                <span class="d-block line-20 ml-50"> 8.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University8_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University8_2.</span>
+                <span class="d-block line-20 ml-50"> 9. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University9_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University9_2.</span>
+                <span class="d-block line-20 ml-50"> 10. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University10_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University10_2.</span>
+                <span class="d-block line-20 ml-50"> 11. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University11_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University11_2.</span>
+                <span class="d-block line-20 ml-50"> 12. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University12_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University12_2.</span>
+                <span class="d-block line-20 ml-50"> 13. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University13_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University13_2.</span>
+                <span class="d-block line-20 ml-50"> 14. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University14_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University14_2.</span>
+                <span class="d-block line-20 ml-50"> 15. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University15_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University15_2.</span>
+                <span class="d-block line-20 ml-50"> 16. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University16_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University16_2.</span>
+                <span class="d-block line-20 ml-50"> 17. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University17_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University17_2.</span>
+                <span class="d-block line-20 ml-50"> 18. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University18_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University18_2.</span>
+                <span class="d-block line-20 ml-50"> 19. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University19_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University19_2.</span>
+                <span class="d-block line-20 ml-50"> 20. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University20_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University20_2.</span>
+                <span class="d-block line-20 ml-50"> 21. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University21_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University21_2.</span>
+                <span class="d-block line-20 ml-50"> 22. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University22_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University22_2.</span>
+                <span class="d-block line-20 ml-50"> 23. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University23_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University23_2.</span>
+                <span class="d-block line-20 ml-50"> 24. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University24_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University24_2.</span>
+                <span class="d-block line-20 ml-50"> 25. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2University25_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2University25_2.</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3College</span>
+                <span class="d-block line-20 ml-50"> <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2College1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2College1_2.</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3Graduate</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2Graduate1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2Graduate1_2.</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area2Graduate2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area2Graduate2_2.</span>
+
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">• @Resources.SharedResource.HandbookMenu2Title3Area3: </span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3University</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University1_1 </span> @Resources.SharedResource.HandbookMenu2Title3Area3University1_2.</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University2_2.</span>
+                <span class="d-block line-20 ml-50"> 3.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University3_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University3_2. </span>
+                <span class="d-block line-20 ml-50"> 4.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University4_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University4_2.</span>
+                <span class="d-block line-20 ml-50"> 5.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University5_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University5_2.</span>
+                <span class="d-block line-20 ml-50"> 6.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University6_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University6_2.</span>
+                <span class="d-block line-20 ml-50"> 7.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University7_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University7_2.</span>
+                <span class="d-block line-20 ml-50"> 8.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University8_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University8_2.</span>
+                <span class="d-block line-20 ml-50"> 9. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University9_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University9_2.</span>
+                <span class="d-block line-20 ml-50"> 10. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University10_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University10_2.</span>
+                <span class="d-block line-20 ml-50"> 11. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University11_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University11_2.</span>
+                <span class="d-block line-20 ml-50"> 12. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3University12_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3University12_2.</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3College</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3College1_1 </span> @Resources.SharedResource.HandbookMenu2Title3Area3College1_2.</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area3College2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area3College2_2.</span>
+
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">• @Resources.SharedResource.HandbookMenu2Title3Area4: </span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3University</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University1_2.</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University2_2.</span>
+                <span class="d-block line-20 ml-50"> 3.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University3_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University3_2. </span>
+                <span class="d-block line-20 ml-50"> 4.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University4_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University4_2.</span>
+                <span class="d-block line-20 ml-50"> 5.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University5_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University5_2.</span>
+                <span class="d-block line-20 ml-50"> 6.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University6_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University6_2.</span>
+                <span class="d-block line-20 ml-50"> 7.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University7_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University7_2.</span>
+                <span class="d-block line-20 ml-50"> 8.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University8_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University8_2.</span>
+                <span class="d-block line-20 ml-50"> 9. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University9_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University9_2.</span>
+                <span class="d-block line-20 ml-50"> 10. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University10_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University10_2.</span>
+                <span class="d-block line-20 ml-50"> 11. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University11_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University11_2.</span>
+                <span class="d-block line-20 ml-50"> 12. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University12_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University12_2.</span>
+                <span class="d-block line-20 ml-50"> 13. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University13_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University13_2.</span>
+                <span class="d-block line-20 ml-50"> 14. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University14_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University14_2.</span>
+                <span class="d-block line-20 ml-50"> 15. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University15_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University15_2.</span>
+                <span class="d-block line-20 ml-50"> 16. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University16_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University16_2.</span>
+                <span class="d-block line-20 ml-50"> 17. <span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4University17_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4University17_2.</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3College</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4College1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4College1_2.</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4College2_1 </span>@Resources.SharedResource.HandbookMenu2Title3Area4College2_2.</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3Graduate</span>
+                <span class="d-block line-20 ml-50"><span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area4Graduate1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area4Graduate1_2.</span>
+
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">• @Resources.SharedResource.HandbookMenu2Title3Area5:</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3University</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University1_2.</span>
+                <span class="d-block line-20 ml-50"> 2.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University2_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University2_2.</span>
+                <span class="d-block line-20 ml-50"> 3.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University3_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University3_2. </span>
+                <span class="d-block line-20 ml-50"> 4.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University4_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University4_2.</span>
+                <span class="d-block line-20 ml-50"> 5.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University5_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University5_2.</span>
+                <span class="d-block line-20 ml-50"> 6.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University6_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University6_2.</span>
+                <span class="d-block line-20 ml-50"> 7.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University7_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University7_2.</span>
+                <span class="d-block line-20 ml-50"> 8.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5University8_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5University8_2.</span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3College</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area5College1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area5College1_2.</span>
+
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">• @Resources.SharedResource.HandbookMenu2Title3Area6: </span>
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title3University</span>
+                <span class="d-block line-20 ml-50"> 1.	<span class="f-600">@Resources.SharedResource.HandbookMenu2Title3Area6University1_1</span> @Resources.SharedResource.HandbookMenu2Title3Area6University1_2.</span>
+
+                <span class="d-block">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu2Title3Info1_1</span> @Resources.SharedResource.HandbookMenu2Title3Info1_2
+                </span>
+            </div>
+        </div>
+        <div id="section3">
+            <div class="line-20 pt-3 order-number-title f-600">3. @Resources.SharedResource.HandbookMenu2Title4</div>
+            <div class="content-section">
+                <span class="d-block pt-2 pb-2">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu2Title4Info1_1 </span>@Resources.SharedResource.HandbookMenu2Title4Info1_2
+                </span>
+                <table>
+                    <tr>
+                        <th class="font-weight-bold text-center">RANK</th>
+                        <th class="font-weight-bold text-center">Trường Đại học</th>
+                        <th class="font-weight-bold text-center">Khu vực</th>
+                        <th class="font-weight-bold text-center">Phí học tiếng/năm</th>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank1</td>
+                        <td>Seoul</td>
+                        <td>6,920,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank2</td>
+                        <td>Daejeon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank3</td>
+                        <td>Seoul</td>
+                        <td>7,080,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#4</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank4</td>
+                        <td>Seoul</td>
+                        <td>6,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#5</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank5</td>
+                        <td>Seoul</td>
+                        <td>7,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#6</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank6</td>
+                        <td>Pohang</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#7</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank7</td>
+                        <td>Seoul</td>
+                        <td>6,920,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#8</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank8</td>
+                        <td>Seoul</td>
+                        <td>6,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#9</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank9</td>
+                        <td>Ulsan</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#10</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank10</td>
+                        <td>Seoul</td>
+                        <td>6,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#11</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank11</td>
+                        <td>Daegu</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#12</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank12</td>
+                        <td>Gwangju</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#13</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank13</td>
+                        <td>Seoul</td>
+                        <td>6,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#14</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank14</td>
+                        <td>Busan</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#15</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank15</td>
+                        <td>Seoul</td>
+                        <td>6,880,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#16</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank16</td>
+                        <td>Ulsan</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#17</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank17</td>
+                        <td>Gyeonggi</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#18</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank18</td>
+                        <td>Seoul</td>
+                        <td>7,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#19</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank19</td>
+                        <td>Incheon</td>
+                        <td>5,480,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#20</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank20</td>
+                        <td>Seoul</td>
+                        <td>7,160,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#21</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank21</td>
+                        <td>Gwangju</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#22</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank22</td>
+                        <td>Jeollabuk</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#23</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank23</td>
+                        <td>Gyeongsangbuk</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#24</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank24</td>
+                        <td>Daejeon</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#25</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank25</td>
+                        <td>Seoul</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#26</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank26</td>
+                        <td>Gangwon</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#27</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank27</td>
+                        <td>Gangwon</td>
+                        <td>3,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#28</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank28</td>
+                        <td>Chungcheongbuk</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#29</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank29</td>
+                        <td>Chungcheongnam</td>
+                        <td>5,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#30</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank30</td>
+                        <td>Seoul</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#31</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank31</td>
+                        <td>Seoul</td>
+                        <td>6,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#32</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank32</td>
+                        <td>Jeju</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#33</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank33</td>
+                        <td>Gyeongsangnam</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#34</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank34</td>
+                        <td>Seoul</td>
+                        <td>5,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#35</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank35</td>
+                        <td>Seoul</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#36</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank36</td>
+                        <td>Incheon</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#37</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank37</td>
+                        <td>Gwangju</td>
+                        <td>5,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#38</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank38</td>
+                        <td>Daegu</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#39</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank39</td>
+                        <td>Seoul</td>
+                        <td>6,680,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#40</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank40</td>
+                        <td>Seoul</td>
+                        <td>6,520,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#41</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank41</td>
+                        <td>Yongin</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#42</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank42</td>
+                        <td>Gyeonggi</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#43</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank43</td>
+                        <td>Busan</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#44</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank44</td>
+                        <td>Seoul</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#45</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank45</td>
+                        <td>Seoul</td>
+                        <td>6,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#46</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank46</td>
+                        <td>Gyeonggi</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#47</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank47</td>
+                        <td>Seoul</td>
+                        <td>6,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#48</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank48</td>
+                        <td>Busan</td>
+                        <td>5,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#49</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank49</td>
+                        <td>Seoul</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#50</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank50</td>
+                        <td>Daegu</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#51</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank51</td>
+                        <td>Busan</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#52</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank52</td>
+                        <td>Daejeon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#53</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank53</td>
+                        <td>Gyeonggi-do</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#54</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank54</td>
+                        <td>Jeollabuk</td>
+                        <td>4,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#55</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank55</td>
+                        <td>Seoul</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#56</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank56</td>
+                        <td>Gangwon-do</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#57</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank57</td>
+                        <td>Gyeongsangbuk</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#58</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank58</td>
+                        <td>Chungcheongnam</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#59</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank59</td>
+                        <td>Gyeongsangbuk</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#60</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank60</td>
+                        <td>Seoul</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#61</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank61</td>
+                        <td>Jeollanam</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#62</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank62</td>
+                        <td>Gyeongsangbuk</td>
+                        <td>4,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#63</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank63</td>
+                        <td>Jeollanam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#64</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank64</td>
+                        <td>Busan</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#65</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank65</td>
+                        <td>Gyeonggi</td>
+                        <td>5,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#66</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank66</td>
+                        <td>Gangwon</td>
+                        <td>4,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#67</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank67</td>
+                        <td>Jeollabuk</td>
+                        <td>5,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#68</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank68</td>
+                        <td>Seoul</td>
+                        <td>6,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#69</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank69</td>
+                        <td>Daejeon</td>
+                        <td>4,840,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#70</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank70</td>
+                        <td>Busan</td>
+                        <td>4,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#71</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank71</td>
+                        <td>Busan</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#72</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank72</td>
+                        <td>Chungcheongnam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#73</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank73</td>
+                        <td>Chungcheongnam</td>
+                        <td>4,100,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#74</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank74</td>
+                        <td>Chungcheongbuk-do</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#75</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank75</td>
+                        <td>Daejeon</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#76</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank76</td>
+                        <td>Seoul</td>
+                        <td>5,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#77</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank77</td>
+                        <td>Daegu</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#78</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank78</td>
+                        <td>Jeollabuk</td>
+                        <td>4,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#79</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank79</td>
+                        <td>Gyeonggi</td>
+                        <td>4,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#80</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank80</td>
+                        <td>Daejeon</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#81</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank81</td>
+                        <td>Gyeongsangnam</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#82</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank82</td>
+                        <td>Chungcheongnam</td>
+                        <td>4,860,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#83</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank83</td>
+                        <td>Busan</td>
+                        <td>4,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#84</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank84</td>
+                        <td>Gyeonggi-do</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#85</td>
+                        <td class="text-underline">@Resources.SharedResource.HandbookMenu2Title4Rank85</td>
+                        <td>Gyeonggi-do</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>#86</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank86</td>
+                        <td>Daejeon</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#87</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank87</td>
+                        <td>Busan</td>
+                        <td>4,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#88</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank88</td>
+                        <td>Chungcheongnam</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#89</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank89</td>
+                        <td>Seoul</td>
+                        <td>6,000,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#90</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank90</td>
+                        <td>Gangwon</td>
+                        <td>3,600,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#91</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank91</td>
+                        <td>Busan</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#92</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank92</td>
+                        <td>Daejeon</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#93</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank93</td>
+                        <td>Chungcheongbuk</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#94</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank94</td>
+                        <td>Busan</td>
+                        <td>4,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#95</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank95</td>
+                        <td>Gyeongsangbuk</td>
+                        <td>4.800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#96</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank96</td>
+                        <td>Chungcheongbuk</td>
+                        <td>4,400,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#97</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank97</td>
+                        <td>Gyeonggi</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#98</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank98</td>
+                        <td>Jeollabuk</td>
+                        <td>5,200,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#99</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank99</td>
+                        <td>Daejeon</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                    <tr>
+                        <td>#100</td>
+                        <td class="text-underline">+ @Resources.SharedResource.HandbookMenu2Title4Rank100</td>
+                        <td>Daejeon</td>
+                        <td>4,800,000 KRW</td>
+                    </tr>
+                </table>
+
+                <span class="d-block line-20 ml-50 pt-4 f-600">@Resources.SharedResource.HandbookMenu2Title2Note </span>
+                <span class="d-block line-20 ml-50">
+                    • @Resources.SharedResource.HandbookMenu2Title4Note1_1
+                </span>
+
+                <span class="d-block line-20 ml-50">
+                    • @Resources.SharedResource.HandbookMenu2Title4Note1_2
+                </span>
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu2Title4Source
+                </span>
+                <span class="d-block line-20 ml-50">• University Guru</span>
+                <span class="d-block line-20 ml-50">• QS World University Rankings </span>
+                <span class="d-block line-20 ml-50">• 4icu</span>
+                <span class="d-block line-20 ml-50">• Times Higher Education</span>
+                <span class="d-block line-20 ml-50">• SCImago Institutions Rankings</span>
+                <span class="d-block line-20 ml-50">• Zila Team tổng hợp</span>
+                @*<span class="d-block">@Resources.SharedResource.HighSchool21</span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool22</span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool23 </span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool24</span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool25</span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool26</span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool27</span>
+                    <span class="d-block line-20 ml-50">-	@Resources.SharedResource.HighSchool28</span>
+                    <span class="d-block line-20 ml-50">
+                        -	@Resources.SharedResource.HighSchool29
+                    </span>
+                    <span class="d-block line-20 ml-50">
+                        -	@Resources.SharedResource.HighSchool30
+                    </span>*@
+            </div>
+        </div>
+        <div id="section4">
+            <div class="line-20 pt-3 order-number-title f-600">4. @Resources.SharedResource.HandbookMenu2Title5</div>
+            <div class="content-section">
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu2Title5Info1
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info1_1.</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info1_2.</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info1_3.</span>
+
+
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu2Title5Info2:
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info2_1</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info2_2</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info2_3</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title5Info2_4 </span>
+
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu2Title6
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title6Info1.</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu2Title6Info2.</span>
+                <span class="d-block line-20 ml-50 pb-2">• @Resources.SharedResource.HandbookMenu2Title6Info3.</span>
+
+                <table class="visa-table">
+                    <tr>
+                        <td class="w-25">
+                            <span class="d-block line-20 f-600">
+                                @Resources.SharedResource.HandbookMenu2Title6Table1
+                            </span>
+                        </td>
+                        <td>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_1</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_2</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_3</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_4</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_5</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_6</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table1_7</span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">
+                            <span class="d-block line-20 f-600">
+                                @Resources.SharedResource.HandbookMenu2Title6Table2
+                            </span>
+                        </td>
+                        <td>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table2_1</span>
+                            <span class="d-block line-20 ml-50">- @Resources.SharedResource.HandbookMenu2Title6Table2_2</span>
+                            <span class="d-block line-20 ml-70">+ @Resources.SharedResource.HandbookMenu2Title6Table2_2_1</span>
+                            <span class="d-block line-20 ml-70">+ @Resources.SharedResource.HandbookMenu2Title6Table2_2_2</span>
+
+                        </td>
+                    </tr>
+                </table>
+                <span class="d-block line-20 f-600 pb-2 pt-2">
+                    1. @Resources.SharedResource.HandbookMenu2Title7
+                </span>
+                <table>
+                    <tr>
+                        <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle1</th>
+                        <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle2</th>
+                        <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle3</th>
+                        <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle4</th>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">A1</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow1Col2</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow1Col3</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow1Col4</td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">A2</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow2Col2</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow2Col3</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow2Col4</td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">A3</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow3Col2</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow3Col3</td>
+                        <td>@Resources.SharedResource.HandbookMenu2Title7TableRow3Col4</td>
+                    </tr>
+                </table>
+
+                <span class="d-block line-20 f-600">
+                    <span class="d-block line-20 f-600 pb-2 pt-2">
+                        2. @Resources.SharedResource.HandbookMenu2Title8
+                    </span>
+                    <table>
+                        <tr>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle1</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle2</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle3</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle4</th>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E1</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow1Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow1Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow1Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow2Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow2Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow2Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow3Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow3Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow3Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E4</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow4Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow4Col3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E5</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow5Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow5Col3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E6</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow6Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow6Col3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E7</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow7Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow7Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow7Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E9</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow8Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow8Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow7Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">E10</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow9Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow9Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow9Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">H1</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow10Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow10Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title8TableRow10Col4</td>
+                        </tr>
+                    </table>
+
+
+                    <span class="d-block line-20 f-600 pb-2 pt-2">
+                        3. @Resources.SharedResource.HandbookMenu2Title9
+                    </span>
+                    <table>
+                        <tr>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle1</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle2</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle3</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle4</th>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">C1</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow1Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow1Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow1Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">C2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow2Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow2Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow2Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">C3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow3Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow3Col3</td>
+                            <td>
+                                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title9TableRow3Col4_1</span>
+                                <span class="d-block line-20 ml-50">@Resources.SharedResource.HandbookMenu2Title9TableRow3Col4_2</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">C4</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow4Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow4Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title9TableRow4Col4</td>
+                        </tr>
+                    </table>
+
+                    <span class="d-block line-20 f-600 pb-2 pt-2">
+                        4.	>@Resources.SharedResource.HandbookMenu2Title10
+                    </span>
+                    <table>
+                        <tr>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle1</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle2</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle3</th>
+                            <th class="font-weight-bold text-center header-table">@Resources.SharedResource.HandbookMenu2Title7TableTitle4</th>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D1</td>
+                            <td>>@Resources.SharedResource.HandbookMenu2Title10TableRow1Col2</td>
+                            <td>>@Resources.SharedResource.HandbookMenu2Title10TableRow1Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow1Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow2Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow2Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow2Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow3Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow3Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow3Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D4</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow4Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow4Col3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D5</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow5Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow5Col3.</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow5Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D6</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow6Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow6Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow1Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D7</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow7Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow7Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow1Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D8</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow8Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow8Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow8Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D9</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow9Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow9Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow9Col4.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">D10</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow10Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow10Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow10Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">F1</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow11Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow11Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow1Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">F2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow12Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow12Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow12Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">F3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow13Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow13Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow13Col4.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">F4</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow14Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow14Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow12Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">F5</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow15Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow15Col3</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow15Col4</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">F6</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow16Col2</td>
+                            <td>@Resources.SharedResource.HandbookMenu2Title10TableRow16Col3</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </span>
+                @*<span class="d-block line-20 ml-50">• Công việc bán thời gian</span>
+                    <span class="d-block"><span class="ml-4 f-600">@Resources.SharedResource.HighSchool32: </span>@Resources.SharedResource.HighSchool33<a>oanhcamry123@gmail.com</a> @Resources.SharedResource.HighSchool34 </span>
+                    <span class="d-block line-20 ml-50">1:@Resources.SharedResource.HighSchool35</span>
+                    <span class="d-block line-20 ml-50">2: @Resources.SharedResource.HighSchool36</span>
+                    <span class="d-block line-20 ml-50">3:@Resources.SharedResource.HighSchool37</span>
+                    <span class="d-block line-20 ml-50">4: @Resources.SharedResource.HighSchool38</span>
+                    <span class="d-block line-20 ml-50">5: @Resources.SharedResource.HighSchool39</span>
+                    <span class="d-block line-20 ml-70 f-600">@Resources.SharedResource.HighSchool40</span>
+                    <span class="d-block line-20 ml-70  f-600">@Resources.SharedResource.HighSchool41 </span>
+                    <span class="d-block line-20 ml-50">@Resources.SharedResource.HighSchool42</span>*@
+            </div>
+        </div>
+        <div id="section5">
+            <div class="line-20 pt-3 order-number-title f-600">II. @Resources.SharedResource.HandbookMenu3</div>
+            <div class="content-section">
+                <span class="d-block line-20 f-600">
+                    1. @Resources.SharedResource.HandbookMenu3Title1
+                </span>
+                <span class="d-block">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu3Title1Info1_1 </span>@Resources.SharedResource.HandbookMenu3Title1Info1_2
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title1Info2</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title1Info3</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title1Info4</span>
+
+                <span class="d-block line-20 f-600">
+                    2. @Resources.SharedResource.HandbookMenu3Title2
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title2Info1</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title2Info2</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title2Info3</span>
+
+                <span class="d-block line-20 f-600">
+                    3. @Resources.SharedResource.HandbookMenu3Title3
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title3Info1</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title3Info2</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title3Info3</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title3Info4</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title3Info5.</span>
+
+                <span class="d-block line-20 f-600">
+                    @Resources.SharedResource.HandbookMenu3Title4
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title4Info1</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title4Info2</span>
+
+
+                <span class="d-block line-20 f-600">
+                    4. @Resources.SharedResource.HandbookMenu3Title5
+                </span>
+                <span class="d-block">
+                    <span class="ml-4">@Resources.SharedResource.HandbookMenu3Title5Info1 </span>
+                </span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_1</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_2</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_3</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_4</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_5</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_6</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_7</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_8</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_9</span>
+                <span class="d-block line-20 ml-50">• @Resources.SharedResource.HandbookMenu3Title5Info1_10</span>
+
+            </div>
+            @*<div class="line-20 pt-3 order-number-title f-600"> @Resources.SharedResource.HighSchool43</div>
+                    <div class="content-section">
+                        <span class="d-block">
+                            <span class="ml-4">@Resources.SharedResource.HighSchool44 </span>@Resources.SharedResource.HighSchool45
+                        </span>
+                        <span class="d-block">@Resources.SharedResource.HighSchool46</span>
+                    </div>
+                </div>
+                <div id="section6">
+                    <div class="line-20 pt-3 order-number-title f-600"> @Resources.SharedResource.HighSchool47</div>
+                    <div class="content-section">
+                        <span class="d-block  line-20 ">
+                            •@Resources.SharedResource.HighSchool48
+                        </span>
+                        <span class="d-block line-20">• @Resources.SharedResource.HighSchool49</span>
+                        <span class="d-block line-20">• @Resources.SharedResource.HighSchool50</span>
+                        <span class="d-block line-20">• @Resources.SharedResource.HighSchool51</span>
+                        <span class="d-block line-20">• @Resources.SharedResource.HighSchool52</span>
+                        <span class="d-block line-20">• @Resources.SharedResource.HighSchool53</span>
+                        <span class="d-block line-20">• @Resources.SharedResource.HighSchool54</span>
+                        <span class="d-block line-20">
+                            • @Resources.SharedResource.HighSchool55
+                        </span>
+                    </div>*@
+        </div>
+        @*<div id="section7">
+                <div class="line-20 pt-3 order-number-title f-600">@Resources.SharedResource.HighSchool56</div>
+                <div class="content-section">
+                    <span class="title-child-page"> @Resources.SharedResource.HighSchool57</span>
+                    <img class="img-page d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Gincheon.jpg">
+                    <span class="d-block ml-50 line-20 pt-4"> 1. @Resources.SharedResource.HighSchool58 </span>
+                    <span class="d-block ml-50 line-20"> 2. @Resources.SharedResource.HighSchool59 </span>
+                    <span class="d-block ml-50 line-20"> 3. @Resources.SharedResource.HighSchool60 </span>
+                    <span class="d-block ml-50 line-20"> 4.  @Resources.SharedResource.HighSchool61 </span>
+                    <span class="d-block ml-50 line-20"> 5.  @Resources.SharedResource.HighSchool62 </span>
+                    <span class="title-child-page pt-3 mt-4 line-20">  @Resources.SharedResource.HighSchool63</span>
+                    <img class="img-page d-block  col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Namwon.png">
+                    <span class="d-block ml-50 line-20f-600 pt-4 f-600"> @Resources.SharedResource.HighSchool64 </span>
+                    <span class="d-block ml-50 line-20 f-600"> @Resources.SharedResource.HighSchool65 </span>
+                    <span class="d-block ml-50 line-20  pt-3"><span class="ml-4">@Resources.SharedResource.HighSchool66</span>  @Resources.SharedResource.HighSchool67 </span>
+                    <span class="d-block ml-50 line-20 pt-3">
+                        <span class="ml-4">@Resources.SharedResource.HighSchool68 </span>  @Resources.SharedResource.HighSchool69
+                    </span>
+                    <span class="d-block ml-50 line-20 pt-3">
+                        <span class="ml-4">@Resources.SharedResource.HighSchool70 </span>@Resources.SharedResource.HighSchool71
+                    </span>
+                    <span class="d-block ml-50 pt-3 line-20">
+                        <span class="ml-4">@Resources.SharedResource.HighSchool72 </span>@Resources.SharedResource.HighSchool73
+                    </span>
+                    <span class="d-block ml-50 pt-3 line-20">
+                        <span class="ml-4">@Resources.SharedResource.HighSchool74  </span>@Resources.SharedResource.HighSchool75
+                    </span>
+                    <span class="d-block f-600 line-20">@Resources.SharedResource.HighSchool76</span>
+                </div>
+            </div>
+            <div id="section8">
+                <div class="line-20 pt-3 order-number-title f-600"> @Resources.SharedResource.HighSchool77</div>
+                <div class="content-section">
+                    <div class="row pt-4">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN1.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN2.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN5.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN4.png">
+                        <span class="d-block span-des-image col-12 pt-4">
+                            @Resources.SharedResource.HighSchool78
+                        </span>
+                    </div>
+                    <div class="row pt-4">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN5.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN6.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN7.png">
+                        <img class="iimg-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN8.png">
+                        <img class="iimg-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/schoolHN9.png">
+                        <span class="d-block span-des-image col-12 pt-4">
+                            @Resources.SharedResource.HighSchool79
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="d-block f-600 col-12 pt-4 ">
+                            @Resources.SharedResource.HighSchool80
+                        </span>
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission1.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission2.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission3.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission4.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission5.jpg">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission6.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission7.jpg">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission8.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission9.png">
+                        <img class="img-page-child d-block col-6 pt-3" src="~/Theme-FrontEnd/assets/Content/Admission10.png">
+                    </div>
+                </div>
+            </div>*@
+    </div>
+    <div class="right-high-school mt-3">
+        <div class="card-progame-study">
+            <div class="title-card-progame">Chương trình của KIPA</div>
+            <div class="card-pro"> <a class="link-action" href="/tieng-han-doanh-nghiep">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.Enterprise</a></div>
+            <div class="card-pro">  <a class="link-action" href="/e9-ve-nuoc">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.E9</a></div>
+            <div class="card-pro">  <a class="link-action" href="/du-hoc-cap-3">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.C3</a></div>
+            <div class="card-pro"><a class="link-action" href="/du-hoc-thac-sy">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.Mater</a></div>
+            <div class="card-pro"><a class="link-action" href="/du-hoc-dai-hoc">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.University</a></div>
+        </div>
+        <div class="card-progame-study mt-3">
+            <div class="title-card-progame">Visa Hàn Quốc</div>
+            <div class="card-pro">  <a class="link-action" href="/visa-d4">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png"> @Resources.SharedResource.VisaD4</a></div>
+            <div class="card-pro">  <a class="link-action" href="/visa-d10">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaD10</a></div>
+            <div class="card-pro"> <a class="link-action" href="/visa-D2">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaD2</a></div>
+            <div class="card-pro"> <a class="link-action" href="/visa-e7">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaE7</a></div>
+        </div>
+    </div>
+</div>

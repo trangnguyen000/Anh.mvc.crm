@@ -1,0 +1,92 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập - Quản trị website</title>
+    <link rel="icon" href="/Assets/img/kipa-logo.png" type="image/x-icon">
+    <!-- Google Font: Source Sans Pro -->
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/login")
+</head>
+<body class="hold-transition login-page bg-full" style="background-image: url(/Assets/img/backdound-login.jpg); min-height: 258px; ">
+    <div class="login-box " id="formVue">
+        @*<div class="login-logo">
+                <a href="javascript;"><b>WDC</b></a>
+            </div>*@
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <div class="login-box-msg">
+                    <a href="/" target="_blank" class="brand-link">
+                        <img src="/Assets/img/kipa-logo.png" class="brand-image" style=" height: 100%;">
+                        <h4 class="brand-text font-weight-light title-head-menu">DU HỌC KIPA</h4>
+                    </a>
+                </div>
+                <div class=" mb-3">
+                    <div class="input-group" v-bind:class="{ 'validate-error': !model.UserName &&  submit }">
+                        <input type="text" class="form-control" placeholder="Tài khoản" v-model="model.UserName">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="error invalid-error" v-if="!model.UserName &&  submit">Vui lòng nhập tài khoản</span>
+                </div>
+
+                <div class=" mb-3">
+                    <div class="input-group" v-bind:class="{ 'validate-error': !model.Password &&  submit }">
+                        <input type="password" class="form-control " placeholder="Mật khẩu" v-model="model.Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="error invalid-error" v-if="!model.Password &&  submit">Vui lòng nhập mật khẩu</span>
+                </div>
+                <div class="mb-3">
+                    <span class="error invalid-error " v-if="!islogin &&  submit">Tài khoản hoặc mật khẩu không chính xác</span>
+
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        @*<div class="icheck-primary">
+                                <input type="checkbox" id="remember" v-model="model.RememberMe">
+                                <label for="remember">
+                                    Ghi nhớ
+                                </label>
+                            </div>*@
+                        @*<a href="forgot-password.html">Quên mật khẩu</a>*@
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block btn-main" v-on:click="login()">Đăng nhập</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+
+                <!-- /.social-auth-links -->
+
+                <p class="mb-1">
+                    @*<a href="forgot-password.html">Quên mật khẩu</a>*@
+                </p>
+
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/login")
+</body>
+</html>

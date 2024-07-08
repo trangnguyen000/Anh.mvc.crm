@@ -1,0 +1,225 @@
+﻿/*body {
+    font-family: Roboto;*/
+/*margin: auto;*/
+/*overflow-x: hidden
+}*/
+
+.container-fluid {
+    padding-left: 100px;
+    padding-right: 0 !important;
+    height: 100%;
+}
+
+header {
+    /*   margin: auto;*/
+    /*          display:flex; */
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    height: 110px;
+    position: fixed;
+    left: 0;
+    right: 10%
+}
+
+.navbar {
+    background-color: #fff;
+    font-size: 20px;
+    /*   border-radius: 16px;
+                margin: 20px; */
+    height: 110px;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.25rem;
+}
+
+    .navbar-toggler:focus, .btn-close:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+.img-logo-header {
+}
+
+.multi-language-button {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.header-detail {
+    height: 40vh;
+    background-image: url('../content/imageheader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.title-header-detail {
+    font-size: 45px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.des-header-detail {
+    position: absolute;
+    top: 73%;
+    left: 38%;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+
+
+.footer-web {
+    height: 35vh;
+    padding: 40px;
+}
+
+/*.footer-logo {
+    height: 100%;
+    position: relative;*/
+/*  margin: 0 20px;*/
+/*}*/
+
+.logo-Royal {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+/*.
+    {
+    position: absolute;
+    right: 2%;
+    top: 30%
+}*/
+
+/*.image-logo-footer {
+    height: 160px;
+    width: 160px;
+}*/
+
+/*.address-info {
+    padding: 0 30px 0 60px !important;
+    font-size: 20px
+}*/
+
+
+
+.phone-des {
+    position: absolute;
+    left: 150px;
+    top: 0
+}
+
+.des-address {
+    /*margin-top: -50px;*/
+}
+
+.dropdown-menu {
+    display: block !important;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    padding: 20px
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/*@media screen and (min-width: 62rem) {
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
+}*/
+@media screen and (min-width:993px) and (max-width: 1024px) {
+    .header-detail {
+        height: 21vh
+    }
+
+    .des-sign-up {
+        font-size: 16px
+    }
+
+    .main-form-connect {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .header-detail {
+        height: 21vh
+    }
+
+    .des-sign-up {
+        font-size: 16px
+    }
+
+    .main-form-connect {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 768px) {
+
+    .header-detail {
+        height: 30vh !important
+    }
+
+    .title-header-detail {
+        left: 32%;
+        font-size: 30px
+    }
+
+    .des-header-detail {
+        left: 13%
+    }
+}
+
+@media screen and (max-width: 390px) {
+    /*  .progame-info-kipa {
+        height: 60vh !important
+    }
+*/
+    header {
+        right: 0 !important;
+        height: 90px !important
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: 90px !important
+    }
+
+    .header-detail {
+        height: 30vh !important
+    }
+
+    .title-header-detail {
+        left: 32%;
+        font-size: 30px
+    }
+
+    .des-header-detail {
+        left: 13%
+    }
+}

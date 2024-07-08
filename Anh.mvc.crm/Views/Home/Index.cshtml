@@ -1,0 +1,505 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+}
+@model  Module.BusinessLogic.Dto.TinTucViewHomeDto
+
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('#myCarousel').on('slide.bs.carousel', function () {
+                var $active = $(this).find('.item.active');
+                var $next = $active.next('.item');
+                if (!$next.length) {
+                    $next = $(this).find('.item').first();
+                }
+                $next.css('transition', 'none');
+                setTimeout(function () {
+                    $next.css('transition', '');
+                }, 50);
+            });
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    //1200: {
+                    //    items: 4
+                    //},
+                    1400: {
+                        items: 5
+                    }
+                }
+            });
+            // Cập nhật kích thước của các slide khi kích thước màn hình thay đổi
+            $(window).on('resize', function () {
+                $('.carousel-inner .item').each(function () {
+                    $(this).css('height', $(window).height() + 'px');
+                });
+            }).resize(); // Gọi hàm resize ngay khi trang được tải
+        });
+
+    </script>
+}
+<style>
+
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item,
+    .carousel-inner .item img {
+        height: 100%;
+        width: 100%;
+    }
+
+        .carousel-inner .item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+    .carousel-caption {
+        color: white;
+    }
+</style>
+
+<div id="myCarousel" class="carousel slide slide-kipa" data-ride="carousel" data-aos="fade-up">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        @for (int i = 0; i < Model.Banners.Count; i++)
+        {
+            var item = Model.Banners[i];
+            var active = i == 0 ? "active" : "";
+            <li data-target="#myCarousel" data-slide-to="@i" class="@active"></li>
+        }
+        <!-- Add more indicators as needed -->
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        @for (int i = 0; i < Model.Banners.Count; i++)
+        {
+            var item = Model.Banners[i];
+            var active = i == 0 ? "active" : "";
+            <div class="item item-slide-kipa @active">
+                <img src="@item.Anh" height="100" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="animated slideInDown" style="animation-delay: 1s">@item.TieuDe</h2>
+                    <h4 class="animated fadeInUp" style="animation-delay: 2s">@item.Mota</h4>
+                </div>
+            </div>
+
+        }
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="main-index-website" >
+    <div class="row progame-info-kipa" data-aos="fade-up">
+        <div class="programe-title col-12">
+            <div class="button-progame">  @Resources.SharedResource.Programe</div>
+        </div>
+        <div class="item-visa-company card-progame">
+            <a class="h-100 d-block" href="/chuong-trinh-du-hoc">
+                <div class="card-item-progame animated bounceInLeft" style="animation-delay: 1s">
+                    <span class="title-copany title-progame-card d-block">
+                        @Resources.SharedResource.Enterprise
+                    </span>
+                    <span class="d-block des-programe-kipa pt-3">Dạy thật, học thật, không chạy theo kết quả</span>
+                </div>
+            </a>
+        </div>
+        <div class="item-visa-E9 card-progame">
+            <a class="h-100 d-block" href="/chuong-trinh-du-hoc">
+                <div class="card-item-progame  animated bounceInRight" style="animation-delay: 2s">
+                    <span class="title-E9 title-progame-card  d-block">
+                        @Resources.SharedResource.E9
+                    </span>
+                    <span class="d-block des-programe-kipa pt-2">Được trang bị các kỹ năng về quản lý sản xuất, kỹ năng tin học văn phòng và tiếng Hàn và củng cố lại những kiến thức có được khi làm việc tại Hàn Quốc.</span>
+                </div>
+            </a>
+        </div>
+        <div class="item-visa-high-school card-progame">
+            <a class="h-100 d-block" href="/chuong-trinh-du-hoc">
+                <div class="card-item-progame animated bounceInLeft" style="animation-delay: 3s">
+                    <span class="title-school title-progame-card d-block">
+
+                        @Resources.SharedResource.C3
+                    </span>
+                    <span class="d-block des-programe-kipa pt-3">Nền giáo dục chất lượng, chuyển tiếp đại học dễ dàng hơn</span>
+                </div>
+            </a>
+        </div>
+        <div class="item-visa-masters card-progame">
+            <a class="h-100 d-block" href="/chuong-trinh-du-hoc">
+                <div class="card-item-progame animated bounceInRight" style="animation-delay: 4s">
+                    <span class="title-master title-progame-card d-block">
+                        @Resources.SharedResource.Mater
+                    </span>
+                    <span class="d-block des-programe-kipa pt-3">Chính sách học bổng hấp dẫn, học phí ưu đãi. </span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="view-partner" id="view-partner" data-aos="fade-up">
+        <div class="header-view-partner">
+            <span class="title-partner"> @Resources.SharedResource.LinkSchool</span>
+            <span class="des-partner">
+                @Resources.SharedResource.DesLinkSchool
+            </span>
+        </div>
+        <div class="owl-carousel main-partner animated fadeInUp">
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/chungang.jpg">
+                <div class="main-card">
+                    <div class="title-school d-block  title-progame-card">@Resources.SharedResource.Chungang</div>
+                    <div class="des-school d-block pt-3">
+                        <a href="https://www.cau.ac.kr/index.do" target="_blank">www.cau.ac.kr</a>
+                    </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="/Theme-FrontEnd/assets/Content/KwangWoon.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.KwangWoon</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.kw.ac.kr/ko/" target="_blank">www.kw.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/chungwoon.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Chungwoon</div>
+                    <div class="des-school d-block pt-3">  <a href="http://www.chungwoon.ac.kr/" target="_blank">www.chungwoon.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="/Theme-FrontEnd/assets/Content/Kaist.png">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Kaist</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.kaist.ac.kr/kr/" target="_blank">www.kaist.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/MSU.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Mocpo</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.msu.ac.kr/ipsi/main/view" target="_blank">www.msu.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/Kyungin-Women.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card"> @Resources.SharedResource.KyungIn</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.kiwu.ac.kr/" target="_blank">www.kiwu.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/osan.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Osan</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.osan.ac.kr/?menuno=127" target="_blank">www.osan.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/Inha.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Inha</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.inha.ac.kr/kr/index.do" target="_blank">www.inha.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/daegu.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Daegu</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.dgau.ac.kr/" target="_blank">www.dgau.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/DONGGUK.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Dongguk</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.dongguk.edu/main" target=" _blank">www.dongguk.edu</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/calvin.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Calvin</div>
+                    <div class="des-school d-block pt-3">  <a href="http://www.calvin.ac.kr/main/index.do" target=" _blank">www.calvin.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/Yeoju.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Yeoju</div>
+                    <div class="des-school d-block pt-3">  <a href="http://www.info.yit.ac.kr/" target=" _blank">www.info.yit.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/shingu.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Shingu</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.shingu.ac.kr/" target=" _blank">www.shingu.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/Myongji.png">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Myongji</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.mju.ac.kr/sites/mjukr/intro/intro.html" target=" _blank">www.mju.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/dongshin.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Dongshin</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.dsu.ac.kr/kr/" target=" _blank">www.dsu.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/sunmoon.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Sunmoon</div>
+                    <div class="des-school d-block pt-3">  <a href="https://lily.sunmoon.ac.kr/MainDefault3.aspx" target=" _blank">www.sunmoon.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/shinhan.png">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Shinhan</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.shinhan.ac.kr/sites/kr/index.do" target=" _blank">www.shinhan.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/JNBU.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Jeonbuk</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.jbnu.ac.kr/kor/" target=" _blank">www.jbnu.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/Jeonju.png">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Jeonju</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.jvision.ac.kr/vision/main/" target=" _blank">www.jvision.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Theme-FrontEnd/assets/Content/Yeonsei.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Yeonsei</div>
+                    <div class="des-school d-block pt-3">  <a href="http://www.yeonsei.ac.kr/" target=" _blank">www.yeonsei.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="/Theme-FrontEnd/assets/Content/Kunjang.jpg">
+                <div class="main-card">
+                    <div class="title-school title-progame-card">@Resources.SharedResource.Kunjang</div>
+                    <div class="des-school d-block pt-3">  <a href="https://www.kunjang.ac.kr/" target=" _blank">www.kunjang.ac.kr</a> </div>
+                </div>
+                <img class="img-korea" src="/Theme-FrontEnd/assets/Content/korie.png">
+            </div>
+        </div>
+    </div>
+    <div class="students-comments" data-aos="fade-up">
+        <div class="programe-title row">
+            <div class="col-12">
+                <div class="button-progame-comment button-progame">
+                    @Resources.SharedResource.Comment
+                </div>
+            </div>
+            <div class="card-students-comment row">
+                <div class="img-student-div col-3"> <img class="img-student " src="/Theme-FrontEnd/assets/Content/avatar-01.png"></div>
+                <div class="content-student col-9">
+                    <span class="d-block">
+                        Sau khi tìm hiểu rất nhiều trung tâm du học trên thị
+                        trường, tôi đã lựa chọn KIPA vì ở đây các chi phí
+                        đều rất minh bạch, làm việc trực tiếp không qua
+                        trung gian nên tiết kiệm được khoảng 100 triệu
+                        đồng. Trước khi chốt, chúng tôi còn ghé qua ký túc
+                        xem kỹ hơn. Thấy nơi ở của các cháu sạch sẽ, an toàn,
+                        có đủ đồ phòng cháy chữa cháy,.. nên mới yên tâm
+                        đặt bút ký.
+                    </span>
+                    <span class="d-block f-600 pt-3">Phụ huynh bạn Thu Hằng</span>
+                </div>
+            </div>
+            <div class="card-students-comment row">
+                <div class="img-student-div col-3">
+                    <img class="img-student" src="/Theme-FrontEnd/assets/Content/avatar-03.png">
+                </div>
+                <div class="content-student col-9">
+                    <span class="d-block">
+                        Em từng trượt ở 1 trung tâm khác và đã quyết định
+                        gửi lại hồ sơ vào KIPA. Cảm ơn trung tâm đã giúp
+                        đỡ em rất nhiều. Bởi với em khoảng thời gian đó
+                        thực sự khó khăn, em mất niềm tin vào bản thân và
+                        từng nghĩ mình là kẻ thất bại. Cảm ơn cô giáo, cảm
+                        ơn chị Nhung và chị sale đã luôn động viên em ạ!
+                    </span>
+                    <span class="d-block f-600 pt-3">Bạn Nguyễn Huyền</span>
+                    <span class="d-block span-des-student">Sinh viên Đại học Hankuk</span>
+
+                </div>
+            </div>
+            <div class="card-students-comment row">
+                <div class="img-student-div col-3">
+                    <img class="img-student" src="/Theme-FrontEnd/assets/Content/avata3.jpg">
+                </div>
+                <div class="content-student col-9">
+                    <span class="d-block">
+                        Con gái tôi sau khi tốt nghiệp cấp 3 thì muốn đi du
+                        học Hàn. Tôi đã được bạn bè có con đi trước giới
+                        thiệu vào KIPA. Sau khi so sánh và tham khảo kỹ
+                        lưỡng hai vợ chồng tôi đã quyết định gửi gắm con
+                        vào đây. Đến bây giờ sau khi cháu đã đi du học gia
+                        đình vẫn giữ liên lạc với tư vấn viên của trung tâm và
+                        nhờ mọi người giúp đỡ con bên Hàn.
+                    </span>
+                    <span class="d-block f-600 ">Phụ huynh bạn Thu Hằng</span>
+                </div>
+            </div>
+            <div class="card-students-comment row">
+                <div class="img-student-div col-3">
+                    <img class="img-student" src="/Theme-FrontEnd/assets/Content/avata4.jpg">
+                </div>
+                <div class="content-student col-9">
+                    <span class="d-block">
+                        Em từng học đại học ở Việt Nam nhưng rồi lại quyết
+                        định chuyển tiếp sang Hàn để theo đuổi giấc mơ của
+                        mình. Cảm ơn KIPA từ những ngày đầu đã rất
+                        nhiệt tình tư vấn, xử lý hồ sơ chuyển tiếp cho em.
+                        Sang Hàn học mới thấy, hỏi 10 bạn thì có tới 8 bạn
+                        cũng đi từ KIPA luôn ạ: từ Hà Nội, Đà Nẵng, Sài
+                        Gòn,... đều rất đông. Mỗi khi tìm thấy 1 bạn Sunnier
+                        em cảm thấy như tìm được người nhà ở nơi đất
+                        khách quê người ấy.
+                    </span>
+                    <span class="d-block f-600">Bạn Nguyễn Châu</span>
+                    <span class="d-block span-des-student">Sinh viên Đại học Kwangwoon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="activities-info" data-aos="fade-up">
+        <div class="programe-title programe-title-activities col-12">
+            <div class="button-progame button-progame-activities">
+                HOẠT ĐỘNG Ở KIPA
+            </div>
+        </div>
+        <div class="conntent-activities row">
+            @if (Model.TinTucHomes != null && Model.TinTucHomes.Count > 0)
+            {
+                var first = Model.TinTucHomes[0];
+                <div class="content-left px-0">
+
+                    <img class="img-activities-page-left px-0" src="@first.Anh">
+                    <div class="content-page-activities">
+                        <div class="title-content-left ">
+                            @first.TieuDe
+                        </div>
+                        <div class="content-right-des pt-2">  @first.Mota </div>
+                        <div class="show-more pt-3">
+                            <a class="" href="@first.Link"> >> Xem thêm </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right px-0">
+                    @for (int i = 1; i < Model.TinTucHomes.Count; i++)
+                    {
+                        var item = Model.TinTucHomes[i];
+                        <div class="card-content-activities row">
+                            <div class="col-4 px-0 ">
+                                <img class="img-activities-page-right" src="@item.Anh">
+                            </div>
+                            <div class="col-8 content-page-activities">
+                                <div class="title-content-left">
+                                    @item.TieuDe
+                                </div>
+                                <div class="content-right-des pt-2"> @item.Mota </div>
+                                <div class="show-more pt-3">  <a class="" href="@item.Link"> >> Xem thêm </a></div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+            }
+        </div>
+    </div>
+    @*<div class="owl-carousel owl-loaded owl-drag">
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Content/school.png">
+                <span class="d-block line-20 ml-70">• Đại học hà nội </span>
+                <span class="d-block line-20 ml-70">• Đơn xin cấp visa Đơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visa</span>
+                <img class="img-korea" src="~/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Content/school.png">
+                <span class="d-block line-20 ml-70">• Đại học hà nội </span>
+                <span class="d-block line-20 ml-70">• Đơn xin cấp visa Đơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visa</span>
+                <img class="img-korea" src="~/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Content/school.png">
+                <span class="d-block line-20 ml-70">• Đại học hà nội </span>
+                <span class="d-block line-20 ml-70">• Đơn xin cấp visa Đơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visa</span>
+                <img class="img-korea" src="~/Content/korie.png">
+            </div>
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Content/school.png">
+                <span class="d-block line-20 ml-70">• Đại học hà nội </span>
+                <span class="d-block line-20 ml-70">• Đơn xin cấp visa Đơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visa</span>
+                <img class="img-korea" src="~/Content/korie.png">
+            </div>
+
+            <div class="item card-partner">
+                <img class="img-school-partner" src="~/Content/school.png">
+                <span class="d-block line-20 ml-70">• Đại học hà nội </span>
+                <span class="d-block line-20 ml-70">• Đơn xin cấp visa Đơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visaĐơn xin cấp visa</span>
+                <img class="img-korea" src="~/Content/korie.png">
+            </div>
+        </div>*@
+</div>

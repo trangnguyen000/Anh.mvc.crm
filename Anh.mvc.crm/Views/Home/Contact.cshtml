@@ -1,0 +1,89 @@
+﻿@model Anh.mvc.Models.ContactFormModel
+@{
+    ViewBag.Title = "Liên hệ tư vấn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Lấy thông báo từ TempData
+    var alertMessage = TempData["AlertMessage"] as string;
+    var alertType = TempData["AlertType"] as string;
+    var ValidateName = TempData["ValidateName"] as string;
+    var ValidatePhone = TempData["ValidatePhone"] as string;
+}
+@section scripts {
+
+}
+<link href="~/Theme-FrontEnd/assets/css/header.css" rel="stylesheet" />
+
+<div class="header-detail" data-aos="fade-up">
+    <span class="title-header-detail animated slideInDown" style="animation-delay: 1s">@Resources.SharedResource.TitleHeader</span>
+    <span class="des-header-detail animated fadeInUp" style="animation-delay: 2s">@Resources.SharedResource.DesHeader</span>
+</div>
+
+<div class="des-sign-up" data-aos="fade-up">@Resources.SharedResource.PleaseContact</div>
+<div class="connect-form" data-aos="fade-up">
+    @if (!string.IsNullOrEmpty(alertMessage))
+    {
+        <div class="alert @alertType">
+            @alertMessage
+        </div>
+    }
+<div class="main-form-connect row">
+    <div class="left-form-connect">
+        <img class="image-member" src="~/Theme-FrontEnd/assets/Content/member.png">
+        <div class="des-image-member">@Resources.SharedResource.Counselors</div>
+    </div>
+    <div class="right-form-connect">
+        <div class="title-form-connect">@Resources.SharedResource.PleaseContactNow</div>
+        <form class="form-connect-submit" action="/Home/SendEmail" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">@Resources.SharedResource.Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Vui lòng nhập tên..">
+                    @if (!string.IsNullOrEmpty(ValidateName))
+                    {
+                        <span class="text-red pl-1" asp-validation-for="name">@ValidateName</span>
+                       
+                    }
+                    <span asp-validation-for="name"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">@Resources.SharedResource.Phone</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Nhập số điện thoại..">
+                    @if (!string.IsNullOrEmpty(ValidatePhone))
+                    {
+                        <span class="text-red pl-1" asp-validation-for="name">@ValidatePhone</span>
+                    }
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">@Resources.SharedResource.ProgramCare</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="DuHoc">Du học</option>
+                        <option value="TiengHanDoanhNghiep">Tiếng hàn doanh nghiệp</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">@Resources.SharedResource.Question</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Nhập câu hỏi bạn cần tư vấn.." style="height:150px"></textarea>
+                </div>
+            </div>
+            <div class="row submit-btn">
+                <input type="submit" value=@Resources.SharedResource.Send>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Hoạt động tại KiPa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Module.Data.DataAccess.AppTinTuc
+
+<link href="~/Theme-FrontEnd/assets/css/header.css" rel="stylesheet" />
+<div class="header-detail" data-aos="fade-up">
+    <span class="title-header-detail animated slideInDown" style="animation-delay: 1s">@Resources.SharedResource.TitleHeader</span>
+    <span class="des-header-detail animated fadeInUp" style="animation-delay: 2s">@Resources.SharedResource.DesHeader</span>
+</div>
+<div class="study-abroad-high-school row" data-aos="fade-up">
+    <div class="left-high-school">
+        @{
+            Html.RenderAction("_MainLeft", "Home");
+        }
+    </div>
+    <div class="center-high-school mt-5">
+        <div class="
+             p-5">
+            <h1>
+                @Model.TieuDe
+            </h1>
+            <div class="date-post text-right mb-3">
+                Ngày đăng:<span> @Model.CreationTime.Value.ToString("dd-MM-yyyy - hh:mm tt", new System.Globalization.CultureInfo("vi-VN"))</span>
+            </div>
+            <p>
+                <em>   @Model.Mota</em>
+            </p>
+            <div class="content-detail mt-4">
+                @Html.Raw(Model.NoiDung)
+            </div>
+        </div>
+    </div>
+    <div class="right-high-school mt-3">
+        <div class="card-progame-study">
+            <div class="title-card-progame">Chương trình của KIPA</div>
+            <div class="card-pro"> <a class="link-action" href="/tieng-han-doanh-nghiep">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.Enterprise</a></div>
+            <div class="card-pro">  <a class="link-action" href="/e9-ve-nuoc">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.E9</a></div>
+            <div class="card-pro">  <a class="link-action" href="/du-hoc-cap-3">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.C3</a></div>
+            <div class="card-pro"><a class="link-action" href="/du-hoc-thac-sy">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.Mater</a></div>
+            <div class="card-pro"><a class="link-action" href="/du-hoc-dai-hoc">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.University</a></div>
+        </div>
+        <div class="card-progame-study mt-3">
+            <div class="title-card-progame">Visa Hàn Quốc</div>
+            <div class="card-pro">  <a class="link-action" href="/visa-d4">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png"> @Resources.SharedResource.VisaD4</a></div>
+            <div class="card-pro">  <a class="link-action" href="/visa-d10">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaD10</a></div>
+            <div class="card-pro"> <a class="link-action" href="/visa-D2">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaD2</a></div>
+            <div class="card-pro"> <a class="link-action" href="/visa-e7">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaE7</a></div>
+        </div>
+    </div>
+
+</div>

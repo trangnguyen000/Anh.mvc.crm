@@ -1,0 +1,2691 @@
+.html-index-main {
+    width: 100%;
+    overflow-x: hidden
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: Roboto;*/
+    margin: auto;
+    overflow-x: visible;
+    /*  overflow-x: hidden;*/
+    font-size: 14px;
+}
+
+.container-fluid {
+    padding-left: 85px;
+    padding-right: 0 !important;
+}
+
+header {
+    /*   margin: auto;
+            display:flex; */
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    height: 110px;
+    position: fixed;
+    left: 0;
+    right: 10%
+}
+
+.navbar-brand {
+    height: 100%
+}
+
+.navbar {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0;
+    /*   border-radius: 16px;
+            margin: 20px; */
+    height: 110px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.25rem;
+}
+
+    .navbar-toggler:focus, .btn-close:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+.img-logo-header {
+    /*height: 80%;
+    margin: 10% 0;*/
+    height: 100%
+}
+
+.multi-language-button {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.nav-link {
+    /*color: red;*/
+
+    font-weight: 600;
+    /*position: relative;*/
+}
+
+    .nav-link:hover, .nav-link:active {
+        color: #000;
+    }
+
+.nav-link-sub::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #411C6B;
+    /*visibility: hidden;*/
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link-sub:hover:before, .nav-link:active::before {
+    width: 100%;
+    /*visibility: visible;*/
+}
+
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    /*         -webkit-background-size: cover; */
+    background-size: cover
+}
+
+.carousel-caption {
+    bottom: 55% !important;
+    left: 20% !important;
+    color: black !important;
+    right: auto !important
+}
+
+    .carousel-caption h5 {
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+
+    .carousel-caption p {
+        width: 60%;
+        margin: auto;
+    }
+
+
+.footer-web {
+    height: 35vh;
+    /*padding: 40px;*/
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-logo {
+    height: 100%;
+    position: relative;
+    /*margin: 0 20px;*/
+    width: 30%;
+}
+
+.logo-Royal {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    width: 68%;
+
+}
+
+.logo-kipa {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 68%;
+}
+
+.image-logo-footer {
+    height: 100%;
+    width: 100%;
+}
+
+.address-info {
+    padding: 20px 20px 20px 60px !important;
+    font-size: 20px;
+    width: 40%
+}
+
+.title-company {
+    font-size: 30px;
+    font-weight: 600;
+    color: #411C6B;
+    display: flex;
+    justify-content: center
+}
+/*.title-company {
+    color: #411C6B;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center
+}*/
+
+.total-phone {
+    position: relative;
+    /*margin-top: -70px;*/
+}
+
+.phone-des {
+    position: absolute;
+    left: 150px;
+    top: 0
+}
+
+.progame-info-kipa {
+    height: 100vh;
+    background-image: url('../content/sectiondomain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+    .progame-info-kipa img {
+        height: 100%
+    }
+
+.card-progame {
+    /*    position:absolute; */
+    height: 200px;
+    width: 50%
+}
+
+.card-item-progame {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    height: 100%;
+    display: block;
+    text-align: center
+}
+
+    .card-item-progame:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        /*  background-color: #411C6B;
+        color: white*/
+    }
+
+.des-programe-kipa {
+    font-size: 20px;
+    /* margin-top: 20px*/
+    color: #411C6B;
+}
+
+.programe-title {
+    height: 40px;
+    margin-left: 15%;
+    /*   margin-top: 50px;*/
+    border-radius: 10px;
+    text-align: left;
+}
+
+.button-progame {
+    line-height: 31px;
+    height: 100%;
+    background-color: #411C6B;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+    .button-progame::after {
+        content: "";
+        position: absolute;
+        left: calc(20% + 200);
+        /*    bottom: 50%; */
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        top: 20px;
+        margin-left: 15px
+    }
+
+.item-visa-company {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 93px;
+    align-items: center
+}
+
+.item-visa-high-school {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 93px;
+    align-items: center
+}
+
+.item-visa-E9 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 93px;
+    align-items: center
+}
+
+.item-visa-masters {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 93px;
+    align-items: center
+}
+
+.title-progame-card {
+    font-size: 22px;
+    font-weight: 700;
+    color: #411C6B;
+}
+
+.header-view-partner {
+    /*    background-color: #2d124df5; */
+    background: linear-gradient(30deg, rgb(148 73 172), rgb(50 50 148), rgb(103 56 205));
+    height: 40vh;
+    min-height: 400px
+    /*    width: 60%;
+            margin: auto */
+}
+
+    .header-view-partner span {
+        color: #ffff
+    }
+
+.title-partner {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding: 40px 20px 20px 20px;
+    font-weight: 500
+}
+
+.des-partner {
+    display: flex;
+    justify-content: center;
+    font-size: 20px
+}
+
+.card-partner {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-school-partner {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50% !important;
+    width: 100% !important
+}
+
+.img-student {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 58%;
+    border-radius: 50%
+}
+
+.img-korea {
+    position: absolute;
+    left: 1px;
+    top: 38%
+}
+
+.main-partner {
+    background-color: #fff;
+    display: flex;
+    /*  align-items:center; */
+    overflow: hidden;
+    padding: 40px 40px 60px 0;
+    background-color: transparent;
+    position: absolute;
+    top: 26%;
+    user-select: none;
+    white-space: nowrap;
+    cursor: grab;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
+
+.card-partner {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 320px;
+    transition: transform 0.3s ease;
+    /*  word-wrap: break-word;
+    white-space: nowrap;*/
+}
+
+    .card-partner:hover {
+        transform: scale(1.2);
+    }
+
+.view-partner {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    /*    width: 900px; */
+}
+
+.students-comments {
+    height: 100vh;
+    background-image: url('../content/section.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 50px
+}
+
+.activities-info {
+    /*height: 100vh;*/
+    /* background-color: yellow;*/
+    position: relative;
+    /*   width: 80%;
+    margin: auto;*/
+}
+
+.main-card {
+    width: 100%;
+    padding: 20px;
+    height: 50%;
+    display: block;
+    text-align: center;
+    border-radius: 100px;
+    /*   word-wrap: break-word;
+            white-space: nowrap; */
+}
+
+.des-school {
+    height: 100%;
+    width: 100%;
+    /*    word-wrap: break-word;
+            white-space: pre-wrap; */
+}
+
+.study-abroad-high-school {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    color: #411C6B;
+}
+
+.card-progame-study {
+    width: 100%;
+    padding: 20px;
+    color: #411C6B;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6px
+}
+
+.card-pro {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: #411C6B;
+    border-radius: 6px;
+    font-size: 14px
+}
+
+.title-card-progame {
+    color: #411C6B;
+    font-weight: 600;
+}
+
+.img-vector {
+    margin-right: 10px
+}
+
+.card-content-letter {
+    width: 100%;
+    padding: 20px;
+    color: #411C6B;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6px
+}
+
+.f-600 {
+    font-weight: 600
+}
+
+.d-block {
+    display: block;
+}
+
+.a-link-page {
+    text-decoration: none;
+    margin: 10px;
+    color: #411C6B;
+}
+
+.style-type-none {
+    list-style-type: none;
+    padding-left: 5px
+}
+
+.a-link-page:hover {
+    font-weight: 600
+}
+
+.title-page {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600
+}
+
+.line-20 {
+    line-height: 2
+}
+
+.reson-study {
+}
+
+.list-reson-study {
+}
+
+.option-reson {
+    font-weight: 600
+}
+
+.ml-50 {
+    margin-left: 20px
+}
+
+.ml-70 {
+    margin-left: 35px
+}
+
+.order-number-title {
+    font-size: 20px
+}
+
+.content-section {
+    padding: 5px 20px;
+}
+
+.img-page {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 100%
+}
+
+.span-des-image {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    font-size: 16px
+}
+
+.div-image-page {
+    display: flex
+}
+
+.title-child-page {
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.des-child-page {
+    margin-left: 20px
+}
+
+
+/*Giao di?n dc3*/
+.study-abroad-high-school {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    color: #411C6B;
+}
+
+.card-progame-study {
+    width: 100%;
+    padding: 20px;
+    color: #411C6B;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6px
+}
+
+.card-pro {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: #411C6B;
+    border-radius: 6px;
+    font-size: 14px
+}
+
+.title-card-progame {
+    color: #411C6B;
+    font-weight: 600;
+}
+
+.img-vector {
+    margin-right: 10px
+}
+
+.card-content-letter {
+    width: 100%;
+    padding: 20px;
+    color: #411C6B;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6px
+}
+
+.f-600 {
+    font-weight: 600
+}
+
+.d-block {
+    display: block;
+}
+
+.a-link-page {
+    text-decoration: none;
+    margin: 10px;
+    color: #411C6B;
+}
+
+.style-type-none {
+    list-style-type: none;
+    padding-left: 5px
+}
+
+.a-link-page:hover {
+    font-weight: 600
+}
+
+.title-page {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600
+}
+
+.line-20 {
+    line-height: 2
+}
+
+.reson-study {
+}
+
+.list-reson-study {
+}
+
+.option-reson {
+    font-weight: 600
+}
+
+
+.order-number-title {
+    font-size: 20px
+}
+
+.content-section {
+    padding: 5px 20px;
+}
+
+.img-page {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.span-des-image {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    font-size: 16px
+}
+
+.div-image-page {
+    display: flex
+}
+
+.title-child-page {
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.des-child-page {
+    margin-left: 20px
+}
+
+/*Liên h?*/
+.connect-form {
+    /*    background: linear-gradient(30deg, rgb(196 177 202), rgb(86 86 175), rgb(69 56 97)); */
+    background-color: rgb(132 92 171 / 15%);
+    padding: 40px;
+}
+
+.main-form-connect {
+    border: 2px dashed #411C6B;
+    padding: 10px 40px 20px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.des-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-size: 24px;
+    color: #411C6B;
+}
+
+.image-member {
+    width: 90%;
+    padding-top: 30px
+}
+
+.des-image-member {
+    display: inline-block;
+    background-color: #411C6B;
+    margin-top: 30px;
+    color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.title-form-connect {
+    display: flex;
+    justify-content: end;
+    padding: 10px 69px;
+    color: #411C6B;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #411C6B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+    input[type=submit]:hover {
+        background-color: #7232ba;
+    }
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submit-btn {
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+}
+
+.form-connect-submit {
+    position: relative
+}
+
+/*About*/
+
+
+.infomation-company {
+    /*  height: 80vh; */
+    background-color: #fff;
+    padding: 20px 40px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+
+.content-company {
+    padding: 20px;
+    width: 100%
+}
+
+.des-company {
+    padding: 0 20px;
+    width: 59%;
+}
+
+.image-company {
+    width: 41%;
+    padding: 20px 20px 20px 50px;
+}
+
+.title-choose {
+    /*display: flex;
+    justify-content: center;*/
+    font-size: 26px;
+    /*font-weight: 600;*/
+    color: #411C6B;
+}
+
+.title-content {
+    font-size: 26px;
+    color: #411C6B;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.des-info-company {
+    font-size: 20px;
+    font-weight: 600;
+    color: #411C6B;
+    padding: 15px 0;
+}
+
+.image-company-des {
+    width: 100%;
+    height: 80%
+}
+
+.info-staff {
+    /*  height: 80vh; */
+    background-color: rgb(132 92 171 / 15%);
+    padding: 40px;
+}
+
+
+
+
+.des-staff {
+    width: 80%;
+    margin: 10px auto
+}
+
+.img-LeeWon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-superior {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px
+}
+
+.img-two-superior {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px
+}
+
+.card-img-info {
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+.d-block {
+    display: block;
+}
+
+.name-staff {
+    font-weight: 700;
+    color: #411C6B;
+    text-align: center;
+}
+
+.des-work-staff {
+    color: #411C6B;
+}
+
+
+.info-infrastructure {
+    background-color: rgb(132 92 171 / 15%);
+    padding: 40px 20px;
+}
+
+.service-company {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.header-infrastructure {
+    width: 80%;
+    margin: 10px auto
+}
+
+.card-service {
+    position: relative;
+    width: 33%
+}
+
+.div-null {
+    border: 1px solid;
+    height: 190px;
+    width: 190px;
+}
+
+.imgage-service {
+    position: absolute;
+    left: 20px;
+    height: 190px;
+    top: -14px;
+}
+
+.titl-service {
+    text-align: center;
+    font-weight: 700;
+    color: #411C6B;
+}
+
+.f-600 {
+    font-weight: 600
+}
+
+.content-service {
+    padding: 10px;
+    color: gray;
+}
+
+.image-teacher {
+    border: 1px dashed #411C6B;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    padding: 0;
+    z-index: 1
+}
+
+.name-teacher {
+    border: 1px dashed #411C6B;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+.team-teachers {
+    width: 80%;
+    margin: 10px auto;
+    color: #411C6B;
+    padding: 20px
+}
+
+.img-avatar-teacher {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-teachers {
+    padding: 20px;
+    width: 33%
+}
+
+.p-20 {
+    padding: 20px
+}
+
+.p-10 {
+    padding: 10px
+}
+
+.card-students-comment {
+    background-color: #ffff !important;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 55px;
+    width: 38%
+}
+
+
+.span-des-student {
+    font-style: italic;
+}
+
+.programe-title-activities {
+    margin: 50px auto 20px 0;
+    padding-left: 2px
+}
+
+.button-progame-activities::after {
+    top: 20px;
+    background-color: #411C6B;
+}
+
+.conntent-activities {
+    padding: 0 20px 20px;
+    color: #411C6B;
+}
+
+.img-activities-page-left {
+    max-width: 100%;
+    width: 100%;
+    height: 50%;
+    border-radius: 4px;
+}
+
+.img-activities-page-right {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 85%;
+    width: 90%
+}
+
+.content-right {
+    color: #30154f
+}
+
+.main-index-website {
+    background-color: #F5F5F5
+}
+
+.content-left {
+    background-color: #fff;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+}
+
+.content-right {
+    width: calc(50% - 10px);
+}
+
+.card-content-activities {
+    background-color: #fff;
+    margin-bottom: 20px
+}
+
+.content-page-activities {
+    padding: 15px
+}
+
+.title-content-left {
+    font-weight: 700
+}
+
+.content-right-des {
+    color: #333333
+}
+
+.div-image-page {
+    position: relative;
+    height: 100%
+}
+
+.show-more {
+    font-weight: 700;
+    cursor: pointer
+}
+
+.button-progame-comment {
+    width: auto
+}
+
+.link-action {
+    color: white !important
+}
+
+.owl-stage-outer {
+    overflow: visible !important
+}
+
+.sub-menu-web {
+    background-color: #fff;
+    position: absolute;
+    top: 109px;
+    display: flex;
+    width: 100%;
+    right: 0;
+    border: 1px solid #dfdfdf;
+    visibility: hidden;
+}
+
+.sub-menu-left {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+    padding: 70px 0 50px;
+    background-image: url('../content/header-left_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-menu-right {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    text-align: left;
+    background: #fff;
+}
+
+.nav-item:hover .sub-menu-web {
+    visibility: visible;
+}
+
+.sub-menu-li {
+    display: inline-block;
+    width: 33.33333%;
+    vertical-align: top;
+    padding: 15px 28px;
+}
+
+.sub-menu-a {
+    position: relative;
+    display: block;
+    height: 70px;
+    font-size: 18px;
+    color: #171717;
+    font-weight: 500;
+    border-bottom: 1px solid #bbb;
+    padding: 0 10px;
+}
+
+    .sub-menu-a::after {
+        position: absolute;
+        display: inline-block;
+        width: 0%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: red;
+        content: '';
+        transition: width 0.5s ease;
+    }
+
+    .sub-menu-a::before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        content: '';
+    }
+
+.card-content-newest {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px
+}
+
+.footer-icon-network {
+    display: flex;
+    width: 30%
+}
+
+    .footer-icon-network a {
+        text-decoration: none !important
+    }
+
+.truncate-multi-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-custom {
+    height: 107px;
+}
+
+    .menu-custom .menu-item {
+        padding: 28px 0px;
+    }
+
+.show .menu-item {
+    padding: 12px 0;
+}
+
+.show .sub-menu-a span {
+    font-size: 14px;
+}
+
+
+.show .sub-menu-li {
+    width: 100%;
+    padding: 0;
+}
+
+.toggler-controll {
+    width: 52px;
+    height: 52px;
+}
+
+.img-toggle {
+    width: 42px;
+    height: 42px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.info-staff-image {
+    padding: 30px;
+    height: 90vh;
+    background-color: rgb(132 92 171 / 15%);
+    /* display: flex;
+    justify-content:center*/
+}
+
+.content-result-company {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.image-carousel-company {
+    /*margin: 20px;*/
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    max-height: 100%
+}
+
+.item-image-carousel {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.card-des-work-staff {
+    padding: 10px 20px 10px 30px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+    padding: 70px;
+    font-size: 17px;
+    line-height: 1.85;
+    visibility: hidden
+}
+
+.div-image-staff {
+    width: 100%;
+    height: 100%
+}
+
+.card-img-LeeWon:hover .card-des-work-staff {
+    visibility: visible
+}
+
+.image-staff {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-img-LeeWon {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    padding: 0;
+    margin: 0 120px;
+}
+
+.card-des-work-bottom {
+    padding: 10px 20px 10px 30px;
+    position: absolute;
+    top: 400px
+}
+
+.margin-top {
+    margin-top: 100px !important;
+    margin-bottom: 100px
+}
+
+.card-img-superior {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-two-superior {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px
+}
+
+.dess-card-img-superior {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 80px 20px 0;
+    font-size: 15px;
+    visibility: hidden
+}
+
+.name-card-img-superior {
+    position: absolute;
+    top: 280px;
+}
+
+.card-img-superior:hover .dess-card-img-superior {
+    visibility: visible
+}
+
+.navbar-expand-lg .offcanvas.offcanvas-custom {
+    height: 100% !important
+}
+
+    .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
+        height: 100% !important;
+        padding: 40px 8px;
+    }
+
+.font-korean .navbar-nav .nav-link {
+    letter-spacing: 0.1em;
+    margin: 0 20px !important
+}
+
+.dropdown-menu {
+    display: block !important;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    padding: 20px
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.title-company-footer {
+    font-size: 24px;
+    font-weight: 600;
+    color: #411C6B;
+}
+
+.info-staff-infomation {
+    padding: 30px;
+    height: 65vh;
+    background-color: rgb(132 92 171 / 15%);
+}
+
+.size-16 {
+    font-size: 16px
+}
+
+.size-18 {
+    font-size: 18px
+}
+
+.owl-nav {
+    display: none
+}
+
+.img-page-child-learn-free {
+    width: 97%
+}
+
+.span-link-signin {
+    font-size: 25px
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.visa-table td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.header-table {
+    background-color: #a3bdd7;
+}
+
+.left-form-connect {
+    width: 33%
+}
+
+.right-form-connect {
+    width: 67%
+}
+
+.left-high-school {
+    width: 25%
+}
+
+.center-high-school {
+    width: 58%
+}
+
+.right-high-school {
+    width: 17%
+}
+.image-DH-footer{
+    width: 100%
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    .navbar-expand-lg > .container-fluid {
+        padding-left: 25px
+    }
+
+    header {
+        right: 0 !important;
+    }
+
+    .font-korean .navbar-nav .nav-link {
+        margin: 0 10px !important;
+    }
+
+    .study-abroad-high-school {
+        width: 100%;
+    }
+
+    .infomation-company {
+        width: 100%;
+    }
+
+    .image-staff {
+        width: 100%;
+    }
+
+    .card-img-LeeWon {
+        margin: 0 60px;
+    }
+
+    .team-teachers {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .content-result-company {
+        width: 90%
+    }
+
+
+    .owl-carousel .owl-item img {
+        width: 100%;
+        height: 100%
+    }
+
+    .img-korea {
+        width: 70px !important;
+        height: 70px !important
+    }
+
+    .show .sub-menu-web {
+        width: 90%;
+    }
+
+    .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
+        font-size: 17px;
+    }
+
+    .card-partner {
+        height: 350px;
+    }
+
+    .main-partner {
+        padding: 40px;
+        top: 30%;
+    }
+
+
+    .img-student {
+        height: 35%
+    }
+
+    iframe {
+        height: 100%;
+        width: 120%
+    }
+
+    .main-form-connect {
+        padding: 10px 40px 53px;
+    }
+
+    .service-company {
+        width: 100%;
+        padding-left: 20px
+    }
+
+    .sub-menu-li {
+        width: 45%
+    }
+
+    .progame-info-kipa {
+        height: 82vh
+    }
+
+    .students-comments {
+        height: 92vh;
+        padding-top: 25px
+    }
+
+    .card-students-comment {
+        width: 40%;
+        margin: 30px
+    }
+
+    .programe-title {
+        margin-left: 10%
+    }
+
+    .logo-Royal {
+        overflow: hidden;
+        top: 7%
+    }
+
+    .image-DH-footer {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .logo-kipa {
+        top: 42%;
+        overflow: hidden
+    }
+
+    .image-logo-footer {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .footer-web {
+        height: 35vh
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    iframe {
+        height: 80%
+    }
+
+    .address-info {
+        padding: 0 40px !important;
+        margin-top: -10px
+    }
+
+    .left-form-connect {
+        width: 33%
+    }
+
+    .right-form-connect {
+        width: 67%
+    }
+
+    .left-high-school {
+        width: 25%
+    }
+
+    .center-high-school {
+        width: 58%
+    }
+
+    .right-high-school {
+        width: 17%
+    }
+}
+
+@media screen and (min-width:993px) and (max-width: 1024px) {
+    .card-img-LeeWon {
+        margin: 0 50px !important;
+    }
+
+    .card-teachers {
+        width: 50%
+    }
+
+    .progame-info-kipa {
+        height: 45vh !important
+    }
+
+    header {
+        right: 0 !important;
+        height: 90px !important;
+    }
+
+    .navbar {
+        height: 90px !important;
+    }
+
+    .container-fluid {
+        padding-left: 20px !important
+    }
+
+    .font-korean .navbar-nav .nav-link {
+        margin: 0 13px !important;
+        padding: 35px 0;
+        font-size: 13px
+    }
+
+    .img-logo-language {
+        height: 90px
+    }
+
+    .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
+        margin: 0 8px;
+        padding: 35px 0;
+        font-size: 13px;
+    }
+
+    .programe-title {
+        margin: 10px 0;
+    }
+
+    .item-visa-company {
+        padding-right: 10px
+    }
+
+    .item-visa-high-school {
+        padding-right: 10px
+    }
+
+    .item-visa-E9 {
+        padding-left: 10px
+    }
+
+    .item-visa-masters {
+        padding-left: 10px
+    }
+
+    .card-item-progame {
+        margin-top: 0
+    }
+
+    .view-partner {
+        height: 43vh
+    }
+
+    .card-partner {
+        width: 270px;
+        height: 310px;
+    }
+
+    .header-view-partner {
+        height: 25vh;
+        min-height: 190px
+    }
+
+    .img-korea {
+        width: 55px;
+        height: 55px
+    }
+
+    .title-progame-card {
+        font-size: 19px
+    }
+
+    .students-comments {
+        height: 53vh;
+        padding-top: 5px;
+    }
+
+    .card-students-comment {
+        margin: 29px;
+        width: 44%;
+    }
+
+    .img-student {
+        height: 35%
+    }
+
+    .infomation-company {
+        width: 100%
+    }
+
+    .header-detail {
+        height: 21vh
+    }
+
+    .image-staff {
+        width: 100%
+    }
+
+    .card-img-LeeWon {
+        margin: 0 41px !important;
+    }
+
+    .main-form-connect {
+        padding: 10px 40px 60px 20px;
+    }
+
+    .sub-menu-web {
+        top: 89px
+    }
+
+    .sub-menu-li {
+        width: 47%
+    }
+
+    .sub-menu-a {
+        font-size: 16px
+    }
+
+    .card-img-superior {
+        /*      height: 300px;
+        width: 300px*/
+    }
+
+    .team-teachers {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .content-result-company {
+        width: 100%;
+    }
+
+    .info-staff-infomation {
+        height: 42vh;
+    }
+
+    .image-carousel-company {
+        margin: 10px;
+        padding: 0
+    }
+
+    .study-abroad-high-school {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card-service {
+        width: 50%;
+        padding-top: 30px
+    }
+
+    .service-company {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .main-service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-service-last {
+        width: 50%
+    }
+
+    .card-pro {
+        font-size: 12px
+    }
+
+    .card-progame-study {
+        padding: 10px
+    }
+
+    .logo-Royal {
+        overflow: hidden;
+        top: 7%;
+        width:80%;
+    }
+
+    .image-DH-footer {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .logo-kipa {
+        top: 15%;
+        overflow: hidden;
+        width: 80%;
+    }
+
+    .image-logo-footer {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .footer-web {
+        height: 30vh
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%
+    }
+
+    .slide-kipa {
+        height: 800px
+    }
+
+    .item-slide-kipa {
+        height: 100%
+    }
+    .footer-logo {
+        width: 25%
+    }
+/*    .footer-logo {
+width: 45%
+    }*/
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .offcanvas-title {
+        color: #ffffff;
+    }
+    /*    .footer-map {
+        width:1
+    }*/
+    .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .navbar-nav {
+        width: 46%;
+    }
+
+    .sub-menu-right {
+        width: 100%;
+    }
+
+    .sub-menu-web {
+        width: 58%;
+        height: 100%;
+        border-left: 1px solid #dfdfdf;
+        top: 50px;
+    }
+
+    .sub-menu-a {
+        height: 56px;
+    }
+
+    .show .sub-menu-a span {
+        font-size: 12px;
+        display: inline-flex;
+    }
+
+    .sub-menu-left {
+        display: none;
+    }
+
+    .img-student {
+        height: 35%
+    }
+
+
+    header {
+        right: 0 !important
+    }
+
+    .navbar-brand {
+        margin-left: 20px !important
+    }
+
+    .main-form-connect {
+        width: 100%;
+        padding: 10px 10px 50px 10px
+    }
+
+    .progame-info-kipa {
+        height: 60vh
+    }
+
+    body {
+        overflow-x: visible;
+    }
+
+    .programe-title {
+        margin-left: 1%;
+        margin-top: -20px
+    }
+
+    .item-visa-company {
+        padding-right: 0;
+    }
+
+    .item-visa-high-school {
+        padding-right: 0
+    }
+
+    .item-visa-E9 {
+        padding-left: 0
+    }
+
+    .item-visa-masters {
+        padding-left: 0
+    }
+
+    .card-item-progame {
+        width: 360px
+    }
+
+    .card-progame {
+        height: 250px;
+        margin-top: -20px
+    }
+
+    .des-partner {
+        font-size: 18px
+    }
+
+    .card-partner {
+        width: 220px;
+        height: 310px
+    }
+
+    .header-view-partner {
+        height: 29vh;
+        min-height: 250px
+    }
+
+    .main-partner {
+        top: 28%
+    }
+
+    .view-partner {
+        height: 50vh
+    }
+
+    .card-students-comment {
+        margin: 17px;
+        width: 45%
+    }
+
+    .img-student {
+        height: 25%
+    }
+
+    .students-comments {
+        height: 70vh
+    }
+
+    .programe-title-activities {
+        margin-top: 30px !important
+    }
+
+    .infomation-company {
+        width: 100%
+    }
+
+    .image-staff {
+        width: 100%
+    }
+
+    .study-abroad-high-school {
+        width: 100%
+    }
+
+    .card-img-LeeWon {
+        height: 310px;
+        width: 310px;
+        margin: 0 20px
+    }
+
+        .card-img-LeeWon:first-child {
+            margin-right: 20px
+        }
+
+        .card-img-LeeWon:last-child {
+            margin-left: 20px
+        }
+
+    .info-staff {
+        padding: 40px 20px
+    }
+
+    .title-progame-card {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .logo-Royal {
+        overflow: hidden;
+        top: 7%
+    }
+
+    .image-DH-footer {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .logo-kipa {
+        top: 30%;
+        overflow: hidden
+    }
+
+    .image-logo-footer {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .footer-web {
+        height: 30vh;
+        padding: 20px
+    }
+
+    iframe {
+        height: 100%;
+        width: 120%
+    }
+
+    .slide-kipa {
+        height: 600px
+    }
+
+    .item-slide-kipa {
+        height: 100%
+    }
+    .address-info{
+        width: 55%
+    }
+    .footer-icon-network {
+        width: 25%
+    }
+    .footer-logo{
+        width: 25%
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 768px) {
+    .progame-info-kipa {
+        height: 110vh !important
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .navbar {
+        height: 90px !important
+    }
+
+    .offcanvas-title {
+        color: #ffffff;
+    }
+
+    .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .navbar-nav {
+        width: 46%;
+        margin-left: 2px;
+    }
+
+    .sub-menu-right {
+        width: 100%;
+    }
+
+    .sub-menu-web {
+        width: 58%;
+        height: 100%;
+        border-left: 1px solid #dfdfdf;
+        top: 54px;
+    }
+
+    .sub-menu-a {
+        height: 56px;
+    }
+
+    .show .sub-menu-a span {
+        font-size: 12px;
+        display: inline-flex;
+    }
+
+    .sub-menu-left {
+        display: none;
+    }
+
+    header {
+        right: 0 !important;
+        height: 90px;
+    }
+
+    .img-logo-language {
+        height: 90px !important
+    }
+
+    .programe-title {
+        margin-left: 1%;
+    }
+
+    .card-progame {
+        width: 99%;
+        margin: auto
+    }
+
+    .card-item-progame {
+        margin-top: -10px
+    }
+
+    .item-visa-company {
+        justify-content: center;
+        padding-right: 5px;
+        margin-top: 0
+    }
+
+    .item-visa-E9 {
+        justify-content: center;
+        padding-left: 5px;
+    }
+
+    .item-visa-high-school {
+        justify-content: center;
+        padding-right: 5px;
+    }
+
+    .item-visa-masters {
+        justify-content: center;
+        padding-left: 5px;
+    }
+
+    .title-partner {
+        font-size: 20px;
+        padding: 20px
+    }
+
+    .des-partner {
+        font-size: 17px;
+        padding: 0 20px
+    }
+
+    .header-view-partner {
+        height: 33vh;
+        min-height: 250px
+    }
+
+    .card-partner {
+        height: 350px;
+        width: 288px
+    }
+
+    .main-partner {
+        padding: 40px;
+        top: 20%
+    }
+
+    .view-partner {
+        height: 60vh
+    }
+
+    .students-comments {
+        padding-top: 30px;
+        height: 135vh
+    }
+
+    .card-students-comment {
+        margin: 20px auto;
+        width: 90%;
+        padding: 10px
+    }
+
+    .img-student {
+        height: 33%
+    }
+
+    .programe-title-activities {
+        margin-top: 20px
+    }
+
+    .title-progame-card {
+        font-size: 17px;
+        margin-top: 10px
+    }
+
+    .logo-Royal {
+        overflow: hidden;
+        top: 7%;
+        width: 100%
+    }
+
+    .image-DH-footer {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .logo-kipa {
+        top: 45%;
+        overflow: hidden;
+        width: 100%
+    }
+
+    .image-logo-footer {
+        width: 85%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .footer-web {
+        height: 80vh !important;
+        height: auto;
+        padding: 20px
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: 170px
+    }
+
+    .address-info {
+        width: 100%;
+        padding: 0 !important
+    }
+
+    .footer-icon-network {
+        width: 100%
+    }
+
+    .title-company-footer {
+        font-size: 21px
+    }
+
+    .des-address {
+        font-size: 19px
+    }
+
+    .content-left {
+        width: 100%
+    }
+
+    .content-right {
+        width: 100%
+    }
+
+    .infomation-company {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        height: 110vh !important
+    }
+
+    .des-company {
+        width: 100%;
+        padding: 0
+    }
+
+    .image-company {
+        width: 100%;
+        padding: 20px 0
+    }
+
+    .des-sign-up {
+        font-size: 19px
+    }
+
+    .main-form-connect {
+        width: 100%;
+        padding: 5px 5px 50px 5px;
+        margin: 0
+    }
+
+    .connect-form {
+        padding: 10px
+    }
+
+    .left-form-connect {
+        display: none
+    }
+
+    .right-form-connect {
+        width: 100% !important
+    }
+
+    .study-abroad-high-school {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-high-school {
+        width: 100%
+    }
+
+    .center-high-school {
+        width: 100%
+    }
+
+    .right-high-school {
+        width: 100%
+    }
+
+    .span-link-signin {
+        font-size: 21px
+    }
+
+    .slide-kipa {
+        height: 400px
+    }
+
+    .item-slide-kipa {
+        height: 100%
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .progame-info-kipa {
+        height: 111vh !important
+    }
+
+    header {
+        right: 0;
+        height: 90px
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .font-korean .navbar-nav .nav-link {
+        margin: 0 13px !important;
+        padding: 35px 0;
+        font-size: 17px
+    }
+
+    .img-logo-language {
+        height: 90px
+    }
+
+    .programe-title {
+        margin-top: 20px;
+        margin-left: 1%;
+    }
+
+    .offcanvas-title {
+        color: #ffffff;
+    }
+    /*    .footer-map {
+        width:1
+    }*/
+    .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .navbar-nav {
+        width: 46%;
+        margin-left: 2px;
+    }
+
+    .sub-menu-right {
+        width: 100%;
+    }
+
+    .sub-menu-web {
+        width: 58%;
+        height: 100%;
+        border-left: 1px solid #dfdfdf;
+        top: 58px;
+    }
+
+    .sub-menu-a {
+        height: 56px;
+    }
+
+    .show .sub-menu-a span {
+        font-size: 10px;
+        display: inline-flex;
+    }
+
+    .sub-menu-left {
+        display: none;
+    }
+
+    header {
+        right: 0 !important;
+        height: 90px !important;
+    }
+
+    .img-logo-language {
+        height: 90px !important
+    }
+
+    .programe-title {
+        margin-left: 1%;
+    }
+
+    .card-progame {
+        width: 99%;
+        margin: auto;
+        height: 210px
+    }
+
+    .card-item-progame {
+        margin-top: -10px;
+        width: 320px;
+        padding: 10px
+    }
+
+    .item-visa-company {
+        justify-content: center;
+        padding-right: 5px;
+        margin-top: 0
+    }
+
+    .item-visa-E9 {
+        justify-content: center;
+        padding-left: 5px;
+    }
+
+    .item-visa-high-school {
+        justify-content: center;
+        padding-right: 5px;
+    }
+
+    .item-visa-masters {
+        justify-content: center;
+        padding-left: 5px;
+    }
+
+    .title-partner {
+        font-size: 20px;
+        padding: 20px
+    }
+
+    .des-partner {
+        font-size: 15px;
+        padding: 0 20px
+    }
+
+    .header-view-partner {
+        height: 33vh;
+        min-height: 250px
+    }
+
+    .card-partner {
+        height: 350px;
+        width: 288px
+    }
+
+    .main-partner {
+        padding: 40px;
+        top: 20%
+    }
+
+    .view-partner {
+        height: 60vh
+    }
+
+    .students-comments {
+        padding-top: 30px;
+        height: 164vh
+    }
+
+    .card-students-comment {
+        margin: 20px auto;
+        width: 90%;
+        padding: 10px
+    }
+
+    .img-student {
+        height: 33%
+    }
+
+    .programe-title-activities {
+        margin-top: 20px
+    }
+
+    .title-progame-card {
+        font-size: 17px;
+        margin-top: 10px
+    }
+
+    .logo-Royal {
+        overflow: hidden;
+        top: 7%;
+        width: 100%
+    }
+
+    .image-DH-footer {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .logo-kipa {
+        top: 45%;
+        overflow: hidden;
+        width: 100%
+    }
+
+    .image-logo-footer {
+        width: 85%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .footer-web {
+        height: 80vh !important;
+        height: auto;
+        padding: 20px
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: 170px
+    }
+
+    .address-info {
+        width: 100%;
+        padding: 0 !important
+    }
+
+    .footer-icon-network {
+        width: 100%
+    }
+
+    .title-company-footer {
+        font-size: 21px
+    }
+
+    .des-address {
+        font-size: 19px
+    }
+
+    .progame-info-kipa {
+        margin: 20px
+    }
+
+    .content-left {
+        width: 100%
+    }
+
+    .content-right {
+        width: 100% !important
+    }
+
+    .infomation-company {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        height: 110vh
+    }
+
+    .des-company {
+        width: 100%;
+        padding: 0
+    }
+
+    .image-company {
+        width: 100%;
+        padding: 20px 0
+    }
+
+    .des-sign-up {
+        font-size: 19px
+    }
+
+    .slide-kipa {
+        height: 400px
+    }
+
+    .item-slide-kipa {
+        height: 100%
+    }
+
+    .main-form-connect {
+        width: 100%;
+        padding: 5px 5px 50px 5px;
+        margin: 0
+    }
+
+    .connect-form {
+        padding: 10px
+    }
+
+    .left-form-connect {
+        display: none
+    }
+
+    .right-form-connect {
+        width: 100% !important
+    }
+
+    .study-abroad-high-school {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-high-school {
+        width: 100%
+    }
+
+    .center-high-school {
+        width: 100%
+    }
+
+    .right-high-school {
+        width: 100%
+    }
+
+    .span-link-signin {
+        font-size: 21px
+    }
+}
+
+
+/*@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-nav {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}*/
+
+/*@media (orientation: portrait) and (max-width: 640px) {
+}
+*/

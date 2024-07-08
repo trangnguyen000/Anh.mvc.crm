@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+<div class="modal fade " id="modal-user-edit"  aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Cập nhật mật khẩu</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @*<h3 class="profile-username text-center"> Nina Mcintire</h3>*@
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="lb-normal">Mật khẩu  <span style="color:red">*</span></label>
+                        <input type="password" class="form-control" placeholder="Mật khẩu"
+                               v-bind:class="{ 'validate-error': !modelEdit.Password &&  submit }" v-model="modelEdit.Password">
+                        <span class="error invalid-error" v-if=" !modelEdit.Password &&  submit">Vui lòng nhập mật khẩu</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="lb-normal">Gõ lại mật khẩu  <span style="color:red">*</span></label>
+                        <input type="password" class="form-control" placeholder="nhập lại mật khẩu"
+                               v-bind:class="{ 'validate-error': (!modelEdit.PasswordAgain  || isValidatePassword()) &&  submit }" v-model="modelEdit.PasswordAgain">
+                        <span class="error invalid-error" v-if=" !modelEdit.PasswordAgain  &&  submit">Vui lòng nhập lại mật khẩu</span>
+                        <span class="error invalid-error" v-if=" isValidatePassword()  &&  submit">Mật khẩu nhập lại không đúng</span>
+                    </div>
+
+                </div>
+            </div>
+                <div class="modal-footer justify-content-between modal-footer-custom">
+                    <button type="button" class="btn btn-primary float-right btn-custom" v-on:click="save()"> <i class="far fa-save"></i> Cập nhật</button>
+                </div>
+            </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+

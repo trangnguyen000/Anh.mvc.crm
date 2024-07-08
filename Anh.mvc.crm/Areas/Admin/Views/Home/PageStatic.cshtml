@@ -1,0 +1,165 @@
+﻿
+@{
+    ViewBag.Title = "Lịch sử phát triển";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section scripts {
+    <script>
+        const app = new Vue({
+            el: '#forTinTuc',
+            data: {
+
+                submit: false,
+                modelEdit: {
+                    Id: null,
+                    TieuDe: null,
+                    NoiDung: null,
+                    IsPage: true
+                }
+            },
+            methods: {
+                getDetailById: function () {
+                    var self = this;
+                    $.ajax({
+                        url: '/api/ApiBusiness/GetChiTietTinTucPageById',
+                        contentType: "application/json; charset=utf-8",
+                        method: 'GET',
+                        success: function (result) {
+                            if (result.Items && result.Items.length > 0) {
+                                var item = result.Items[0];
+                                self.modelEdit = {
+                                    Id: item.Id,
+                                    TieuDe: item.TieuDe,
+                                    NoiDung: item.NoiDung,
+                                    IsPage: true
+                                }
+                                setTimeout(function () { CKEDITOR.instances['description'].setData(item.NoiDung); }, 500);
+
+                            }
+                            else {
+                                modelEdit = {
+                                    Id: null,
+                                    TieuDe: null,
+                                    NoiDung: null,
+                                    IsPage: true
+                                }
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.log(xhr);
+                        }
+                    });
+
+                },
+                save: function () {
+                    var self = this;
+                    self.submit = true;
+                    if (self.modelEdit.TieuDe) {
+                        self.modelEdit.NoiDung = CKEDITOR.instances['description'].getData();
+                        $.ajax({
+                            url: '/api/ApiBusiness/SaveTinTuc',
+                            method: 'POST',
+                            data: self.modelEdit,
+                            success: function (result) {
+                                if (result == 1) {
+                                    self.Toast.fire({
+                                        icon: 'success',
+                                        title: 'Thành công!'
+                                    });
+                                    self.getDetailById();
+                                }
+                                else {
+                                    self.Toast.fire({
+                                        icon: 'error',
+                                        title: 'Tiêu đề bị trùng'
+                                    })
+                                }
+                            },
+                            error: function (xhr, status, error) {
+                                console.log(xhr);
+                            }
+                        });
+                    }
+                    else {
+                        self.Toast.fire({
+                            icon: 'error',
+                            title: 'Vui lòng nhập đầy đủ thông tin'
+                        });
+                    }
+                }
+            },
+            computed: {
+                Toast: {
+                    get: function () {
+                        return Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000
+                        })
+                    }
+                }
+            },
+            beforeMount() {
+                this.getDetailById();
+            },
+        });
+        $(function () {
+            $('#exampleInputFile').click(function () {
+                var ckfinder = new CKFinder();
+                ckfinder.selectActionFunction = function (Images) {
+                    app.changeImage(Images);
+                };
+                ckfinder.popup();
+            });
+            CKEDITOR.replace("description", { customConfig: "/Content/ckeditor/config.js", height: 700 });
+        })
+    </script>
+}
+<div class="row" id="forTinTuc" v-cloak>
+    <div class="content-header  col-md-12">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-9">
+                    <h1 class="m-0 title-head">Lịch sử phát triển</h1>
+                </div><!-- /.col -->
+                <div class="col-md-3">
+                    <button type="button" class="btn  bg-gradient-primary btn-customCommon btn-save " v-on:click="save()">
+                        <i class="fas fa-save"></i> Lưu
+                    </button>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="col-12">
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Tiêu đề trang <span style="color:Red">*</span></label>
+                                <input type="text" v-model="modelEdit.TieuDe"
+                                       name="tieude" class="form-control" placeholder="Nhập tiêu đề" autocomplete="off"
+                                       v-bind:class="{ 'validate-error':  !modelEdit.TieuDe &&  submit }">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nội dung</label>
+                                <textarea id="description" v-model="modelEdit.NoiDung" name="noidung"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+
+
+        </div>
+
+        <!-- /.card -->
+    </div>
+</div>

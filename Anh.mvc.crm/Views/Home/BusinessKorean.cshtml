@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Đào tạo tiếng hàn doanh nghiệp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+    <script>
+        document.getElementById('card-content-letter').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+
+            if (e.target.tagName === 'A') {
+                var targetId = e.target.getAttribute('href').substring(1); // Get the ID of the target content section
+                var targetElement = document.getElementById(targetId); // Find the target content section
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target content section smoothly
+                }
+            }
+        });
+
+    </script>
+}
+
+<link href="~/Theme-FrontEnd/assets/css/header.css" rel="stylesheet" />
+<div class="header-detail" data-aos="fade-up">
+    <span class="title-header-detail animated slideInDown" style="animation-delay: 1s">@Resources.SharedResource.TitleHeader</span>
+    <span class="des-header-detail animated fadeInUp" style="animation-delay: 2s">@Resources.SharedResource.DesHeader</span>
+</div>
+<div class="study-abroad-high-school row" data-aos="fade-up">
+    <div class="left-high-school">
+        <div class="card-content-letter" id="card-content-letter">
+            <div class="title-left-link f-600">Nội dung</div>
+            <ul class="pt-3 style-type-none">
+                <li><a href="#section1" class="a-link-page d-block">@Resources.SharedResource.BusinessKorean4</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center-high-school">
+        <div class="Introduce-progame ">
+            <span class="title-page d-block">@Resources.SharedResource.BusinessKorean1</span>
+            <span class="d-block pt-3">
+                <span class="ml-4">@Resources.SharedResource.BusinessKorean2</span>@Resources.SharedResource.BusinessKorean3 </span>
+        </div>
+        <div id="section1">
+            <div class="line-20 pt-3 order-number-title f-600">@Resources.SharedResource.BusinessKorean4</div>
+            <div class="content-section">
+                <div class="pt-2">
+                    <span class="ml-4">
+                        @Resources.SharedResource.BusinessKorean5
+                    </span>@Resources.SharedResource.BusinessKorean6
+                </div>
+                <img class="img-page d-block pt-3" src="~/Theme-FrontEnd/assets/Content/Picture1.png">
+                <span class="d-block span-des-image">@Resources.SharedResource.BusinessKorean7</span>
+                <img class="img-page d-block pt-4" src="~/Theme-FrontEnd/assets/Content/Picture2.png">
+                <span class="d-block span-des-image pt-3">@Resources.SharedResource.BusinessKorean8</span>
+            </div>
+            <div class="content-section pt-4">
+                <span class="d-block line-20 ">
+                    <span class="ml-4">
+                        @Resources.SharedResource.BusinessKorean9
+                    </span> @Resources.SharedResource.BusinessKorean10
+                </span>
+                <img class="img-page d-block pt-3" src="~/Theme-FrontEnd/assets/Content/Picture3.png">
+                <span class="d-block span-des-image pt-3">@Resources.SharedResource.BusinessKorean11</span>
+                <img class="img-page d-block pt-4" src="~/Theme-FrontEnd/assets/Content/Picture4.png">
+                <span class="d-block span-des-image pt-3">@Resources.SharedResource.BusinessKorean12</span>
+                <span class="d-block line-20 pt-2 ">
+                    <span class="ml-4">
+                        @Resources.SharedResource.BusinessKorean13
+                    </span>@Resources.SharedResource.BusinessKorean14
+                </span>
+                <img class="img-page d-block pt-4" src="~/Theme-FrontEnd/assets/Content/Picture5.png">
+                <span class="d-block span-des-image pt-3">@Resources.SharedResource.BusinessKorean15</span>
+                <span class="d-block line-20 pt-2 ">
+                    <span class="f-600 ml-4">@Resources.SharedResource.BusinessKorean16</span>,
+                    @Resources.SharedResource.BusinessKorean17
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-high-school mt-3">
+        <div class="card-progame-study">
+            <div class="title-card-progame">Chương trình của KIPA</div>
+            <div class="card-pro"> <a class="link-action" href="/tieng-han-doanh-nghiep">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.Enterprise</a></div>
+            <div class="card-pro">  <a class="link-action" href="/e9-ve-nuoc">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.E9</a></div>
+            <div class="card-pro">  <a class="link-action" href="/du-hoc-cap-3">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.C3</a></div>
+            <div class="card-pro"><a class="link-action" href="/du-hoc-thac-sy">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.Mater</a></div>
+            <div class="card-pro"><a class="link-action" href="/du-hoc-dai-hoc">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.University</a></div>
+        </div>
+        <div class="card-progame-study mt-3">
+            <div class="title-card-progame">Visa Hàn Quốc</div>
+            <div class="card-pro">  <a class="link-action" href="/visa-d4">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png"> @Resources.SharedResource.VisaD4</a></div>
+            <div class="card-pro">  <a class="link-action" href="/visa-d10">  <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaD10</a></div>
+            <div class="card-pro"> <a class="link-action" href="/visa-D2">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaD2</a></div>
+            <div class="card-pro"> <a class="link-action" href="/visa-e7">   <img class="img-vector" src="~/Theme-FrontEnd/assets/Content/vector.png">@Resources.SharedResource.VisaE7</a></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+﻿
+
+@{
+    ViewBag.Title = "Danh sách Banner";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using Module.BusinessLogic.Helper;
+
+@section scripts {
+    <script src="~/Assets/Js/bTinTuc.js"></script>
+}
+@Html.Hidden("TypePage", (int)CommonHelper.TypePage.Silder)
+<div class="row" id="forTinTuc" v-cloak>
+    <div class="content-header  col-md-12">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-9">
+                    <h1 class="m-0 title-head">Danh sách Banner</h1>
+                </div><!-- /.col -->
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-block bg-gradient-primary btn-custom btn-filter" v-on:click="showEdit()">
+                        <i class="fas fa-plus"></i>Thêm mới
+                    </button>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="col-12">
+        <div class="card card-custom">
+            <div class="card-header">
+                <div class="col-md-12 form-head">
+                    <div class="col-md-5 form-head_Left">
+                        <input id="searchnews" autocomplete="off" class="form-control" type="text" placeholder="Tìm kiếm tin tức" v-model="search" v-on:keyup="keymonitor" />
+                    </div>
+                    <div class="col-md-3 form-head_right">
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body card-body-form">
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-12 col-sm-6 col-md-3 d-flex align-items-stretch" v-for="(item, index) in data">
+                        <div class="card bg-light w-100" >
+                            
+                            <div class="card-body bg-image" :style="{ backgroundImage: 'url(' + item.Anh + ')' } " >
+                                <div class="row">
+                                    <div class="col-12" style="height:200px">
+                                        <div style="position:absolute;bottom:0">
+                                            <h4 class=" fw-bold"> {{ item.TieuDe }}</h4>
+                                            <p class=" text-sm fw-bold">{{ item.Mota }} </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="text-right">
+                                        <a class="btn btn-info btn-sm btn-edit" href="javascript:void(0)" v-on:click="showEdit(item.Id)">
+                                            <i class="fas fa-pencil-alt">
+                                            </i>
+                                            Sửa
+                                        </a>
+                                        <a class="btn btn-danger btn-sm btn-edit" href="javascript:void(0)" v-on:click="deleteTinTuc(item)">
+                                            <i class="fas fa-trash">
+                                            </i>
+                                            Xóa
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer clearfix">
+                <span>
+                    Hiển thị {{data.length}} / {{total}} tin
+                </span>
+                <div class="float-lg-right">
+                    <v-pagination v-model="currentPage" :page-count="numberPage"
+                                  :classes="bootstrapPaginationClasses"
+                                  :labels="paginationAnchorTexts"></v-pagination>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /.card -->
+    </div>
+
+</div>

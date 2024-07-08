@@ -1,0 +1,3131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AboutCompany" xml:space="preserve">
+    <value>Về KIPA</value>
+  </data>
+	<data name="AddressCo" xml:space="preserve">
+    <value>Địa chỉ: số 25, Lô A20, Khu geleximco, An Khánh, Hoài</value>
+  </data>
+	<data name="Business" xml:space="preserve">
+    <value>Kinh doanh khác</value>
+  </data>
+	<data name="BusinessKorean1" xml:space="preserve">
+    <value>Chương trình đào tạo tiếng Hàn doanh nghiệp</value>
+  </data>
+	<data name="BusinessKorean10" xml:space="preserve">
+    <value>rõ ràng như sau: một năm đào tạo trong 6 tháng, một tuần ba buổi và buổi đầu tiên của tuần luôn luôn có bài kiểm tra đánh giá năng lực của ứng viên,
+                    cuối khóa tổ chức kỳ thi nói, thi đánh giá năng lực,.... Với chiến lược trên từ 2 lớp tiếng Hàn sơ cấp đến năm 2023,
+                    hầu hết các học sinh tham gia khóa học đã đạt được topik 2, 3, 4... trong kỳ thi cuối khóa, cũng như kỳ thi đánh giá năng lực chính thức.</value>
+  </data>
+	<data name="BusinessKorean11" xml:space="preserve">
+    <value>Học sinh tham gia kỳ thi nói cùng với giáo viên và quản lý của công ty.</value>
+  </data>
+	<data name="BusinessKorean12" xml:space="preserve">
+    <value>Học viên nhận giấy chứng nhận kết thúc khóa học.</value>
+  </data>
+	<data name="BusinessKorean13" xml:space="preserve">
+    <value>Không chỉ dừng lại ở đó,</value>
+  </data>
+	<data name="BusinessKorean14" xml:space="preserve">
+    <value>học viên được KIPA đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
+                    được trau dồi thêm cả văn hóa ứng xử doanh nghiệp nói chung và văn hóa Hàn Quốc nói riêng.</value>
+  </data>
+	<data name="BusinessKorean15" xml:space="preserve">
+    <value>Học sinh cùng thầy cô, lãnh đạo công ty chụp hình lưu niệm cuối khóa.</value>
+  </data>
+	<data name="BusinessKorean16" xml:space="preserve">
+    <value>Với phương châm:“ Dạy thật, học thật, không chạy theo kết quả.”</value>
+  </data>
+	<data name="BusinessKorean17" xml:space="preserve">
+    <value>Kipa luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
+  đang và sẽ tin tưởng và đồng hành cùng KIPA.</value>
+  </data>
+	<data name="BusinessKorean2" xml:space="preserve">
+    <value>Việt Nam và Hàn Quốc đang dần trở thành</value>
+  </data>
+	<data name="BusinessKorean3" xml:space="preserve">
+    <value>đối tác chiến lược toàn diện vì vậy các tập đoàn lớn nhỏ đang ngày càng mở rộng và khai thác thị trường Việt Nam.
+                Chính vì lẽ đó, nhu cầu đào tạo tiếng Hàn cho công nhân viên chức ngày càng tăng cao. Với mục tiêu giúp cho công nhân viên chức có thể giao tiếp và hiểu được chỉ thị của sếp người Hàn cũng như am hiểu hơn trong lĩnh vực công tác.
+                Để đáp ứng nhu cầu đó, KIPA đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu.</value>
+  </data>
+	<data name="BusinessKorean4" xml:space="preserve">
+    <value>1.Chương trình đào tạo tiếng hàn tại công ty SKC</value>
+  </data>
+	<data name="BusinessKorean5" xml:space="preserve">
+    <value>Công ty SKC là doanh nghiệp phát triển đổi</value>
+  </data>
+	<data name="BusinessKorean6" xml:space="preserve">
+    <value>mới công nghệ sản xuất chất bán dẫn Test Socket cần thử nghiệm chất bán dẫn IC chip sử dụng trong IT, BT,
+                    Ô Tô và linh kiện điện tử, SKC phát triển đa dạng các loại sản phẩm được tối ưu hóa trong thời gian ngắn theo từng loại gói bán dẫn và cung cấp giải
+                    pháp tốt nhất cho khách hàng với đội ngũ nhân sự, quản lý cấp cao, kỹ sư là người Hàn Quốc. Nhận thấy yêu cầu tiếng Hàn với công nhân viên là cần thiết nên công ty SKC
+                    đã gửi gắm niềm tin cho KIPA từ năm 2020 với mục tiêu đào tạo tiếng Hàn, phát triển khả năng giao tiếp với đội ngũ nhân sự Hàn Quốc.</value>
+  </data>
+	<data name="BusinessKorean7" xml:space="preserve">
+    <value>Học sinh và thầy cô KIPA nhân ngày 20/11</value>
+  </data>
+	<data name="BusinessKorean8" xml:space="preserve">
+    <value>Học sinh cùng thầy cô, lãnh đạo công ty chụp hình lưu niệm cuối khóa.</value>
+  </data>
+	<data name="BusinessKorean9" xml:space="preserve">
+    <value>Với kế hoạch đào tạo cụ thể,</value>
+  </data>
+	<data name="C3" xml:space="preserve">
+    <value>DU HỌC CẤP 3</value>
+  </data>
+	<data name="Calvin" xml:space="preserve">
+    <value>Calvin University</value>
+  </data>
+	<data name="Choi" xml:space="preserve">
+    <value>Choi Jae Hak – 1969</value>
+  </data>
+	<data name="Choi1" xml:space="preserve">
+    <value>ESC Reims (Grandes Ecoles – Trường quản trị
+kinh doanh Pháp) , MBA , Cử nhân đại học sư phạm đại học Seoul
+khoa tiéng Pháp</value>
+  </data>
+	<data name="Choi2" xml:space="preserve">
+    <value>Giám đốc đại diện Công ty cổ phần
+C&amp;C Partners</value>
+  </data>
+	<data name="Choi3" xml:space="preserve">
+    <value>Viện trưởng Viện nghiên cứu kinh tế NH</value>
+  </data>
+	<data name="Choi4" xml:space="preserve">
+    <value>Phó ban Liên minh Hợp tác xã nông nghiệp</value>
+  </data>
+	<data name="Chungang" xml:space="preserve">
+    <value>Chungang University</value>
+  </data>
+	<data name="Chungwoon" xml:space="preserve">
+    <value>Chungwoon University</value>
+  </data>
+	<data name="Comment" xml:space="preserve">
+    <value>Cảm nhận về Kipa</value>
+  </data>
+	<data name="Contact" xml:space="preserve">
+    <value>Liên hệ tư vấn</value>
+  </data>
+	<data name="Cosmetics" xml:space="preserve">
+    <value>Mỹ phẩm</value>
+  </data>
+	<data name="D2_3_Condition1" xml:space="preserve">
+    <value>1. Điều kiện để đi du học thạc sĩ tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Condition10" xml:space="preserve">
+    <value>Độ tuổi từ 21 đến 35.</value>
+  </data>
+	<data name="D2_3_Condition11" xml:space="preserve">
+    <value>Có chứng chỉ tiếng Hàn TOPIK 4 trở lên. Tuy nhiên, một số chuyên ngành bên nghệ thuật, thể dục chấp nhận bằng TOPIK 2. Nếu không yêu cầu TOPIK thì trường sẽ yêu cầu bằng tiếng Anh (TOEFL iBT 80, IELTS 6.0, TEPS 551). Đối với E-visa thì không cần. Một số ngành chỉ yêu cầu học tiếng tại Việt Nam 480 giờ sau đó nhập học tiếng Hàn với Visa D4-1. Khi hoàn thành khóa học tiếng tại Hàn và đạt topik thì bạn có thể chuyển lên học hệ thạc sĩ.</value>
+  </data>
+	<data name="D2_3_Condition12" xml:space="preserve">
+    <value>Có sức khỏe tốt. Không mắc bệnh truyền nhiễm, lao phổi.</value>
+  </data>
+	<data name="D2_3_Condition13" xml:space="preserve">
+    <value>Không nằm trong diện bị hạn chế xuất nhập cảnh. Không bị cấm nhập cảnh vào Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Condition14" xml:space="preserve">
+    <value>Học sinh tham gia khám lao phổi tại bệnh viện Hồng Ngọc</value>
+  </data>
+	<data name="D2_3_Condition15" xml:space="preserve">
+    <value>1.2. Chương trình du học E- VISA</value>
+  </data>
+	<data name="D2_3_Condition16" xml:space="preserve">
+    <value>Học sinh kipa du học chương trình E-VISA</value>
+  </data>
+	<data name="D2_3_Condition17" xml:space="preserve">
+    <value>ƯU ĐIỂM:</value>
+  </data>
+	<data name="D2_3_Condition18" xml:space="preserve">
+    <value>Thời hạn visa : 2 năm</value>
+  </data>
+	<data name="D2_3_Condition19" xml:space="preserve">
+    <value>Nhận các vùng miền và có độ tuổi lên đến 32 tuổi.</value>
+  </data>
+	<data name="D2_3_Condition2" xml:space="preserve">
+    <value>Nếu bạn đi du học Hàn Quốc hệ thạc sĩ, bạn sẽ được cấp visa loại D2-3. Để có được visa này, bạn phải đạt đầy đủ các điều kiện sau:</value>
+  </data>
+	<data name="D2_3_Condition20" xml:space="preserve">
+    <value>Với nhiều học bổng từ 30% ~ 100% học phí.</value>
+  </data>
+	<data name="D2_3_Condition21" xml:space="preserve">
+    <value>Đặc biệt một tuần học có 1-2 buổi lên lớp, thời gian học linh hoạt</value>
+  </data>
+	<data name="D2_3_Condition22" xml:space="preserve">
+    <value>Được bảo lãnh người thân: bố, mẹ, vợ, chồng, con sang thăm thân</value>
+  </data>
+	<data name="D2_3_Condition23" xml:space="preserve">
+    <value>Sau tốt nghiệp được hỗ trợ chuyển đổi sang E7 hoặc F2 ( visa vĩnh trú)</value>
+  </data>
+	<data name="D2_3_Condition24" xml:space="preserve">
+    <value>Cho nợ Topik</value>
+  </data>
+	<data name="D2_3_Condition25" xml:space="preserve">
+    <value>ĐIỀU KIỆN TUYỂN SINH:</value>
+  </data>
+	<data name="D2_3_Condition26" xml:space="preserve">
+    <value>Nam/nữ dưới 32 tuổi</value>
+  </data>
+	<data name="D2_3_Condition27" xml:space="preserve">
+    <value>Đã tốt nghiệp Đại Học</value>
+  </data>
+	<data name="D2_3_Condition28" xml:space="preserve">
+    <value>Không phân biệt vùng miền</value>
+  </data>
+	<data name="D2_3_Condition29" xml:space="preserve">
+    <value>NHIỀU NGÀNH HẤP DẪN:</value>
+  </data>
+	<data name="D2_3_Condition3" xml:space="preserve">
+    <value>Ứng viên và bố mẹ không mang quốc tịch Hàn Quốc.</value>
+  </data>
+	<data name="D2_3_Condition30" xml:space="preserve">
+    <value>Ngành Hàn Quốc Học</value>
+  </data>
+	<data name="D2_3_Condition31" xml:space="preserve">
+    <value>Ngành Quản trị kinh doanh</value>
+  </data>
+	<data name="D2_3_Condition32" xml:space="preserve">
+    <value>Ngành Quản trị du lịch</value>
+  </data>
+	<data name="D2_3_Condition33" xml:space="preserve">
+    <value>Ngành Phúc lợi xã hội</value>
+  </data>
+	<data name="D2_3_Condition34" xml:space="preserve">
+    <value>Ngành Nông nghiệp thông minh</value>
+  </data>
+	<data name="D2_3_Condition4" xml:space="preserve">
+    <value>Tốt nghiệp Đại học tại Việt Nam.</value>
+  </data>
+	<data name="D2_3_Condition5" xml:space="preserve">
+    <value>1.1. Chương trình nợ TOPIK hoặc TOPIK 2</value>
+  </data>
+	<data name="D2_3_Condition6" xml:space="preserve">
+    <value>Với chương trình nợ TOPIK hoặc TOPIK 2:</value>
+  </data>
+	<data name="D2_3_Condition7" xml:space="preserve">
+    <value>Lúc đăng ký không cần TOPIK nhưng sẽ có thời gian đào tạo và thi đạt yêu cầu từ phía nhà trường để có thể nhận được thư thông báo đóng học phí</value>
+  </data>
+	<data name="D2_3_Condition8" xml:space="preserve">
+    <value>Yêu cầu các bạn phải đạt được TOPIK 4 trước khi ra trường.</value>
+  </data>
+	<data name="D2_3_Condition9" xml:space="preserve">
+    <value>Đã tốt nghiệp đại học (bằng chính quy, tại chức, liên thông đều được chấp thuận). Tuy nhiên, một vài trường top đầu chỉ chấp nhận bằng chính quy.</value>
+  </data>
+	<data name="D2_3_File1" xml:space="preserve">
+    <value>2. Hồ sơ du học thạc sĩ Hàn Quốc</value>
+  </data>
+	<data name="D2_3_File10" xml:space="preserve">
+    <value>Giấy khai sinh</value>
+  </data>
+	<data name="D2_3_File11" xml:space="preserve">
+    <value>Giấy chứng nhận khác (nếu có)</value>
+  </data>
+	<data name="D2_3_File12" xml:space="preserve">
+    <value>Sổ tiết kiệm 20,000 USD trở lên</value>
+  </data>
+	<data name="D2_3_File13" xml:space="preserve">
+    <value>Giấy tờ chứng minh tài chính gia đình</value>
+  </data>
+	<data name="D2_3_File2" xml:space="preserve">
+    <value>Hồ sơ chính là yếu tố tiên quyết trong quá trình trường xét tuyển bạn. Một bộ hồ sơ tốt đồng nghĩa tỷ lệ đậu vào trường rất cao. Vậy nên hãy chuẩn bị bộ hồ sơ của chính mình một cách tốt nhất để ước mơ có thể trở thành hiện thực. Dưới đây là những hồ sơ bắt buộc bạn phải chuẩn bị:</value>
+  </data>
+	<data name="D2_3_File3" xml:space="preserve">
+    <value>Bằng tốt nghiệp Đại học</value>
+  </data>
+	<data name="D2_3_File4" xml:space="preserve">
+    <value>Chứng chỉ ngoại ngữ (TOPIK 4 trở lên, IELTS 6.0, TOEFL, TEPS)</value>
+  </data>
+	<data name="D2_3_File5" xml:space="preserve">
+    <value>Đơn nhập học (theo mẫu của trường)</value>
+  </data>
+	<data name="D2_3_File6" xml:space="preserve">
+    <value>Thư giới thiệu</value>
+  </data>
+	<data name="D2_3_File7" xml:space="preserve">
+    <value>Kế hoạch học tập, giới thiệu bản thân, kế hoạch nghiên cứu…..</value>
+  </data>
+	<data name="D2_3_File8" xml:space="preserve">
+    <value>Bản sao chứng minh nhân dân của ứng viên và bố mẹ</value>
+  </data>
+	<data name="D2_3_File9" xml:space="preserve">
+    <value>Hộ khẩu</value>
+  </data>
+	<data name="D2_3_Image" xml:space="preserve">
+    <value>8. Hình ảnh sinh viên KIPA học tập thạc sỹ tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Money1" xml:space="preserve">
+    <value>4. Học phí du học thạc sĩ Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Money10" xml:space="preserve">
+    <value>(chỉ nộp 1 lần duy nhất trong 1 năm học)</value>
+  </data>
+	<data name="D2_3_Money11" xml:space="preserve">
+    <value>Học phí (trường Đại học Quốc gia):</value>
+  </data>
+	<data name="D2_3_Money12" xml:space="preserve">
+    <value>3,000,000 - 7,000,000 KRW/kỳ</value>
+  </data>
+	<data name="D2_3_Money13" xml:space="preserve">
+    <value>Học (trường tư):</value>
+  </data>
+	<data name="D2_3_Money14" xml:space="preserve">
+    <value>3,000,000 - 10,000,000 KRW/kỳ</value>
+  </data>
+	<data name="D2_3_Money15" xml:space="preserve">
+    <value>Bảo hiểm 1 năm: </value>
+  </data>
+	<data name="D2_3_Money16" xml:space="preserve">
+    <value>~200,000 KRW</value>
+  </data>
+	<data name="D2_3_Money17" xml:space="preserve">
+    <value>Bên cạnh học phí thì bạn cũng phải chuẩn bị cho những chi phí khác như: nhà ở, ăn uống, đi lại, mua sắm,…</value>
+  </data>
+	<data name="D2_3_Money2" xml:space="preserve">
+    <value>Học phí cho chương trình thạc sĩ tại Hàn Quốc dao động từ khoảng</value>
+  </data>
+	<data name="D2_3_Money3" xml:space="preserve">
+    <value>$3,000 - $10,000 USD</value>
+  </data>
+	<data name="D2_3_Money4" xml:space="preserve">
+    <value>mỗi năm. Tuy nhiên, các chương trình tiên tiến hơn, chẳng hạn như MBA, có thể lên đến $30,000 USD mỗi năm.</value>
+  </data>
+	<data name="D2_3_Money5" xml:space="preserve">
+    <value>Phí đăng ký xét duyệt hồ sơ:</value>
+  </data>
+	<data name="D2_3_Money6" xml:space="preserve">
+    <value>50,000 - 100,000 KRW</value>
+  </data>
+	<data name="D2_3_Money7" xml:space="preserve">
+    <value>(chỉ nộp 1 lần duy nhất trong 1 năm học)</value>
+  </data>
+	<data name="D2_3_Money8" xml:space="preserve">
+    <value>Phí nhập học:</value>
+  </data>
+	<data name="D2_3_Money9" xml:space="preserve">
+    <value>500,000 - 900,000 KRW</value>
+  </data>
+	<data name="D2_3_Reson1" xml:space="preserve">
+    <value>Đa dạng chương trình lựa chọn phụ thuộc vào nhiều mục đích khác nhau:</value>
+  </data>
+	<data name="D2_3_Reson2" xml:space="preserve">
+    <value>Hệ thạc sĩ chính quy / đặc biệt/ chuyên môn</value>
+  </data>
+	<data name="D2_3_Reson3" xml:space="preserve">
+    <value>Hệ thạc sĩ yêu cầu TOPIK / nợ TOPIK</value>
+  </data>
+	<data name="D2_3_Reson4" xml:space="preserve">
+    <value>Hệ thạc sĩ thư mời / Visa code/ E -Visa</value>
+  </data>
+	<data name="D2_3_Reson5" xml:space="preserve">
+    <value>Hệ thạc sĩ English Track – Korean Track</value>
+  </data>
+	<data name="D2_3_Reson6" xml:space="preserve">
+    <value>Chính sách học bổng hấp dẫn, học phí ưu đãi.</value>
+  </data>
+	<data name="D2_3_Reson7" xml:space="preserve">
+    <value>Thời gian học trên trường ít.</value>
+  </data>
+	<data name="D2_3_Reson8" xml:space="preserve">
+    <value>Số giờ làm thêm CAO NHẤT trong các hệ du học tại Hàn Quốc.</value>
+  </data>
+	<data name="D2_3_Reson9" xml:space="preserve">
+    <value>Vì vậy hãy cùng KIPA tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp.</value>
+  </data>
+	<data name="D2_3_Route1" xml:space="preserve">
+    <value>5. Lộ trình Du học Thạc sĩ ở Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Route10" xml:space="preserve">
+    <value>Bạn cần có bằng TOPIK theo yêu cầu của nhà trường</value>
+  </data>
+	<data name="D2_3_Route11" xml:space="preserve">
+    <value>Làm hồ sơ ứng tuyển chương trình Thạc sĩ tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Route12" xml:space="preserve">
+    <value>Nhập học với theo quy trình của nhà trường</value>
+  </data>
+	<data name="D2_3_Route13" xml:space="preserve">
+    <value>Hệ Thạc Sĩ nợ TOPIK, E Visa</value>
+  </data>
+	<data name="D2_3_Route14" xml:space="preserve">
+    <value>Vượt qua kỳ thi tiếng của nhà trường</value>
+  </data>
+	<data name="D2_3_Route15" xml:space="preserve">
+    <value>Hoàn thiện hồ sơ để nộp trường và nhận visa code</value>
+  </data>
+	<data name="D2_3_Route16" xml:space="preserve">
+    <value>Nhận kết quả Visa và nhập học</value>
+  </data>
+	<data name="D2_3_Route2" xml:space="preserve">
+    <value>5.1. Học tiếng Hàn và thạc sĩ tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Route3" xml:space="preserve">
+    <value>Các bạn chuẩn bị hồ sơ ứng tuyển hệ tiếng tại trường Đại học</value>
+  </data>
+	<data name="D2_3_Route4" xml:space="preserve">
+    <value>Nộp hồ sơ xin Visa học tiếng tại Hàn Quốc là D4-1.</value>
+  </data>
+	<data name="D2_3_Route5" xml:space="preserve">
+    <value>Đạt TOPIK 3 trở lên, ưu tiên có TOPIK 4 &gt; thì khả năng chọn trường và học tập tại Hàn Quốc sẽ tốt hơn.</value>
+  </data>
+	<data name="D2_3_Route6" xml:space="preserve">
+    <value>Đăng ký hệ Thạc sĩ tại Hàn Quốc.</value>
+  </data>
+	<data name="D2_3_Route7" xml:space="preserve">
+    <value>Chuyển tiếp Visa D4-1 sang Visa D2-3.</value>
+  </data>
+	<data name="D2_3_Route8" xml:space="preserve">
+    <value>5.2. Học thẳng lên hệ thạc sĩ tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Route9" xml:space="preserve">
+    <value>Hệ Thạc Sĩ yêu cầu TOPIK</value>
+  </data>
+	<data name="D2_3_Scholarship1" xml:space="preserve">
+    <value>6. Học bổng du học Thạc sĩ Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Scholarship2" xml:space="preserve">
+    <value>Tiêu chuẩn</value>
+  </data>
+	<data name="D2_3_Scholarship3" xml:space="preserve">
+    <value>Học bổng</value>
+  </data>
+	<data name="D2_3_Scholarship4" xml:space="preserve">
+    <value>Khối ngành xã hội nhân văn</value>
+  </data>
+	<data name="D2_3_Scholarship5" xml:space="preserve">
+    <value>Khối ngành tự nhiên, kỹ thuật công nghiệp</value>
+  </data>
+	<data name="D2_3_Scholarship6" xml:space="preserve">
+    <value>TOPIK cấp 4 trở lên</value>
+  </data>
+	<data name="D2_3_Scholarship7" xml:space="preserve">
+    <value>Học bổng dành cho chương trình thạc sỹ của trường Soongsil</value>
+  </data>
+	<data name="D2_3_Scholarship8" xml:space="preserve">
+    <value>Chương trình du học Thạc sĩ Hàn Quốc thường có nhiều học bổng khác nhau. Nhưng thường các bạn sẽ nhận được học bổng theo TOPIK hoặc trình độ tiếng Anh từ 30% – 100% học phí học kỳ đầu tiên. Sau đó có học bổng duy trì dành cho các kỳ sau, sẽ dựa vào thành tích học tập của kỳ trước để quyết định các bạn sẽ nhận bao nhiêu % học bổng cho kỳ tiếp theo.</value>
+  </data>
+	<data name="D2_3_Specialized1" xml:space="preserve">
+    <value>7. Nên học thạc sĩ ngành nào tại Hàn Quốc:</value>
+  </data>
+	<data name="D2_3_Specialized10" xml:space="preserve">
+    <value>Đại học quốc gia Seoul</value>
+  </data>
+	<data name="D2_3_Specialized11" xml:space="preserve">
+    <value>Viện Khoa học và Công nghệ cao cấp Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Specialized12" xml:space="preserve">
+    <value>Đại học Khoa học và Công nghệ Pohang</value>
+  </data>
+	<data name="D2_3_Specialized13" xml:space="preserve">
+    <value>Đại học nữ Ewha</value>
+  </data>
+	<data name="D2_3_Specialized14" xml:space="preserve">
+    <value>Đại học nữ Sungshin</value>
+  </data>
+	<data name="D2_3_Specialized2" xml:space="preserve">
+    <value>7.1. Một số chuyên ngành học thạc sĩ tại Hàn Quốc:</value>
+  </data>
+	<data name="D2_3_Specialized3" xml:space="preserve">
+    <value>7.2. Một số trường đào tạo hệ thạc sĩ bạn có thể tham khảo:</value>
+  </data>
+	<data name="D2_3_Specialized4" xml:space="preserve">
+    <value>Đại học Sejong</value>
+  </data>
+	<data name="D2_3_Specialized5" xml:space="preserve">
+    <value>Đại học Kookmin</value>
+  </data>
+	<data name="D2_3_Specialized6" xml:space="preserve">
+    <value>Đại học Chungang</value>
+  </data>
+	<data name="D2_3_Specialized7" xml:space="preserve">
+    <value>Đại học Hongik</value>
+  </data>
+	<data name="D2_3_Specialized8" xml:space="preserve">
+    <value>Đại học Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Specialized9" xml:space="preserve">
+    <value>Đại học Yonsei</value>
+  </data>
+	<data name="D2_3_Step1" xml:space="preserve">
+    <value>Bước 1</value>
+  </data>
+	<data name="D2_3_Step2" xml:space="preserve">
+    <value>Bước 2</value>
+  </data>
+	<data name="D2_3_Step3" xml:space="preserve">
+    <value>Bước 3</value>
+  </data>
+	<data name="D2_3_Step4" xml:space="preserve">
+    <value>Bước 4</value>
+  </data>
+	<data name="D2_3_Step5" xml:space="preserve">
+    <value>Bước 5</value>
+  </data>
+	<data name="D2_3_Time1" xml:space="preserve">
+    <value>3. Thời gian học thạc sĩ tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Time10" xml:space="preserve">
+    <value>• Kỳ nghỉ hè: Từ tháng 7 đến tháng 8</value>
+  </data>
+	<data name="D2_3_Time11" xml:space="preserve">
+    <value>• Kỳ nghỉ đông: Từ tháng 1 đến tháng 2</value>
+  </data>
+	<data name="D2_3_Time2" xml:space="preserve">
+    <value>Học sinh KIPA trong tiết học cùng với các sinh viên khác tại Hàn Quốc</value>
+  </data>
+	<data name="D2_3_Time3" xml:space="preserve">
+    <value>Chương trình học Thạc sĩ tại Hàn Quốc thường có thời gian đào tạo tối thiểu là 2 năm. Với từng chuyên ngành thì số lượng tín chỉ cũng như chương trình học khác nhau nhưng nhìn chung bạn thường phải hoàn thành khoảng 24 tín chỉ (tương đương 48 tín chỉ ECTS).</value>
+  </data>
+	<data name="D2_3_Time4" xml:space="preserve">
+    <value>Sau khi hoàn thành chương trình học bạn phải làm một bài kiểm tra chất lượng vào kỳ thi cuối cùng cũng như nghiên cứu và trình bày luận thạc sĩ trước hội đồng chấm thi (có ít nhất 3 giám khảo chấp nhận mới đủ điều kiện nhận bằng và tốt nghiệp, nếu trượt thì 6 tháng sau trình bày lại).</value>
+  </data>
+	<data name="D2_3_Time5" xml:space="preserve">
+    <value>Chương trình học tại Hàn Quốc trong một năm thường chia làm 2 kỳ học:</value>
+  </data>
+	<data name="D2_3_Time6" xml:space="preserve">
+    <value>Kỳ 1: Từ tháng 3 đến tháng 6</value>
+  </data>
+	<data name="D2_3_Time7" xml:space="preserve">
+    <value>Kỳ 2: Từ tháng 9 đến tháng 12</value>
+  </data>
+	<data name="D2_3_Time8" xml:space="preserve">
+    <value>Sinh viên Kipa trong chương trình hoạt động ngoại khóa tại trường</value>
+  </data>
+	<data name="D2_3_Time9" xml:space="preserve">
+    <value>Mỗi năm có 2 kỳ nghỉ chính:</value>
+  </data>
+	<data name="D2_3_Title" xml:space="preserve">
+    <value>Du học thạc sỹ Hàn Quốc đang tạo được cơn sốt cho rất nhiều bạn trẻ quan tâm vì lý do:</value>
+  </data>
+	<data name="Daegu" xml:space="preserve">
+    <value>Daegu Arts University</value>
+  </data>
+	<data name="DesHeader" xml:space="preserve">
+    <value>Người bạn đồng hành tin cậy nhất</value>
+  </data>
+	<data name="DesLinkSchool" xml:space="preserve">
+    <value>KIPA tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc</value>
+  </data>
+	<data name="DesReson1" xml:space="preserve">
+    <value>KIPA với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc.</value>
+  </data>
+	<data name="DesReson2" xml:space="preserve">
+    <value>Giáo viên có kinh nghiệm giảng dạy nhiều năm, được đào tạo bài bản, kỹ lưỡng, nhiệt tình, tâm huyết trong công việc giảng day. Đặc biệt, với sự chuẩn bị kỹ càng về mặt kiến thức cũng như giáo trình chúng tôi tin rằng có thể làm hài lòng tới tận người học khó tính nhất.</value>
+  </data>
+	<data name="DesReson3" xml:space="preserve">
+    <value>Cam kết chất lượng giáo dục tốt nhất đảm bảo đầu ra đúng với kỳ vọng.</value>
+  </data>
+	<data name="desteacher1" xml:space="preserve">
+    <value>Khoa ngôn ngữ Hàn Quốc trường
+Việt Nhật</value>
+  </data>
+	<data name="desteacher2" xml:space="preserve">
+    <value>Đại học kinh tế quốc dân khoa Kinh doanh
+thương mại</value>
+  </data>
+	<data name="desteacher3" xml:space="preserve">
+    <value>Cao đẳng bách khoa Hà Nội khoa
+ngôn ngữ Hàn Quốc</value>
+  </data>
+	<data name="Dongguk" xml:space="preserve">
+    <value>Dongguk University</value>
+  </data>
+	<data name="Dongshin" xml:space="preserve">
+    <value>Dongshin University</value>
+  </data>
+	<data name="E9" xml:space="preserve">
+    <value>ĐÀO TẠO E9 VỀ NƯỚC</value>
+  </data>
+	<data name="e9_1" xml:space="preserve">
+    <value>CHƯƠNG TRÌNH ĐÀO TẠO E9 VỀ NƯỚC</value>
+  </data>
+	<data name="e9_10" xml:space="preserve">
+    <value>Chương trình nhận được sự quan tâm của đài truyền hình trong nước và được xuất hiện trên VTV1</value>
+  </data>
+	<data name="e9_11" xml:space="preserve">
+    <value>Ảnh các tiết học  mà người lao động được tham gia</value>
+  </data>
+	<data name="e9_12" xml:space="preserve">
+    <value>Ảnh các buổi ngoại khóa tham quan doanh nghiệp(SamSung) và mô phỏng phỏng vấn</value>
+  </data>
+	<data name="e9_2" xml:space="preserve">
+    <value>Hiện nay,</value>
+  </data>
+	<data name="e9_3" xml:space="preserve">
+    <value>số lượng lao động từ nước ngoài về nước ngày càng tăng lên hàng năm. Nếu được đào tạo thêm, họ sẽ trở thành nguồn nhân lực chất lượng cao, đóng góp vào sự phát triển của nền kinh tế quốc gia.</value>
+  </data>
+	<data name="e9_4" xml:space="preserve">
+    <value>1.Giới thiệu chương trình đạo tạo E9 về nước</value>
+  </data>
+	<data name="e9_5" xml:space="preserve">
+    <value>Với dự án của Cơ quan Phát triển</value>
+  </data>
+	<data name="e9_6" xml:space="preserve">
+    <value>Nguồn nhân lực Hàn Quốc(HRDK) và Trung tâm COLAB dành cho người lao động về nước làm việc, 
+                    KIPA vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
+                    Khóa đào tạo được thực hiện với đối tượng là các lao động Việt Nam đã hoàn thành hợp đồng lao động tại Hàn Quốc và trở về Việt Nam.
+                    Mục tiêu của khóa đào tạo là giúp cho người lao động trở về từ Hàn Quốc có thể tìm kiếm việc làm thành công tại các công ty Hàn Quốc tại
+                    Việt Nam bằng những kinh nghiệm đã tích lũy trong thời gian làm việc tại Hàn Quốc và những kiến thức được giảng dạy thông qua khóa đào tạo này. 
+                    Trong khóa học này, người lao động được trang bị các kỹ năng về quản lý sản xuất, 
+                    kỹ năng tin học văn phòng và tiếng Hàn và củng cố lại những kiến thức có được khi làm việc tại Hàn Quốc.</value>
+  </data>
+	<data name="e9_7" xml:space="preserve">
+    <value>Khóa đào đạo</value>
+  </data>
+	<data name="e9_8" xml:space="preserve">
+    <value>được diễn ra trong 1 tháng và sau khi kết thúc khóa học,
+                    người lao động được cấp chứng chỉ do chính phủ Hàn Quốc cấp phát và được hỗ trợ tìm kiếm việc làm phù hợp tại các công ty Hàn Quốc tại Việt Nam.</value>
+  </data>
+	<data name="e9_9" xml:space="preserve">
+    <value>Chương trình đào tạo cho lao động E9 về nước kết hợp với Cơ quan phát triển nguồn nhân lực Hàn Quốc (HRDK)</value>
+  </data>
+	<data name="Enterprise" xml:space="preserve">
+    <value>TIẾNG HÀN DOANH NGHIỆP</value>
+  </data>
+	<data name="Ex" xml:space="preserve">
+    <value>Kinh nghiệm làm việc</value>
+  </data>
+	<data name="Exteacher1" xml:space="preserve">
+    <value>KIPA Hà Nội, Hội viên R&amp;I
+Institute, Giảng viên tại VNJ, Giảng viên tại SKC, Giảng
+viên Cơ quan phát triển nguồn nhân lực Hàn Quốc
+HRDK</value>
+  </data>
+	<data name="Exteacher2" xml:space="preserve">
+    <value>KIPA Hà Nội, Hội viên R&amp;I Institute,
+Thông dịch, Biên dịch, Giảng viên tiếng Hàn</value>
+  </data>
+	<data name="Exteacher3" xml:space="preserve">
+    <value>KIPA Hà Nội, Hội viên R&amp;I
+Institute, Giảng viên tại SKC, Giảng viên tiếng Hàn</value>
+  </data>
+	<data name="Functional" xml:space="preserve">
+    <value>Thực phẩm chức năng</value>
+  </data>
+	<data name="Handbook" xml:space="preserve">
+    <value>Cẩm nang du học</value>
+  </data>
+	<data name="HighSchool" xml:space="preserve">
+    <value>Du học cấp 3</value>
+  </data>
+	<data name="HighSchool1" xml:space="preserve">
+    <value>CHƯƠNG TRÌNH DU HỌC CẤP 3 TẠI HÀN QUỐC</value>
+  </data>
+	<data name="HighSchool10" xml:space="preserve">
+    <value>gồm trường nam sinh, nữ sinh và trường hỗn hợp</value>
+  </data>
+	<data name="HighSchool11" xml:space="preserve">
+    <value>Trường nghề:</value>
+  </data>
+	<data name="HighSchool12" xml:space="preserve">
+    <value>Đây là một hình thức du học nghề từ sớm.
+                    Học sinh theo học tại những ngôi trường này sẽ được kết hợp dạy văn hóa cùng những buổi học nghề. Sau khi tốt nghiệp, học sinh sẽ có cả bằng cấp 3 và bằng nghề.
+                    Sau khi tốt nghiệp cấp 3, ngoài việc tiếp tục học nghề hoặc đi làm thì bạn vẫn đủ điều kiện để học lên trường cao đẳng hoặc đại học.</value>
+  </data>
+	<data name="HighSchool13" xml:space="preserve">
+    <value>Trường tư lập ưu tú:</value>
+  </data>
+	<data name="HighSchool14" xml:space="preserve">
+    <value>Đây là một loại hình trường cấp 3 ưu tú tại Hàn.
+                    Từng trường sẽ có những đặc điểm và cách đào tạo học sinh riêng biệt.</value>
+  </data>
+	<data name="HighSchool15" xml:space="preserve">
+    <value>Chương trình du học cấp 3 ở Hàn Quốc cũng giống ở Việt Nam. Nó kéo dài trong 3 năm.</value>
+  </data>
+	<data name="HighSchool16" xml:space="preserve">
+    <value>2. Tuyển sinh học sinh năm 2024-2025.</value>
+  </data>
+	<data name="HighSchool17" xml:space="preserve">
+    <value>Tuyển sinh 2024</value>
+  </data>
+	<data name="HighSchool18" xml:space="preserve">
+    <value>Mục tiêu:</value>
+  </data>
+	<data name="HighSchool19" xml:space="preserve">
+    <value>30 bạn là học sinh của 1 trong số 40 trường cấp 3 đang đào tạo tiếng Hàn tại Việt Nam</value>
+  </data>
+	<data name="HighSchool2" xml:space="preserve">
+    <value>1. Du học cấp 3 Hàn Quốc là gì?</value>
+  </data>
+	<data name="HighSchool20" xml:space="preserve">
+    <value>3. Điều kiện du học cấp 3 Hàn Quốc</value>
+  </data>
+	<data name="HighSchool21" xml:space="preserve">
+    <value>Cũng giống như các chương trình du học Hàn Quốc khác. Du học cấp 3 Hàn Quốc cũng có những điều kiện cần và đủ nhất định. Bao gồm:</value>
+  </data>
+	<data name="HighSchool22" xml:space="preserve">
+    <value>Bắt buộc phải tốt nghiệp bậc trung học cơ sở tại Việt Nam;</value>
+  </data>
+	<data name="HighSchool23" xml:space="preserve">
+    <value>Hiện đang là học sinh lớp 10, 11 của trường THPT tại Việt Nam;</value>
+  </data>
+	<data name="HighSchool24" xml:space="preserve">
+    <value>Học sinh và bố mẹ không có tiền án tiền sự, không nằm trong danh sách cấm của Cục Quản lý xuất nhập cảnh Việt Nam;</value>
+  </data>
+	<data name="HighSchool25" xml:space="preserve">
+    <value>Trình độ tiếng Hàn tốt, nghe, viết và hiểu được bài giảng của các thầy cô;</value>
+  </data>
+	<data name="HighSchool26" xml:space="preserve">
+    <value>Chứng minh tài chính;</value>
+  </data>
+	<data name="HighSchool27" xml:space="preserve">
+    <value>Giấy khám sức khỏe ( khám lao phổi và viêm gan B);</value>
+  </data>
+	<data name="HighSchool28" xml:space="preserve">
+    <value>Không có người thân cư trú bất hợp pháp hoặc bị cấp nhập cảnh Hàn Quốc.</value>
+  </data>
+	<data name="HighSchool29" xml:space="preserve">
+    <value>Học sinh thông qua được kỳ thi toán, tiếng Anh, tiếng Hàn được tổ chức vào tháng 9
+                    hàng năm( đề thi do trường Hàn Quốc ra đề và có sự giám sát của các đại diện ngườ Hàn Quốc);</value>
+  </data>
+	<data name="HighSchool3" xml:space="preserve">
+    <value>Hiện nay ngày càng</value>
+  </data>
+	<data name="HighSchool30" xml:space="preserve">
+    <value>Tài chính: Người bảo lãnh cần đảm bảo chi trả được toàn bộ chi phí cho học sinh trong quá trình học.
+                    Đồng thời có sổ ngân hàng thời hạn trên 6 tháng tính tới thời điểm nộp hồ sơ với số dư tối thiểu theo quy định của Cục xuất nhập cảnh.</value>
+  </data>
+	<data name="HighSchool31" xml:space="preserve">
+    <value>4. Hồ sơ cần nộp</value>
+  </data>
+	<data name="HighSchool32" xml:space="preserve">
+    <value>Thời gian tiếp nhận hồ sơ:</value>
+  </data>
+	<data name="HighSchool33" xml:space="preserve">
+    <value>nhân hồ sơ vào mail</value>
+  </data>
+	<data name="HighSchool34" xml:space="preserve">
+    <value>đến ngày 30/07/2024</value>
+  </data>
+	<data name="HighSchool35" xml:space="preserve">
+    <value>Khám sức khỏe ( lao phổi và viêm gan B)</value>
+  </data>
+	<data name="HighSchool36" xml:space="preserve">
+    <value>Giấy tư pháp số 2 của bố và mẹ</value>
+  </data>
+	<data name="HighSchool37" xml:space="preserve">
+    <value>Bản giới thiệu bản thân của học sinh</value>
+  </data>
+	<data name="HighSchool38" xml:space="preserve">
+    <value>Bằng, học bạ cấp 2</value>
+  </data>
+	<data name="HighSchool39" xml:space="preserve">
+    <value>Ảnh</value>
+  </data>
+	<data name="HighSchool4" xml:space="preserve">
+    <value>nhiều phụ huynh Việt Nam quyết định cho con đi du học Hàn Quốc ngay sau khi tốt nghiệp THCS.</value>
+  </data>
+	<data name="HighSchool40" xml:space="preserve">
+    <value>Vòng 1: Thi năng lực vào tháng 9 (Toán, tiếng Anh, tiếng Hàn)</value>
+  </data>
+	<data name="HighSchool41" xml:space="preserve">
+    <value>Vòng 2: Sau khi đậu vòng 1, học sinh tham gia thi phỏng vấn online</value>
+  </data>
+	<data name="HighSchool42" xml:space="preserve">
+    <value>Sau khi đậu hai kỳ thi nói trên, học sinh sẽ chuẩn bị các hồ sơ còn lại và nhập học vào tháng 3 năm 2025.</value>
+  </data>
+	<data name="HighSchool43" xml:space="preserve">
+    <value>5. Chi phí du học cấp 3 Hàn Quốc</value>
+  </data>
+	<data name="HighSchool44" xml:space="preserve">
+    <value>Chi phí Du học Hàn</value>
+  </data>
+	<data name="HighSchool45" xml:space="preserve">
+    <value>chỉ rẻ bằng 1/3 so với du học các nước Châu Âu, Châu Úc. Đây là mức chi phí khá hợp lý. Với mức phí từ khoảng &lt;span class="f-600"&gt; 2000$ đến 10.000$&lt;/span&gt;
+                    ( đã bao gồm tiền hồ sơ, vé máy bay và các loại chi phí khác)tùy theo trường cấp 3 mà các bạn ứng tuyển.</value>
+  </data>
+	<data name="HighSchool46" xml:space="preserve">
+    <value>Và trong quá trình học bạn sẽ có cơ hội nhận được học bổng hấp dẫn nếu có thành tích học tập tốt.</value>
+  </data>
+	<data name="HighSchool47" xml:space="preserve">
+    <value>6. Những lý do nên du học cấp 3 Hàn Quốc từ sớm</value>
+  </data>
+	<data name="HighSchool48" xml:space="preserve">
+    <value>Nền giáo dục tại Hàn Quốc luôn được chú trọng đầu tư. Cho dù đó là hệ thống giáo dục cấp 3.
+                    Phương tiện giảng dạy và giáo viên luôn được quan tâm và hỗ trợ hết mức.</value>
+  </data>
+	<data name="HighSchool49" xml:space="preserve">
+    <value>Khi đi bố hoặc mẹ có thể sang cùng ( có thể sang cùng con hoặc sau 6 tháng sau khi con nhập cảnh(tùy từng trường)).</value>
+  </data>
+	<data name="HighSchool5" xml:space="preserve">
+    <value>Tương tự như bậc THPT tại Việt Nam,</value>
+  </data>
+	<data name="HighSchool50" xml:space="preserve">
+    <value>Chi phí đi du học Hàn Quốc khá hợp lý.</value>
+  </data>
+	<data name="HighSchool51" xml:space="preserve">
+    <value>Văn hóa Hàn Quốc có nhiều nét tương đồng với Việt Nam nên dễ dàng có thể thích nghi.</value>
+  </data>
+	<data name="HighSchool52" xml:space="preserve">
+    <value>Điều kiện sống ở Hàn Quốc khá cao.</value>
+  </data>
+	<data name="HighSchool53" xml:space="preserve">
+    <value>An ninh ở Hàn cũng rất đảm bảo</value>
+  </data>
+	<data name="HighSchool54" xml:space="preserve">
+    <value>Du học Hàn cấp 3 có thể rèn luyện được tính tự lập từ sớm</value>
+  </data>
+	<data name="HighSchool55" xml:space="preserve">
+    <value>Du học cấp 3 Hàn Quốc đem tới cho sự lựa chọn để vào trường Đại học Hàn Quốc mà các bạn mơ ước.
+                    Điều quan trọng nhất các bạn có thể nhập học vào Đại học Hàn Quốc với tư cách đặc biệt là người nước ngoài.</value>
+  </data>
+	<data name="HighSchool56" xml:space="preserve">
+    <value>7. Các trường cấp 3 tại Hàn Quốc</value>
+  </data>
+	<data name="HighSchool57" xml:space="preserve">
+    <value>7.1. Giới thiệu về trường Gimcheon</value>
+  </data>
+	<data name="HighSchool58" xml:space="preserve">
+    <value>Trường tư thục danh tiếng thành lập năm 1931</value>
+  </data>
+	<data name="HighSchool59" xml:space="preserve">
+    <value>Nằm trong Top 1% các trường tốt nhất trong số 2.000 trường trung học phổ thông ở Hàn Quốc</value>
+  </data>
+	<data name="HighSchool6" xml:space="preserve">
+    <value>trường THPT tại Hàn Quốc cũng có 3 khối học từ 10 – 12.
+                    Ngoài tập trung giảng dạy những môn học cố định như: tiếng Hàn, tiếng Anh, Toán, các môn tự nhiên, xã hội và thể dục;
+                    chương trình học tại trường còn chú trọng vào các hoạt động như: thể thao, ngoại khóa, câu lạc bộ.
+                    Điều này nhằm đảm bảo sự phát triển toàn diện cho học sinh.</value>
+  </data>
+	<data name="HighSchool60" xml:space="preserve">
+    <value>Trường tư thục tự do tuyển sinh những học sinh xuất sắc từ khắp Hàn Quốc</value>
+  </data>
+	<data name="HighSchool61" xml:space="preserve">
+    <value>Đa số học sinh tốt nghiệp đều tiếp tục vào các trường đại học danh tiếng</value>
+  </data>
+	<data name="HighSchool62" xml:space="preserve">
+    <value>Bồi dưỡng nhân tài toàn cầu bằng cách mang đến chương trình giảng dạy đa dạng và chuyên sâu</value>
+  </data>
+	<data name="HighSchool63" xml:space="preserve">
+    <value>7.2.  Giới thiệu về trường Namwon Jeil</value>
+  </data>
+	<data name="HighSchool64" xml:space="preserve">
+    <value>Địa chỉ: 1206 Nosong-ro, Namwon-si, Jeollabuk-do, Hàn Quốc</value>
+  </data>
+	<data name="HighSchool65" xml:space="preserve">
+    <value>Số điện thoại: +82 63-630-9002</value>
+  </data>
+	<data name="HighSchool66" xml:space="preserve">
+    <value>Học viện Seongwon của chúng tôi</value>
+  </data>
+	<data name="HighSchool67" xml:space="preserve">
+    <value>được thành lập vào tháng 6 năm 1974, mở Trường Trung học Seongwon vào năm 1975 và Trường Trung học Namwon Jeil vào năm 1977.</value>
+  </data>
+	<data name="HighSchool68" xml:space="preserve">
+    <value>Dựa trên phương châm sáng lập</value>
+  </data>
+	<data name="HighSchool69" xml:space="preserve">
+    <value>của cố Chủ tịch thứ nhất Yang Seung-kwon là “trở thành người tiên phong tạo nên lịch sử mới” và triết lý sáng lập của cố Chủ tịch thứ hai Yang Seung-gwi là “nuôi dưỡng những tài năng sáng tạo với ước mơ”,
+                    Chunhyanggol tự khẳng định mình là hội trường nghiên cứu lịch sử.
+                    Tôi đang xem khoảng 40 biểu tượng của Hanji.</value>
+  </data>
+	<data name="HighSchool7" xml:space="preserve">
+    <value>Đây là hình thức dành cho các em học</value>
+  </data>
+	<data name="HighSchool70" xml:space="preserve">
+    <value>Để phù hợp với tinh thần giáo dục</value>
+  </data>
+	<data name="HighSchool71" xml:space="preserve">
+    <value>của người sáng lập, học viện của chúng tôi tích cực hỗ trợ các hoạt động giáo dục sáng tạo và tự chủ của giáo
+                    viên dưới trách nhiệm của hiệu trưởng cả hai trường và đưa ra con đường tiên phong trong tương lai thông qua giao tiếp suôn sẻ giữa phụ huynh, cựu sinh viên và học sinh.
+                    Toàn bộ giảng viên và nhân viên đang cố gắng hết sức để cung cấp hướng dẫn về thăng tiến và việc làm thông qua tư vấn cá nhân chỉ dành cho việc học tập suốt đời của sinh viên.</value>
+  </data>
+	<data name="HighSchool72" xml:space="preserve">
+    <value>Chúng tôi cam kết nuôi dưỡng</value>
+  </data>
+	<data name="HighSchool73" xml:space="preserve">
+    <value>những đứa trẻ của học viện trở thành những công dân Namwon siêng năng,
+                    tài năng, có thể phát triển thành những công dân có thể chất khỏe mạnh và tinh thần dân chủ, tự chủ, tự lực lành mạnh,
+                    góp phần vào sự phát triển của đất nước cũng như địa phương.
+                    cộng đồng và tiên phong vì một tương lai hạnh phúc. Toàn bộ 110 giảng viên và nhân viên sẽ cố gắng hết sức mình.</value>
+  </data>
+	<data name="HighSchool74" xml:space="preserve">
+    <value>Rất mong nhận được</value>
+  </data>
+	<data name="HighSchool75" xml:space="preserve">
+    <value>nhiều sự quan tâm, yêu mến từ phía phụ huynh, 20.000 cựu sinh viên của cả hai trường và người dân.</value>
+  </data>
+	<data name="HighSchool76" xml:space="preserve">
+    <value>Sau đây là danh sách một số trường cấp 3 tại Hàn Quốc:</value>
+  </data>
+	<data name="HighSchool77" xml:space="preserve">
+    <value>8. Hình ảnh về các hoạt động du học cấp 3</value>
+  </data>
+	<data name="HighSchool78" xml:space="preserve">
+    <value>Đến thăm làm việc và ký hợp đồng hợp tác với các trường đang dạy tiếng Hàn ở tại khu vực Hà Nội</value>
+  </data>
+	<data name="HighSchool79" xml:space="preserve">
+    <value>Đến thăm làm việc và ký hợp đồng hợp tác với tỉnh Thái Nguyên và tỉnh Bắc Ninh</value>
+  </data>
+	<data name="HighSchool8" xml:space="preserve">
+    <value>sinh sau khi học hết lớp 9 sẽ sang Hàn Quốc học tại các trường trung học ở đây.
+                    Hiện nay, Hàn Quốc có 3 loại trường cấp 3:</value>
+  </data>
+	<data name="HighSchool80" xml:space="preserve">
+    <value>Học sinh nhập học kỳ tháng 3/2024</value>
+  </data>
+	<data name="HighSchool9" xml:space="preserve">
+    <value>Trường chính quy:</value>
+  </data>
+	<data name="Inha" xml:space="preserve">
+    <value>Inha University</value>
+  </data>
+	<data name="Jang" xml:space="preserve">
+    <value>Jang Jun Yong - 1967</value>
+  </data>
+	<data name="Jang1" xml:space="preserve">
+    <value>Du học Đài Loan</value>
+  </data>
+	<data name="Jang2" xml:space="preserve">
+    <value>Điều hành công ty tại Bắc Kinh
+Trung Quốc, Giám đốc tài vụ Công ty hữu hạn
+Marketing I one Bắc Kinh Trung Quốc</value>
+  </data>
+	<data name="Jeonbuk" xml:space="preserve">
+    <value>Jeonbuk National University</value>
+  </data>
+	<data name="Jeonju" xml:space="preserve">
+    <value>College of Jeonju</value>
+  </data>
+	<data name="Kaist" xml:space="preserve">
+    <value>Kaist</value>
+  </data>
+	<data name="Kunjang" xml:space="preserve">
+    <value>Kunjang University college</value>
+  </data>
+	<data name="KwangWoon" xml:space="preserve">
+    <value>KwangWoon University</value>
+  </data>
+	<data name="KyungIn" xml:space="preserve">
+    <value>Kyung-In Women’s University</value>
+  </data>
+	<data name="Language" xml:space="preserve">
+    <value>DU HỌC HỆ TIẾNG D4-1</value>
+  </data>
+	<data name="Learn" xml:space="preserve">
+    <value>Đào tạo tiếng Hàn</value>
+  </data>
+	<data name="LeeWon" xml:space="preserve">
+    <value>Lee Won – 1962</value>
+  </data>
+	<data name="DesLeeWon1" xml:space="preserve">
+    <value>Chủ tịch Viện văn hóa quốc gia Hàn Quốc</value>
+  </data>
+	<data name="DesLeeWon2" xml:space="preserve">
+    <value>Chủ tịch Hiệp hội Hoàng gia Lee Jeonju</value>
+  </data>
+	<data name="LeeWon2" xml:space="preserve">
+    <value>Cử nhân Đại học Công nghệ New York
+khoa truyền thông báo chí</value>
+  </data>
+	<data name="LeeWon3" xml:space="preserve">
+    <value>Chủ tịch Viện văn hóa
+quốc gia Hàn Quốc</value>
+  </data>
+	<data name="LeeWon4" xml:space="preserve">
+    <value>Giám đốc Viện văn hóa
+Hoàng Gia</value>
+  </data>
+	<data name="LinkSchool" xml:space="preserve">
+    <value>Các trường đại học liên kết</value>
+  </data>
+	<data name="Mater" xml:space="preserve">
+    <value>DU HỌC THẠC SỸ</value>
+  </data>
+	<data name="Min" xml:space="preserve">
+    <value>Park Jung Min – 1978</value>
+  </data>
+	<data name="Min1" xml:space="preserve">
+    <value>Australia Melbourne Institute, Cử nhân khoa
+giáo dục mỹ thuật ứng dụng trường Đại học HanYang</value>
+  </data>
+	<data name="Min2" xml:space="preserve">
+    <value>Phó giám đốc R&amp;I Institute), FINCOM Art
+Director, V&amp;K Homeshopping Art Director</value>
+  </data>
+	<data name="Mocpo" xml:space="preserve">
+    <value>Mocpo Science University</value>
+  </data>
+	<data name="Myongji" xml:space="preserve">
+    <value>Myongji University</value>
+  </data>
+	<data name="Osan" xml:space="preserve">
+    <value>Osan University</value>
+  </data>
+	<data name="Park" xml:space="preserve">
+    <value>Park Chang Deok – 1975</value>
+  </data>
+	<data name="Park1" xml:space="preserve">
+    <value>Thạc sĩ Đại học Inha khoa Đa văn hóa</value>
+  </data>
+	<data name="Park2" xml:space="preserve">
+    <value>Giám đốc hợp tác giao lưu quốc tế Hiệp
+hội chuyên gia xã hội nhân dân Hàn Quốc</value>
+  </data>
+	<data name="Park3" xml:space="preserve">
+    <value>Điều hành chương trình thích ứng cơ bản</value>
+  </data>
+	<data name="Park4" xml:space="preserve">
+    <value>Điều hành chương trình hòa nhập xã hội</value>
+  </data>
+	<data name="Phone" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+	<data name="Potision" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+	<data name="Programe" xml:space="preserve">
+    <value>Chương trình du học</value>
+  </data>
+	<data name="Reson" xml:space="preserve">
+    <value>TẠI SAO CHỌN KIPA ?</value>
+  </data>
+	<data name="Reson1" xml:space="preserve">
+    <value>THƯƠNG HIỆU UY TÍN</value>
+  </data>
+	<data name="Reson2" xml:space="preserve">
+    <value>GIẢNG VIÊN CHUYÊN NGHIỆP</value>
+  </data>
+	<data name="Reson3" xml:space="preserve">
+    <value>CAM KẾT CHẤT LƯỢNG</value>
+  </data>
+	<data name="Seo" xml:space="preserve">
+    <value>Seo Suk Yong - 1970</value>
+  </data>
+	<data name="Seo1" xml:space="preserve">
+    <value>Giám đốc K.I.P.A Hà Nội</value>
+  </data>
+	<data name="Seo2" xml:space="preserve">
+    <value>Thạc sĩ khoa Kinh tế học tại N.S.W University</value>
+  </data>
+	<data name="Seo3" xml:space="preserve">
+    <value>Giám đốc Viện văn hóa quốc gia Hàn Quốc
+khu vực Đông Nam Á, Giám đốc K.I.P.A Hà Nội, Giám đốc điều
+hành R&amp;I Institute, Trưởng phòng Ecommerce law Division,
+Macquarie investment Bank Analyst</value>
+  </data>
+	<data name="Shingu" xml:space="preserve">
+    <value>Shingu College</value>
+  </data>
+	<data name="Shinhan" xml:space="preserve">
+    <value>Shinhan University</value>
+  </data>
+	<data name="Study" xml:space="preserve">
+    <value>Trình độ học vấn</value>
+  </data>
+	<data name="Sunmoon" xml:space="preserve">
+    <value>Sunmoon University</value>
+  </data>
+	<data name="teacher1" xml:space="preserve">
+    <value>Đậu Thị Kiều Oanh 1995</value>
+  </data>
+	<data name="teacher2" xml:space="preserve">
+    <value>Vũ Thị Diễm</value>
+  </data>
+	<data name="teacher3" xml:space="preserve">
+    <value>Nguyễn Hoàng Linh</value>
+  </data>
+	<data name="TitleCompany" xml:space="preserve">
+    <value>Công ty cổ phần giao lưu văn hóa Hoàng gia Hàn – Việt R&amp;I</value>
+  </data>
+	<data name="TitleHeader" xml:space="preserve">
+    <value>DU HỌC KIPA</value>
+  </data>
+	<data name="University" xml:space="preserve">
+    <value>DU HỌC ĐẠI HỌC D2-1</value>
+  </data>
+	<data name="Visa" xml:space="preserve">
+    <value>Visa Hàn Quốc</value>
+  </data>
+	<data name="VisaD10" xml:space="preserve">
+    <value>VISA D10</value>
+  </data>
+	<data name="VisaD2" xml:space="preserve">
+    <value>VISA D2</value>
+  </data>
+	<data name="VisaD4" xml:space="preserve">
+    <value>VISA D4</value>
+  </data>
+	<data name="VisaE7" xml:space="preserve">
+    <value>VISA E7</value>
+  </data>
+	<data name="Yeoju" xml:space="preserve">
+    <value>Yeoju Institute of Technology</value>
+  </data>
+	<data name="Yeonsei" xml:space="preserve">
+    <value>Yeonsei University</value>
+  </data>
+	<data name="PleaseContact" xml:space="preserve">
+    <value>Bạn hãy để lại thông tin tại đây để Kipa liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!</value>
+  </data>
+	<data name="PleaseContactNow" xml:space="preserve">
+    <value>ĐĂNG KÝ TƯ VẤN MIỄN PHÍ NGAY</value>
+  </data>
+	<data name="Name" xml:space="preserve">
+    <value>Họ và tên</value>
+  </data>
+	<data name="ProgramCare" xml:space="preserve">
+    <value>Chương trình quan tâm</value>
+  </data>
+	<data name="Question" xml:space="preserve">
+    <value>Câu hỏi</value>
+  </data>
+	<data name="Send" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+	<data name="Counselors" xml:space="preserve">
+    <value>Chuyên gia tư vấn tại KIPA</value>
+  </data>
+	<data name="LearnFree1" xml:space="preserve">
+    <value>CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG HÀN MIỄN PHÍ</value>
+  </data>
+	<data name="D82" xml:space="preserve">
+    <value>LAO ĐỘNG THỜI VỤ  E8_2</value>
+  </data>
+	<data name="LearnFree10" xml:space="preserve">
+    <value>lấy theo thứ tự ưu tiên</value>
+  </data>
+	<data name="LearnFree11" xml:space="preserve">
+    <value>Hình thức đào tạo</value>
+  </data>
+	<data name="LearnFree12" xml:space="preserve">
+    <value>Sơ cấp</value>
+  </data>
+	<data name="LearnFree13" xml:space="preserve">
+    <value>Trung Cấp</value>
+  </data>
+	<data name="LearnFree14" xml:space="preserve">
+    <value>Địa chỉ đào tạo Offline</value>
+  </data>
+	<data name="LearnFree15" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+	<data name="LearnFree16" xml:space="preserve">
+    <value>Dự kiến  đầu tháng 6( 1 tuần 3 buổi lớp online( 7h30-9h30 tối) offline(3h -5h chiều)</value>
+  </data>
+	<data name="LearnFree17" xml:space="preserve">
+    <value>Giáo trình</value>
+  </data>
+	<data name="LearnFree18" xml:space="preserve">
+    <value>do giáo viên giảng dạy trực tiếp biên soạn</value>
+  </data>
+	<data name="LearnFree19" xml:space="preserve">
+    <value>Giáo viên</value>
+  </data>
+	<data name="LearnFree2" xml:space="preserve">
+    <value>Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Kipa kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec)</value>
+  </data>
+	<data name="LearnFree20" xml:space="preserve">
+    <value>Giáo viên giàu kinh nghiệm, nhệt tình( Topik 5-6)</value>
+  </data>
+	<data name="LearnFree21" xml:space="preserve">
+    <value>Phí đăng ký</value>
+  </data>
+	<data name="LearnFree22" xml:space="preserve">
+    <value>giáo trình</value>
+  </data>
+	<data name="LearnFree23" xml:space="preserve">
+    <value>đã bao gồm chi phí trải nghiệm văn hóa</value>
+  </data>
+	<data name="LearnFree24" xml:space="preserve">
+    <value>Sau khi kết thúc khóa học, học viên sẽ nhận được giấy chứng nhận tốt nghiệp do trung tâm giáo dục tiếng Hàn Jevec trao tặng và có cơ hội được đi du học tại các trường đại học ở Jeollabuk-do. Hoc viên hoàn thành khoá học với điểm số cao nhất cũng sẽ có cơ hội đến thăm Hàn Quốc theo lời mời của Jeollabuk-do hoàn toàn miễn phí. Rất mong nhận được sự quan tâm của mọi người.</value>
+  </data>
+	<data name="LearnFree25" xml:space="preserve">
+    <value>Các bạn quan tâm đăng ký link dưới, trung tâm sẽ trực tiếp liên lạc lại với ứng viên.</value>
+  </data>
+	<data name="LearnFree3" xml:space="preserve">
+    <value>Mục tiêu khoá học</value>
+  </data>
+	<data name="LearnFree4" xml:space="preserve">
+    <value>nhằm đưa tiếng Hàn tới gần với những người quan tâm đến tiếng Hàn đặc biệt các bạn có ý định du học tại đất nước Hàn Quốc. Ngoài ra, khóa học còn giúp cho học viên phát triển năng lực tiếng hàn của bản thân một cách toàn diện. Đặc biệt, học viên sẽ được tham gia trải nghiệm trực tiếp văn hóa Hàn Quốc do trung tâm tổ chức.</value>
+  </data>
+	<data name="LearnFree5" xml:space="preserve">
+    <value>Đối tượng</value>
+  </data>
+	<data name="LearnFree6" xml:space="preserve">
+    <value>không giới hạn</value>
+  </data>
+	<data name="LearnFree7" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+	<data name="LearnFree8" xml:space="preserve">
+    <value>60 người</value>
+  </data>
+	<data name="LearnFree9" xml:space="preserve">
+    <value>15 người/1 lớp</value>
+  </data>
+	<data name="HandbookMenu1" xml:space="preserve">
+    <value>1. Quy định làm thêm dành cho du học sinh</value>
+  </data>
+	<data name="HandbookMenu1Info1" xml:space="preserve">
+    <value>Hàn Quốc là</value>
+  </data>
+	<data name="HandbookMenu1Info1List1" xml:space="preserve">
+    <value>1. Đối tượng</value>
+  </data>
+	<data name="HandbookMenu1Info1List1Subject" xml:space="preserve">
+    <value>Visa D4-1 (Sinh viên Du học Tiếng) và Visa D2 (Sinh viên Du học Chuyên ngành)</value>
+  </data>
+	<data name="HandbookMenu1Info1List2" xml:space="preserve">
+    <value>2. Thời gian</value>
+  </data>
+	<data name="HandbookMenu1Info1List2Subject" xml:space="preserve">
+    <value>được đi làm thêm sau 6 tháng nhập cảnh.</value>
+  </data>
+	<data name="HandbookMenu1Info1List3" xml:space="preserve">
+    <value>3. Thời gian làm việc :</value>
+  </data>
+	<data name="HandbookMenu1Info1List3Subject1" xml:space="preserve">
+    <value>- D4-1 (Du học Tiếng) : 20h/ tuần</value>
+  </data>
+	<data name="HandbookMenu1Info1List3Subject2" xml:space="preserve">
+    <value>- D2-1 =&gt; D2-2 (Du học Chuyên ngành) : 25h/ tuần</value>
+  </data>
+	<data name="HandbookMenu1Info1List3Subject3" xml:space="preserve">
+    <value>- D2-3 (Du học thạc sỹ, tiến sỹ) : 30h/ tuần</value>
+  </data>
+	<data name="HandbookMenu1Info1List3Subject4" xml:space="preserve">
+    <value>(Kỳ nghỉ xuân được phép làm 8h/ngày)</value>
+  </data>
+	<data name="HandbookMenu1Info1List4" xml:space="preserve">
+    <value>4. Yêu cầu :</value>
+  </data>
+	<data name="HandbookMenu1Info1List4Subject1" xml:space="preserve">
+    <value>+ Sinh viên phải có bằng TOPIK 2 trở lên</value>
+  </data>
+	<data name="HandbookMenu1Info1List4Subject2" xml:space="preserve">
+    <value>+ Sinh viên phải có điểm chuyên cần trên 90%</value>
+  </data>
+	<data name="HandbookMenu1Info1List5" xml:space="preserve">
+    <value>Các công việc mà du học sinh thường hay làm</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject1" xml:space="preserve">
+    <value>• Công việc bán thời gian</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject10" xml:space="preserve">
+    <value>• Thông dịch (Đoàn du lịch, công tác)</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject11" xml:space="preserve">
+    <value>• Dạy tiếng việt</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject2" xml:space="preserve">
+    <value>• Nhân viên bán hàng (cửa hàng tiện lợi, siêu thị, trung tâm thương mại)</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject3" xml:space="preserve">
+    <value>• Nhân viên phục vụ ( cà phê, nhà hàng)</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject4" xml:space="preserve">
+    <value>• Nhân viên phụ bếp</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject5" xml:space="preserve">
+    <value>• Công nhân xưởng</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject6" xml:space="preserve">
+    <value>• Giao hàng, bốc vác</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject7" xml:space="preserve">
+    <value>• Làm việc trong trường</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject8" xml:space="preserve">
+    <value>• Công việc thời vụ</value>
+  </data>
+	<data name="HandbookMenu1Info1List5Subject9" xml:space="preserve">
+    <value>• Hái trái cây, thu hoạch nông sản</value>
+  </data>
+	<data name="HandbookMenu1Info1List6" xml:space="preserve">
+    <value>Cách xin việc làm thêm tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject1" xml:space="preserve">
+    <value>Tham gia cộng đồng DU HỌC SINH NGƯỜI VIỆT tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject1_1" xml:space="preserve">
+    <value>Hiện tại,</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject1_2" xml:space="preserve">
+    <value>cộng đồng Việt Nam bên Hàn Quốc cũng khá đông, hầu hết các trường đều có hội du học sinh của mỗi trường, nên bạn hãy chủ động xin vào các cộng đồng ấy để nhận được giúp đỡ ban đầu, cách này được sử dụng phổ biến và khá là hiệu quả, nhưng cũng cần thời gian tiếp xúc và tìm hiểu tầm 1-2 tháng để xây dựng sự tin tưởng trong cộng đồng.</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject2" xml:space="preserve">
+    <value>Tới trực tiếp</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject2_1" xml:space="preserve">
+    <value>Khi các bạn đi trên xe bus, </value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject2_2" xml:space="preserve">
+    <value>tầu điện ngầm, hay đi ngang qua các quán ăn, sẽ thấy tin tìm người. Bạn có thể chủ động đến hỏi và xin vào làm.</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject3" xml:space="preserve">
+    <value>Sử dụng các app hoặc Website tìm kiếm việc làm.</value>
+  </data>
+	<data name="HandbookMenu1Info1List6Subject3_1" xml:space="preserve">
+    <value>Danh sách 6 Website tìm việc ở Hàn Quốc :</value>
+  </data>
+	<data name="HandbookMenu1Info2" xml:space="preserve">
+    <value>một đất nước tạo điều kiện khá thuận lợi cho du học sinh trong chính sách việc làm thêm, tuy nhiên các bạn cần hiểu là việc làm thêm để hỗ trợ một phần nào sinh hoạt phí và giúp các bạn hòa nhập nhanh hơn. Họ không khuyến khích các bạn đi du học mà mục đích chính là chỉ để đi làm, vì thế sẽ có những điều kiện ràng buộc để các bạn.</value>
+  </data>
+	<data name="HandbookMenu2" xml:space="preserve">
+    <value>2. Thông tin chương trình thí điểm cho phụ huynh học sinh làm việc thời vụ</value>
+  </data>
+	<data name="HandbookMenu2Info1_1" xml:space="preserve">
+    <value>Thời hạn: </value>
+  </data>
+	<data name="HandbookMenu2Info1_2" xml:space="preserve">
+    <value>26/02/2024 đến hết ngày 31/12/2024.</value>
+  </data>
+	<data name="HandbookMenu2Title1" xml:space="preserve">
+    <value>1. Điều kiện tham gia:</value>
+  </data>
+	<data name="HandbookMenu2Title1Info1" xml:space="preserve">
+    <value>• Cha mẹ du học sinh phải dưới 55 tuổi, không có tiền án tiền sự và vấn đề về sức khỏe.</value>
+  </data>
+	<data name="HandbookMenu2Title1Info2" xml:space="preserve">
+    <value>• Du học sinh còn ít nhất 2 kì học (có nghĩa là còn ít nhất đủ 1 năm học nữa ở trường) và không vi phạm luật pháp ở Hàn Quốc.</value>
+  </data>
+	<data name="HandbookMenu2Title1Info3" xml:space="preserve">
+    <value>• Du học sinh đang học trên 1 năm tại trường được chứng nhận (danh sách bên dưới)</value>
+  </data>
+	<data name="HandbookMenu2Title1Info4" xml:space="preserve">
+    <value>• Thời hạn bảo lãnh cho phụ huynh lao động ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title1Info5" xml:space="preserve">
+    <value>• Visa C4 là 90 ngày</value>
+  </data>
+	<data name="HandbookMenu2Title1Info6" xml:space="preserve">
+    <value>• Visa E8 là 5 tháng (có thể gia hạn thành 8 tháng, 5 tháng +3 tháng)</value>
+  </data>
+	<data name="HandbookMenu2Title2" xml:space="preserve">
+    <value>2. Lợi ích của chương trình:</value>
+  </data>
+	<data name="HandbookMenu2Title2Info1" xml:space="preserve">
+    <value>• Giúp phụ huynh du học sinh trang trải chi phí sinh hoạt và học tập cho con.</value>
+  </data>
+	<data name="HandbookMenu2Title2Info2" xml:space="preserve">
+    <value>• Tăng cường sự gắn kết giữa gia đình và du học sinh.</value>
+  </data>
+	<data name="HandbookMenu2Title2Info3" xml:space="preserve">
+    <value>• Giúp phụ huynh có cơ hội trải nghiệm cuộc sống và văn hóa Hàn Quốc.</value>
+  </data>
+	<data name="HandbookMenu2Title2Info4" xml:space="preserve">
+    <value>• Phụ huynh có cơ hội học hỏi kỹ năng mới, trau dồi kiến thức và kinh nghiệm làm việc trong môi trường quốc tế. Điều này giúp họ phát triển bản thân, nâng cao khả năng cạnh tranh và có thêm cơ hội nghề nghiệp sau khi trở về Việt Nam.</value>
+  </data>
+	<data name="HandbookMenu2Title2Note" xml:space="preserve">
+    <value>*Lưu ý:</value>
+  </data>
+	<data name="HandbookMenu2Title2NoteInfo1" xml:space="preserve">
+    <value>1. Đây là chương trình thí điểm và có thể thay đổi trong tương lai.</value>
+  </data>
+	<data name="HandbookMenu2Title2NoteInfo2" xml:space="preserve">
+    <value>2. Du học sinh và phụ huynh cần tìm hiểu kỹ thông tin và điều kiện tham gia trước khi đăng ký.</value>
+  </data>
+	<data name="HandbookMenu2Title2NoteInfo3" xml:space="preserve">
+    <value>3. Hàn Quốc cấp phép cho phụ huynh du học sinh lao động ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title3" xml:space="preserve">
+    <value>Danh sách các các trường Hàn Quốc cấp phép lao động ngắn hạn cho phụ huynh du học sinh.</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1" xml:space="preserve">
+    <value>• Khu vực Gangwon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University1_1" xml:space="preserve">
+    <value>Đại học Quốc gia Gangneung Wonju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University1_2" xml:space="preserve">
+    <value>(Gangneung Wonju National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University2_1" xml:space="preserve">
+    <value>Đại học Quốc gia Kangwon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University2_2" xml:space="preserve">
+    <value>(Kangwon National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University3_1" xml:space="preserve">
+    <value>Trường Đại học Yonsei</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University3_2" xml:space="preserve">
+    <value>(Yonsei University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University4_1" xml:space="preserve">
+    <value> Đại học Hallym</value>
+  </data>
+	<data name="HandbookMenu2Title3Area1University4_2" xml:space="preserve">
+    <value>(Hallym University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2" xml:space="preserve">
+    <value>• Khu vực Daejeon, Chungcheong:</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2College1_1" xml:space="preserve">
+    <value>Đại học Nghệ Thuật Truyền Thông Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2College1_2" xml:space="preserve">
+    <value>(Korea University of Media Arts)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2Graduate1_1" xml:space="preserve">
+    <value>Đại Học Khoa Học Và Công Nghệ Hàn Quốc UST</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2Graduate1_2" xml:space="preserve">
+    <value>(University of Science and Technology)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2Graduate2_1" xml:space="preserve">
+    <value>Trường Quản Lý Và Chính Sách Công KDI Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2Graduate2_2" xml:space="preserve">
+    <value>(KDI School of Public Policy and Management )</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University10_1" xml:space="preserve">
+    <value>Đại học Sun Moon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University10_2" xml:space="preserve">
+    <value>(Sun Moon University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University11_1" xml:space="preserve">
+    <value>Đại học Semyung</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University11_2" xml:space="preserve">
+    <value>(Semyung University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University12_1" xml:space="preserve">
+    <value>Đại học Soonchunhyang</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University12_2" xml:space="preserve">
+    <value>(Soonchunhyang University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University13_1" xml:space="preserve">
+    <value>Đại học Woosong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University13_2" xml:space="preserve">
+    <value>(Woosong University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University14_1" xml:space="preserve">
+    <value>Đại Học Joongbu</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University14_2" xml:space="preserve">
+    <value>(Joongbu University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University15_1" xml:space="preserve">
+    <value>Đại học Cheongju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University15_2" xml:space="preserve">
+    <value>(Đại học Cheongju)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University16_1" xml:space="preserve">
+    <value>Đại Học Quốc Gia Chungnam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University16_2" xml:space="preserve">
+    <value>(Chungnam National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University17_1" xml:space="preserve">
+    <value>Đại Học Quốc gia Chungbuk</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University17_2" xml:space="preserve">
+    <value>(Chungbuk National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University18_1" xml:space="preserve">
+    <value>KAIST – Viện khoa học và công nghệ tiên tiến Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University18_2" xml:space="preserve">
+    <value>(Korea Advanced Institute of Science and Technology)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University19_1" xml:space="preserve">
+    <value>Đại học Giáo Dục Quốc Gia Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University19_2" xml:space="preserve">
+    <value>(Korea National University of Education)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University1_1" xml:space="preserve">
+    <value> Đại học Konkuk</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University1_2" xml:space="preserve">
+    <value>(Konkuk University) – Global</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University20_1" xml:space="preserve">
+    <value>Đại Học Giao Thông Quốc Gia Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University20_2" xml:space="preserve">
+    <value>(Korea National University of Transportation)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University21_1" xml:space="preserve">
+    <value>Đại học Công nghệ và Giáo dục Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University21_2" xml:space="preserve">
+    <value>(Korea University of Technology and Education)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University22_1" xml:space="preserve">
+    <value>Đại học Hannam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University22_2" xml:space="preserve">
+    <value>(Hannam University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University23_1" xml:space="preserve">
+    <value>Đại học Quốc gia Hanbat</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University23_2" xml:space="preserve">
+    <value>(Hanbat National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University24_1" xml:space="preserve">
+    <value>Đại học Hanseo</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University24_2" xml:space="preserve">
+    <value>(Hanseo University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University25_1" xml:space="preserve">
+    <value>Đại học Hoseo</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University25_2" xml:space="preserve">
+    <value>(Hoseo University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University2_1" xml:space="preserve">
+    <value>Đại học Konyang</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University2_2" xml:space="preserve">
+    <value>(Konyang University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University3_1" xml:space="preserve">
+    <value>Đại học Korea</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University3_2" xml:space="preserve">
+    <value>(Korea University) – Sejong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University4_1" xml:space="preserve">
+    <value>Đại học Nazarene</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University4_2" xml:space="preserve">
+    <value>(Nazarene University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University5_1" xml:space="preserve">
+    <value>Đại học Namseoul</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University5_2" xml:space="preserve">
+    <value>(Namseoul University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University6_1" xml:space="preserve">
+    <value>Đại học Daejeon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University6_2" xml:space="preserve">
+    <value>(Daejeon University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University7_1" xml:space="preserve">
+    <value>Đại học Mokwon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University7_2" xml:space="preserve">
+    <value>(Mokwon University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University8_1" xml:space="preserve">
+    <value>Đại học Pai Chai</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University8_2" xml:space="preserve">
+    <value>(Pai Chai University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University9_1" xml:space="preserve">
+    <value>Đại học Baekseok</value>
+  </data>
+	<data name="HandbookMenu2Title3Area2University9_2" xml:space="preserve">
+    <value>(Baekseok University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3" xml:space="preserve">
+    <value>• Khu vực Daegu, Gyeongbuk:</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University10_1" xml:space="preserve">
+    <value>Đại học Yeungnam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University10_2" xml:space="preserve">
+    <value>(Yeungnam University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University11_1" xml:space="preserve">
+    <value>Đại học Khoa học và Công nghệ Pohang (POSTECH)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University11_2" xml:space="preserve">
+    <value>(Pohang University of Science and Technology)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University12_1" xml:space="preserve">
+    <value>Đại học Handong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University12_2" xml:space="preserve">
+    <value>(Handong Global University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University1_1" xml:space="preserve">
+    <value>Đại học Kyungbok</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University1_2" xml:space="preserve">
+    <value>(Kyungbok University)– Global</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University2_1" xml:space="preserve">
+    <value>Đại học Kwangwoon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University2_2" xml:space="preserve">
+    <value>(Kwangwoon University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University3_1" xml:space="preserve">
+    <value>Đại học Kyungil</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University3_2" xml:space="preserve">
+    <value>(Kyungil University) – Sejong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University4_1" xml:space="preserve">
+    <value>Đại học Keimyung</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University4_2" xml:space="preserve">
+    <value>(Keimyung University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University5_1" xml:space="preserve">
+    <value>Đại học Gimcheon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University5_2" xml:space="preserve">
+    <value>(Gimcheon University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University6_1" xml:space="preserve">
+    <value>Đại học Daegu Catholic</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University6_2" xml:space="preserve">
+    <value>(Daegu Catholic University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University7_1" xml:space="preserve">
+    <value>Đại học Daegu Haany</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University7_2" xml:space="preserve">
+    <value>(Daegu Haany University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University8_1" xml:space="preserve">
+    <value>Đại học Dongguk</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University8_2" xml:space="preserve">
+    <value>(Dongguk University) – WISE</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University9_1" xml:space="preserve">
+    <value>Đại học quốc gia Andong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3University9_2" xml:space="preserve">
+    <value>(Andong National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3College" xml:space="preserve">
+    <value>Hệ cao đẳng</value>
+  </data>
+	<data name="HandbookMenu2Title3Graduate" xml:space="preserve">
+    <value>Hệ cao học</value>
+  </data>
+	<data name="HandbookMenu2Title3Info" xml:space="preserve">
+    <value>Sau đây là danh sách các trường chứng nhận (theo tiêu chuẩn đánh giá năm 2023, khu vực ngoài đô thị):</value>
+  </data>
+	<data name="HandbookMenu2Title3University" xml:space="preserve">
+    <value>Hệ đại học</value>
+  </data>
+	<data name="Image" xml:space="preserve">
+    <value>Hình ảnh minh hoạ</value>
+  </data>
+	<data name="HandbookMenu2Title10" xml:space="preserve">
+    <value>Visa Hàn Quốc lưu trú dài hạn (D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, F1, F2, F3, F4, F5, F6, G1)</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow10Col2" xml:space="preserve">
+    <value>Visa tìm việc làm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow10Col3" xml:space="preserve">
+    <value>Cấp cho những đối tượng cần chuẩn bị thời gian để lựa chọn, tìm kiếm nghề nghiệp mang tính chuyên môn</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow10Col4" xml:space="preserve">
+    <value>6 tháng đến 2năm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow11Col2" xml:space="preserve">
+    <value>Visa thăm người thân</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow11Col3" xml:space="preserve">
+    <value>Cấp cho những người được người thân đang lưu trú tại Hàn Quốc mời sang theo diện thăm thân</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow12Col2" xml:space="preserve">
+    <value>Visa cư trú</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow12Col3" xml:space="preserve">
+    <value>Cấp cho những người đang sinh sống làm việc tại Hàn Quốc dưới các diện visa khác</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow12Col4" xml:space="preserve">
+    <value>3 năm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow13Col2" xml:space="preserve">
+    <value>Visa diện bảo lãnh</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow13Col3" xml:space="preserve">
+    <value>Cấp cho người thân của những người đang sinh sống làm việc tại Hàn Quốc bảo lãnh sang Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow13Col4" xml:space="preserve">
+    <value>Bằng thời hạn của người bảo lãnh.</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow14Col2" xml:space="preserve">
+    <value>Visa Hàn kiều</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow14Col3" xml:space="preserve">
+    <value>Cấp cho người gốc Hàn Quốc có hộ chiếu nước ngoài</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow15Col2" xml:space="preserve">
+    <value>Visa định cư</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow15Col3" xml:space="preserve">
+    <value>Cấp cho những người đang sinh sống làm việc tại Hàn Quốc. Chuyển từ một số diện visa khác sang, để được định cư vĩnh viễn tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow15Col4" xml:space="preserve">
+    <value>Vô thời hạn</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow16Col2" xml:space="preserve">
+    <value>Visa kết hôn Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow16Col3" xml:space="preserve">
+    <value>Cấp cho những người nước ngoài nhập cư kết hôn với công dân Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow1Col2" xml:space="preserve">
+    <value>Visa văn hóa / nghệ thuật</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow1Col3" xml:space="preserve">
+    <value>Cấp cho những cá nhân đến Hàn Quốc tham gia các hoạt động văn hóa, nghệ thuật phi lợi nhuận</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow1Col4" xml:space="preserve">
+    <value>2 năm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow2Col2" xml:space="preserve">
+    <value>Visa du học Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow2Col3" xml:space="preserve">
+    <value>Cấp cho du học sinh Hàn Quốc theo các hệ đào tạo chính quy</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow2Col4" xml:space="preserve">
+    <value>6 tháng đến 1 năm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow3Col2" xml:space="preserve">
+    <value>Visa đào tạo sản xuất</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow3Col3" xml:space="preserve">
+    <value>Cấp cho những người đến Hàn Quốc để tham gia khóa đào tạo ngắn hạn tại các cơ sở đào tạo công nghiệp</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow3Col4" xml:space="preserve">
+    <value>1 năm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow4Col2" xml:space="preserve">
+    <value>Visa đào tạo tổng hợp</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow4Col3" xml:space="preserve">
+    <value>Cấp cho các sinh viên du học Hàn Quốc và tham gia các chương trình đào tạo tiếng, học nghề…</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow5Col2" xml:space="preserve">
+    <value>Visa phóng viên thường trú</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow5Col3" xml:space="preserve">
+    <value>Cấp cho phóng viên các nước đến làm việc trong thời gian dài tại Hàn Quốc.</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow5Col4" xml:space="preserve">
+    <value>Visa dài hạn</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow6Col2" xml:space="preserve">
+    <value>Religious works</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow6Col3" xml:space="preserve">
+    <value>Cấp cho những người đến Hàn Quốc tham gia các hoạt động tôn giáo hoặc dịch vụ xã hội</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow7Col2" xml:space="preserve">
+    <value>Intra-Company Transfer</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow7Col3" xml:space="preserve">
+    <value>Cấp cho những người được công ty mẹ ở nước ngoài điều chuyển đến công ty con, chi nhánh ở Hàn Quốc làm việc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow8Col2" xml:space="preserve">
+    <value>Visa hợp tác đầu tư</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow8Col3" xml:space="preserve">
+    <value>Cấp cho những cá nhân muốn mở, xây dựng các doanh nghiệp nhỏ tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow8Col4" xml:space="preserve">
+    <value>2 năm hoặc 5 năm</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow9Col2" xml:space="preserve">
+    <value>Visa hợp tác thương mại</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow9Col3" xml:space="preserve">
+    <value>Cấp cho những người đến Hàn Quốc làm quản lý công ty, thương mại quốc tế, quản lý sản xuất hàng hóa</value>
+  </data>
+	<data name="HandbookMenu2Title10TableRow9Col4" xml:space="preserve">
+    <value>1 năm hoặc 2 năm.</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3College1_1" xml:space="preserve">
+    <value>Đại học Gumi Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3College1_2" xml:space="preserve">
+    <value>(Gumi University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3College2_1" xml:space="preserve">
+    <value>Trường Cao đẳng Yeungjin</value>
+  </data>
+	<data name="HandbookMenu2Title3Area3College2_2" xml:space="preserve">
+    <value>(Yeungjin University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4" xml:space="preserve">
+    <value>Khu vực Busan, Ulsan Gyeongnam:</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4College1_1" xml:space="preserve">
+    <value>Trường cao đẳng Koje</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4College1_2" xml:space="preserve">
+    <value>(Koje College)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4College2_1" xml:space="preserve">
+    <value>Trường Cao Đẳng Ulsan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4College2_2" xml:space="preserve">
+    <value>(Ulsan College)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4Graduate1_1" xml:space="preserve">
+    <value>Trường Năng Lượng Hạt Nhân Quốc tế KEPCO</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4Graduate1_2" xml:space="preserve">
+    <value>(KEPCO International Nuclear Graduated School)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University10_1" xml:space="preserve">
+    <value>Đại học Ngoại ngữ Busan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University10_2" xml:space="preserve">
+    <value>(Busan University of Foreign Studies)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University11_1" xml:space="preserve">
+    <value>Đại học Silla</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University11_2" xml:space="preserve">
+    <value>(Silla University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University12_1" xml:space="preserve">
+    <value>Đại học Youngsan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University12_2" xml:space="preserve">
+    <value>(Youngsan University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University13_1" xml:space="preserve">
+    <value>Viện khoa học và công nghệ Quốc gia Ulsan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University13_2" xml:space="preserve">
+    <value>(Ulsan National Institute of Science and Technology – UNIST)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University14_1" xml:space="preserve">
+    <value>Đại học Ulsan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University14_2" xml:space="preserve">
+    <value>(Ulsan University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University15_1" xml:space="preserve">
+    <value>Đại học Inje</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University15_2" xml:space="preserve">
+    <value>(Inje University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University16_1" xml:space="preserve">
+    <value>Đại học Quốc Gia Changwon</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University16_2" xml:space="preserve">
+    <value>(Changwon National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University17_1" xml:space="preserve">
+    <value>Đại học Hàng hải và Đại dương Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University17_2" xml:space="preserve">
+    <value>(Korea Maritime &amp; Ocean University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University1_1" xml:space="preserve">
+    <value>Đại học KyungnamĐại học Kyungnam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University1_2" xml:space="preserve">
+    <value>(Kyungnam University)– Global</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University2_1" xml:space="preserve">
+    <value>Đại học Quốc gia Gyeongsang</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University2_2" xml:space="preserve">
+    <value>(Gyeongsang National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University3_1" xml:space="preserve">
+    <value>Đại học Kyungsung</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University3_2" xml:space="preserve">
+    <value>(Kyungsung University) – Sejong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University4_1" xml:space="preserve">
+    <value>Đại học Tongmyong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University4_2" xml:space="preserve">
+    <value>(Tongmyong University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University5_1" xml:space="preserve">
+    <value>Đại học Dongseo</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University5_2" xml:space="preserve">
+    <value>(Dongseo University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University6_1" xml:space="preserve">
+    <value>Đại học Dong-A</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University6_2" xml:space="preserve">
+    <value>(Dong-A University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University7_1" xml:space="preserve">
+    <value>Đại học Dong-eui</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University7_2" xml:space="preserve">
+    <value>(Dong-eui University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University8_1" xml:space="preserve">
+    <value>Đại học quốc gia Pukyong</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University8_2" xml:space="preserve">
+    <value>(Pukyong National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University9_1" xml:space="preserve">
+    <value>Đại học Quốc gia Pusan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area4University9_2" xml:space="preserve">
+    <value>(Pusan National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5" xml:space="preserve">
+    <value>Khu vực Gwangju, Jeonbuk, Jeonnam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5College1_1" xml:space="preserve">
+    <value>Trường cao đẳng Jeonju Vision</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5College1_2" xml:space="preserve">
+    <value>(Vision College of Jeonju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University1_1" xml:space="preserve">
+    <value>Viện khoa học và Công nghệ Gwangju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University1_2" xml:space="preserve">
+    <value>(Gwangju Institute of Science and Technology)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University2_1" xml:space="preserve">
+    <value>Đại học Gwangju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University2_2" xml:space="preserve">
+    <value>(Gwangju University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University3_1" xml:space="preserve">
+    <value>Đại học Quốc Gia Kunsan</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University3_2" xml:space="preserve">
+    <value>(Kunsan National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University4_1" xml:space="preserve">
+    <value>Đại học Dongshin</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University4_2" xml:space="preserve">
+    <value>(Dongshin University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University5_1" xml:space="preserve">
+    <value>Đại học Woosuk</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University5_2" xml:space="preserve">
+    <value>(Woosuk University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University6_1" xml:space="preserve">
+    <value>Đại học Quốc gia Chonnam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University6_2" xml:space="preserve">
+    <value>(Chonnam National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University7_1" xml:space="preserve">
+    <value>Đại học Quốc gia Chonbuk</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University7_2" xml:space="preserve">
+    <value>(Chonbuk National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University8_1" xml:space="preserve">
+    <value>Đại học Honam</value>
+  </data>
+	<data name="HandbookMenu2Title3Area5University8_2" xml:space="preserve">
+    <value>(Honam University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Area6" xml:space="preserve">
+    <value>Khu vực Jeju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area6University1_1" xml:space="preserve">
+    <value>Đại học Quốc gia Jeju</value>
+  </data>
+	<data name="HandbookMenu2Title3Area6University1_2" xml:space="preserve">
+    <value>(Jeju National University)</value>
+  </data>
+	<data name="HandbookMenu2Title3Info1_1" xml:space="preserve">
+    <value>Chương trình</value>
+  </data>
+	<data name="HandbookMenu2Title3Info1_2" xml:space="preserve">
+    <value>cho phép phụ huynh du học sinh Hàn Quốc làm việc thời vụ là bước tiến mới trong chính sách du học của Hàn Quốc. Đây là cơ hội vàng để du học sinh và gia đình giảm bớt gánh nặng tài chính,  tăng cường sự gắn kết và trải nghiệm cuộc sống Hàn Quốc một cách trọn vẹn nhất.</value>
+  </data>
+	<data name="HandbookMenu2Title4" xml:space="preserve">
+    <value>[2024] BXH Top 100 trường đại học Hàn Quốc tốt nhất</value>
+  </data>
+	<data name="HandbookMenu2Title4Info1_1" xml:space="preserve">
+    <value>Bảng xếp hạng (BXH) Top 100</value>
+  </data>
+	<data name="HandbookMenu2Title4Info1_2" xml:space="preserve">
+    <value>Trường đại học Hàn Quốc tốt nhất 2024 được KIPA tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ KIPA để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp.</value>
+  </data>
+	<data name="HandbookMenu2Title4Note1_1" xml:space="preserve">
+    <value>Bảng xếp hạng 100 Trường đại học tốt nhất Hàn Quốc chỉ dùng để tham khảo.
+                    Những tiêu chí đánh giá và xếp hạng của mỗi tổ chức dựa trên các tiêu chí đánh giá riêng.
+                    Mỗi tổ chức sẽ đưa ra một bảng xếp hạng riêng biệt. Do đó, thứ tự xếp hạng các Trường đại học tốt nhất Hàn Quốc sẽ thay đổi.</value>
+  </data>
+	<data name="HandbookMenu2Title4Note1_2" xml:space="preserve">
+    <value>Ngoài những Trường đại học trong bảng xếp hạng 100 Trường đại học tốt nhất Hàn Quốc dùng để tham khảo. Học sinh và ph
+                    ụ huynh vẫn có thể tìm hiểu các Trường đại học ở các thành phố khác tại Hàn Quốc. Tùy vào mỗi học sinh mà sẽ lựa chọn cho bản thân một
+                    Trường đại học Hàn Quốc dựa trên khả năng học tập, điều kiện tài chính, chuyên ngành lựa chọn và định hướng nghề nghiệp trong tương lai,…</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank1" xml:space="preserve">
+    <value>Đại học Quốc gia Seoul</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank10" xml:space="preserve">
+    <value>Đại học Sejong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank100" xml:space="preserve">
+    <value>Đại học Mokwon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank11" xml:space="preserve">
+    <value>Đại học Quốc gia Kyungpook</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank12" xml:space="preserve">
+    <value>Gwangju Institute of Science and Technology (GIST)</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank13" xml:space="preserve">
+    <value>Đại học Chungang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank14" xml:space="preserve">
+    <value>Đại học Quốc gia Pusan</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank15" xml:space="preserve">
+    <value>Đại học nữ Ewha</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank16" xml:space="preserve">
+    <value>Đại học Ulsan</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank17" xml:space="preserve">
+    <value>Đại học Ajou</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank18" xml:space="preserve">
+    <value>Đại học Konkuk</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank19" xml:space="preserve">
+    <value>Đại học Inha</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank2" xml:space="preserve">
+    <value>Viện Khoa học và Công nghệ Hàn Quốc KAIST</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank20" xml:space="preserve">
+    <value>Đại học Sogang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank21" xml:space="preserve">
+    <value>Đại học Quốc gia Chonnam</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank22" xml:space="preserve">
+    <value>Đại học Quốc gia Jeonbuk</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank23" xml:space="preserve">
+    <value>Đại học Yeungnam</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank24" xml:space="preserve">
+    <value>Đại học Quốc gia Chungnam</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank25" xml:space="preserve">
+    <value>University of Seoul</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank26" xml:space="preserve">
+    <value>Đại học Hallym</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank27" xml:space="preserve">
+    <value>Đại học Quốc gia Kangwon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank28" xml:space="preserve">
+    <value>Đại học Quốc gia Chungbuk</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank29" xml:space="preserve">
+    <value>Đại học Soonchunhyang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank3" xml:space="preserve">
+    <value>Đại học Yonsei</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank30" xml:space="preserve">
+    <value>Đại học Khoa học và Công nghệ QG Seoul</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank31" xml:space="preserve">
+    <value>Đại học Kookmin</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank32" xml:space="preserve">
+    <value>Đại học Quốc gia Jeju</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank33" xml:space="preserve">
+    <value>Đại học Quốc gia Gyeongsang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank34" xml:space="preserve">
+    <value>Đại học Soongsil</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank35" xml:space="preserve">
+    <value>Đại học Catholic</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank36" xml:space="preserve">
+    <value>Đại học Quốc gia Incheon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank37" xml:space="preserve">
+    <value>Đại học Chosun</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank38" xml:space="preserve">
+    <value>Viện Khoa học và Công nghệ Daegu (DGIST)</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank39" xml:space="preserve">
+    <value>Đại học Dongguk</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank4" xml:space="preserve">
+    <value>Đại học Sungkyunkwan</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank40" xml:space="preserve">
+    <value>Đại học Ngoại ngữ Hankuk</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank41" xml:space="preserve">
+    <value>Đại học Calvin</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank42" xml:space="preserve">
+    <value>Đại học Dankook</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank43" xml:space="preserve">
+    <value>Đại học Quốc gia Pukyong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank44" xml:space="preserve">
+    <value>Đại học nữ Sungshin</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank45" xml:space="preserve">
+    <value>Đại học nữ Sookmyung</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank46" xml:space="preserve">
+    <value>Đại học Gachon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank47" xml:space="preserve">
+    <value>Đại học Hongik</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank48" xml:space="preserve">
+    <value>Đại học Inje</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank49" xml:space="preserve">
+    <value>Đại học Kwangwoon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank5" xml:space="preserve">
+    <value>Đại học Korea</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank50" xml:space="preserve">
+    <value>Đại học Keimyung</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank51" xml:space="preserve">
+    <value>Đại học Dong A</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank52" xml:space="preserve">
+    <value>Korea University of Science and Technology (UST)</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank53" xml:space="preserve">
+    <value>Trường đại học CHA</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank54" xml:space="preserve">
+    <value>Đại học Wonkwang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank55" xml:space="preserve">
+    <value>Đại học Myongji</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank56" xml:space="preserve">
+    <value>Trường đại học Quốc gia Gangneung Wonju</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank57" xml:space="preserve">
+    <value>Đại học Daegu Haany</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank58" xml:space="preserve">
+    <value>Đại học Quốc gia Kongju</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank59" xml:space="preserve">
+    <value>Đại học Handong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank6" xml:space="preserve">
+    <value>Pohang University of Science And Technology (POSTECH)</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank60" xml:space="preserve">
+    <value>Đại học nữ Duksung</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank61" xml:space="preserve">
+    <value>Đại học Quốc gia Sunchon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank62" xml:space="preserve">
+    <value>Viện Công nghệ Quốc gia Kumoh</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank63" xml:space="preserve">
+    <value>Đại học Hàng hải Quốc gia Mokpo</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank64" xml:space="preserve">
+    <value>Đại học Youngsan</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank65" xml:space="preserve">
+    <value>Đại học Kyonggi</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank66" xml:space="preserve">
+    <value>Đại học Catholic Kwandong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank67" xml:space="preserve">
+    <value>Đại học Quốc gia Kunsan</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank68" xml:space="preserve">
+    <value>Đại học Sangmyung</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank69" xml:space="preserve">
+    <value>Đại học Daejeon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank7" xml:space="preserve">
+    <value>Đại học Hanyang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank70" xml:space="preserve">
+    <value>Đại học Silla</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank71" xml:space="preserve">
+    <value>Trường đại học Hàng Hải và Đại Dương Hàn Quốc - KMOU</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank72" xml:space="preserve">
+    <value>Trường đại học kỹ thuật giáo dục Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank73" xml:space="preserve">
+    <value>Đại học Konyang</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank74" xml:space="preserve">
+    <value>Trường đại học Giao thông Quốc gia Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank75" xml:space="preserve">
+    <value>Trường đại học Eulji</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank76" xml:space="preserve">
+    <value>Đại học nữ Seoul</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank77" xml:space="preserve">
+    <value>Đại học Daegu</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank78" xml:space="preserve">
+    <value>Đại học Woosuk</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank79" xml:space="preserve">
+    <value>Đại học Quốc gia Hankyong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank8" xml:space="preserve">
+    <value>Đại học Kyunghee</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank80" xml:space="preserve">
+    <value>Đại học Quốc gia Hanbat</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank81" xml:space="preserve">
+    <value>Đại học Quốc gia Changwon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank82" xml:space="preserve">
+    <value>Đại học Hoseo</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank83" xml:space="preserve">
+    <value>Đại học Dongeui</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank84" xml:space="preserve">
+    <value>Đại học Bách khoa Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank85" xml:space="preserve">
+    <value>Trường đại học hàng không vũ trụ Hàn Quố</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank86" xml:space="preserve">
+    <value>Đại học Hannam</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank87" xml:space="preserve">
+    <value>Đại học Kyungsung</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank88" xml:space="preserve">
+    <value>Đại học Sunmoon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank89" xml:space="preserve">
+    <value>Đại học Sahmyook</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank9" xml:space="preserve">
+    <value>Viện Khoa học và Công nghệ Quốc gia Ulsan (UNIST)</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank90" xml:space="preserve">
+    <value>Đại học Sangji</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank91" xml:space="preserve">
+    <value>Đại học Kosin</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank92" xml:space="preserve">
+    <value>Đại học Woosong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank93" xml:space="preserve">
+    <value>Đại học Cheongju</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank94" xml:space="preserve">
+    <value>Đại học Dongseo</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank95" xml:space="preserve">
+    <value>Đại học Quốc gia Andong</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank96" xml:space="preserve">
+    <value>Đại học Semyung</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank97" xml:space="preserve">
+    <value>Đại học Suwon</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank98" xml:space="preserve">
+    <value>Đại học Jeonju</value>
+  </data>
+	<data name="HandbookMenu2Title4Rank99" xml:space="preserve">
+    <value>Đại học Pai Chai</value>
+  </data>
+	<data name="HandbookMenu2Title4Source" xml:space="preserve">
+    <value>Nguồn</value>
+  </data>
+	<data name="HandbookMenu2Title5" xml:space="preserve">
+    <value>Các loại Visa nhập cảnh Hàn Quốc mà bạn cần biết:</value>
+  </data>
+	<data name="HandbookMenu2Title5Info1" xml:space="preserve">
+    <value>Hiện tại, có ba loại Visa chính như sau:</value>
+  </data>
+	<data name="HandbookMenu2Title5Info1_1" xml:space="preserve">
+    <value>Single visa: Là loại visa chỉ cho phép nhập cảnh một lần duy nhất và có giá trị dưới 3 tháng kể từ ngày được phát hành.</value>
+  </data>
+	<data name="HandbookMenu2Title5Info1_2" xml:space="preserve">
+    <value>Double visa: Là loại visa cho phép nhập cảnh hai lần liên tiếp trong 6 tháng.</value>
+  </data>
+	<data name="HandbookMenu2Title5Info1_3" xml:space="preserve">
+    <value>Multiple visa: Là loại visa cho phép nhập cảnh nhiều lần.</value>
+  </data>
+	<data name="HandbookMenu2Title5Info2" xml:space="preserve">
+    <value>Và tùy theo tình trạng lưu trú tại nước ngoài của từng cá nhân thì có các loại Visa như sau:</value>
+  </data>
+	<data name="HandbookMenu2Title5Info2_1" xml:space="preserve">
+    <value>Visa ngoại giao/ công vụ</value>
+  </data>
+	<data name="HandbookMenu2Title5Info2_2" xml:space="preserve">
+    <value>Visa lao động</value>
+  </data>
+	<data name="HandbookMenu2Title5Info2_3" xml:space="preserve">
+    <value>Visa lưu trú ngắn hạn và hoạt động phi lợi nhuận</value>
+  </data>
+	<data name="HandbookMenu2Title5Info2_4" xml:space="preserve">
+    <value>Visa lưu trú dài hạn</value>
+  </data>
+	<data name="HandbookMenu2Title6" xml:space="preserve">
+    <value>Visa Hàn Quốc 5 năm (Áp dụng từ ngày 10.12.2018)</value>
+  </data>
+	<data name="HandbookMenu2Title6Info1" xml:space="preserve">
+    <value>Mục đích: Chỉ sử dụng chủ yếu du lịch Hàn Quốc, công tác hoặc thương mại.</value>
+  </data>
+	<data name="HandbookMenu2Title6Info2" xml:space="preserve">
+    <value>Đối tượng áp dụng: Công dân Việt Nam có hộ khẩu tại 3 thành phố lớn Hà Nội, Đà Nẵng và Hồ Chí Minh đã từng nhập cảnh Hàn Quốc (ít nhất hai lần). Ngoài khu vực trên, yêu cầu phải nhập cảnh Hàn Quốc tối thiểu 4 lần trong 2 năm gần nhất</value>
+  </data>
+	<data name="HandbookMenu2Title6Info3" xml:space="preserve">
+    <value>Thời hạn lưu trú: Liên tục 30 ngày/ lần nhập cảnh trong vòng 5 năm</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1" xml:space="preserve">
+    <value>Hồ sơ cần chuẩn bị xin Visa 5 năm Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_1" xml:space="preserve">
+    <value>Hộ chiếu (Bản gốc, bản sao còn thời hạn ít nhất 06 tháng)</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_2" xml:space="preserve">
+    <value>Đơn xin cấp visa</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_3" xml:space="preserve">
+    <value>CMND/CCCD (Bản gốc và bản sao)</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_4" xml:space="preserve">
+    <value>Sổ hộ khẩu (Bản gốc và bản sao công chứng)</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_5" xml:space="preserve">
+    <value>Sổ tạm trú (Bản gốc và bản sao công chứng)</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_6" xml:space="preserve">
+    <value>2 ảnh chân dung (3.5 x 4.5 cm, nền trắng)</value>
+  </data>
+	<data name="HandbookMenu2Title6Table1_7" xml:space="preserve">
+    <value>Giấy chứng minh nghề nghiệp</value>
+  </data>
+	<data name="HandbookMenu2Title6Table2" xml:space="preserve">
+    <value>Lưu ý</value>
+  </data>
+	<data name="HandbookMenu2Title6Table2_1" xml:space="preserve">
+    <value>Trong trường hợp nơi đăng ký sổ hộ khẩu là TP. HCM thì không cần Sổ tạm trú</value>
+  </data>
+	<data name="HandbookMenu2Title6Table2_2" xml:space="preserve">
+    <value>Sổ hộ khẩu, sổ tạm trú phải được dịch công chứng tư pháp</value>
+  </data>
+	<data name="HandbookMenu2Title6Table2_2_1" xml:space="preserve">
+    <value>Sổ hộ khẩu: Trong trường hợp người mới đăng ký thường trú phải từ 1 năm trở lên</value>
+  </data>
+	<data name="HandbookMenu2Title6Table2_2_2" xml:space="preserve">
+    <value>Sổ tạm trú: Yêu cầu người lưu trú đăng ký tạm trú từ 1 năm trở lên</value>
+  </data>
+	<data name="HandbookMenu2Title7" xml:space="preserve">
+    <value>Visa Hàn Quốc ngoại giao/ công việc (A1, A2, A3)</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow1Col2" xml:space="preserve">
+    <value>Visa ngoại giao</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow1Col3" xml:space="preserve">
+    <value>Cấp cho các nhà ngoại giao, quan chức chính phủ khi đi công tác chính thức tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow1Col4" xml:space="preserve">
+    <value>3 tháng đối với trường hợp đi công vụ tạm thời</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow2Col2" xml:space="preserve">
+    <value>Visa công vụ</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow2Col3" xml:space="preserve">
+    <value>Cấp cho người nước ngoài thực hiện công việc chính thức của chính phủ nước ngoài hoặc các tổ chức quốc tế được chính phủ Hàn Quốc chấp nhận</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow2Col4" xml:space="preserve">
+    <value>Thời hạn theo thời gian thực hiện công vụ</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow3Col2" xml:space="preserve">
+    <value>Visa hợp tác</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow3Col3" xml:space="preserve">
+    <value>Cấp cho nhân viên quân đội, nhân viên dân sự quốc phòng, các nhà thầu dân sự có nhiệm vụ chính thức được giao tại Hàn Quốc và các thành viên gia đình</value>
+  </data>
+	<data name="HandbookMenu2Title7TableRow3Col4" xml:space="preserve">
+    <value>Thời hạn đối với loại visa này là 2 năm hoặc 5 năm</value>
+  </data>
+	<data name="HandbookMenu2Title7TableTitle1" xml:space="preserve">
+    <value>Loại Visa</value>
+  </data>
+	<data name="HandbookMenu2Title7TableTitle2" xml:space="preserve">
+    <value>Đặc điểm</value>
+  </data>
+	<data name="HandbookMenu2Title7TableTitle3" xml:space="preserve">
+    <value>Đối tượng được cấp</value>
+  </data>
+	<data name="HandbookMenu2Title7TableTitle4" xml:space="preserve">
+    <value>Thời hạn</value>
+  </data>
+	<data name="HandbookMenu2Title8" xml:space="preserve">
+    <value>Visa Hàn Quốc lao động(E1, E2, E3, E4, E5, E6, E7, E9, E10, H1)</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow10Col2" xml:space="preserve">
+    <value>Visa lao động ngày lễ</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow10Col3" xml:space="preserve">
+    <value>Cấp cho công dân một số quốc gia được phép đến Hàn Quốc làm việc trong kì nghỉ lễ</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow10Col4" xml:space="preserve">
+    <value>1 năm</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow1Col2" xml:space="preserve">
+    <value>Visa giáo sư</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow1Col3" xml:space="preserve">
+    <value>Cấp cho những người muốn giảng dạy, làm công tác nghiên cứu tại trường đại học, cao đẳng Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow1Col4" xml:space="preserve">
+    <value>5 năm</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow2Col2" xml:space="preserve">
+    <value>Visa giảng viên ngoại ngữ</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow2Col3" xml:space="preserve">
+    <value>Cấp cho những công dân ở một số quốc gia đến Hàn Quốc làm giáo viên dạy tiếng Anh</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow2Col4" xml:space="preserve">
+    <value>13 tháng</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow3Col2" xml:space="preserve">
+    <value>Visa nghiên cứu</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow3Col3" xml:space="preserve">
+    <value>Cấp cho những người đến Hàn Quốc làm các hoạt động nghiên cứu ở các viện nghiên cứu hoặc các trường đại học</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow3Col4" xml:space="preserve">
+    <value>Do lãnh sự quán quyết định</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow4Col2" xml:space="preserve">
+    <value>Visa hỗ trợ kỹ thuật</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow4Col3" xml:space="preserve">
+    <value>Cấp cho những người đến Hàn Quốc làm việc ở lĩnh vực kỹ thuật</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow5Col2" xml:space="preserve">
+    <value>Visa chuyên gia</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow5Col3" xml:space="preserve">
+    <value>Cấp cho những người làm việc trong các lĩnh vực chuyên nghiệp như: phi công, bác sĩ…</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow6Col2" xml:space="preserve">
+    <value>Visa nghệ thuật/ giải trí</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow6Col3" xml:space="preserve">
+    <value>Cấp cho những người muốn làm việc tại Hàn Quốc trong lĩnh vực nghệ thuật, giải trí</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow7Col2" xml:space="preserve">
+    <value>Visa kỹ sư chuyên ngành</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow7Col3" xml:space="preserve">
+    <value>Cấp cho lao động kỹ thuật, có bằng cấp chuyên môn, lao động có tay nghề cao</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow7Col4" xml:space="preserve">
+    <value>Visa dài hạn</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow8Col2" xml:space="preserve">
+    <value>Visa lao động phổ thông</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow8Col3" xml:space="preserve">
+    <value>Cấp cho những lao động có trình độ phổ thông làm việc tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow9Col2" xml:space="preserve">
+    <value>Visa lao động trên tàu thuyền</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow9Col3" xml:space="preserve">
+    <value>Cấp cho những người đi lao động trên tàu thuyền tại Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu2Title8TableRow9Col4" xml:space="preserve">
+    <value>4 năm 10 tháng</value>
+  </data>
+	<data name="HandbookMenu2Title8TableTitle1" xml:space="preserve">
+    <value>Loại Visa</value>
+  </data>
+	<data name="HandbookMenu2Title8TableTitle2" xml:space="preserve">
+    <value>Đặc điểm</value>
+  </data>
+	<data name="HandbookMenu2Title8TableTitle3" xml:space="preserve">
+    <value>Đối tượng được cấp</value>
+  </data>
+	<data name="HandbookMenu2Title8TableTitle4" xml:space="preserve">
+    <value>Thời hạn</value>
+  </data>
+	<data name="HandbookMenu2Title9" xml:space="preserve">
+    <value>Visa Hàn Quốc lưu trú ngắn hạn và hoạt động phi lợi nhuận (C1, C2, C3, C4)</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow1Col2" xml:space="preserve">
+    <value>Visa phóng viên tạm trú</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow1Col3" xml:space="preserve">
+    <value>Cấp cho những phóng viên đến Hàn Quốc công tác</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow1Col4" xml:space="preserve">
+    <value>Visa ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow2Col2" xml:space="preserve">
+    <value>Visa thương mại ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow2Col3" xml:space="preserve">
+    <value>Cấp cho những người đến Hàn Quốc làm giao dịch thương mại</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow2Col4" xml:space="preserve">
+    <value>90 ngày</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow3Col2" xml:space="preserve">
+    <value>Visa du lịch ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow3Col3" xml:space="preserve">
+    <value>Cấp cho những người có mục đích lưu trú ngắn hạn tại Hàn Quốc như đi du lịch, chữa bệnh…</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow3Col4_1" xml:space="preserve">
+    <value>Visa single: 15 ngày</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow3Col4_2" xml:space="preserve">
+    <value>Visa 5 năm: 30 ngày</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow4Col2" xml:space="preserve">
+    <value>Visa lao động ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow4Col3" xml:space="preserve">
+    <value>Cấp cho người đến Hàn Quốc lao động ngắn hạn</value>
+  </data>
+	<data name="HandbookMenu2Title9TableRow4Col4" xml:space="preserve">
+    <value>90 ngày</value>
+  </data>
+	<data name="HandbookMenu3" xml:space="preserve">
+    <value>HƯỚNG DẪN XIN VISA HÀN QUỐC</value>
+  </data>
+	<data name="HandbookMenu3Title1" xml:space="preserve">
+    <value>Nơi tiếp nhận đơn và cấp nhận visa</value>
+  </data>
+	<data name="HandbookMenu3Title1Info1_1" xml:space="preserve">
+    <value>Từ ngày 02/05/2019,</value>
+  </data>
+	<data name="HandbookMenu3Title1Info1_2" xml:space="preserve">
+    <value>Đại sứ quán Hàn Quốc (Hà Nội) và Tổng lãnh sự quán Hàn Quốc (TP. HCM) sẽ không trực tiếp nhận hồ sơ xin Visa. Hồ sơ sẽ được nộp và xử lý tại Trung tâm đăng ký Visa Hàn Quốc (Korea Visa Application Center – KVAC) tại 3 thành phố Hà Nội, Thành phố Hồ Chí Minh và Đà Nẵng.</value>
+  </data>
+	<data name="HandbookMenu3Title1Info2" xml:space="preserve">
+    <value>Hà Nội: Tầng 12, Tòa nhà văn phòng Discovery Complex 302 đường Cầu Giấy, P. Dịch Vọng, Q. Cầu Giấy, Hà Nội</value>
+  </data>
+	<data name="HandbookMenu3Title1Info3" xml:space="preserve">
+    <value>TP.HCM: Tòa nhà Saigon Coop Building, 253 Điện Biên Phủ, P.7, Q.3, TP. HCM</value>
+  </data>
+	<data name="HandbookMenu3Title1Info4" xml:space="preserve">
+    <value>Đà Nẵng: Tổng lãnh sự quán Hàn Quốc tại Đà Nẵng, Tầng 3-4, Lô A1-2, tòa nhà Nam Việt Á, đường Chương Dương, P. Khuê Mỹ, Q. Ngũ Hành Sơn, Đà Nẵng</value>
+  </data>
+	<data name="HandbookMenu3Title2" xml:space="preserve">
+    <value>Hồ sơ xin cấp visa</value>
+  </data>
+	<data name="HandbookMenu3Title2Info1" xml:space="preserve">
+    <value>Hộ chiếu</value>
+  </data>
+	<data name="HandbookMenu3Title2Info2" xml:space="preserve">
+    <value>Đơn xin cấp visa</value>
+  </data>
+	<data name="HandbookMenu3Title2Info3" xml:space="preserve">
+    <value>Các tài liệu cần thiết cho từng trường hợp lưu trú</value>
+  </data>
+	<data name="HandbookMenu3Title3" xml:space="preserve">
+    <value>Lệ phí cấp phát visa</value>
+  </data>
+	<data name="HandbookMenu3Title3Info1" xml:space="preserve">
+    <value>Nhập cảnh một lần dưới 30 ngày: 20 USD</value>
+  </data>
+	<data name="HandbookMenu3Title3Info2" xml:space="preserve">
+    <value>Nhập cảnh một lần dưới 3 tháng: 30 USD</value>
+  </data>
+	<data name="HandbookMenu3Title3Info3" xml:space="preserve">
+    <value>Nhập cảnh một lần trên 3 tháng: 50 USD</value>
+  </data>
+	<data name="HandbookMenu3Title3Info4" xml:space="preserve">
+    <value>Nhập cảnh 2 lần liên tiếp trong vòng 6 tháng: 60 USD</value>
+  </data>
+	<data name="HandbookMenu3Title3Info5" xml:space="preserve">
+    <value>Nhập cảnh nhiều lần: 80 USD</value>
+  </data>
+	<data name="HandbookMenu3Title4" xml:space="preserve">
+    <value>Lưu ý:</value>
+  </data>
+	<data name="HandbookMenu3Title4Info1" xml:space="preserve">
+    <value>Phí dịch vụ nộp hồ sơ: 390,000 VND/ hồ sơ (Không bao gồm lệ phí cấp visa)</value>
+  </data>
+	<data name="HandbookMenu3Title4Info2" xml:space="preserve">
+    <value>Lệ phí đăng ký xin visa là bắt buộc, không hoàn trả trong trường hợp bị từ chối cấp visa.</value>
+  </data>
+	<data name="HandbookMenu3Title5" xml:space="preserve">
+    <value>Các trường hợp miễn visa (thị thực) khi nhập cảnh vào Hàn Quốc</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1" xml:space="preserve">
+    <value>Nếu rơi vào một trong những trường hợp sau đây thì có thể nhập cảnh vào Hàn Quốc mà không cần phải xin visa:</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_1" xml:space="preserve">
+    <value>Công dân thuộc quốc gia ký thỏa thuận miễn thị thực nhập cảnh với Hàn Quốc.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_10" xml:space="preserve">
+    <value>Người có Thẻ Du lịch Thương Mại APEC – APEC Business Travel Card.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_2" xml:space="preserve">
+    <value>Các quốc gia có thỏa thuận miễn thị thực nhập cảnh.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_3" xml:space="preserve">
+    <value>Người được miễn thị thực nhập cảnh.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_4" xml:space="preserve">
+    <value>Người thường xuyên nhập cảnh vào Hàn Quốc.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_5" xml:space="preserve">
+    <value>Khách du lịch chờ chuyển tiếp sang quốc gia khác.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_6" xml:space="preserve">
+    <value>Khách du lịch Nhật Bản.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_7" xml:space="preserve">
+    <value>Khách du lịch Trung Quốc chờ chuyển tiếp sang châu Âu.</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_8" xml:space="preserve">
+    <value>Khách du lịch được ưu tiên nhập cảnh đến đảo Jeju</value>
+  </data>
+	<data name="HandbookMenu3Title5Info1_9" xml:space="preserve">
+    <value>Người có giấy phép tái nhập cảnh.</value>
+  </data>
+	<data name="D2VisaHeaderTitle" xml:space="preserve">
+    <value>VISA D2</value>
+  </data>
+	<data name="D2VisaTitle1" xml:space="preserve">
+    <value>Visa D2 Hàn Quốc là gì</value>
+  </data>
+	<data name="D2VisaTitle1Subject" xml:space="preserve">
+    <value>Visa D2 là loại thị thực cấp cho học sinh, sinh viên được một trường cao đẳng hoặc đại học ở Hàn Quốc chấp thuận vào học một chuyên ngành cụ thể nào đó sau khi đã đào tạo xong khóa học tiếng Hàn hoặc có topik 3 trở lên</value>
+  </data>
+	<data name="D2VisaTitle2" xml:space="preserve">
+    <value>Điều kiện xin visa D2 Hàn Quốc</value>
+  </data>
+	<data name="D2VisaTitle2Subject1_1" xml:space="preserve">
+    <value>Yêu cầu có sức khỏe tốt, không mắc lao phổi hay các bệnh truyền nhiễm khác</value>
+  </data>
+	<data name="D2VisaTitle2Subject1_2" xml:space="preserve">
+    <value>Không có tiền án tiền sự</value>
+  </data>
+	<data name="D2VisaTitle2Subject1_3" xml:space="preserve">
+    <value>Không rớt visa Hàn Quốc trong 6 tháng kể từ ngày nộp hồ sơ</value>
+  </data>
+	<data name="D2VisaTitle2Subject1_4" xml:space="preserve">
+    <value>Có sổ tiết kiệm tối thiểu 10.000 USD đã gửi vào ngân hàng ít nhất 3 tháng trở về trước</value>
+  </data>
+	<data name="D2VisaTitle2Subject1_5" xml:space="preserve">
+    <value>Người bảo lãnh phải có minh chứng rõ ràng với mức thu nhập trung bình 30 – 70 triệu VND/ tháng</value>
+  </data>
+	<data name="D2VisaTitle2Subject2_1" xml:space="preserve">
+    <value>Đối với visa D2-1, D2-2</value>
+  </data>
+	<data name="D2VisaTitle2Subject2_2" xml:space="preserve">
+    <value>Tốt nghiệp phổ thông/ trung cấp/ cao đẳng/ đại học</value>
+  </data>
+	<data name="D2VisaTitle2Subject2_3" xml:space="preserve">
+    <value>Điểm trung bình GPA đạt 6.5 trở lên</value>
+  </data>
+	<data name="D2VisaTitle2Subject2_4" xml:space="preserve">
+    <value>Chứng chỉ tiếng Hàn đạt TOPIK 3 trở lên</value>
+  </data>
+	<data name="D2VisaTitle2Subject3_1" xml:space="preserve">
+    <value>Đối với visa D2-3</value>
+  </data>
+	<data name="D2VisaTitle2Subject3_2" xml:space="preserve">
+    <value>Tốt nghiệp đại học</value>
+  </data>
+	<data name="D2VisaTitle2Subject3_3" xml:space="preserve">
+    <value>GPA đạt tối thiểu 7.0</value>
+  </data>
+	<data name="D2VisaTitle2Subject3_4" xml:space="preserve">
+    <value>Chứng chỉ tiếng Hàn đạt TOPIK 4 trở lên</value>
+  </data>
+	<data name="D2VisaTitle2Subject4_1" xml:space="preserve">
+    <value>Đối với visa D2-4</value>
+  </data>
+	<data name="D2VisaTitle2Subject4_2" xml:space="preserve">
+    <value>Tốt nghiệp thạc sĩ</value>
+  </data>
+	<data name="D2VisaTitle2Subject4_3" xml:space="preserve">
+    <value>Chứng chỉ tiếng Hàn từ TOPIK 4 trở lên</value>
+  </data>
+	<data name="D2VisaTitle3" xml:space="preserve">
+    <value>Các loại visa D2 Hàn Quốc</value>
+  </data>
+	<data name="D2VisaTitle4" xml:space="preserve">
+    <value>Visa Hàn Quốc có thời hạn bao lâu</value>
+  </data>
+	<data name="D2VisaTitle5" xml:space="preserve">
+    <value>Hồ sơ xin visa D2 Hàn Quốc</value>
+  </data>
+	<data name="D2VisaTitle5Subject1" xml:space="preserve">
+    <value>Các loại giấy tờ chung</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_1" xml:space="preserve">
+    <value>Đơn xin cấp visa</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_2" xml:space="preserve">
+    <value>Hộ chiếu bản gốc + bản sao</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_3" xml:space="preserve">
+    <value>1 ảnh thẻ (nền trắng 3.5*4.5cm)</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_4" xml:space="preserve">
+    <value>Giấy nhập học</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_5" xml:space="preserve">
+    <value>Bản sao chứng nhận đăng kí kinh doanh của nơi đào tạo</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_6" xml:space="preserve">
+    <value>Bản sao CMND/CCCD</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_7" xml:space="preserve">
+    <value>Phiếu xét nghiệm kết quả bệnh lao phổi (yêu cầu được cấp bởi bệnh viện do Đại sứ quán chỉ định)</value>
+  </data>
+	<data name="D2VisaTitle5Subject1_8" xml:space="preserve">
+    <value>Mẫu đăng kí thông tin của người xin cấp visa</value>
+  </data>
+	<data name="D2VisaTitle5Subject2" xml:space="preserve">
+    <value>Giấy tờ chứng minh học lực cao nhất</value>
+  </data>
+	<data name="D2VisaTitle5Subject3" xml:space="preserve">
+    <value>Giới thiệu bản thân và kế hoạch học tập</value>
+  </data>
+	<data name="D2VisaTitle5Subject4" xml:space="preserve">
+    <value>Giấy tờ chứng minh tài chính: Sổ tiết kiệm yêu cầu tổi thiểu cần có là 20.000 USD được gửi vào ngân hàng ít nhất 3 tháng tính đến ngày nộp hồ sơ, xác nhận thu nhập, nghề nghiệp, bảng lương, giấy tờ nhà đất, ô tô,…</value>
+  </data>
+	<data name="D2VisaTitle5Subject5" xml:space="preserve">
+    <value>Giấy tờ cam kết bảo lãnh tài chính của bố mẹ</value>
+  </data>
+	<data name="UniversityHeaderTitle" xml:space="preserve">
+    <value>Du học Đại Học D2-1</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject1" xml:space="preserve">
+    <value>Giới thiệu chung về chương trình du học tiếng Hàn tại Hàn Quốc</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject2_1" xml:space="preserve">
+    <value>Hầu như các trường</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject2_2" xml:space="preserve">
+    <value>đại học ở Hàn Quốc cũng có khóa học tiếng Hàn chính quy, đào tạo chuyên sâu 4 kỹ năng nghe, nói, đọc viết, từ cấp 1 đến cấp 6. Không chỉ được học tiếng Hàn, được rèn luyện đầy đủ 4 kĩ năng mà sinh viên còn được tham gia các buổi trải nghiệm văn hóa Hàn Quốc.</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject3_1" xml:space="preserve">
+    <value>Giảng viên giảng dạy</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject3_2" xml:space="preserve">
+    <value>là những người có kinh nghiệm, trình độ chuyên môn cao. Giáo trình học tập là giáo trình tiếng Hàn chung hoặc giáo trình riêng của trường được biên soạn theo quy định chuẩn quốc gia.</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject4" xml:space="preserve">
+    <value>Để đảm bảo đầu ra, mỗi lớp học tiếng Hàn chỉ có khoảng 10 – 25 sinh viên.</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject5" xml:space="preserve">
+    <value>Khóa học tiếng Hàn tại phần lớn các trường đại học gồm có bốn học kỳ:</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject5_1" xml:space="preserve">
+    <value>Học kỳ mùa xuân: tháng 3 – tháng 5</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject5_2" xml:space="preserve">
+    <value>Học kỳ mùa hè: tháng 6 – tháng 8</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject5_3" xml:space="preserve">
+    <value>Học kỳ mùa thu: tháng 9 – tháng 11</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject5_4" xml:space="preserve">
+    <value>Học kỳ mùa đông: tháng 12 – tháng 2</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject5_5" xml:space="preserve">
+    <value>Mỗi học kỳ kéo dài mười tuần. Mỗi tuần học 5 buổi từ thứ 2 – thứ 6 và mỗi buổi học kéo dài 4 tiếng đồng hồ.</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject6_1" xml:space="preserve">
+    <value>Trong một học kỳ</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject6_2" xml:space="preserve">
+    <value>sẽ có 2 bài kiểm tra là bài kiểm tra giữa kỳ và bài kiểm tra cuối kỳ. Để nhận được chứng nhận hoàn thành khóa học
+                và được chuyển lên cấp học cao hơn, thông thường, sinh viên phải đạt được điểm trung bình trên 70% và không nghỉ quá 10% tổng số buổi học.</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject7_1" xml:space="preserve">
+    <value>Ngoài khóa học tiếng Hàn</value>
+  </data>
+	<data name="UniversityHeaderTitleSubject7_2" xml:space="preserve">
+    <value>chính quy thông thường, các trường còn tổ chức các khóa học tiếng Hàn chuyên biệt như khóa học luyện thi Topik, khóa học tiếng Hàn thông biên dịch,…</value>
+  </data>
+	<data name="UniversityTitle1" xml:space="preserve">
+    <value>Visa du học tiếng Hàn D4-1 là gì</value>
+  </data>
+	<data name="UniversityTitle1Subject1Image" xml:space="preserve">
+    <value>Du học tiếng Hàn Quốc visa D4-1</value>
+  </data>
+	<data name="UniversityTitle1Subject1_1" xml:space="preserve">
+    <value>Đầu tiên,</value>
+  </data>
+	<data name="UniversityTitle1Subject1_2" xml:space="preserve">
+    <value>chúng ta cùng tìm hiểu về visa du học tiếng Hàn D4-1 là gì. Hiện nay, có rất nhiều loại visa du học Hàn Quốc khác nhau, mỗi loại visa ứng với mỗi chương trình du học Hàn Quốc khác nhau. Đây là loại visa cho phép sinh viên tham gia chương trình du học tiếng Hàn tại các trường Đại học, Cao đẳng của xứ sở kim chi.</value>
+  </data>
+	<data name="UniversityTitle1Subject2_1" xml:space="preserve">
+    <value>Để đủ điều kiện</value>
+  </data>
+	<data name="UniversityTitle1Subject2_2" xml:space="preserve">
+    <value>du học hệ Đại học Hàn Quốc, sinh viên cần có chứng chỉ TOPIK 3 trở lên mới đạt yêu cầu. Vì thế, loại visa này dành cho những bạn sinh viên chưa có chứng chỉ tiếng Hàn TOPIK 3 đi du học tiếng. Các bạn chỉ cần hoàn thành khoá học tiếng Hàn cơ bản từ 3 – 6 tháng là đã đủ điều kiện về ngoại ngữ.</value>
+  </data>
+	<data name="UniversityTitle1Subject3_1" xml:space="preserve">
+    <value>Sau khi kết thúc</value>
+  </data>
+	<data name="UniversityTitle1Subject3_2" xml:space="preserve">
+    <value>chương trình học, nếu như đạt chứng chỉ TOPIK 2, bạn có thể học tiếp lên Cao đẳng nghề. Còn nếu đạt chứng chỉ TOPIK 3, bạn có thể đăng ký học tiếp lên hệ Đại học tại Hàn Quốc và học thẳng vào các môn chuyên ngành. Và đương nhiên nếu như bạn không đạt tối thiểu TOPIK 2 thì bạn buộc phải trở về nước.</value>
+  </data>
+	<data name="UniversityTitle2" xml:space="preserve">
+    <value>Điều kiện tuyển sinh Du học tiếng Hàn Visa D4-1</value>
+  </data>
+	<data name="UniversityTitle2Subject1" xml:space="preserve">
+    <value>Độ tuổi: 18 – 25 tuổi</value>
+  </data>
+	<data name="UniversityTitle2Subject10" xml:space="preserve">
+    <value>Không yêu cầu có trình độ tiếng Hàn (trường hợp sinh viên đã có TOPIK 3 thì không cần phải học tiếng bên Hàn Quốc nữa mà có thể học thẳng lên chuyên ngành)</value>
+  </data>
+	<data name="UniversityTitle2Subject2" xml:space="preserve">
+    <value>Đã tốt nghiệp THPT( Trung cấp/ Cao đẳng/ Đại học)</value>
+  </data>
+	<data name="UniversityTitle2Subject3" xml:space="preserve">
+    <value>Điểm trung bình THPT tối thiểu 6.5 hoặc tùy thuộc vào yêu cầu của trường mà bạn đăng ký</value>
+  </data>
+	<data name="UniversityTitle2Subject4" xml:space="preserve">
+    <value>Thời gian bỏ trống thông thường không quá 2 năm sau khi tốt nghiệp THPT và không quá 3 năm sau khi tốt nghiệp Trung cấp/ Cao đẳng/ Đại học</value>
+  </data>
+	<data name="UniversityTitle2Subject5" xml:space="preserve">
+    <value>Không mắc bệnh lao phổi và các bệnh truyền nhiễm khác</value>
+  </data>
+	<data name="UniversityTitle2Subject6" xml:space="preserve">
+    <value>Không có tiền án, tiền sự</value>
+  </data>
+	<data name="UniversityTitle2Subject7" xml:space="preserve">
+    <value>Không có người thân cư trú bất hợp pháp tại Hàn Quốc</value>
+  </data>
+	<data name="UniversityTitle2Subject8" xml:space="preserve">
+    <value>Có sổ tiết kiệm từ 10.000 USD trở lên và được gửi vào ngân hàng ít nhất 6 tháng tính đến ngày nộp hồ sơ</value>
+  </data>
+	<data name="UniversityTitle2Subject9" xml:space="preserve">
+    <value>Người bảo lãnh có công việc và thu nhập ổn định từ 30 triệu VND/ tháng trở lên</value>
+  </data>
+	<data name="UniversityTitle3" xml:space="preserve">
+    <value>Hồ sơ xin visa D4-1</value>
+  </data>
+	<data name="UniversityTitle3Subject1" xml:space="preserve">
+    <value>Hộ chiếu</value>
+  </data>
+	<data name="UniversityTitle3Subject10" xml:space="preserve">
+    <value>Giấy xác nhận kinh doanh của trường</value>
+  </data>
+	<data name="UniversityTitle3Subject11" xml:space="preserve">
+    <value>Thời khóa biểu của trường</value>
+  </data>
+	<data name="UniversityTitle3Subject12" xml:space="preserve">
+    <value>Sơ yếu lý lịch</value>
+  </data>
+	<data name="UniversityTitle3Subject13" xml:space="preserve">
+    <value>Giấy khai sinh</value>
+  </data>
+	<data name="UniversityTitle3Subject14" xml:space="preserve">
+    <value>Chứng minh thư nhân dân</value>
+  </data>
+	<data name="UniversityTitle3Subject15" xml:space="preserve">
+    <value>Sổ hộ khẩu</value>
+  </data>
+	<data name="UniversityTitle3Subject16" xml:space="preserve">
+    <value>Chứng minh tài chính: giấy xác nhận nghề nghiệp, xác nhận thu nhập, sổ đỏ,…</value>
+  </data>
+	<data name="UniversityTitle3Subject17" xml:space="preserve">
+    <value>Sổ tiết kiệm và giấy xác nhận số dư tiền gửi</value>
+  </data>
+	<data name="UniversityTitle3Subject18" xml:space="preserve">
+    <value>Giấy cam kết bảo lãnh tài chính của bố mẹ</value>
+  </data>
+	<data name="UniversityTitle3Subject2" xml:space="preserve">
+    <value>Đơn xin cấp visa</value>
+  </data>
+	<data name="UniversityTitle3Subject3" xml:space="preserve">
+    <value>Ảnh thẻ</value>
+  </data>
+	<data name="UniversityTitle3Subject4" xml:space="preserve">
+    <value>Bản khai thông tin</value>
+  </data>
+	<data name="UniversityTitle3Subject5" xml:space="preserve">
+    <value>Mẫu đăng ký thông tin</value>
+  </data>
+	<data name="UniversityTitle3Subject6" xml:space="preserve">
+    <value>Giấy khám sức khỏe</value>
+  </data>
+	<data name="UniversityTitle3Subject7" xml:space="preserve">
+    <value>Học bạ THPT, bảng điểm, bằng cấp cao nhất</value>
+  </data>
+	<data name="UniversityTitle3Subject8" xml:space="preserve">
+    <value>Giới thiệu bản thân và kế hoạch học tập</value>
+  </data>
+	<data name="UniversityTitle3Subject9" xml:space="preserve">
+    <value>Thư mời nhập học của trường</value>
+  </data>
+	<data name="UniversityTitle4" xml:space="preserve">
+    <value>Ưu điểm của chương trình du học tiếng Hàn tại Hàn Quốc</value>
+  </data>
+	<data name="UniversityTitle4_1" xml:space="preserve">
+    <value>Điều kiện đơn giản</value>
+  </data>
+	<data name="UniversityTitle4_1Subject" xml:space="preserve">
+    <value>Nhìn vào điều kiện du học tiếng Hàn được chúng mình giới thiệu ở trên, các bạn có thể thấy, điều kiện này khá là đơn giản. Thậm chí, có thể khẳng định điều kiện để tham gia chương trình này đơn giản nhất trong các loại chương trình du học Hàn Quốc.</value>
+  </data>
+	<data name="UniversityTitle4_2" xml:space="preserve">
+    <value>Chi phí hợp lý</value>
+  </data>
+	<data name="UniversityTitle4_2Subject" xml:space="preserve">
+    <value>Chi phí du học tiếng Hàn trong một năm đầu tiên trung bình khoảng 180 – 250 triệu VND. Đây là một con số tương đối hợp lý, rẻ hơn rất nhiều so với các quốc gia ở châu Âu và các nước có nền giáo dục tương đương ở châu Á như Nhật Bản, Singapore. Nếu 6 tháng nhập học, các bạn đi làm thêm để kiếm thêm thu nhập chi trả sinh hoạt phí thì sẽ tiết kiệm được một khoản tiền đáng kể đấy nhé!</value>
+  </data>
+	<data name="UniversityTitle4_3" xml:space="preserve">
+    <value>Cải thiện trình độ tiếng Hàn nhanh chóng</value>
+  </data>
+	<data name="UniversityTitle4_3Subject" xml:space="preserve">
+    <value>Được học tiếng Hàn tại Hàn Quốc với giáo viên bản ngữ có kinh nghiệm, giàu chuyên môn. Bên cạnh đó, môi trường học tập, sinh sống được tiếp xúc nhiều với sinh viên Hàn Quốc và người dân bản địa cũng sẽ giúp bạn nâng cao trình độ tiếng Hàn nhanh chóng, đặc biệt là khả năng nghe, nói và phản xạ giao tiếp.</value>
+  </data>
+	<data name="UniversityTitle4_4" xml:space="preserve">
+    <value>Tạo nền tảng tốt cho du học chuyên ngành</value>
+  </data>
+	<data name="UniversityTitle4_4Subject" xml:space="preserve">
+    <value>Một trong những điều kiện du học chuyên ngành quan trọng và bắt buộc là phải có Topik 3 trở lên.
+Vì vậy, du học tiếng Hàn sẽ giúp bạn xây dựng nên tảng vững chắc để tiếp tục theo học các chương trình cao hơn.</value>
+  </data>
+	<data name="UniversityTitle4_5" xml:space="preserve">
+    <value>Cơ hội việc làm rộng mở</value>
+  </data>
+	<data name="UniversityTitle4_5Subject1" xml:space="preserve">
+    <value>Sau khi du học tiếng Hàn tại Hàn Quốc, nếu bạn không chuyển lên du học chuyên ngành thì bắt buộc phải quay về Việt Nam.
+Nếu du học 1 năm thì khi kết thúc khóa học các bạn có thể lên đến Topik 4 rồi.</value>
+  </data>
+	<data name="UniversityTitle4_5Subject2" xml:space="preserve">
+    <value>Quay trở về Việt Nam các bạn có thể xin vào làm việc tại các công ty, doanh nghiệp Hàn Quốc như Lotte, CJ, Samsung, Huyndai, Kumho, Hyosung, Daewoo, LG,…
+Mức lương dành cho người có chứng chỉ Topik 4 tiếng Hàn mới ra trường trung bình là 10 triệu/ tháng – một con số không nhỏ.</value>
+  </data>
+	<data name="UniversityTitle5" xml:space="preserve">
+    <value>Học bổng du học tiếng Hàn tại Hàn Quốc</value>
+  </data>
+	<data name="UniversityTitle5Subject1" xml:space="preserve">
+    <value>Học bổng dành cho sinh viên du học tiếng Hàn tại Hàn Quốc thường rất hiếm. Nếu có thì sẽ chỉ có học bổng của trường đại học.</value>
+  </data>
+	<data name="UniversityTitle5Subject2_1" xml:space="preserve">
+    <value>Học bổng đầu vào</value>
+  </data>
+	<data name="UniversityTitle5Subject2_2" xml:space="preserve">
+    <value>Sinh viên phải trải qua một cuộc thi, cuộc phỏng vấn riêng của trường</value>
+  </data>
+	<data name="UniversityTitle5Subject3_1" xml:space="preserve">
+    <value>Học bổng duy trì (từ học kỳ thứ 2 trở đi)</value>
+  </data>
+	<data name="UniversityTitle5Subject3_2" xml:space="preserve">
+    <value>Điều kiện xét học bổng sẽ dựa vào thành tích của học kỳ trước</value>
+  </data>
+	<data name="UniversityTitle6" xml:space="preserve">
+    <value>Tại sao ngay lúc này chính là thời điểm thích hợp nhất để bạn đi du học Hàn Quốc</value>
+  </data>
+	<data name="UniversityTitle6_1" xml:space="preserve">
+    <value>Số lượng du học sinh Việt Nam đi Hàn Quốc ngày càng tăng</value>
+  </data>
+	<data name="UniversityTitle6_1Subject1" xml:space="preserve">
+    <value>Vậy nên tỉ lệ cạnh tranh càng ngày càng nhiều nên các trường cũng nâng tiêu chí tuyển sinh khó hơn</value>
+  </data>
+	<data name="UniversityTitle6_1Subject2" xml:space="preserve">
+    <value>Trước đây GPA &lt; 6.0 thì KIPA vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học</value>
+  </data>
+	<data name="UniversityTitle6_1Subject3" xml:space="preserve">
+    <value>Trước đây hồ sơ có thời gian trống trên 5 năm vẫn có nhiều sự lựa chọn, thì giờ hồ sơ trống quá 3 năm cũng khó chọn trường rồi</value>
+  </data>
+	<data name="UniversityTitle6_2" xml:space="preserve">
+    <value>Yêu cầu hồ sơ càng ngày càng phức tạp</value>
+  </data>
+	<data name="UniversityTitle6_2Subject1" xml:space="preserve">
+    <value>Đơn vị xét duyệt Visa như Cục quản lý xuất nhập cảnh, Đại sứ quán, Lãnh sự quán yêu cầu hồ sơ càng ngày càng phức tạp</value>
+  </data>
+	<data name="UniversityTitle6_2Subject2" xml:space="preserve">
+    <value>Trước đây xác minh nghề nghiệp chỉ cần giấy xác nhận của UBND thì nay sẽ yêu cầu thêm những chứng từ, hình ảnh có liên quan để tăng tính xác minh</value>
+  </data>
+	<data name="UniversityTitle6_2Subject3" xml:space="preserve">
+    <value>Yều cầu hồ sơ nộp trường và lãnh sự được cập nhật theo từng kỳ bay, vì vậy nếu không có một chuyên gia hỗ trợ bạn, sẽ không tránh khỏi chuyện sai xót trong quá trình chuẩn bị hồ sơ</value>
+  </data>
+	<data name="UniversityTitle6_3" xml:space="preserve">
+    <value>Danh sách các trường chứng nhận ngày càng bị thu hẹp</value>
+  </data>
+	<data name="UniversityTitle6_3Subject1" xml:space="preserve">
+    <value>Năm 2021 có 88 trường đại học, 17 trường cao đẳng, 11 trường cao học</value>
+  </data>
+	<data name="UniversityTitle6_3Subject2" xml:space="preserve">
+    <value>Năm 2022 có 92 trường đại học, 4 trường cao đẳng, 10 trường cao học</value>
+  </data>
+	<data name="UniversityTitle6_3Subject3" xml:space="preserve">
+    <value>Năm 2023 còn 60 trường đại học, 2 trường cao đẳng, 1 trường cao học</value>
+  </data>
+	<data name="UniversityTitle6_4" xml:space="preserve">
+    <value>Số lượng các trường trong danh sách trường đại học TOP 1 Hàn Quốc cũng giảm rất mạnh</value>
+  </data>
+	<data name="UniversityTitle6_4Subject1" xml:space="preserve">
+    <value>Năm 2021 có 23 trường đại học, 2 trường cao đẳng, 3 trường cao học</value>
+  </data>
+	<data name="UniversityTitle6_4Subject2" xml:space="preserve">
+    <value>Năm 2022 có 19 trường đại học, 1 trường cao đẳng, 5 trường cao học</value>
+  </data>
+	<data name="UniversityTitle6_4Subject3" xml:space="preserve">
+    <value>Năm 2023 còn 9 trường đại học , 0 trường cao đẳng, 4 trường cao học</value>
+  </data>
+	<data name="UniversityTitle6_5" xml:space="preserve">
+    <value>Điều này cũng ảnh hưởng rất nhiều tới quyết định chọn trường của các bạn rất nhiều. Nếu các bạn không có khả năng mở sổ K-study (Sổ đóng băng) thì các bạn chỉ có thể chọn trường trong danh sách các trường chứng nhận mà thôi.</value>
+  </data>
+	<data name="UniversityTitle6__6" xml:space="preserve">
+    <value>Vậy nên ngay chính tại thời điểm này, càng sớm càng tốt, luôn là thời điểm thích hợp nhất để bạn đi du học nếu bạn có đủ điều kiện!</value>
+  </data>
+	<data name="UniversityTitle7" xml:space="preserve">
+    <value>Các trường đại học nổi tiếng về chất lượng đào tạo tiếng Hàn(D4-1)</value>
+  </data>
+</root>
