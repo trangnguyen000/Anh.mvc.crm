@@ -39,7 +39,7 @@
                     <label for="fname">@Resources.SharedResource.Name</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="name" name="name" placeholder="Vui lòng nhập tên..">
+                    <input type="text" id="name" name="name" placeholder="@Resources.SharedResource.EnterName">
                     @if (!string.IsNullOrEmpty(ValidateName))
                     {
                         <span class="text-red pl-1" asp-validation-for="name">@ValidateName</span>
@@ -53,7 +53,7 @@
                     <label for="lname">@Resources.SharedResource.Phone</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Nhập số điện thoại..">
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="@Resources.SharedResource.EnterPhone">
                     @if (!string.IsNullOrEmpty(ValidatePhone))
                     {
                         <span class="text-red pl-1" asp-validation-for="name">@ValidatePhone</span>
@@ -66,8 +66,8 @@
                 </div>
                 <div class="col-75">
                     <select id="country" name="country">
-                        <option value="DuHoc">Du học</option>
-                        <option value="TiengHanDoanhNghiep">Tiếng hàn doanh nghiệp</option>
+                        <option value="@Resources.SharedResource.StudyOption">@Resources.SharedResource.StudyOption</option>
+                        <option value="@Resources.SharedResource.CompanyOption">@Resources.SharedResource.CompanyOption</option>
                     </select>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <label for="subject">@Resources.SharedResource.Question</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Nhập câu hỏi bạn cần tư vấn.." style="height:150px"></textarea>
+                    <textarea id="subject" name="subject" placeholder="@Resources.SharedResource.EnterQuestion.." style="height:150px"></textarea>
                 </div>
             </div>
             <div class="row submit-btn">

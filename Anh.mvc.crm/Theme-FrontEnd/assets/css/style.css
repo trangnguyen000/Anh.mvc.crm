@@ -724,7 +724,7 @@ header {
 
 .title-form-connect {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding: 10px 69px;
     color: #411C6B;
     font-size: 20px;
@@ -1138,7 +1138,7 @@ input[type=submit] {
 
 .sub-menu-li {
     display: inline-block;
-    width: 33.33333%;
+    width: 45%;
     vertical-align: top;
     padding: 15px 28px;
 }

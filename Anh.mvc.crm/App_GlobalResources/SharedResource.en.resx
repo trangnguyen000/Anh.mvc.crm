@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,3018 +59,3222 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="AboutCompany" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutCompany" xml:space="preserve">
     <value>키파란</value>
   </data>
-	<data name="AddressCo" xml:space="preserve">
+  <data name="AddressCo" xml:space="preserve">
     <value>주소: số 25, Lô A20, Khu geleximco, An Khánh, Hoài Đức, Hà Nội</value>
   </data>
-	<data name="Business" xml:space="preserve">
+  <data name="Business" xml:space="preserve">
     <value>후원 기업</value>
   </data>
-	<data name="BusinessKorean1" xml:space="preserve">
+  <data name="BusinessKorean1" xml:space="preserve">
     <value>기업에서 한국어 교육 프로그램</value>
   </data>
-	<data name="BusinessKorean10" xml:space="preserve">
+  <data name="BusinessKorean10" xml:space="preserve">
     <value>계획을 가지고 있습니다: 1년에 6개월 동안 교육, 주 3회이고 매주 첫 번째 월요일에는 학생의 능력 평가 시험이 있으며, 교육 과정을 우수하게 수료하기 위해 한국어 능력시험 및 말하기 대회, ......등이 있습니다. 위의 일정으로 2개 반의 학생들은 2023년까지 초급 한국어 등급부터 기말 한국어능력시험에서 토픽 2, 3, 4급을 획득하고 공식 한국어능력시험에서도 같은 결과를 낳았습니다.</value>
   </data>
-	<data name="BusinessKorean11" xml:space="preserve">
+  <data name="BusinessKorean11" xml:space="preserve">
     <value>SKC학생들은 강사와 회사 매니저와 말하기 대회에 참여</value>
   </data>
-	<data name="BusinessKorean12" xml:space="preserve">
+  <data name="BusinessKorean12" xml:space="preserve">
     <value>학생들 수료식</value>
   </data>
-	<data name="BusinessKorean13" xml:space="preserve">
+  <data name="BusinessKorean13" xml:space="preserve">
     <value>뿐만 아니라,</value>
   </data>
-	<data name="BusinessKorean14" xml:space="preserve">
+  <data name="BusinessKorean14" xml:space="preserve">
     <value>KIPA에서 교육 받은 학생들은 한국인 직원, 상사와 자신있게 소통할 수 있으며 비즈니스 문화, 특히 한국 문화를 습득할 수 있습니다.</value>
   </data>
-	<data name="BusinessKorean15" xml:space="preserve">
+  <data name="BusinessKorean15" xml:space="preserve">
     <value>수료 날 KIPA강사, SKC대표와 학생과 함께 기념 사진 촬영</value>
   </data>
-	<data name="BusinessKorean16" xml:space="preserve">
+  <data name="BusinessKorean16" xml:space="preserve">
     <value>"성적을 쫓지 않고 참된 교육, 효율적인 학습"이라는 모토로</value>
   </data>
-	<data name="BusinessKorean17" xml:space="preserve">
+  <data name="BusinessKorean17" xml:space="preserve">
     <value>KIPA는 항상 SKC 및 기타 한국 기업과 계속해서 동행할 것을 확신하며 KIPA를 믿고 있는 파트너 기업과 학생들에게도 최고의 결과를 가져올 수 있도록 항상 발전하려고 노력합니다.</value>
   </data>
-	<data name="BusinessKorean2" xml:space="preserve">
+  <data name="BusinessKorean2" xml:space="preserve">
     <value>베트남과 한국은</value>
   </data>
-	<data name="BusinessKorean3" xml:space="preserve">
+  <data name="BusinessKorean3" xml:space="preserve">
     <value>포괄적인 전략적 파트너가 되어가고 있어 한국 대기업과 중소기업이 점점 베트남 시장을 확장하고 있습니다. 이로 인해 이 회사의 직원을 위한 한국어 교육은 생산성과 효율성을 높이는 데 절대적으로 필요합니다. 직원들이 한국 상사의 지시를 이해하고 소통하며 업무 분야에 대한 지식을 쌓을 수 있도록 돕는 것이 이 프로그램의 목표입니다. 이러한 목표를 달성하기 위해 KIPA는 기업과 함께 집중적인 한국어 교육 프로그램을 진행해 왔습니다.</value>
   </data>
-	<data name="BusinessKorean4" xml:space="preserve">
+  <data name="BusinessKorean4" xml:space="preserve">
     <value>1. SKC – 베트남 내 대 기업의 직원을 위한 한국어 소통 교육</value>
   </data>
-	<data name="BusinessKorean5" xml:space="preserve">
+  <data name="BusinessKorean5" xml:space="preserve">
     <value>SKC 기업은 IT, BT,</value>
   </data>
-	<data name="BusinessKorean6" xml:space="preserve">
+  <data name="BusinessKorean6" xml:space="preserve">
     <value>자동차, 전자부품에 사용되는 Test Socket 반도체 생산기술을 개발하고 혁신하는 기업입니다. 회사의 한국인 직원, 고위 관리자, 엔지니어로 구성됨으로 반도체 유형별로 단기간에 최적화된 각종 제품을 개발하고 고객에게 최상의 솔루션을 제공합니다. 직원의 한국어 교육이 필요하다는 것을 알아서 SKC 회사는 2020년에 KIPA에게 사내 교육을 맡기고 한국어 교육 및 한국인 직원과의 의사소통 능력 향상에 만족하고 있습니다.</value>
   </data>
-	<data name="BusinessKorean7" xml:space="preserve">
+  <data name="BusinessKorean7" xml:space="preserve">
     <value>베트남 스승의 날(20/11)에 KIPA강사와 SKC학생</value>
   </data>
-	<data name="BusinessKorean8" xml:space="preserve">
+  <data name="BusinessKorean8" xml:space="preserve">
     <value>수료 날 KIPA강사, SKC대표와 학생과 함께 기념 사진 촬영</value>
   </data>
-	<data name="BusinessKorean9" xml:space="preserve">
+  <data name="BusinessKorean9" xml:space="preserve">
     <value>구체적이고 명확한 교육</value>
   </data>
-	<data name="C3" xml:space="preserve">
+  <data name="C3" xml:space="preserve">
     <value>고등학교유학교</value>
   </data>
-	<data name="Calvin" xml:space="preserve">
+  <data name="Calvin" xml:space="preserve">
     <value>칼빈대</value>
   </data>
-	<data name="Choi" xml:space="preserve">
+  <data name="Choi" xml:space="preserve">
     <value>1969 년생 최재학</value>
   </data>
-	<data name="Choi1" xml:space="preserve">
+  <data name="Choi1" xml:space="preserve">
     <value>ESC Reims (프랑스 상경계 그랑제꼴), MBA 서울대학교 사범
 대학 불어학과 학사</value>
   </data>
-	<data name="Choi2" xml:space="preserve">
+  <data name="Choi2" xml:space="preserve">
     <value>시앤시파트너스 주식회사, 대표이사</value>
   </data>
-	<data name="Choi3" xml:space="preserve">
+  <data name="Choi3" xml:space="preserve">
     <value>NH경제연구소 수석연구원</value>
   </data>
-	<data name="Choi4" xml:space="preserve">
+  <data name="Choi4" xml:space="preserve">
     <value>농협중앙회, 차장</value>
   </data>
-	<data name="Chungang" xml:space="preserve">
+  <data name="Chungang" xml:space="preserve">
     <value>중잉대학교</value>
   </data>
-	<data name="Chungwoon" xml:space="preserve">
+  <data name="Chungwoon" xml:space="preserve">
     <value>청운대학교</value>
   </data>
-	<data name="Comment" xml:space="preserve">
+  <data name="Comment" xml:space="preserve">
     <value>키파에 대한 소감</value>
   </data>
-	<data name="Contact" xml:space="preserve">
+  <data name="Contact" xml:space="preserve">
     <value>상담예약</value>
   </data>
-	<data name="Cosmetics" xml:space="preserve">
+  <data name="Cosmetics" xml:space="preserve">
     <value>화장품</value>
   </data>
-	<data name="D2_3_Condition1" xml:space="preserve">
+  <data name="D2_3_Condition1" xml:space="preserve">
     <value>1. 한국 석사유학 조건</value>
   </data>
-	<data name="D2_3_Condition10" xml:space="preserve">
+  <data name="D2_3_Condition10" xml:space="preserve">
     <value>나이는 21세에서 35세 사이입니다.</value>
   </data>
-	<data name="D2_3_Condition11" xml:space="preserve">
+  <data name="D2_3_Condition11" xml:space="preserve">
     <value>TOPIK 4 이상의 한국어 자격증이 있습니다. 그러나 예술, 체육 분야의 일부 전공은 TOPIK 2로 승인합니다. TOPIK이 요구되지 않는 경우, 영어(TOEFL IBT 80, IELTS 6.0, TEPS 551)를 요구합니다. E 비자의 경우는 필요없습니다. 일부 전공은 베트남에서 480시간만 어학연수한 뒤 D4-1 비자로 한국어에 입학할 것입니다. 한국 대학에 어학 과정을 끝내고 토픽을 취득하면 석사과정으로 진학할 수 있습니다.</value>
   </data>
-	<data name="D2_3_Condition12" xml:space="preserve">
+  <data name="D2_3_Condition12" xml:space="preserve">
     <value>건강이 좋고 간염, 결핵이 없어야 합니다.</value>
   </data>
-	<data name="D2_3_Condition13" xml:space="preserve">
+  <data name="D2_3_Condition13" xml:space="preserve">
     <value>출입국 제한 대상이 아닙니다. 한국 입국 비자 불… 사유가 없는 사…</value>
   </data>
-	<data name="D2_3_Condition14" xml:space="preserve">
+  <data name="D2_3_Condition14" xml:space="preserve">
     <value>Học sinh tham gia khám lao phổi tại bệnh viện Hồng Ngọc</value>
   </data>
-	<data name="D2_3_Condition15" xml:space="preserve">
+  <data name="D2_3_Condition15" xml:space="preserve">
     <value>1.2  E-VISA 유학 프로그램</value>
   </data>
-	<data name="D2_3_Condition16" xml:space="preserve">
+  <data name="D2_3_Condition16" xml:space="preserve">
     <value>Học sinh kipa du học chương trình E-VISA</value>
   </data>
-	<data name="D2_3_Condition17" xml:space="preserve">
+  <data name="D2_3_Condition17" xml:space="preserve">
     <value>장점</value>
   </data>
-	<data name="D2_3_Condition18" xml:space="preserve">
+  <data name="D2_3_Condition18" xml:space="preserve">
     <value>비자 기간: 2년</value>
   </data>
-	<data name="D2_3_Condition19" xml:space="preserve">
+  <data name="D2_3_Condition19" xml:space="preserve">
     <value>지역 및 연령은 최대 32세까지 허용됩니다.</value>
   </data>
-	<data name="D2_3_Condition2" xml:space="preserve">
+  <data name="D2_3_Condition2" xml:space="preserve">
     <value>석사과정으로 한국에 유학하면 D2-3 비자가 발급될 겁니다. 이 비자를 받으려면 다음 조건을 모두 충족해야 합니다.</value>
   </data>
-	<data name="D2_3_Condition20" xml:space="preserve">
+  <data name="D2_3_Condition20" xml:space="preserve">
     <value>30% ~ 100%까지 장학금이 제공됩니다.</value>
   </data>
-	<data name="D2_3_Condition21" xml:space="preserve">
+  <data name="D2_3_Condition21" xml:space="preserve">
     <value>특히 주 1~2회 수업이 있으며, 유연한 학습시간을 제공합니다.</value>
   </data>
-	<data name="D2_3_Condition22" xml:space="preserve">
+  <data name="D2_3_Condition22" xml:space="preserve">
     <value>친척이 보증할 수 있습니다: 아버지, 어머니, 아내, 남편, 자녀가 친척을 방문할 수 있니다.</value>
   </data>
-	<data name="D2_3_Condition23" xml:space="preserve">
+  <data name="D2_3_Condition23" xml:space="preserve">
     <value>졸업 후 E7 또는 F2(영주권 비자)로의 전환을 지원합니다.</value>
   </data>
-	<data name="D2_3_Condition24" xml:space="preserve">
+  <data name="D2_3_Condition24" xml:space="preserve">
     <value>TOPIK 점수 없이 지원 가능합니다.</value>
   </data>
-	<data name="D2_3_Condition25" xml:space="preserve">
+  <data name="D2_3_Condition25" xml:space="preserve">
     <value>입학 조건</value>
   </data>
-	<data name="D2_3_Condition26" xml:space="preserve">
+  <data name="D2_3_Condition26" xml:space="preserve">
     <value>32세 미만의 남녀</value>
   </data>
-	<data name="D2_3_Condition27" xml:space="preserve">
+  <data name="D2_3_Condition27" xml:space="preserve">
     <value>대학 졸업</value>
   </data>
-	<data name="D2_3_Condition28" xml:space="preserve">
+  <data name="D2_3_Condition28" xml:space="preserve">
     <value>지역 무관</value>
   </data>
-	<data name="D2_3_Condition29" xml:space="preserve">
+  <data name="D2_3_Condition29" xml:space="preserve">
     <value>많은 매력적인 전공</value>
   </data>
-	<data name="D2_3_Condition3" xml:space="preserve">
+  <data name="D2_3_Condition3" xml:space="preserve">
     <value>지원자와 부모는 한국 국적이 없습니다.</value>
   </data>
-	<data name="D2_3_Condition30" xml:space="preserve">
+  <data name="D2_3_Condition30" xml:space="preserve">
     <value>한국학과</value>
   </data>
-	<data name="D2_3_Condition31" xml:space="preserve">
+  <data name="D2_3_Condition31" xml:space="preserve">
     <value>경영학과</value>
   </data>
-	<data name="D2_3_Condition32" xml:space="preserve">
+  <data name="D2_3_Condition32" xml:space="preserve">
     <value>관광경영학과</value>
   </data>
-	<data name="D2_3_Condition33" xml:space="preserve">
+  <data name="D2_3_Condition33" xml:space="preserve">
     <value>사회복지학과</value>
   </data>
-	<data name="D2_3_Condition34" xml:space="preserve">
+  <data name="D2_3_Condition34" xml:space="preserve">
     <value>스마트 농업학과</value>
   </data>
-	<data name="D2_3_Condition4" xml:space="preserve">
+  <data name="D2_3_Condition4" xml:space="preserve">
     <value>베트남에서 대학을 졸업했습니다.</value>
   </data>
-	<data name="D2_3_Condition5" xml:space="preserve">
+  <data name="D2_3_Condition5" xml:space="preserve">
     <value>1.1 TOPIK 또는 TOPIK 2 증명이 필요없는 프로그램의 경우</value>
   </data>
-	<data name="D2_3_Condition6" xml:space="preserve">
+  <data name="D2_3_Condition6" xml:space="preserve">
     <value>TOPIK 또는 TOPIK 2 증명이 필요없는 프로그램의 경우:</value>
   </data>
-	<data name="D2_3_Condition7" xml:space="preserve">
+  <data name="D2_3_Condition7" xml:space="preserve">
     <value>등록 시 TOPIK 점수가 필요하지 않지만 등록금 통지서를 받을 수 있도록 학교 측의 교육 및 요구 사항 충족 시간이 있습니다.</value>
   </data>
-	<data name="D2_3_Condition8" xml:space="preserve">
+  <data name="D2_3_Condition8" xml:space="preserve">
     <value>졸업하기 전에 TOPIK 4를 꼭 달성해야 합니다.</value>
   </data>
-	<data name="D2_3_Condition9" xml:space="preserve">
+  <data name="D2_3_Condition9" xml:space="preserve">
     <value>대학 졸업자(정규 학위). 그러나 일부 상위 대학은 정규 학위만 승인합니다.</value>
   </data>
-	<data name="D2_3_File1" xml:space="preserve">
+  <data name="D2_3_File1" xml:space="preserve">
     <value>2. 한국 석사 유학 서류</value>
   </data>
-	<data name="D2_3_File10" xml:space="preserve">
+  <data name="D2_3_File10" xml:space="preserve">
     <value>출생증명서</value>
   </data>
-	<data name="D2_3_File11" xml:space="preserve">
+  <data name="D2_3_File11" xml:space="preserve">
     <value>기타 증명서 (해당되는 경우)</value>
   </data>
-	<data name="D2_3_File12" xml:space="preserve">
+  <data name="D2_3_File12" xml:space="preserve">
     <value>2만 달러 이상의 예금 통장</value>
   </data>
-	<data name="D2_3_File13" xml:space="preserve">
+  <data name="D2_3_File13" xml:space="preserve">
     <value>재정을 입증하는 서류</value>
   </data>
-	<data name="D2_3_File2" xml:space="preserve">
+  <data name="D2_3_File2" xml:space="preserve">
     <value>서류는 학교에서 선발하는 과정에서 선결 요소입니다. 좋은 서류는 학교 합격률이 매우 높다는 것을 의미합니다. 그러니까 꿈을 이룰 수 있는 최선의 방법으로 자신의 서류를 준비하세요. 준비해야 할 필수 서류는 다음과 같습니다:</value>
   </data>
-	<data name="D2_3_File3" xml:space="preserve">
+  <data name="D2_3_File3" xml:space="preserve">
     <value>대학 졸업장</value>
   </data>
-	<data name="D2_3_File4" xml:space="preserve">
+  <data name="D2_3_File4" xml:space="preserve">
     <value>외국어 자격증 (TOPIK 4 이상, IELTS 6.0, TOEFL, TEPS)</value>
   </data>
-	<data name="D2_3_File5" xml:space="preserve">
+  <data name="D2_3_File5" xml:space="preserve">
     <value>입학지원서 (학교 양식에 따름)</value>
   </data>
-	<data name="D2_3_File6" xml:space="preserve">
+  <data name="D2_3_File6" xml:space="preserve">
     <value>추천서</value>
   </data>
-	<data name="D2_3_File7" xml:space="preserve">
+  <data name="D2_3_File7" xml:space="preserve">
     <value>학습 계획서, 자기 소개서, 연구 계획 등.</value>
   </data>
-	<data name="D2_3_File8" xml:space="preserve">
+  <data name="D2_3_File8" xml:space="preserve">
     <value>지원자와 부모의 주민등록등본</value>
   </data>
-	<data name="D2_3_File9" xml:space="preserve">
+  <data name="D2_3_File9" xml:space="preserve">
     <value>호적</value>
   </data>
-	<data name="D2_3_Image" xml:space="preserve">
+  <data name="D2_3_Image" xml:space="preserve">
     <value>8. 한국에서 석사 과정을 공부하는 KIPA 학생들의 사진</value>
   </data>
-	<data name="D2_3_Money1" xml:space="preserve">
+  <data name="D2_3_Money1" xml:space="preserve">
     <value>4. 한국 석사 유학비</value>
   </data>
-	<data name="D2_3_Money10" xml:space="preserve">
+  <data name="D2_3_Money10" xml:space="preserve">
     <value>(1학년 1회만 납부)</value>
   </data>
-	<data name="D2_3_Money11" xml:space="preserve">
+  <data name="D2_3_Money11" xml:space="preserve">
     <value>학비(국립대학교): </value>
   </data>
-	<data name="D2_3_Money12" xml:space="preserve">
+  <data name="D2_3_Money12" xml:space="preserve">
     <value>학기당 300만 - 700만 원</value>
   </data>
-	<data name="D2_3_Money13" xml:space="preserve">
+  <data name="D2_3_Money13" xml:space="preserve">
     <value>학비(사립학교):</value>
   </data>
-	<data name="D2_3_Money14" xml:space="preserve">
+  <data name="D2_3_Money14" xml:space="preserve">
     <value>학기당 300만 - 1000만 원</value>
   </data>
-	<data name="D2_3_Money15" xml:space="preserve">
+  <data name="D2_3_Money15" xml:space="preserve">
     <value>1년 보험 :</value>
   </data>
-	<data name="D2_3_Money16" xml:space="preserve">
+  <data name="D2_3_Money16" xml:space="preserve">
     <value>~ 20만원</value>
   </data>
-	<data name="D2_3_Money17" xml:space="preserve">
+  <data name="D2_3_Money17" xml:space="preserve">
     <value>학비 외에 주택, 식사, 여행, 쇼핑 등과 같은 다른 비용도 준비해야 합니다.</value>
   </data>
-	<data name="D2_3_Money2" xml:space="preserve">
+  <data name="D2_3_Money2" xml:space="preserve">
     <value>한국의 석사과정 등록금은 연간 약</value>
   </data>
-	<data name="D2_3_Money3" xml:space="preserve">
+  <data name="D2_3_Money3" xml:space="preserve">
     <value>3,000 - 10,000</value>
   </data>
-	<data name="D2_3_Money4" xml:space="preserve">
+  <data name="D2_3_Money4" xml:space="preserve">
     <value>달러 사이입니다. 그러나 MBA와 같은 고급 프로그램은 연간 3만 달러까지 비용을 들 수 있습니다.</value>
   </data>
-	<data name="D2_3_Money5" xml:space="preserve">
+  <data name="D2_3_Money5" xml:space="preserve">
     <value>서류 심사 등록비 :</value>
   </data>
-	<data name="D2_3_Money6" xml:space="preserve">
+  <data name="D2_3_Money6" xml:space="preserve">
     <value>5만10만원</value>
   </data>
-	<data name="D2_3_Money7" xml:space="preserve">
+  <data name="D2_3_Money7" xml:space="preserve">
     <value>(1학년 1회만 납부)</value>
   </data>
-	<data name="D2_3_Money8" xml:space="preserve">
+  <data name="D2_3_Money8" xml:space="preserve">
     <value>입학비 :</value>
   </data>
-	<data name="D2_3_Money9" xml:space="preserve">
+  <data name="D2_3_Money9" xml:space="preserve">
     <value>50만 - 90만 원</value>
   </data>
-	<data name="D2_3_Reson1" xml:space="preserve">
+  <data name="D2_3_Reson1" xml:space="preserve">
     <value>다양한 유학 프로그램은 다양한 목적에 따라 다릅니다:</value>
   </data>
-	<data name="D2_3_Reson2" xml:space="preserve">
+  <data name="D2_3_Reson2" xml:space="preserve">
     <value>정규/특별/전문 석사 학위</value>
   </data>
-	<data name="D2_3_Reson3" xml:space="preserve">
+  <data name="D2_3_Reson3" xml:space="preserve">
     <value>정규/특별/전문 석사 학위</value>
   </data>
-	<data name="D2_3_Reson4" xml:space="preserve">
+  <data name="D2_3_Reson4" xml:space="preserve">
     <value>초청장 석사학위 / 비자코드 / E-Visa</value>
   </data>
-	<data name="D2_3_Reson5" xml:space="preserve">
+  <data name="D2_3_Reson5" xml:space="preserve">
     <value>영어 트랙 석사학위 - 코리안 트랙</value>
   </data>
-	<data name="D2_3_Reson6" xml:space="preserve">
+  <data name="D2_3_Reson6" xml:space="preserve">
     <value>매력적인 장학금 정책, 우대 학비</value>
   </data>
-	<data name="D2_3_Reson7" xml:space="preserve">
+  <data name="D2_3_Reson7" xml:space="preserve">
     <value>학교에서 공부 시간이 적습니다</value>
   </data>
-	<data name="D2_3_Reson8" xml:space="preserve">
+  <data name="D2_3_Reson8" xml:space="preserve">
     <value>아르바이트 시간은 한국의 유학 시스템 중 가장 높습니다.</value>
   </data>
-	<data name="D2_3_Reson9" xml:space="preserve">
+  <data name="D2_3_Reson9" xml:space="preserve">
     <value>따라서 KIPA와 함께 석사과정 한국유학은 어떤 조건이 필요한지, 어떤 비용이 필요한지, 어떤 전공을 적합한지 다음 내용을 통해 알아보자.</value>
   </data>
-	<data name="D2_3_Route1" xml:space="preserve">
+  <data name="D2_3_Route1" xml:space="preserve">
     <value>5. 한국 석사 유학 코스</value>
   </data>
-	<data name="D2_3_Route10" xml:space="preserve">
+  <data name="D2_3_Route10" xml:space="preserve">
     <value>학교에서 요구하는 TOPIK 자격증이 필요</value>
   </data>
-	<data name="D2_3_Route11" xml:space="preserve">
+  <data name="D2_3_Route11" xml:space="preserve">
     <value>한국에서 석사과정 지원서 작성</value>
   </data>
-	<data name="D2_3_Route12" xml:space="preserve">
+  <data name="D2_3_Route12" xml:space="preserve">
     <value>학교 절차에 따라 입학</value>
   </data>
-	<data name="D2_3_Route13" xml:space="preserve">
+  <data name="D2_3_Route13" xml:space="preserve">
     <value>TOPIK 점수가 필요없는 석사 과정, E 비자 석사 과정</value>
   </data>
-	<data name="D2_3_Route14" xml:space="preserve">
+  <data name="D2_3_Route14" xml:space="preserve">
     <value>학교 자체 시험에 합격</value>
   </data>
-	<data name="D2_3_Route15" xml:space="preserve">
+  <data name="D2_3_Route15" xml:space="preserve">
     <value>학교 제출 및 코드 비자 발급을 위한 서류 완성</value>
   </data>
-	<data name="D2_3_Route16" xml:space="preserve">
+  <data name="D2_3_Route16" xml:space="preserve">
     <value>비자 결과를 받고 입학</value>
   </data>
-	<data name="D2_3_Route2" xml:space="preserve">
+  <data name="D2_3_Route2" xml:space="preserve">
     <value>5.1. 한국에서 한국어와 석사 교육</value>
   </data>
-	<data name="D2_3_Route3" xml:space="preserve">
+  <data name="D2_3_Route3" xml:space="preserve">
     <value>대학 어학연수 서류를 준비</value>
   </data>
-	<data name="D2_3_Route4" xml:space="preserve">
+  <data name="D2_3_Route4" xml:space="preserve">
     <value>한국에서 어학연수 비자 D4-1 신청서 제출</value>
   </data>
-	<data name="D2_3_Route5" xml:space="preserve">
+  <data name="D2_3_Route5" xml:space="preserve">
     <value>TOPIK 3 이상을 달성하고 TOPIK 4 이상을 우선시하는 한국 학교를 선택하면 유학갈 가능성이 더 좋아짐</value>
   </data>
-	<data name="D2_3_Route6" xml:space="preserve">
+  <data name="D2_3_Route6" xml:space="preserve">
     <value>한국에서 석사과정을 등록</value>
   </data>
-	<data name="D2_3_Route7" xml:space="preserve">
+  <data name="D2_3_Route7" xml:space="preserve">
     <value>비자 D4-1을 비자 D2-3으로 전환</value>
   </data>
-	<data name="D2_3_Route8" xml:space="preserve">
+  <data name="D2_3_Route8" xml:space="preserve">
     <value>5.2. 한국에서 석사 과정을 바로 공부</value>
   </data>
-	<data name="D2_3_Route9" xml:space="preserve">
+  <data name="D2_3_Route9" xml:space="preserve">
     <value>TOPIK 필요 석사 과정</value>
   </data>
-	<data name="D2_3_Scholarship1" xml:space="preserve">
+  <data name="D2_3_Scholarship1" xml:space="preserve">
     <value>6. 한국 석사 유학 장학금</value>
   </data>
-	<data name="D2_3_Scholarship2" xml:space="preserve">
+  <data name="D2_3_Scholarship2" xml:space="preserve">
     <value>Tiêu chuẩn</value>
   </data>
-	<data name="D2_3_Scholarship3" xml:space="preserve">
+  <data name="D2_3_Scholarship3" xml:space="preserve">
     <value>Học bổng</value>
   </data>
-	<data name="D2_3_Scholarship4" xml:space="preserve">
+  <data name="D2_3_Scholarship4" xml:space="preserve">
     <value>Khối ngành xã hội nhân văn</value>
   </data>
-	<data name="D2_3_Scholarship5" xml:space="preserve">
+  <data name="D2_3_Scholarship5" xml:space="preserve">
     <value>Khối ngành tự nhiên, kỹ thuật công nghiệp</value>
   </data>
-	<data name="D2_3_Scholarship6" xml:space="preserve">
+  <data name="D2_3_Scholarship6" xml:space="preserve">
     <value>TOPIK cấp 4 trở lên</value>
   </data>
-	<data name="D2_3_Scholarship7" xml:space="preserve">
+  <data name="D2_3_Scholarship7" xml:space="preserve">
     <value>Học bổng dành cho chương trình thạc sỹ của trường Soongsil</value>
   </data>
-	<data name="D2_3_Scholarship8" xml:space="preserve">
+  <data name="D2_3_Scholarship8" xml:space="preserve">
     <value>한국 석사 유학 프로그램에는 보통 다양한 장학금이 있습니다. 그런데 보통 TOPIK이나 영어 능력에 따라1학기 학비의 30% - 100%를 장학금으로 받게 됩니다. 그 후 다음 학기에 대한 장학금이 있으며, 이전 학기의 학업 성적에 따라 다음 학기에 장학금의 몇 %를 받을지 결정됩니다.</value>
   </data>
-	<data name="D2_3_Specialized1" xml:space="preserve">
+  <data name="D2_3_Specialized1" xml:space="preserve">
     <value>7. 한국에서 어떤 전공의 석사 학위를 취득해야 합니까?</value>
   </data>
-	<data name="D2_3_Specialized10" xml:space="preserve">
+  <data name="D2_3_Specialized10" xml:space="preserve">
     <value>서울대학교</value>
   </data>
-	<data name="D2_3_Specialized11" xml:space="preserve">
+  <data name="D2_3_Specialized11" xml:space="preserve">
     <value>한국과학기술원</value>
   </data>
-	<data name="D2_3_Specialized12" xml:space="preserve">
+  <data name="D2_3_Specialized12" xml:space="preserve">
     <value>포항공과대학교</value>
   </data>
-	<data name="D2_3_Specialized13" xml:space="preserve">
+  <data name="D2_3_Specialized13" xml:space="preserve">
     <value>이화여자대학교</value>
   </data>
-	<data name="D2_3_Specialized14" xml:space="preserve">
+  <data name="D2_3_Specialized14" xml:space="preserve">
     <value>성신여자대학교</value>
   </data>
-	<data name="D2_3_Specialized2" xml:space="preserve">
+  <data name="D2_3_Specialized2" xml:space="preserve">
     <value>7.1 한국에서 석사 학위를 전공하는 일부 전공:</value>
   </data>
-	<data name="D2_3_Specialized3" xml:space="preserve">
+  <data name="D2_3_Specialized3" xml:space="preserve">
     <value>7.2 석사 학위를 제공하는 일부 대학교는 다음을 참고할 수 있습니다.</value>
   </data>
-	<data name="D2_3_Specialized4" xml:space="preserve">
+  <data name="D2_3_Specialized4" xml:space="preserve">
     <value>세종대학교</value>
   </data>
-	<data name="D2_3_Specialized5" xml:space="preserve">
+  <data name="D2_3_Specialized5" xml:space="preserve">
     <value>국민대학교</value>
   </data>
-	<data name="D2_3_Specialized6" xml:space="preserve">
+  <data name="D2_3_Specialized6" xml:space="preserve">
     <value>중앙대학교</value>
   </data>
-	<data name="D2_3_Specialized7" xml:space="preserve">
+  <data name="D2_3_Specialized7" xml:space="preserve">
     <value>홍익대학교</value>
   </data>
-	<data name="D2_3_Specialized8" xml:space="preserve">
+  <data name="D2_3_Specialized8" xml:space="preserve">
     <value>고려대학교</value>
   </data>
-	<data name="D2_3_Specialized9" xml:space="preserve">
+  <data name="D2_3_Specialized9" xml:space="preserve">
     <value>연세대학교</value>
   </data>
-	<data name="D2_3_Step1" xml:space="preserve">
+  <data name="D2_3_Step1" xml:space="preserve">
     <value>1단계</value>
   </data>
-	<data name="D2_3_Step2" xml:space="preserve">
+  <data name="D2_3_Step2" xml:space="preserve">
     <value>2단계</value>
   </data>
-	<data name="D2_3_Step3" xml:space="preserve">
+  <data name="D2_3_Step3" xml:space="preserve">
     <value>3단계</value>
   </data>
-	<data name="D2_3_Step4" xml:space="preserve">
+  <data name="D2_3_Step4" xml:space="preserve">
     <value>4단계</value>
   </data>
-	<data name="D2_3_Step5" xml:space="preserve">
+  <data name="D2_3_Step5" xml:space="preserve">
     <value>5단계</value>
   </data>
-	<data name="D2_3_Time1" xml:space="preserve">
+  <data name="D2_3_Time1" xml:space="preserve">
     <value>3. 한국에서 석사 과정 기간</value>
   </data>
-	<data name="D2_3_Time10" xml:space="preserve">
+  <data name="D2_3_Time10" xml:space="preserve">
     <value>여름방학 : 7월부터 8월까지</value>
   </data>
-	<data name="D2_3_Time11" xml:space="preserve">
+  <data name="D2_3_Time11" xml:space="preserve">
     <value>겨울방학 : 1월부터 2월까지</value>
   </data>
-	<data name="D2_3_Time2" xml:space="preserve">
+  <data name="D2_3_Time2" xml:space="preserve">
     <value>Học sinh KIPA trong tiết học cùng với các sinh viên khác tại Hàn Quốc</value>
   </data>
-	<data name="D2_3_Time3" xml:space="preserve">
+  <data name="D2_3_Time3" xml:space="preserve">
     <value>한국의 석사과정 프로그램은 일반적으로 최소 2년의 교육기간을 가지고 있습다. 전공별로 학점 수와 교육 과정은 다르지만 일반적으로 약 24학점(ECTS 학점 48학점)을 이수해야 합니다.</value>
   </data>
-	<data name="D2_3_Time4" xml:space="preserve">
+  <data name="D2_3_Time4" xml:space="preserve">
     <value>교육 과정을 마친 후 최종 시험에서 시험을 치르고 채점 위원회 앞에서 연구 및 석사 논문을 발표해야 합니다. (최소 3명의 평가관이 수락하면 학위를 받고 졸업할 자격이 있으며 불합격하면 6개월 후에 다시 발표합니다.)</value>
   </data>
-	<data name="D2_3_Time5" xml:space="preserve">
+  <data name="D2_3_Time5" xml:space="preserve">
     <value>1년 동안의 교육 과정은 일반적으로 2학기로 나뉩니다.</value>
   </data>
-	<data name="D2_3_Time6" xml:space="preserve">
+  <data name="D2_3_Time6" xml:space="preserve">
     <value>1학기: 3월부터 6월까지</value>
   </data>
-	<data name="D2_3_Time7" xml:space="preserve">
+  <data name="D2_3_Time7" xml:space="preserve">
     <value>2학기: 9월부터 12월까지</value>
   </data>
-	<data name="D2_3_Time8" xml:space="preserve">
+  <data name="D2_3_Time8" xml:space="preserve">
     <value>Sinh viên Kipa trong chương trình hoạt động ngoại khóa tại trường</value>
   </data>
-	<data name="D2_3_Time9" xml:space="preserve">
+  <data name="D2_3_Time9" xml:space="preserve">
     <value>매년 2번의 방학이 있습니다.</value>
   </data>
-	<data name="D2_3_Title" xml:space="preserve">
+  <data name="D2_3_Title" xml:space="preserve">
     <value>한국 석사 유학은 다음과 같은 이유로 많은 젊은이들이 관심을 가지고 열풍을 일으키고 있습니다.</value>
   </data>
-	<data name="Daegu" xml:space="preserve">
+  <data name="Daegu" xml:space="preserve">
     <value>대구예술대학교</value>
   </data>
-	<data name="DesHeader" xml:space="preserve">
+  <data name="DesHeader" xml:space="preserve">
     <value>가장 믿을 수 있는 동반자!</value>
   </data>
-	<data name="DesLinkSchool" xml:space="preserve">
+  <data name="DesLinkSchool" xml:space="preserve">
     <value>KIPA 는 입학 파트너임을 자랑스럽게 생각하며 한국의 명문 대학과 협력 관계를 맺고 있습니다.</value>
   </data>
-	<data name="DesReson1" xml:space="preserve">
+  <data name="DesReson1" xml:space="preserve">
     <value>베트남과 한국의 비즈니스 환경에 대한 깊은 이해와 많은 한국 기업의 파트너들을 위한 한국어 교육 분야에서 수년간의 경험으로 KIPA는 한국 대기업들이 인정한 파트너입니다</value>
   </data>
-	<data name="DesReson2" xml:space="preserve">
+  <data name="DesReson2" xml:space="preserve">
     <value>교사들은 다년간 SKC, Hyosung, Daklak성, 산업인력공단(HRDK)등 기업 교육 경험을 갖고 있으며 잘 훈련되어 있고 철저하며 열정적이며 교육 활동에 헌신하고 있습니다. 특히, 지식과 커리큘럼을 세심한 준비로 가장 까다로운 학습자도 만족시킬 수 있습니다.</value>
   </data>
-	<data name="DesReson3" xml:space="preserve">
+  <data name="DesReson3" xml:space="preserve">
     <value>언제나 기대 이상의 효과로 최고의 교육을 진행하고 있습니다.s</value>
   </data>
-	<data name="desteacher1" xml:space="preserve">
+  <data name="desteacher1" xml:space="preserve">
     <value>Viet Nhat 한국어학과</value>
   </data>
-	<data name="desteacher2" xml:space="preserve">
+  <data name="desteacher2" xml:space="preserve">
     <value>국민경제대학 상경과</value>
   </data>
-	<data name="desteacher3" xml:space="preserve">
+  <data name="desteacher3" xml:space="preserve">
     <value>하노이 폴리텍 대학교 한국어학과</value>
   </data>
-	<data name="Dongguk" xml:space="preserve">
+  <data name="Dongguk" xml:space="preserve">
     <value>동국대학교</value>
   </data>
-	<data name="Dongshin" xml:space="preserve">
+  <data name="Dongshin" xml:space="preserve">
     <value>동신대학교</value>
   </data>
-	<data name="E9" xml:space="preserve">
+  <data name="E9" xml:space="preserve">
     <value>귀국 근로자 교육</value>
   </data>
-	<data name="e9_1" xml:space="preserve">
+  <data name="e9_1" xml:space="preserve">
     <value>귀국 근로자(E9)를 위한 훈련과정 프로젝트</value>
   </data>
-	<data name="e9_10" xml:space="preserve">
+  <data name="e9_10" xml:space="preserve">
     <value>VTV1채널 베트남 방송국에 나옴</value>
   </data>
-	<data name="e9_11" xml:space="preserve">
+  <data name="e9_11" xml:space="preserve">
     <value>수업 사진</value>
   </data>
-	<data name="e9_12" xml:space="preserve">
+  <data name="e9_12" xml:space="preserve">
     <value>삼성 공단 기업탐방, 모의 면접, ... 등의 교외 활동 사진</value>
   </data>
-	<data name="e9_2" xml:space="preserve">
+  <data name="e9_2" xml:space="preserve">
     <value>현재 외국에서 귀국하는</value>
   </data>
-	<data name="e9_3" xml:space="preserve">
+  <data name="e9_3" xml:space="preserve">
     <value>근로자의 수는 매년 늘어나고 있습니다. 이들이 훈련을 좀 더 받을 수 있다면 국가경제 발전에 이바지할 수 있는 양질의 인적 자원이 될 것입니다.</value>
   </data>
-	<data name="e9_4" xml:space="preserve">
+  <data name="e9_4" xml:space="preserve">
     <value>1. 귀국 근로자(E9)를 위한 훈련과정 프로젝트</value>
   </data>
-	<data name="e9_5" xml:space="preserve">
+  <data name="e9_5" xml:space="preserve">
     <value>한국산업인력공단(HRDK)과 COLAB</value>
   </data>
-	<data name="e9_6" xml:space="preserve">
+  <data name="e9_6" xml:space="preserve">
     <value>센터의 귀국 근로자 대상 사업에 참가된 KIPA는 이 근로자를 위한 훈련기관으로 선정되었습니다. 이 훈련과정은 한국에서 근로계약을 마치고 베트남으로 귀국한 베트남 근로자를 대상으로 진행됩니다. 과정의 목표는 한국에서 근무하면서 쌓은 경험과 본 훈련과정을 통해 배운 지식을 활용하여 한국에서 귀국한 근로자들이 베트남에 있는 한국기업에 성공적으로 취업할 수 있도록 돕는 것입니다. 이 과정을 통해 근로자는 생산 관리 기술, 기본 컴퓨터 기술 및 한국어 교육을 갖추고 한국에서 근무하면서 습득한 지식을 좀 더 체계적으로 갖추게 됩니다.</value>
   </data>
-	<data name="e9_7" xml:space="preserve">
+  <data name="e9_7" xml:space="preserve">
     <value>훈련 과정은</value>
   </data>
-	<data name="e9_8" xml:space="preserve">
+  <data name="e9_8" xml:space="preserve">
     <value>1개월 동안 진행되며, 과정 수료 후 근로자들은 한국 수료증을 발급 받고, 베트남 내 한국 기업에 적합한 일자리를 찾을 수 있도록 지원됩니다.</value>
   </data>
-	<data name="e9_9" xml:space="preserve">
+  <data name="e9_9" xml:space="preserve">
     <value>산업인력공단(HRDK)의 E9 근로자를 위한 생산관리 및 한국어 교육 프로젝트</value>
   </data>
-	<data name="Enterprise" xml:space="preserve">
+  <data name="Enterprise" xml:space="preserve">
     <value>기업에서 한국어 교육 프로그램</value>
   </data>
-	<data name="Ex" xml:space="preserve">
+  <data name="Ex" xml:space="preserve">
     <value>주요경력</value>
   </data>
-	<data name="Exteacher1" xml:space="preserve">
+  <data name="Exteacher1" xml:space="preserve">
     <value>K.I.P.A 하노이, R&amp;I Institute 연구원, VNJ 강사,
 SKC 강사, 산업인력공단(HRDK) 강사</value>
   </data>
-	<data name="Exteacher2" xml:space="preserve">
+  <data name="Exteacher2" xml:space="preserve">
     <value>K.I.P.A 하노이, R&amp;I Institute 연구원, 통역, 번역, 한국
 어 강사</value>
   </data>
-	<data name="Exteacher3" xml:space="preserve">
+  <data name="Exteacher3" xml:space="preserve">
     <value>K.I.P.A 하노이, R&amp;I Institute 연구원, SKC 강사,
 한국어 강사</value>
   </data>
-	<data name="Functional" xml:space="preserve">
+  <data name="Functional" xml:space="preserve">
     <value>건강 식품</value>
   </data>
-	<data name="Handbook" xml:space="preserve">
+  <data name="Handbook" xml:space="preserve">
     <value>유학 정보</value>
   </data>
-	<data name="HighSchool" xml:space="preserve">
+  <data name="HighSchool" xml:space="preserve">
     <value>한국어 교육프로그램</value>
   </data>
-	<data name="HighSchool1" xml:space="preserve">
+  <data name="HighSchool1" xml:space="preserve">
     <value>한국 고등학교 유학 프로그램</value>
   </data>
-	<data name="HighSchool10" xml:space="preserve">
+  <data name="HighSchool10" xml:space="preserve">
     <value>남학교, 여학교, 혼성학교</value>
   </data>
-	<data name="HighSchool11" xml:space="preserve">
+  <data name="HighSchool11" xml:space="preserve">
     <value>직업학교:</value>
   </data>
-	<data name="HighSchool12" xml:space="preserve">
+  <data name="HighSchool12" xml:space="preserve">
     <value>조기 직업교육의 형태입니다. 이런 학교에 다니는 학생들은 문화 교육과 직업 훈련을 함께 받게 됩니다. 졸업 후 학생들은 고등학교 졸업장과 직업에 관련된 자격증을 모두 취득하게 됩니다. 직업고등학교를 졸업한 후에도 계속 직업 훈련을 받거나 일을 하는 것 외에도 대학이나 전문대에 지원할 수 있는 자격이 있습니다.</value>
   </data>
-	<data name="HighSchool13" xml:space="preserve">
+  <data name="HighSchool13" xml:space="preserve">
     <value>자율형 시립고등학교:</value>
   </data>
-	<data name="HighSchool14" xml:space="preserve">
+  <data name="HighSchool14" xml:space="preserve">
     <value>한국에서 유명한 유형의 고등학교입니다. 학교별로 다양하고 개성 있는 교육과정을 실시하는 고등학교입니다.</value>
   </data>
-	<data name="HighSchool15" xml:space="preserve">
+  <data name="HighSchool15" xml:space="preserve">
     <value>한국의 고등학교 프로그램은 베트남과 비슷하며 3년 동안 지속됩니다.</value>
   </data>
-	<data name="HighSchool16" xml:space="preserve">
+  <data name="HighSchool16" xml:space="preserve">
     <value>2: 2024-2025 모집 프로그램</value>
   </data>
-	<data name="HighSchool17" xml:space="preserve">
+  <data name="HighSchool17" xml:space="preserve">
     <value>2024-2025 모집 프로그램</value>
   </data>
-	<data name="HighSchool18" xml:space="preserve">
+  <data name="HighSchool18" xml:space="preserve">
     <value>모집인원:</value>
   </data>
-	<data name="HighSchool19" xml:space="preserve">
+  <data name="HighSchool19" xml:space="preserve">
     <value>베트남 40개 한국어를 가르치는 고등학교 중에서 30명 선발 모집</value>
   </data>
-	<data name="HighSchool2" xml:space="preserve">
+  <data name="HighSchool2" xml:space="preserve">
     <value>1: 한국 고등학교 유학은 무엇인가요?</value>
   </data>
-	<data name="HighSchool20" xml:space="preserve">
+  <data name="HighSchool20" xml:space="preserve">
     <value>3: 한국 고등학교 지원 자격</value>
   </data>
-	<data name="HighSchool21" xml:space="preserve">
+  <data name="HighSchool21" xml:space="preserve">
     <value>다른 한국 유학 프로그램과 마찬가지로 한국 고등학교 유학에도 일정한 조건이 있습니다.</value>
   </data>
-	<data name="HighSchool22" xml:space="preserve">
+  <data name="HighSchool22" xml:space="preserve">
     <value>베트남에서 중학교를 졸업하여 중학교 졸업 증명서가 있는 학생;</value>
   </data>
-	<data name="HighSchool23" xml:space="preserve">
+  <data name="HighSchool23" xml:space="preserve">
     <value>베트남 1학년, 2학년 고등학교에 다니고 있는 사람 중 17세를 초과하지 않은 학생;</value>
   </data>
-	<data name="HighSchool24" xml:space="preserve">
+  <data name="HighSchool24" xml:space="preserve">
     <value>부모나 학생의 범죄 기록이 없거나 베트남 출국 금지 사유가 없는 학생;</value>
   </data>
-	<data name="HighSchool25" xml:space="preserve">
+  <data name="HighSchool25" xml:space="preserve">
     <value>한국어 능력이 좋고 선생님의 강의를 이해할 수 있는 학생;</value>
   </data>
-	<data name="HighSchool26" xml:space="preserve">
+  <data name="HighSchool26" xml:space="preserve">
     <value>재정 증명;</value>
   </data>
-	<data name="HighSchool27" xml:space="preserve">
+  <data name="HighSchool27" xml:space="preserve">
     <value>건강검진 증명서(간염과 결핵 포함);</value>
   </data>
-	<data name="HighSchool28" xml:space="preserve">
+  <data name="HighSchool28" xml:space="preserve">
     <value>가족 중에 한국 불법 체류가 없는 학생;</value>
   </data>
-	<data name="HighSchool29" xml:space="preserve">
+  <data name="HighSchool29" xml:space="preserve">
     <value>9월에 있는 수학, 영어, 한국어 시험에 합격한 사람. (시험 문제는 한국 3개 대학에서 출시하고 감독은 하노이 지점 한국인 대표입니다.);</value>
   </data>
-	<data name="HighSchool3" xml:space="preserve">
+  <data name="HighSchool3" xml:space="preserve">
     <value>요즘,</value>
   </data>
-	<data name="HighSchool30" xml:space="preserve">
+  <data name="HighSchool30" xml:space="preserve">
     <value>재정보증: 보증인은 학업 기간 동안 학생의 모든 비용을 보장해야 합니다. 동시에, 이민국 규정에 따라 최소 잔액이 있는 신청서 제출 시점을 기준으로 6개월 이상 유효한 통장을 보유하고 있어야 합니다.-	재정보증: 보증인은 학업 기간 동안 학생의 모든 비용을 보장해야 합니다. 동시에, 이민국 규정에 따라 최소 잔액이 있는 신청서 제출 시점을 기준으로 6개월 이상 유효한 통장을 보유하고 있어야 합니다.;</value>
   </data>
-	<data name="HighSchool31" xml:space="preserve">
+  <data name="HighSchool31" xml:space="preserve">
     <value>4: 제출서류</value>
   </data>
-	<data name="HighSchool32" xml:space="preserve">
+  <data name="HighSchool32" xml:space="preserve">
     <value>신청 서류 접수 기간:</value>
   </data>
-	<data name="HighSchool33" xml:space="preserve">
+  <data name="HighSchool33" xml:space="preserve">
     <value>이메일로 접수</value>
   </data>
-	<data name="HighSchool34" xml:space="preserve">
+  <data name="HighSchool34" xml:space="preserve">
     <value>2024년 7월 30일까지</value>
   </data>
-	<data name="HighSchool35" xml:space="preserve">
+  <data name="HighSchool35" xml:space="preserve">
     <value>건강검진 증명서( 간염과 결핵 포함)</value>
   </data>
-	<data name="HighSchool36" xml:space="preserve">
+  <data name="HighSchool36" xml:space="preserve">
     <value>부모님 범죄 경력증명서</value>
   </data>
-	<data name="HighSchool37" xml:space="preserve">
+  <data name="HighSchool37" xml:space="preserve">
     <value>학생 자기소개</value>
   </data>
-	<data name="HighSchool38" xml:space="preserve">
+  <data name="HighSchool38" xml:space="preserve">
     <value>중학교 성적증명서</value>
   </data>
-	<data name="HighSchool39" xml:space="preserve">
+  <data name="HighSchool39" xml:space="preserve">
     <value>사진 (3,5x4,5)</value>
   </data>
-	<data name="HighSchool4" xml:space="preserve">
+  <data name="HighSchool4" xml:space="preserve">
     <value>베트남에서 중학교를 졸업하자마자 자녀를 한국으로 고등학교 유학을 보내기로 결정하는 부모님들이 점점 많아지고 있습니다.</value>
   </data>
-	<data name="HighSchool40" xml:space="preserve">
+  <data name="HighSchool40" xml:space="preserve">
     <value>1차: 9월 능력 시험(수학, 영어, 한국어) 합격</value>
   </data>
-	<data name="HighSchool41" xml:space="preserve">
+  <data name="HighSchool41" xml:space="preserve">
     <value>2차: 화상 면접 합격 후 추후 통지 서류 제출을 알려줍니다</value>
   </data>
-	<data name="HighSchool42" xml:space="preserve">
+  <data name="HighSchool42" xml:space="preserve">
     <value>위에서 언급한 두 가지 시험에 합격한 후 학생들은 나머지 서류를 준비하고 2025년 3월에 입학할 것입니다.</value>
   </data>
-	<data name="HighSchool43" xml:space="preserve">
+  <data name="HighSchool43" xml:space="preserve">
     <value>5: 한국 고등 유학 경비</value>
   </data>
-	<data name="HighSchool44" xml:space="preserve">
+  <data name="HighSchool44" xml:space="preserve">
     <value>한국 유학</value>
   </data>
-	<data name="HighSchool45" xml:space="preserve">
+  <data name="HighSchool45" xml:space="preserve">
     <value>비용은 유럽이나 호주 유학에 비해 1/3정도 저렴합니다. 이 비용은 상당히 합리적인 비용입니다. 지원하는 고등학교에 따라 비용은 약 2.000$~10.000$( 지원비, 서류비, 항공권 및 기타 비용 포함)입니다.</value>
   </data>
-	<data name="HighSchool46" xml:space="preserve">
+  <data name="HighSchool46" xml:space="preserve">
     <value>그리고, 공부하는 동안 학업 성적이 좋으면 장학금을 받을 수 있는 기회도 적지 않습니다.</value>
   </data>
-	<data name="HighSchool47" xml:space="preserve">
+  <data name="HighSchool47" xml:space="preserve">
     <value>6: 한국 고등학교에서 조기유학을 하는 이유</value>
   </data>
-	<data name="HighSchool48" xml:space="preserve">
+  <data name="HighSchool48" xml:space="preserve">
     <value>한국의 교육은 양질의 교육이며 향후 학생의 미래에 도움울 많이 줍니다.</value>
   </data>
-	<data name="HighSchool49" xml:space="preserve">
+  <data name="HighSchool49" xml:space="preserve">
     <value>학생이 유학을 갈 때 부모님 중에 한 명이 함께 갈 수 있습니다. (지원하는 고등학교에 따라 학생과 갈 수도 있고 학생이 입국한지 6개월 이후에 갈 수도 있습니다)</value>
   </data>
-	<data name="HighSchool5" xml:space="preserve">
+  <data name="HighSchool5" xml:space="preserve">
     <value>베트남의</value>
   </data>
-	<data name="HighSchool50" xml:space="preserve">
+  <data name="HighSchool50" xml:space="preserve">
     <value>고등학교 한국 유학 비용은 적당합니다</value>
   </data>
-	<data name="HighSchool51" xml:space="preserve">
+  <data name="HighSchool51" xml:space="preserve">
     <value>한국 문화는 베트남과 유사점이 많아서 쉽게 적응할 수 있습니다</value>
   </data>
-	<data name="HighSchool52" xml:space="preserve">
+  <data name="HighSchool52" xml:space="preserve">
     <value>한국의 생활조건은 상당히 높습니다.</value>
   </data>
-	<data name="HighSchool53" xml:space="preserve">
+  <data name="HighSchool53" xml:space="preserve">
     <value>한국은 치안이 잘 되어 있어서 안심하고 학생들을 보낼 수 있습니다.</value>
   </data>
-	<data name="HighSchool54" xml:space="preserve">
+  <data name="HighSchool54" xml:space="preserve">
     <value>한국 고등유학을 하면 일찍 자립을 실천하는데에 도움이 됩니다.</value>
   </data>
-	<data name="HighSchool55" xml:space="preserve">
+  <data name="HighSchool55" xml:space="preserve">
     <value>한국 고등학교에서 공부하면 꿈의 한국 대학교에 입학할 수 있습니다. 가장 중요한 장점 중의 하나는 외국인 특례 자격으로 대학에 입학하는 것입니다.</value>
   </data>
-	<data name="HighSchool56" xml:space="preserve">
+  <data name="HighSchool56" xml:space="preserve">
     <value>7: 대표 고등학교</value>
   </data>
-	<data name="HighSchool57" xml:space="preserve">
+  <data name="HighSchool57" xml:space="preserve">
     <value>7.1. 김천고등학교</value>
   </data>
-	<data name="HighSchool58" xml:space="preserve">
+  <data name="HighSchool58" xml:space="preserve">
     <value>1931년 개교한 명문사학</value>
   </data>
-	<data name="HighSchool59" xml:space="preserve">
+  <data name="HighSchool59" xml:space="preserve">
     <value>대한민국 고등학교 2,000여개 중 상위 1% 이내</value>
   </data>
-	<data name="HighSchool6" xml:space="preserve">
+  <data name="HighSchool6" xml:space="preserve">
     <value>고등학교와 마찬가지로 한국의 고등학교도 1학년부터 3학년까지 3년간 공부합니다. 한국어, 영어, 수학,사회 및  자연계과목, 체육 등 국영과목을 가르치는 데 중점을 두고 있습니다. 또한 학교 프로그램은 스포츠, 과외 활동, 클럽과 같은 활동에 중점을 둡니다. 이런 프로그램은 학생들의 균형잡힌 성장에 도움을 주기 위한 것입니다.</value>
   </data>
-	<data name="HighSchool60" xml:space="preserve">
+  <data name="HighSchool60" xml:space="preserve">
     <value>대한민국 전체에서 우수 학생을 모집하는 자율형 사립학교</value>
   </data>
-	<data name="HighSchool61" xml:space="preserve">
+  <data name="HighSchool61" xml:space="preserve">
     <value>졸업생 다수가 명문 대학 진학</value>
   </data>
-	<data name="HighSchool62" xml:space="preserve">
+  <data name="HighSchool62" xml:space="preserve">
     <value>다양하고 심오한 교육과정을 제공함으로써 글로벌 인재 육성</value>
   </data>
-	<data name="HighSchool63" xml:space="preserve">
+  <data name="HighSchool63" xml:space="preserve">
     <value>7.2. 남원제일고등학교</value>
   </data>
-	<data name="HighSchool64" xml:space="preserve">
+  <data name="HighSchool64" xml:space="preserve">
     <value>주소 : 전북특별자치도 남원시 노송로 1206</value>
   </data>
-	<data name="HighSchool65" xml:space="preserve">
+  <data name="HighSchool65" xml:space="preserve">
     <value>전화번호 : +82 63-630-9002</value>
   </data>
-	<data name="HighSchool66" xml:space="preserve">
+  <data name="HighSchool66" xml:space="preserve">
     <value>우리</value>
   </data>
-	<data name="HighSchool67" xml:space="preserve">
+  <data name="HighSchool67" xml:space="preserve">
     <value>성원학원은 1974년 6월 설립하여 1975년 성원고등학교를 개교하고 1977년 남원제일고등학교를 개교하였습니다.</value>
   </data>
-	<data name="HighSchool68" xml:space="preserve">
+  <data name="HighSchool68" xml:space="preserve">
     <value>초대 故</value>
   </data>
-	<data name="HighSchool69" xml:space="preserve">
+  <data name="HighSchool69" xml:space="preserve">
     <value>瀚書 양승권이사장의 "새 역사 창조의 기수가 되라"는 설립훈과 2대 故 學山 양승귀이사장의 "꿈을 가진 창조적 인재육성"이라는 설립이념을 바탕으로 춘향골 사학의 전당으로 자리매김한지 40여 성상을 바라보고 있습니다.</value>
   </data>
-	<data name="HighSchool7" xml:space="preserve">
+  <data name="HighSchool7" xml:space="preserve">
     <value>이 한국 유학</value>
   </data>
-	<data name="HighSchool70" xml:space="preserve">
+  <data name="HighSchool70" xml:space="preserve">
     <value>우리</value>
   </data>
-	<data name="HighSchool71" xml:space="preserve">
+  <data name="HighSchool71" xml:space="preserve">
     <value>학원은 설립인의 육영정신을 길이 받들어 양교(兩校) 학교장 책임 하에 선생님들의 창의적이고 자율적인 교육활동을 적극 지원하고 학부모와 동문회, 학생간의 원활한 소통을 통한 미래 개척의 통로를 마련하고 있으며, 오직 학생의 평생학습을 위한 개별상담 운영으로 진학과 취업지도에 전교직원이 최선을 다 하고 있습니다.</value>
   </data>
-	<data name="HighSchool72" xml:space="preserve">
+  <data name="HighSchool72" xml:space="preserve">
     <value>우리 학원</value>
   </data>
-	<data name="HighSchool73" xml:space="preserve">
+  <data name="HighSchool73" xml:space="preserve">
     <value>건아들이 건강한 신체와 건전한 민주, 자율, 자립 정신으로 무장한 시민으로 성장하여 지역사회는 물론 국가발전에 기여하며 행복한 미래를 개척할 수 있는 근면 성실한 실력 있는 남원인으로 육성할 것을 다짐하며, 110여명 전 교직원은 모든 역량을 다 할 것입니다.</value>
   </data>
-	<data name="HighSchool74" xml:space="preserve">
+  <data name="HighSchool74" xml:space="preserve">
     <value>두 학교의</value>
   </data>
-	<data name="HighSchool75" xml:space="preserve">
+  <data name="HighSchool75" xml:space="preserve">
     <value>20,000명의 동문들과 학부모들과 국민들로부터 많은 관심과 사랑을 받기를 바랍니다.</value>
   </data>
-	<data name="HighSchool76" xml:space="preserve">
+  <data name="HighSchool76" xml:space="preserve">
     <value>다음은 대한민국의 고등학교 목록입니다.</value>
   </data>
-	<data name="HighSchool77" xml:space="preserve">
+  <data name="HighSchool77" xml:space="preserve">
     <value>8. 2023~2024 : 학생 모집 및 설정 활동 사진</value>
   </data>
-	<data name="HighSchool78" xml:space="preserve">
+  <data name="HighSchool78" xml:space="preserve">
     <value>하노이에 있는 한국어 가르치는 중,고등학교 방문 및 MOU 체결</value>
   </data>
-	<data name="HighSchool79" xml:space="preserve">
+  <data name="HighSchool79" xml:space="preserve">
     <value>타이응엔 교육부 및 박닌성 인민위원회 방문 및 MOU 체결</value>
   </data>
-	<data name="HighSchool8" xml:space="preserve">
+  <data name="HighSchool8" xml:space="preserve">
     <value>프로그램은 중학교를 졸업한 후 한국에 있는 고등학교에서 공부하기 위해 한국에 가는 베트남 학생들을 위한 프로그램입니다. 현재 한국에는 3가지 유형의 고등학교가 있습니다.</value>
   </data>
-	<data name="HighSchool80" xml:space="preserve">
+  <data name="HighSchool80" xml:space="preserve">
     <value>2024 고등학교 입학생</value>
   </data>
-	<data name="HighSchool9" xml:space="preserve">
+  <data name="HighSchool9" xml:space="preserve">
     <value>일반고등학교:</value>
   </data>
-	<data name="Inha" xml:space="preserve">
+  <data name="Inha" xml:space="preserve">
     <value>인하대학교</value>
   </data>
-	<data name="Jang" xml:space="preserve">
+  <data name="Jang" xml:space="preserve">
     <value>1967 년생 장준용</value>
   </data>
-	<data name="Jang1" xml:space="preserve">
+  <data name="Jang1" xml:space="preserve">
     <value>대만(타이페이) 유학</value>
   </data>
-	<data name="Jang2" xml:space="preserve">
+  <data name="Jang2" xml:space="preserve">
     <value>중국 베이징 기획사 운영, 중국북경 I one광고
 유한공사 재무이사</value>
   </data>
-	<data name="Jeonbuk" xml:space="preserve">
+  <data name="Jeonbuk" xml:space="preserve">
     <value>전북대학교</value>
   </data>
-	<data name="Jeonju" xml:space="preserve">
+  <data name="Jeonju" xml:space="preserve">
     <value>전주비전대학교</value>
   </data>
-	<data name="Kaist" xml:space="preserve">
+  <data name="Kaist" xml:space="preserve">
     <value>한국과학기술원</value>
   </data>
-	<data name="Kunjang" xml:space="preserve">
+  <data name="Kunjang" xml:space="preserve">
     <value>군장대학교</value>
   </data>
-	<data name="KwangWoon" xml:space="preserve">
+  <data name="KwangWoon" xml:space="preserve">
     <value>광운대학교</value>
   </data>
-	<data name="KyungIn" xml:space="preserve">
+  <data name="KyungIn" xml:space="preserve">
     <value>경인 여자 대학교</value>
   </data>
-	<data name="Language" xml:space="preserve">
+  <data name="Language" xml:space="preserve">
     <value>D4-1 어학연수</value>
   </data>
-	<data name="Learn" xml:space="preserve">
-    <value>한국어 연수</value>
+  <data name="Learn" xml:space="preserve">
+    <value>한국어 교육프로그램</value>
   </data>
-	<data name="LeeWon" xml:space="preserve">
+  <data name="LeeWon" xml:space="preserve">
     <value>1962 년생 이원</value>
   </data>
-	<data name="DesLeeWon1" xml:space="preserve">
+  <data name="DesLeeWon1" xml:space="preserve">
     <value>대한황실문화원(총재)</value>
   </data>
-	<data name="DesLeeWon2" xml:space="preserve">
+  <data name="DesLeeWon2" xml:space="preserve">
     <value>전주이씨대동종약원(총재)</value>
   </data>
-	<data name="LeeWon2" xml:space="preserve">
+  <data name="LeeWon2" xml:space="preserve">
     <value>뉴욕공과대학 신문방송학 학사</value>
   </data>
-	<data name="LeeWon3" xml:space="preserve">
+  <data name="LeeWon3" xml:space="preserve">
     <value>사단법인 대한황실문화원 총재</value>
   </data>
-	<data name="LeeWon4" xml:space="preserve">
+  <data name="LeeWon4" xml:space="preserve">
     <value>사단법인 왕실문화원 이사장</value>
   </data>
-	<data name="LinkSchool" xml:space="preserve">
+  <data name="LinkSchool" xml:space="preserve">
     <value>연계 대학</value>
   </data>
-	<data name="Mater" xml:space="preserve">
+  <data name="Mater" xml:space="preserve">
     <value>석사 유학</value>
   </data>
-	<data name="Min" xml:space="preserve">
+  <data name="Min" xml:space="preserve">
     <value>1978 년생 박정민</value>
   </data>
-	<data name="Min1" xml:space="preserve">
+  <data name="Min1" xml:space="preserve">
     <value>Australia Melbourne Institute
 한양대학교 응용미술교육학사, 교원2급</value>
   </data>
-	<data name="Min2" xml:space="preserve">
+  <data name="Min2" xml:space="preserve">
     <value>R&amp;I Institute 부센터장, FINCOM Art Director, V&amp;K H
 omeshopping Art Director</value>
   </data>
-	<data name="Mocpo" xml:space="preserve">
+  <data name="Mocpo" xml:space="preserve">
     <value>목포과학대학교</value>
   </data>
-	<data name="Myongji" xml:space="preserve">
+  <data name="Myongji" xml:space="preserve">
     <value>명지대학교</value>
   </data>
-	<data name="Osan" xml:space="preserve">
+  <data name="Osan" xml:space="preserve">
     <value>오산대학교</value>
   </data>
-	<data name="Park" xml:space="preserve">
+  <data name="Park" xml:space="preserve">
     <value>1975 년생 박창덕</value>
   </data>
-	<data name="Park1" xml:space="preserve">
+  <data name="Park1" xml:space="preserve">
     <value>인하대학교 다문화학과 석사</value>
   </data>
-	<data name="Park2" xml:space="preserve">
+  <data name="Park2" xml:space="preserve">
     <value>사단법인 한국이민사회전문가협회 국제교류협력본부장</value>
   </data>
-	<data name="Park3" xml:space="preserve">
+  <data name="Park3" xml:space="preserve">
     <value>현재 조기적응 프로그램 운영</value>
   </data>
-	<data name="Park4" xml:space="preserve">
+  <data name="Park4" xml:space="preserve">
     <value>현재 사회통합프로그램 운영</value>
   </data>
-	<data name="Phone" xml:space="preserve">
+  <data name="Phone" xml:space="preserve">
     <value>휴대전화</value>
   </data>
-	<data name="Potision" xml:space="preserve">
+  <data name="Potision" xml:space="preserve">
     <value>위치</value>
   </data>
-	<data name="Programe" xml:space="preserve">
+  <data name="Programe" xml:space="preserve">
     <value>한국 유학 프로그램</value>
   </data>
-	<data name="Reson" xml:space="preserve">
+  <data name="Reson" xml:space="preserve">
     <value>왜 KIPA는 좋은 선택입니까?</value>
   </data>
-	<data name="Reson1" xml:space="preserve">
+  <data name="Reson1" xml:space="preserve">
     <value>역량 있는 교육 브랜드</value>
   </data>
-	<data name="Reson2" xml:space="preserve">
+  <data name="Reson2" xml:space="preserve">
     <value>전문 강사진</value>
   </data>
-	<data name="Reson3" xml:space="preserve">
+  <data name="Reson3" xml:space="preserve">
     <value>고품질의 교육</value>
   </data>
-	<data name="Seo" xml:space="preserve">
+  <data name="Seo" xml:space="preserve">
     <value>1970 년생 서석용</value>
   </data>
-	<data name="Seo1" xml:space="preserve">
+  <data name="Seo1" xml:space="preserve">
     <value>K.I.P.A 하노이 지부장</value>
   </data>
-	<data name="Seo2" xml:space="preserve">
+  <data name="Seo2" xml:space="preserve">
     <value>N.S.W University 경제학 석사</value>
   </data>
-	<data name="Seo3" xml:space="preserve">
+  <data name="Seo3" xml:space="preserve">
     <value>대한황실문화원 동남아 지부장.K.I.P.A 하노이 지부장, R&amp;I
 Institute 이사,법무법인 광장 Ecommerce law Division 실
 장,Macquarie investment Bank Analyst</value>
   </data>
-	<data name="Shingu" xml:space="preserve">
+  <data name="Shingu" xml:space="preserve">
     <value>신구대학교</value>
   </data>
-	<data name="Shinhan" xml:space="preserve">
+  <data name="Shinhan" xml:space="preserve">
     <value>신한대학교</value>
   </data>
-	<data name="Study" xml:space="preserve">
+  <data name="Study" xml:space="preserve">
     <value>최종학력</value>
   </data>
-	<data name="Sunmoon" xml:space="preserve">
+  <data name="Sunmoon" xml:space="preserve">
     <value>선문대학교</value>
   </data>
-	<data name="teacher1" xml:space="preserve">
+  <data name="teacher1" xml:space="preserve">
     <value>1995 년생</value>
   </data>
-	<data name="teacher2" xml:space="preserve">
+  <data name="teacher2" xml:space="preserve">
     <value>1998 년생</value>
   </data>
-	<data name="teacher3" xml:space="preserve">
+  <data name="teacher3" xml:space="preserve">
     <value>2000 년생</value>
   </data>
-	<data name="TitleCompany" xml:space="preserve">
+  <data name="TitleCompany" xml:space="preserve">
     <value>R&amp;I  한 – 베 황실 문화 교류 주식회사</value>
   </data>
-	<data name="TitleHeader" xml:space="preserve">
+  <data name="TitleHeader" xml:space="preserve">
     <value>키파 어학당</value>
   </data>
-	<data name="University" xml:space="preserve">
+  <data name="University" xml:space="preserve">
     <value>D2-1 유학</value>
   </data>
-	<data name="Visa" xml:space="preserve">
+  <data name="Visa" xml:space="preserve">
     <value>한국어 교육프로그램</value>
   </data>
-	<data name="VisaD10" xml:space="preserve">
+  <data name="VisaD10" xml:space="preserve">
     <value>D10 비자</value>
   </data>
-	<data name="VisaD2" xml:space="preserve">
+  <data name="VisaD2" xml:space="preserve">
     <value>D2 비자</value>
   </data>
-	<data name="VisaD4" xml:space="preserve">
+  <data name="VisaD4" xml:space="preserve">
     <value>D4 비자</value>
   </data>
-	<data name="VisaE7" xml:space="preserve">
+  <data name="VisaE7" xml:space="preserve">
     <value>E7 비자</value>
   </data>
-	<data name="Yeoju" xml:space="preserve">
+  <data name="Yeoju" xml:space="preserve">
     <value>여주 대학교</value>
   </data>
-	<data name="Yeonsei" xml:space="preserve">
+  <data name="Yeonsei" xml:space="preserve">
     <value>연세대학교</value>
   </data>
-	<data name="PleaseContact" xml:space="preserve">
+  <data name="PleaseContact" xml:space="preserve">
     <value>KIPA유학원이 한국어 교육과 한국 유학에 대해 가장 구체적이고 정확한 상담을 할 수 있도록 여기에 정보를 남겨 주시기 바랍니다!</value>
   </data>
-	<data name="PleaseContactNow" xml:space="preserve">
+  <data name="PleaseContactNow" xml:space="preserve">
     <value>바로 무료 상담 신청</value>
   </data>
-	<data name="Name" xml:space="preserve">
+  <data name="Name" xml:space="preserve">
     <value>이름</value>
   </data>
-	<data name="ProgramCare" xml:space="preserve">
+  <data name="ProgramCare" xml:space="preserve">
     <value>관심있는 유학 프로그램청</value>
   </data>
-	<data name="Question" xml:space="preserve">
+  <data name="Question" xml:space="preserve">
     <value>질문</value>
   </data>
-	<data name="Send" xml:space="preserve">
+  <data name="Send" xml:space="preserve">
     <value>갑시다</value>
   </data>
-	<data name="Counselors" xml:space="preserve">
+  <data name="Counselors" xml:space="preserve">
     <value>KIPA 유학컨설턴트</value>
   </data>
-	<data name="LearnFree1" xml:space="preserve">
+  <data name="LearnFree1" xml:space="preserve">
     <value> 한국어 교육 프로그램</value>
   </data>
-	<data name="D82" xml:space="preserve">
+  <data name="D82" xml:space="preserve">
     <value>E8-2 근로자 교육</value>
   </data>
-	<data name="LearnFree10" xml:space="preserve">
+  <data name="LearnFree10" xml:space="preserve">
     <value>선착순 선발</value>
   </data>
-	<data name="LearnFree11" xml:space="preserve">
+  <data name="LearnFree11" xml:space="preserve">
     <value>교육 코스</value>
   </data>
-	<data name="LearnFree12" xml:space="preserve">
+  <data name="LearnFree12" xml:space="preserve">
     <value>초급</value>
   </data>
-	<data name="LearnFree13" xml:space="preserve">
+  <data name="LearnFree13" xml:space="preserve">
     <value>중급</value>
   </data>
-	<data name="LearnFree14" xml:space="preserve">
+  <data name="LearnFree14" xml:space="preserve">
     <value>오프라인 교육 주소</value>
   </data>
-	<data name="LearnFree15" xml:space="preserve">
+  <data name="LearnFree15" xml:space="preserve">
     <value>시간</value>
   </data>
-	<data name="LearnFree16" xml:space="preserve">
+  <data name="LearnFree16" xml:space="preserve">
     <value>6월초 시작, 일주일(3회) 올라인 수업(저녁에 7시반- 9시반)/ 오프라인 수업 : 오후 3시05시(예정)</value>
   </data>
-	<data name="LearnFree17" xml:space="preserve">
+  <data name="LearnFree17" xml:space="preserve">
     <value>교재</value>
   </data>
-	<data name="LearnFree18" xml:space="preserve">
+  <data name="LearnFree18" xml:space="preserve">
     <value>선생님 직접 편찬</value>
   </data>
-	<data name="LearnFree19" xml:space="preserve">
+  <data name="LearnFree19" xml:space="preserve">
     <value>사용자</value>
   </data>
-	<data name="LearnFree2" xml:space="preserve">
+  <data name="LearnFree2" xml:space="preserve">
     <value>한국 정부가 지원하는 무료 한국어 교육 프로그램은 전라북도 교육원(JVEC)과 공동으로 키파센터가 주관한다.</value>
   </data>
-	<data name="LearnFree20" xml:space="preserve">
+  <data name="LearnFree20" xml:space="preserve">
     <value>경험이 풍부하고 열정적인 전운 선생님 (토픽 5-6급)</value>
   </data>
-	<data name="LearnFree21" xml:space="preserve">
+  <data name="LearnFree21" xml:space="preserve">
     <value>접수비</value>
   </data>
-	<data name="LearnFree22" xml:space="preserve">
+  <data name="LearnFree22" xml:space="preserve">
     <value>교재비</value>
   </data>
-	<data name="LearnFree23" xml:space="preserve">
+  <data name="LearnFree23" xml:space="preserve">
     <value>한국문화 체험비 포함</value>
   </data>
-	<data name="LearnFree24" xml:space="preserve">
+  <data name="LearnFree24" xml:space="preserve">
     <value>수강생들은 코스를 마친 뒤 JVEC 한국어교육원에서 수여하는 수료증을 받게 되고 전라복도에 위치한 대학에 유학 갈 수 있는 기회를 얻게 된다. 최고 점수 수료자는 전라복도 초청으로 한국에 방문할 수 있는 기회도 제공된다. 많은 관심 부탁드립니다.</value>
   </data>
-	<data name="LearnFree25" xml:space="preserve">
+  <data name="LearnFree25" xml:space="preserve">
     <value>아래 링크를 등록하는 데 관심이 있는 분들은 센터가 지원자에게 직접 연락할 것이다.</value>
   </data>
-	<data name="LearnFree3" xml:space="preserve">
+  <data name="LearnFree3" xml:space="preserve">
     <value>프로그램 과정 목표</value>
   </data>
-	<data name="LearnFree4" xml:space="preserve">
+  <data name="LearnFree4" xml:space="preserve">
     <value>한국 유학에 관심이 있는 사람들에게 한국어를 좀 더 가까이 다가가게 하고 유학을 준비하는 사람들에게 기회를 주고 한국어 능력을 발전시키 위한 것이다</value>
   </data>
-	<data name="LearnFree5" xml:space="preserve">
+  <data name="LearnFree5" xml:space="preserve">
     <value>대상</value>
   </data>
-	<data name="LearnFree6" xml:space="preserve">
+  <data name="LearnFree6" xml:space="preserve">
     <value>제한 없음</value>
   </data>
-	<data name="LearnFree7" xml:space="preserve">
+  <data name="LearnFree7" xml:space="preserve">
     <value>최대 인원</value>
   </data>
-	<data name="LearnFree8" xml:space="preserve">
+  <data name="LearnFree8" xml:space="preserve">
     <value>60 명</value>
   </data>
-	<data name="LearnFree9" xml:space="preserve">
+  <data name="LearnFree9" xml:space="preserve">
     <value>15명/ 반</value>
   </data>
-	<data name="HandbookMenu1" xml:space="preserve">
+  <data name="HandbookMenu1" xml:space="preserve">
     <value>1. 외국인 유학생의 아르바이트에 대한 규정</value>
   </data>
-	<data name="HandbookMenu1Info1" xml:space="preserve">
+  <data name="HandbookMenu1Info1" xml:space="preserve">
     <value>한국은</value>
   </data>
-	<data name="HandbookMenu1Info1List1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List1" xml:space="preserve">
     <value>1. 대상</value>
   </data>
-	<data name="HandbookMenu1Info1List1Subject" xml:space="preserve">
+  <data name="HandbookMenu1Info1List1Subject" xml:space="preserve">
     <value>비자 D4-1 (어학연수생), 비자 D2 (전공유학생)</value>
   </data>
-	<data name="HandbookMenu1Info1List2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List2" xml:space="preserve">
     <value>2. 시기</value>
   </data>
-	<data name="HandbookMenu1Info1List2Subject" xml:space="preserve">
+  <data name="HandbookMenu1Info1List2Subject" xml:space="preserve">
     <value>입학 후 6개월 후 아르바이트</value>
   </data>
-	<data name="HandbookMenu1Info1List3" xml:space="preserve">
+  <data name="HandbookMenu1Info1List3" xml:space="preserve">
     <value>3. 알바 시간:</value>
   </data>
-	<data name="HandbookMenu1Info1List3Subject1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List3Subject1" xml:space="preserve">
     <value>- D4-1 (어학연수): 20시간/주</value>
   </data>
-	<data name="HandbookMenu1Info1List3Subject2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List3Subject2" xml:space="preserve">
     <value>- D2-1 =&gt; D2-2 (전공유학): 25시간/주</value>
   </data>
-	<data name="HandbookMenu1Info1List3Subject3" xml:space="preserve">
+  <data name="HandbookMenu1Info1List3Subject3" xml:space="preserve">
     <value>- D2-3 (석사, 박사 유학): 30시간/주</value>
   </data>
-	<data name="HandbookMenu1Info1List3Subject4" xml:space="preserve">
+  <data name="HandbookMenu1Info1List3Subject4" xml:space="preserve">
     <value>(봄방학은 하루 8시간 근무 가능)</value>
   </data>
-	<data name="HandbookMenu1Info1List4" xml:space="preserve">
+  <data name="HandbookMenu1Info1List4" xml:space="preserve">
     <value>4. 요구 사항 :</value>
   </data>
-	<data name="HandbookMenu1Info1List4Subject1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List4Subject1" xml:space="preserve">
     <value>+ 한국어능력시험(TOPIK) 2급 이상 있는 사람</value>
   </data>
-	<data name="HandbookMenu1Info1List4Subject2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List4Subject2" xml:space="preserve">
     <value>+ 출석 점수가 90% 이상 있어야 한 사람</value>
   </data>
-	<data name="HandbookMenu1Info1List5" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5" xml:space="preserve">
     <value>유학생들이 자주 하는 아르바이트들</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject1" xml:space="preserve">
     <value>• Công việc bán thời gian</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject10" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject10" xml:space="preserve">
     <value>•  통역 (관광단, 비즈니스)</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject11" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject11" xml:space="preserve">
     <value>•베트남어를 가르치기</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject2" xml:space="preserve">
     <value>•  점원(편의점, 슈퍼마켓, 백화점)</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject3" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject3" xml:space="preserve">
     <value>• 웨이터(커피, 레스토랑))</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject4" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject4" xml:space="preserve">
     <value>• 주방 보조</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject5" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject5" xml:space="preserve">
     <value>• 공장 노동자</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject6" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject6" xml:space="preserve">
     <value>•  배달, 적재</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject7" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject7" xml:space="preserve">
     <value>• 학교에서 일하기</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject8" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject8" xml:space="preserve">
     <value>• 계절 근무</value>
   </data>
-	<data name="HandbookMenu1Info1List5Subject9" xml:space="preserve">
+  <data name="HandbookMenu1Info1List5Subject9" xml:space="preserve">
     <value>•  과일 따기, 농작물 수확</value>
   </data>
-	<data name="HandbookMenu1Info1List6" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6" xml:space="preserve">
     <value>한국에서 아르바이트를 신청하는 방법</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject1" xml:space="preserve">
     <value>한국의 베트남 학생 커뮤니티에 가입하십시오.</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject1_1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject1_1" xml:space="preserve">
     <value>현재</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject1_2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject1_2" xml:space="preserve">
     <value>한국의 베트남인 커뮤니티도 상당히 규모가 크고, 대부분의 학교마다 유학생회가 있기 때문에 초기 도움을 받으려면 해당 커뮤니티에 적극적으로 지원해야 하며, 이 방법은 일반적으로 사용되며 매우 효과적이지만 신뢰를 구축하는 데 약 1-2개월이 소요됩니다.
 👉 버스나 지하철을 타거나 식당에서도 사람을 찾는 광고를 볼 수 있습니다. 주도적으로 구직 신청을 할 수 있습니다.</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject2" xml:space="preserve">
     <value>Tới trực tiếp</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject2_1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject2_1" xml:space="preserve">
     <value>버스나 지하철을 타거나</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject2_2" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject2_2" xml:space="preserve">
     <value>식당에서도 사람을 찾는 광고를 볼 수 있습니다. 주도적으로 구직 신청을 할 수 있습니다.</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject3" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject3" xml:space="preserve">
     <value>구직 앱이나 웹사이트를 사용합니다.</value>
   </data>
-	<data name="HandbookMenu1Info1List6Subject3_1" xml:space="preserve">
+  <data name="HandbookMenu1Info1List6Subject3_1" xml:space="preserve">
     <value>한국의 6 개 구직 웹 사이트 목록 :</value>
   </data>
-	<data name="HandbookMenu1Info2" xml:space="preserve">
+  <data name="HandbookMenu1Info2" xml:space="preserve">
     <value>아르바이트 정책에서 유학생에게 상당히 유리한 조건을 조성하는 나라이지만, 아르바이트가 생활비를 부분적으로 지원하고 더 빨리 적응할 수 있도록 도와준다는 것을 이해해야 합니다. 입국 후 6개월이 지나면 자유롭게 아르바이트를 할 수 있습니다. 규정에 맞게 아르바이트를 하지 않으면 비자가 취소되고 강제 출국 당할 수 있습니다.</value>
   </data>
-	<data name="HandbookMenu2" xml:space="preserve">
+  <data name="HandbookMenu2" xml:space="preserve">
     <value>2. 단기 방문 학부모를 위한 파일럿 프로그램 정보</value>
   </data>
-	<data name="HandbookMenu2Info1_1" xml:space="preserve">
+  <data name="HandbookMenu2Info1_1" xml:space="preserve">
     <value>기간:</value>
   </data>
-	<data name="HandbookMenu2Info1_2" xml:space="preserve">
+  <data name="HandbookMenu2Info1_2" xml:space="preserve">
     <value>2024년 2월 26일부터 2024년 12월 31일까지</value>
   </data>
-	<data name="HandbookMenu2Title1" xml:space="preserve">
+  <data name="HandbookMenu2Title1" xml:space="preserve">
     <value>1. 조견</value>
   </data>
-	<data name="HandbookMenu2Title1Info1" xml:space="preserve">
+  <data name="HandbookMenu2Title1Info1" xml:space="preserve">
     <value>• 유학생의 부모는 55세 미만이어야 하며 범죄 기록이 없어야 하며 건강 문제가 없어야 합니다.</value>
   </data>
-	<data name="HandbookMenu2Title1Info2" xml:space="preserve">
+  <data name="HandbookMenu2Title1Info2" xml:space="preserve">
     <value>• 외국인 유학생은 최소 2학기 이상(학교에서 최소 1년 이상 공부해야 함)이 남아 있어야 하며, 한국에서 법을 위반하지 않아야 합니다.</value>
   </data>
-	<data name="HandbookMenu2Title1Info3" xml:space="preserve">
+  <data name="HandbookMenu2Title1Info3" xml:space="preserve">
     <value>• 공인된 학교에서 1년 이상 공부하고 있는 유학생(아래 목록)</value>
   </data>
-	<data name="HandbookMenu2Title1Info4" xml:space="preserve">
+  <data name="HandbookMenu2Title1Info4" xml:space="preserve">
     <value>• 단기 취업 부모를 위한 기간</value>
   </data>
-	<data name="HandbookMenu2Title1Info5" xml:space="preserve">
+  <data name="HandbookMenu2Title1Info5" xml:space="preserve">
     <value>•C4 비자는 90일입니다.</value>
   </data>
-	<data name="HandbookMenu2Title1Info6" xml:space="preserve">
+  <data name="HandbookMenu2Title1Info6" xml:space="preserve">
     <value>• E8 비자는 5개월입니다 (8개월, 5개월 +3개월까지 연장 가능</value>
   </data>
-	<data name="HandbookMenu2Title2" xml:space="preserve">
+  <data name="HandbookMenu2Title2" xml:space="preserve">
     <value>2. 프로그램의 장점</value>
   </data>
-	<data name="HandbookMenu2Title2Info1" xml:space="preserve">
+  <data name="HandbookMenu2Title2Info1" xml:space="preserve">
     <value>• 유학생의 부모가 자녀의 생활비와 학업비를 충당할 수 있도록 돕습니다.</value>
   </data>
-	<data name="HandbookMenu2Title2Info2" xml:space="preserve">
+  <data name="HandbookMenu2Title2Info2" xml:space="preserve">
     <value>• 가족과 유학생 간의 유대를 강화합니다.</value>
   </data>
-	<data name="HandbookMenu2Title2Info3" xml:space="preserve">
+  <data name="HandbookMenu2Title2Info3" xml:space="preserve">
     <value>• 학부모가 한국의 삶과 문화를 경험할 수 있도록 돕습니다.</value>
   </data>
-	<data name="HandbookMenu2Title2Info4" xml:space="preserve">
+  <data name="HandbookMenu2Title2Info4" xml:space="preserve">
     <value>• 학부모는 새로운 기술을 배우고, 지식을 향상시키고, 국제적인 환경에서 경험을 쌓을 수 있는 기회를 갖게 됩니다. 이를 통해 베트남으로 돌아온 후 자신을 개발하고 경쟁력을 향상시키며 더 많은 기회를 가질 수 있습니다.</value>
   </data>
-	<data name="HandbookMenu2Title2Note" xml:space="preserve">
+  <data name="HandbookMenu2Title2Note" xml:space="preserve">
     <value>*메모:</value>
   </data>
-	<data name="HandbookMenu2Title2NoteInfo1" xml:space="preserve">
+  <data name="HandbookMenu2Title2NoteInfo1" xml:space="preserve">
     <value>1. 파일럿 프로그램이며 향후 변경될 수 있습니다.</value>
   </data>
-	<data name="HandbookMenu2Title2NoteInfo2" xml:space="preserve">
+  <data name="HandbookMenu2Title2NoteInfo2" xml:space="preserve">
     <value>2. 유학생과 학부모는 지원하기 전에 정보와 참가 조건을 주의 깊게 확인해야 합니다.</value>
   </data>
-	<data name="HandbookMenu2Title2NoteInfo3" xml:space="preserve">
+  <data name="HandbookMenu2Title2NoteInfo3" xml:space="preserve">
     <value>3. 한국은 외국인 유학생 학부모의 단기 취업을 허가합니다.</value>
   </data>
-	<data name="HandbookMenu2Title3" xml:space="preserve">
+  <data name="HandbookMenu2Title3" xml:space="preserve">
     <value>유학생의 부모에게 단기 취업 허가를 제공하는 한국 학교 목록</value>
   </data>
-	<data name="HandbookMenu2Title3Area1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1" xml:space="preserve">
     <value>• 강원지역</value>
   </data>
-	<data name="HandbookMenu2Title3Area1University1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University1_1" xml:space="preserve">
     <value> 강릉원주대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area1University1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area1University2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University2_1" xml:space="preserve">
     <value>강원대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area1University2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area1University3_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University3_1" xml:space="preserve">
     <value>연세대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area1University3_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University3_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area1University4_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University4_1" xml:space="preserve">
     <value>한림대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area1University4_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area1University4_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2" xml:space="preserve">
     <value>• 대전, 충청지역</value>
   </data>
-	<data name="HandbookMenu2Title3Area2College1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2College1_1" xml:space="preserve">
     <value>한국미디어예술대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2College1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2College1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2Graduate1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2Graduate1_1" xml:space="preserve">
     <value>한국과학기술대학교 UST</value>
   </data>
-	<data name="HandbookMenu2Title3Area2Graduate1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2Graduate1_2" xml:space="preserve">
     <value>(과학기술대학교)</value>
   </data>
-	<data name="HandbookMenu2Title3Area2Graduate2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2Graduate2_1" xml:space="preserve">
     <value>KDI 국제정책대학원</value>
   </data>
-	<data name="HandbookMenu2Title3Area2Graduate2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2Graduate2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University10_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University10_1" xml:space="preserve">
     <value>르웨탄 대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University10_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University10_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University11_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University11_1" xml:space="preserve">
     <value>세명대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University11_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University11_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University12_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University12_1" xml:space="preserve">
     <value>순천향대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University12_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University12_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University13_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University13_1" xml:space="preserve">
     <value>우송대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University13_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University13_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University14_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University14_1" xml:space="preserve">
     <value>중부대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University14_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University14_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University15_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University15_1" xml:space="preserve">
     <value>청주대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University15_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University15_2" xml:space="preserve">
     <value>(Cheongju University)</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University16_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University16_1" xml:space="preserve">
     <value>충남대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University16_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University16_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University17_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University17_1" xml:space="preserve">
     <value>충북대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University17_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University17_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University18_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University18_1" xml:space="preserve">
     <value>KAIST – 한국과학기술원</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University18_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University18_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University19_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University19_1" xml:space="preserve">
     <value>한국교원대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University19_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University19_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University1_1" xml:space="preserve">
     <value>건국대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University1_2" xml:space="preserve">
     <value>– 글로벌</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University20_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University20_1" xml:space="preserve">
     <value>한국교통대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University20_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University20_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University21_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University21_1" xml:space="preserve">
     <value>한국기술교육대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University21_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University21_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University22_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University22_1" xml:space="preserve">
     <value>한남대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University22_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University22_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University23_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University23_1" xml:space="preserve">
     <value>한밭대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University23_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University23_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University24_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University24_1" xml:space="preserve">
     <value>한서대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University24_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University24_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University25_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University25_1" xml:space="preserve">
     <value>호서대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University25_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University25_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University2_1" xml:space="preserve">
     <value>건양대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University3_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University3_1" xml:space="preserve">
     <value>고려대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University3_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University3_2" xml:space="preserve">
     <value>– 세종</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University4_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University4_1" xml:space="preserve">
     <value>나사렛 대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University4_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University4_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University5_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University5_1" xml:space="preserve">
     <value>남서울대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University5_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University5_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University6_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University6_1" xml:space="preserve">
     <value>대전대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University6_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University6_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University7_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University7_1" xml:space="preserve">
     <value>목원대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University7_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University7_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University8_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University8_1" xml:space="preserve">
     <value>파이차이 대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University8_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University8_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area2University9_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University9_1" xml:space="preserve">
     <value>백석대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area2University9_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area2University9_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3" xml:space="preserve">
     <value>• 대구, 경북 지역</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University10_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University10_1" xml:space="preserve">
     <value>영남대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University10_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University10_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University11_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University11_1" xml:space="preserve">
     <value>포항공과대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University11_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University11_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University12_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University12_1" xml:space="preserve">
     <value>한동글로벌대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University12_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University12_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University1_1" xml:space="preserve">
     <value>경복대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University2_1" xml:space="preserve">
     <value>광운대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University3_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University3_1" xml:space="preserve">
     <value>경일대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University3_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University3_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University4_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University4_1" xml:space="preserve">
     <value>계명대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University4_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University4_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University5_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University5_1" xml:space="preserve">
     <value>김천대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University5_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University5_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University6_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University6_1" xml:space="preserve">
     <value>대구가톨릭대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University6_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University6_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University7_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University7_1" xml:space="preserve">
     <value>대구한대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University7_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University7_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University8_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University8_1" xml:space="preserve">
     <value>동국대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University8_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University8_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3University9_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University9_1" xml:space="preserve">
     <value>안동대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3University9_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3University9_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3College" xml:space="preserve">
+  <data name="HandbookMenu2Title3College" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Graduate" xml:space="preserve">
+  <data name="HandbookMenu2Title3Graduate" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Info" xml:space="preserve">
+  <data name="HandbookMenu2Title3Info" xml:space="preserve">
     <value>다음은 인증 학교 목록입니다(2023년 평가 기준, 비수도권 지역).</value>
   </data>
-	<data name="HandbookMenu2Title3University" xml:space="preserve">
+  <data name="HandbookMenu2Title3University" xml:space="preserve">
     <value>대학</value>
   </data>
-	<data name="Image" xml:space="preserve">
+  <data name="Image" xml:space="preserve">
     <value>화보</value>
   </data>
-	<data name="HandbookMenu2Title10" xml:space="preserve">
+  <data name="HandbookMenu2Title10" xml:space="preserve">
     <value>장기체류비자 (D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, F1, F2, F3, F4, F5, F6, G1)</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow10Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow10Col2" xml:space="preserve">
     <value>취업 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow10Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow10Col3" xml:space="preserve">
     <value>전문 직업을 선택하고 찾기 위해 시간을 준비해야 하는 사람들에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow10Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow10Col4" xml:space="preserve">
     <value>6개월부터 2년까지</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow11Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow11Col2" xml:space="preserve">
     <value>친척 방문 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow11Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow11Col3" xml:space="preserve">
     <value>한국에 체류 중인 친척의 초청을 받아 친척을 방문한 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow12Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow12Col2" xml:space="preserve">
     <value>거주 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow12Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow12Col3" xml:space="preserve">
     <value>다른 비자 카테고리로 한국에 거주하고 일하는 사람들에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow12Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow12Col4" xml:space="preserve">
     <value>3 년</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow13Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow13Col2" xml:space="preserve">
     <value>보증비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow13Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow13Col3" xml:space="preserve">
     <value>한국에 거주하고 일하는 사람의 친인척에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow13Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow13Col4" xml:space="preserve">
     <value>보증인의 기간까지</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow14Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow14Col2" xml:space="preserve">
     <value>교포 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow14Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow14Col3" xml:space="preserve">
     <value>외국 여권을 소지한 한국계 주민에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow15Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow15Col2" xml:space="preserve">
     <value>정착 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow15Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow15Col3" xml:space="preserve">
     <value>한국에 거주하고 일하는 사람들에게 발급. 다른 비자 카테고리에서 이주하여 한국에 영구적으로 정착</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow15Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow15Col4" xml:space="preserve">
     <value>무기한</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow16Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow16Col2" xml:space="preserve">
     <value>한국 결혼 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow16Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow16Col3" xml:space="preserve">
     <value>한국 사람과 결혼하는 이민 외국인에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow1Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow1Col2" xml:space="preserve">
     <value>예술 문화 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow1Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow1Col3" xml:space="preserve">
     <value>비영리 문화예술 활동에 참여하기 위해 한국에 오는 개인에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow1Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow1Col4" xml:space="preserve">
     <value>2 년</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow2Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow2Col2" xml:space="preserve">
     <value>한국유학비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow2Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow2Col3" xml:space="preserve">
     <value>정규 교육 제도에 따라 한국 학생들에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow2Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow2Col4" xml:space="preserve">
     <value>6개월부터 2년까지</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow3Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow3Col2" xml:space="preserve">
     <value>생산 훈련 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow3Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow3Col3" xml:space="preserve">
     <value>산업연수기관의 단기연수과정에 참여하기 위해 한국에 오는 자에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow3Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow3Col4" xml:space="preserve">
     <value>1년</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow4Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow4Col2" xml:space="preserve">
     <value>종합 교육 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow4Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow4Col3" xml:space="preserve">
     <value>한국에서 공부하고 어학연수 프로그램에 참여하는 학생들에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow5Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow5Col2" xml:space="preserve">
     <value>상주 기자 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow5Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow5Col3" xml:space="preserve">
     <value>한국에서 장기간 일하기 위해 다른 나라에서 온 기자들에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow5Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow5Col4" xml:space="preserve">
     <value>장기 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow6Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow6Col2" xml:space="preserve">
     <value>Religious works</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow6Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow6Col3" xml:space="preserve">
     <value>종교 활동이나 사회 봉사를 위해 한국에 오는 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow7Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow7Col2" xml:space="preserve">
     <value>Intra-Company Transfer</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow7Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow7Col3" xml:space="preserve">
     <value>해외 모회사에서 국내 자회사 또는 지점으로 근무를 전근한 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow8Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow8Col2" xml:space="preserve">
     <value>투자협력 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow8Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow8Col3" xml:space="preserve">
     <value>한국에서 소상공인을 창업하고 창업하고자 하는 개인에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow8Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow8Col4" xml:space="preserve">
     <value>2년이나5년</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow9Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow9Col2" xml:space="preserve">
     <value>무역 협력 비자</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow9Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow9Col3" xml:space="preserve">
     <value>한국에 와서 기업경영자, 국제무역, 상품생산책임자로 일하는 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title10TableRow9Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title10TableRow9Col4" xml:space="preserve">
     <value>1년이나 2년</value>
   </data>
-	<data name="HandbookMenu2Title3Area3College1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3College1_1" xml:space="preserve">
     <value>한국 구미대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3College1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3College1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area3College2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3College2_1" xml:space="preserve">
     <value>영진대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area3College2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area3College2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4" xml:space="preserve">
     <value>부산, 울산, 경남 지역</value>
   </data>
-	<data name="HandbookMenu2Title3Area4College1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4College1_1" xml:space="preserve">
     <value>거제전문학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4College1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4College1_2" xml:space="preserve">
     <value>(Koje College)</value>
   </data>
-	<data name="HandbookMenu2Title3Area4College2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4College2_1" xml:space="preserve">
     <value>울산대학</value>
   </data>
-	<data name="HandbookMenu2Title3Area4College2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4College2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4Graduate1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4Graduate1_1" xml:space="preserve">
     <value>한전 국제원자력대학원</value>
   </data>
-	<data name="HandbookMenu2Title3Area4Graduate1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4Graduate1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University10_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University10_1" xml:space="preserve">
     <value>부산외국어대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University10_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University10_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University11_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University11_1" xml:space="preserve">
     <value>신라대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University11_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University11_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University12_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University12_1" xml:space="preserve">
     <value>영산대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University12_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University12_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University13_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University13_1" xml:space="preserve">
     <value>울산과학기술원</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University13_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University13_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University14_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University14_1" xml:space="preserve">
     <value>울산대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University14_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University14_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University15_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University15_1" xml:space="preserve">
     <value>인제대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University15_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University15_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University16_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University16_1" xml:space="preserve">
     <value>창원대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University16_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University16_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University17_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University17_1" xml:space="preserve">
     <value>한국해양대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University17_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University17_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University1_1" xml:space="preserve">
     <value>경남대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University2_1" xml:space="preserve">
     <value>경상대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University3_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University3_1" xml:space="preserve">
     <value>경성대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University3_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University3_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University4_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University4_1" xml:space="preserve">
     <value>동명대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University4_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University4_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University5_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University5_1" xml:space="preserve">
     <value>동서대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University5_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University5_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University6_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University6_1" xml:space="preserve">
     <value>동아대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University6_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University6_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University7_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University7_1" xml:space="preserve">
     <value>동화대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University7_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University7_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University8_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University8_1" xml:space="preserve">
     <value>부경대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University8_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University8_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area4University9_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University9_1" xml:space="preserve">
     <value>부산대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area4University9_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area4University9_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5" xml:space="preserve">
     <value>광주, 전북, 전남 지역</value>
   </data>
-	<data name="HandbookMenu2Title3Area5College1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5College1_1" xml:space="preserve">
     <value>전주 비전 칼리지</value>
   </data>
-	<data name="HandbookMenu2Title3Area5College1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5College1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University1_1" xml:space="preserve">
     <value>광주과학기술원</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University2_1" xml:space="preserve">
     <value>광주대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University2_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University3_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University3_1" xml:space="preserve">
     <value>군산대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University3_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University3_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University4_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University4_1" xml:space="preserve">
     <value>동신대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University4_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University4_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University5_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University5_1" xml:space="preserve">
     <value>우석대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University5_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University5_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University6_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University6_1" xml:space="preserve">
     <value>전남대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University6_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University6_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University7_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University7_1" xml:space="preserve">
     <value>전북대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University7_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University7_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area5University8_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University8_1" xml:space="preserve">
     <value>호남대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area5University8_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area5University8_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Area6" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area6" xml:space="preserve">
     <value>제주 지역</value>
   </data>
-	<data name="HandbookMenu2Title3Area6University1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area6University1_1" xml:space="preserve">
     <value>제주대학교</value>
   </data>
-	<data name="HandbookMenu2Title3Area6University1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Area6University1_2" xml:space="preserve">
     <value />
   </data>
-	<data name="HandbookMenu2Title3Info1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title3Info1_1" xml:space="preserve">
     <value>한국</value>
   </data>
-	<data name="HandbookMenu2Title3Info1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title3Info1_2" xml:space="preserve">
     <value>유학생의 학부모가 계절 근로자도 일할 수 있는 프로그램은 한국 유학 정책의 새로운 시도입니다. 이것은 유학생과 그 가족의 재정적 부담을 줄이고 유대감을 강화하며 한국 생활을 최대한 경험할 수 있는 절호의 기회입니다.</value>
   </data>
-	<data name="HandbookMenu2Title4" xml:space="preserve">
+  <data name="HandbookMenu2Title4" xml:space="preserve">
     <value>[2024] 한국 100대 대학 순위</value>
   </data>
-	<data name="HandbookMenu2Title4Info1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title4Info1_1" xml:space="preserve">
     <value>2024년 한국 100대</value>
   </data>
-	<data name="HandbookMenu2Title4Info1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title4Info1_2" xml:space="preserve">
     <value>대학 순위는 한국대학원이 선정한 대학평가원과 전 세계 교육평가기관의 순위가 반영한다. 순위는 한국의 대학을 참조하고 조회하는 도구입니다. 어떤 한국 대학을 선택해야 할지 모르겠다면 주저하지 말고 KIPA에 연락하여 조언, 자세한 정보 지원 및 해당 한국 대학 입학을 문의하십시오.</value>
   </data>
-	<data name="HandbookMenu2Title4Note1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title4Note1_1" xml:space="preserve">
     <value>한국 100대 대학 순위는 참고용입니다. 각 조직의 평가 및 순위 기준은 자체 평가 기준을 기반으로 합니다. 각 조직은 별도의 순위를 제시합니다. 이에 따라 대한민국 우수 대학의 순위 순서가 바뀔 전망입니다.</value>
   </data>
-	<data name="HandbookMenu2Title4Note1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title4Note1_2" xml:space="preserve">
     <value>참고로 한국 100대 대학 순위에 있는 대학 외에도 학생과 학부모는 한국의 다른 도시에 있는 대학을 찾을 수 있습니다. 학생 개개인에 따라 학업 능력, 재정 상태, 선택한 전공 및 미래 진로 방향에 따라 한국 대학을 선택합니다.</value>
   </data>
-	<data name="HandbookMenu2Title4Rank1" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank1" xml:space="preserve">
     <value>서울대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank10" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank10" xml:space="preserve">
     <value>세종대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank100" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank100" xml:space="preserve">
     <value>목원대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank11" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank11" xml:space="preserve">
     <value>경북대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank12" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank12" xml:space="preserve">
     <value>Gwangju Institute of Science and Technology (GIST)</value>
   </data>
-	<data name="HandbookMenu2Title4Rank13" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank13" xml:space="preserve">
     <value>중앙대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank14" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank14" xml:space="preserve">
     <value>부산대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank15" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank15" xml:space="preserve">
     <value>이화여자대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank16" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank16" xml:space="preserve">
     <value>울산대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank17" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank17" xml:space="preserve">
     <value>아주대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank18" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank18" xml:space="preserve">
     <value>건국대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank19" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank19" xml:space="preserve">
     <value>인하대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank2" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank2" xml:space="preserve">
     <value>한국과학기술원</value>
   </data>
-	<data name="HandbookMenu2Title4Rank20" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank20" xml:space="preserve">
     <value>서강대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank21" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank21" xml:space="preserve">
     <value>전남대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank22" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank22" xml:space="preserve">
     <value>전북대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank23" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank23" xml:space="preserve">
     <value>영남대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank24" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank24" xml:space="preserve">
     <value>충남대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank25" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank25" xml:space="preserve">
     <value>University of Seoul</value>
   </data>
-	<data name="HandbookMenu2Title4Rank26" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank26" xml:space="preserve">
     <value>한림대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank27" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank27" xml:space="preserve">
     <value>강원대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank28" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank28" xml:space="preserve">
     <value>충북대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank29" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank29" xml:space="preserve">
     <value>순천향대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank3" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank3" xml:space="preserve">
     <value>연세대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank30" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank30" xml:space="preserve">
     <value>서울과학기술대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank31" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank31" xml:space="preserve">
     <value>국민대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank32" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank32" xml:space="preserve">
     <value>제주대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank33" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank33" xml:space="preserve">
     <value>경상대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank34" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank34" xml:space="preserve">
     <value>숭실대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank35" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank35" xml:space="preserve">
     <value>가톨릭대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank36" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank36" xml:space="preserve">
     <value>인천대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank37" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank37" xml:space="preserve">
     <value>조선대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank38" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank38" xml:space="preserve">
     <value>Viện Khoa học và Công nghệ Daegu (DGIST)</value>
   </data>
-	<data name="HandbookMenu2Title4Rank39" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank39" xml:space="preserve">
     <value>동국대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank4" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank4" xml:space="preserve">
     <value>성균관대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank40" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank40" xml:space="preserve">
     <value>한국외국어대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank41" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank41" xml:space="preserve">
     <value>Đại học Calvin</value>
   </data>
-	<data name="HandbookMenu2Title4Rank42" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank42" xml:space="preserve">
     <value>단국대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank43" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank43" xml:space="preserve">
     <value>부경대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank44" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank44" xml:space="preserve">
     <value>성신여자대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank45" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank45" xml:space="preserve">
     <value>숙명여자대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank46" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank46" xml:space="preserve">
     <value>가천대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank47" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank47" xml:space="preserve">
     <value>홍익대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank48" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank48" xml:space="preserve">
     <value>인제대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank49" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank49" xml:space="preserve">
     <value>광운대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank5" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank5" xml:space="preserve">
     <value>고려대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank50" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank50" xml:space="preserve">
     <value>계명대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank51" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank51" xml:space="preserve">
     <value>동아대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank52" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank52" xml:space="preserve">
     <value>과학 기술 연합 대학원대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank53" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank53" xml:space="preserve">
     <value>차의과학대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank54" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank54" xml:space="preserve">
     <value>원광대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank55" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank55" xml:space="preserve">
     <value>명지대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank56" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank56" xml:space="preserve">
     <value>강릉원주대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank57" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank57" xml:space="preserve">
     <value>대구한의대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank58" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank58" xml:space="preserve">
     <value>국립공주대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank59" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank59" xml:space="preserve">
     <value>한동대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank6" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank6" xml:space="preserve">
     <value>Pohang University of Science And Technology (POSTECH)</value>
   </data>
-	<data name="HandbookMenu2Title4Rank60" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank60" xml:space="preserve">
     <value>덕성여자대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank61" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank61" xml:space="preserve">
     <value>국립순천대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank62" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank62" xml:space="preserve">
     <value>금오공과대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank63" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank63" xml:space="preserve">
     <value>목포해양대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank64" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank64" xml:space="preserve">
     <value>영산대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank65" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank65" xml:space="preserve">
     <value>경기대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank66" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank66" xml:space="preserve">
     <value>가톨릭관동대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank67" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank67" xml:space="preserve">
     <value>국립군산대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank68" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank68" xml:space="preserve">
     <value>상명대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank69" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank69" xml:space="preserve">
     <value>대전대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank7" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank7" xml:space="preserve">
     <value>한양대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank70" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank70" xml:space="preserve">
     <value>신라대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank71" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank71" xml:space="preserve">
     <value>한국해양대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank72" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank72" xml:space="preserve">
     <value>한국기술교육대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank73" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank73" xml:space="preserve">
     <value>건양대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank74" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank74" xml:space="preserve">
     <value>한국교통대학교 충주캠퍼스</value>
   </data>
-	<data name="HandbookMenu2Title4Rank75" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank75" xml:space="preserve">
     <value>을지대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank76" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank76" xml:space="preserve">
     <value>서울여자대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank77" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank77" xml:space="preserve">
     <value>대구대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank78" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank78" xml:space="preserve">
     <value>우석대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank79" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank79" xml:space="preserve">
     <value>한경대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank8" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank8" xml:space="preserve">
     <value>경희대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank80" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank80" xml:space="preserve">
     <value>한밭대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank81" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank81" xml:space="preserve">
     <value>국립창원대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank82" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank82" xml:space="preserve">
     <value>호서대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank83" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank83" xml:space="preserve">
     <value>동의대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank84" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank84" xml:space="preserve">
     <value>한국산업기술대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank85" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank85" xml:space="preserve">
     <value>한국항공대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank86" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank86" xml:space="preserve">
     <value>한남대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank87" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank87" xml:space="preserve">
     <value>경성대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank88" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank88" xml:space="preserve">
     <value>선문대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank89" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank89" xml:space="preserve">
     <value>삼육대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank9" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank9" xml:space="preserve">
     <value>울산과학기술원</value>
   </data>
-	<data name="HandbookMenu2Title4Rank90" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank90" xml:space="preserve">
     <value>상지대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank91" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank91" xml:space="preserve">
     <value>고신대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank92" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank92" xml:space="preserve">
     <value>우송대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank93" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank93" xml:space="preserve">
     <value>청주대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank94" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank94" xml:space="preserve">
     <value>동서대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank95" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank95" xml:space="preserve">
     <value>안동대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank96" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank96" xml:space="preserve">
     <value>세명대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank97" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank97" xml:space="preserve">
     <value>수원대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank98" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank98" xml:space="preserve">
     <value>전주대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Rank99" xml:space="preserve">
+  <data name="HandbookMenu2Title4Rank99" xml:space="preserve">
     <value>배재대학교</value>
   </data>
-	<data name="HandbookMenu2Title4Source" xml:space="preserve">
+  <data name="HandbookMenu2Title4Source" xml:space="preserve">
     <value>참고</value>
   </data>
-	<data name="HandbookMenu2Title5" xml:space="preserve">
+  <data name="HandbookMenu2Title5" xml:space="preserve">
     <value>알아야 할 현재 한국 입국 비자 유형</value>
   </data>
-	<data name="HandbookMenu2Title5Info1" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info1" xml:space="preserve">
     <value>비자에는 다음과 같은 세 가지 주요 유형이 있습니다.</value>
   </data>
-	<data name="HandbookMenu2Title5Info1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info1_1" xml:space="preserve">
     <value>단수비자: 단수입국만 가능한 비자로 발급일로부터 3개월 이내의 유효기간이 있는 비자입니다.</value>
   </data>
-	<data name="HandbookMenu2Title5Info1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info1_2" xml:space="preserve">
     <value>더블 비자: 6개월 동안 2회 연속 입국할 수 있는 비자의 일종입니다.</value>
   </data>
-	<data name="HandbookMenu2Title5Info1_3" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info1_3" xml:space="preserve">
     <value>복수 비자: 복수 입국이 가능한 비자의 일종입니다</value>
   </data>
-	<data name="HandbookMenu2Title5Info2" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info2" xml:space="preserve">
     <value>그리고 각 개인의 해외 체류 상태에 따라 다음과 같은 유형의 비자가 있습니다.</value>
   </data>
-	<data name="HandbookMenu2Title5Info2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info2_1" xml:space="preserve">
     <value>외교/공무 비자</value>
   </data>
-	<data name="HandbookMenu2Title5Info2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info2_2" xml:space="preserve">
     <value>취업 비자</value>
   </data>
-	<data name="HandbookMenu2Title5Info2_3" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info2_3" xml:space="preserve">
     <value>단기 체류 및 비영리 활동 비자</value>
   </data>
-	<data name="HandbookMenu2Title5Info2_4" xml:space="preserve">
+  <data name="HandbookMenu2Title5Info2_4" xml:space="preserve">
     <value>장기 체류 비자</value>
   </data>
-	<data name="HandbookMenu2Title6" xml:space="preserve">
+  <data name="HandbookMenu2Title6" xml:space="preserve">
     <value>년 비자 (유효기간: 10.12.2018)</value>
   </data>
-	<data name="HandbookMenu2Title6Info1" xml:space="preserve">
+  <data name="HandbookMenu2Title6Info1" xml:space="preserve">
     <value>목적: 주로 한국 관광, 비즈니스에만 사용합니다</value>
   </data>
-	<data name="HandbookMenu2Title6Info2" xml:space="preserve">
+  <data name="HandbookMenu2Title6Info2" xml:space="preserve">
     <value>신청대상: 하노이, 다낭, 호치민시 등 3개 주요 도시에 호적호가 있는 베트남 국민이 한국에 입국한 자(최소 2회). 상기 지역 이외의 지역에서는 최근 2년 동안 최소 4회 이상 한국에 입국해야 합니다</value>
   </data>
-	<data name="HandbookMenu2Title6Info3" xml:space="preserve">
+  <data name="HandbookMenu2Title6Info3" xml:space="preserve">
     <value>체류기간: 30일 연속 체류/5년 이내 입국</value>
   </data>
-	<data name="HandbookMenu2Title6Table1" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1" xml:space="preserve">
     <value>5년 한국 비자 준비서류</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_1" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_1" xml:space="preserve">
     <value>여권 (원본, 사본은 최소 6개월 이상 유효)</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_2" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_2" xml:space="preserve">
     <value>비자 신청</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_3" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_3" xml:space="preserve">
     <value>신분증(원본 및 사본)</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_4" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_4" xml:space="preserve">
     <value>호적등본(원본 및 공증본)</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_5" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_5" xml:space="preserve">
     <value>임시 거주 장부(원본 및 공증 사본)</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_6" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_6" xml:space="preserve">
     <value>인물 사진 2개(3.5 x 4.5cm, 흰색 배경)</value>
   </data>
-	<data name="HandbookMenu2Title6Table1_7" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table1_7" xml:space="preserve">
     <value>직업 증명</value>
   </data>
-	<data name="HandbookMenu2Title6Table2" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table2" xml:space="preserve">
     <value>주의</value>
   </data>
-	<data name="HandbookMenu2Title6Table2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table2_1" xml:space="preserve">
     <value>호적등본의 등기처가 호치민시인 경우 임시거주부가 필요하지 않습니다</value>
   </data>
-	<data name="HandbookMenu2Title6Table2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table2_2" xml:space="preserve">
     <value>호적등본, 임시거주부는 사법부의 공증을 받아야 합니다</value>
   </data>
-	<data name="HandbookMenu2Title6Table2_2_1" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table2_2_1" xml:space="preserve">
     <value>호적등본 : 신규 영주자등록이 1년 이상인 경우</value>
   </data>
-	<data name="HandbookMenu2Title6Table2_2_2" xml:space="preserve">
+  <data name="HandbookMenu2Title6Table2_2_2" xml:space="preserve">
     <value>임시 거주 증명서 : 거주자가 1년 이상 임시 거주 등록을 해야 합니다</value>
   </data>
-	<data name="HandbookMenu2Title7" xml:space="preserve">
+  <data name="HandbookMenu2Title7" xml:space="preserve">
     <value>외교관/취업 비자 (A1, A2, A3)</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow1Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow1Col2" xml:space="preserve">
     <value>외교 비자</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow1Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow1Col3" xml:space="preserve">
     <value>외교관 및 공무원이 공무차 한국을 여행할 때 발급</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow1Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow1Col4" xml:space="preserve">
     <value>임시 공무 여행의 경우 3개월</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow2Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow2Col2" xml:space="preserve">
     <value>공식 비자</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow2Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow2Col3" xml:space="preserve">
     <value>대한민국 정부가 인정하는 외국 정부 또는 국제기구의 공무를 수행하는 외국인에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow2Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow2Col4" xml:space="preserve">
     <value>공무 수행 시기에 따른 납기</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow3Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow3Col2" xml:space="preserve">
     <value>협력 비자</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow3Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow3Col3" xml:space="preserve">
     <value>군인, 국방 민간인, 한국에서 공무를 수행하는 민간 계약자 및 가족에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title7TableRow3Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableRow3Col4" xml:space="preserve">
     <value>2년이나5년</value>
   </data>
-	<data name="HandbookMenu2Title7TableTitle1" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableTitle1" xml:space="preserve">
     <value>종류</value>
   </data>
-	<data name="HandbookMenu2Title7TableTitle2" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableTitle2" xml:space="preserve">
     <value>유형</value>
   </data>
-	<data name="HandbookMenu2Title7TableTitle3" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableTitle3" xml:space="preserve">
     <value>대상</value>
   </data>
-	<data name="HandbookMenu2Title7TableTitle4" xml:space="preserve">
+  <data name="HandbookMenu2Title7TableTitle4" xml:space="preserve">
     <value>기간</value>
   </data>
-	<data name="HandbookMenu2Title8" xml:space="preserve">
+  <data name="HandbookMenu2Title8" xml:space="preserve">
     <value>한국 노동 비자(E1, E2, E3, E4, E5, E6, E7, E9, E10, H1)</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow10Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow10Col2" xml:space="preserve">
     <value>휴일 취업 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow10Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow10Col3" xml:space="preserve">
     <value>특정 국가의 국민이 연휴 기간 동안 한국을 일하러 갈 도록 허가</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow10Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow10Col4" xml:space="preserve">
     <value>1년</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow1Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow1Col2" xml:space="preserve">
     <value>교수 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow1Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow1Col3" xml:space="preserve">
     <value>한국 대학과 전문대학에서 강의와 연구를 하고자 하는 자에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow1Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow1Col4" xml:space="preserve">
     <value>5년</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow2Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow2Col2" xml:space="preserve">
     <value>외국어 강사 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow2Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow2Col3" xml:space="preserve">
     <value>영어교사로 한국에 오는 특정 국가 국민에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow2Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow2Col4" xml:space="preserve">
     <value>13개월</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow3Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow3Col2" xml:space="preserve">
     <value>연구 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow3Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow3Col3" xml:space="preserve">
     <value>연구기관이나 대학에서 연구활동을 하기 위해 한국에 오는 사람에게 연구기관이나 대학에서 연구활동을 하기 위해 한국에 오는 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow3Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow3Col4" xml:space="preserve">
     <value>영사관에 의해 결정</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow4Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow4Col2" xml:space="preserve">
     <value>기술 지원 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow4Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow4Col3" xml:space="preserve">
     <value>기술 분야에서 일하기 위해 한국에 오는 사람들에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow5Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow5Col2" xml:space="preserve">
     <value>전문가 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow5Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow5Col3" xml:space="preserve">
     <value>조종사, 의사와 같은 전문 분야에서 일하는 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow6Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow6Col2" xml:space="preserve">
     <value>예술/연예 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow6Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow6Col3" xml:space="preserve">
     <value>한국에서 예술 및 엔터테인먼트 분야에서 일하고 싶은 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow7Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow7Col2" xml:space="preserve">
     <value>전문 기술자 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow7Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow7Col3" xml:space="preserve">
     <value>전문 자격 및 숙련공을 갖춘 기술 노동자에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow7Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow7Col4" xml:space="preserve">
     <value>장기 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow8Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow8Col2" xml:space="preserve">
     <value>일반 노동 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow8Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow8Col3" xml:space="preserve">
     <value>한국에서 일하는 비숙련 노동자에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow9Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow9Col2" xml:space="preserve">
     <value>선박 노동 비자</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow9Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow9Col3" xml:space="preserve">
     <value>한국에서 선박 노동자에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title8TableRow9Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableRow9Col4" xml:space="preserve">
     <value>4년 10개월</value>
   </data>
-	<data name="HandbookMenu2Title8TableTitle1" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableTitle1" xml:space="preserve">
     <value>종류</value>
   </data>
-	<data name="HandbookMenu2Title8TableTitle2" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableTitle2" xml:space="preserve">
     <value>유형</value>
   </data>
-	<data name="HandbookMenu2Title8TableTitle3" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableTitle3" xml:space="preserve">
     <value>대상</value>
   </data>
-	<data name="HandbookMenu2Title8TableTitle4" xml:space="preserve">
+  <data name="HandbookMenu2Title8TableTitle4" xml:space="preserve">
     <value>기간</value>
   </data>
-	<data name="HandbookMenu2Title9" xml:space="preserve">
+  <data name="HandbookMenu2Title9" xml:space="preserve">
     <value>단기체류 및 비영리활동을 위한 한국비자(C1, C2, C3, C4)</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow1Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow1Col2" xml:space="preserve">
     <value>임시 거주 기자 비자</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow1Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow1Col3" xml:space="preserve">
     <value>업무차 한국에 오는 기자에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow1Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow1Col4" xml:space="preserve">
     <value>단기 비자</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow2Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow2Col2" xml:space="preserve">
     <value>단기 비즈니스 비자</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow2Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow2Col3" xml:space="preserve">
     <value>상업 거래를 위해 한국에 오는 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow2Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow2Col4" xml:space="preserve">
     <value>90일</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow3Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow3Col2" xml:space="preserve">
     <value>단기 관광 비자</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow3Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow3Col3" xml:space="preserve">
     <value>여행, 진료 등 한국에 단기체류할 목적이 있는 사람에게 발급</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow3Col4_1" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow3Col4_1" xml:space="preserve">
     <value>단수 비자: 15일</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow3Col4_2" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow3Col4_2" xml:space="preserve">
     <value>5년 비자: 30일</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow4Col2" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow4Col2" xml:space="preserve">
     <value>단기 취업 비자</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow4Col3" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow4Col3" xml:space="preserve">
     <value>단기 취업을 위해 한국에 오는 사람들에게 지급</value>
   </data>
-	<data name="HandbookMenu2Title9TableRow4Col4" xml:space="preserve">
+  <data name="HandbookMenu2Title9TableRow4Col4" xml:space="preserve">
     <value>90일</value>
   </data>
-	<data name="HandbookMenu3" xml:space="preserve">
+  <data name="HandbookMenu3" xml:space="preserve">
     <value>한국 비자 신청 안내</value>
   </data>
-	<data name="HandbookMenu3Title1" xml:space="preserve">
+  <data name="HandbookMenu3Title1" xml:space="preserve">
     <value>신청서 접수 및 비자 발급 장소</value>
   </data>
-	<data name="HandbookMenu3Title1Info1_1" xml:space="preserve">
+  <data name="HandbookMenu3Title1Info1_1" xml:space="preserve">
     <value>2019년 05월 02일부터</value>
   </data>
-	<data name="HandbookMenu3Title1Info1_2" xml:space="preserve">
+  <data name="HandbookMenu3Title1Info1_2" xml:space="preserve">
     <value>대한민국 대사관(하노이)과 대한민국 총영사관(호치민시)은 비자 신청을 직접 접수하지 않습니다. 신청서는 하노이, 호치민시, 다낭 3개 도시에 있는 한국비자신청센터(KVAC)에서 제출 및 처리됩니다</value>
   </data>
-	<data name="HandbookMenu3Title1Info2" xml:space="preserve">
+  <data name="HandbookMenu3Title1Info2" xml:space="preserve">
     <value>하노이: 디스커버리 콤플렉스 오피스 빌딩 12층, 302 Cau Giay Street, Dich Vong Ward, Cau Giay District, Hanoi</value>
   </data>
-	<data name="HandbookMenu3Title1Info3" xml:space="preserve">
+  <data name="HandbookMenu3Title1Info3" xml:space="preserve">
     <value>호치민시: Saigon Coop 빌딩, 253 Dien Bien Phu Street, Ward 7, District 3, HCM</value>
   </data>
-	<data name="HandbookMenu3Title1Info4" xml:space="preserve">
+  <data name="HandbookMenu3Title1Info4" xml:space="preserve">
     <value>다낭 : Nam Viet A Building 3-4 층, Lot A1-2, Chuong Duong Street, Chuong My Ward, Ngu Hanh Son District, Da Nang</value>
   </data>
-	<data name="HandbookMenu3Title2" xml:space="preserve">
+  <data name="HandbookMenu3Title2" xml:space="preserve">
     <value>비자 신청 서류</value>
   </data>
-	<data name="HandbookMenu3Title2Info1" xml:space="preserve">
+  <data name="HandbookMenu3Title2Info1" xml:space="preserve">
     <value>여권</value>
   </data>
-	<data name="HandbookMenu3Title2Info2" xml:space="preserve">
+  <data name="HandbookMenu3Title2Info2" xml:space="preserve">
     <value>비자 신청서</value>
   </data>
-	<data name="HandbookMenu3Title2Info3" xml:space="preserve">
+  <data name="HandbookMenu3Title2Info3" xml:space="preserve">
     <value>각 체류 사례에 필요한 서류</value>
   </data>
-	<data name="HandbookMenu3Title3" xml:space="preserve">
+  <data name="HandbookMenu3Title3" xml:space="preserve">
     <value>비자 발급 수수료</value>
   </data>
-	<data name="HandbookMenu3Title3Info1" xml:space="preserve">
+  <data name="HandbookMenu3Title3Info1" xml:space="preserve">
     <value>30일 미만 1회 입국: USD 20</value>
   </data>
-	<data name="HandbookMenu3Title3Info2" xml:space="preserve">
+  <data name="HandbookMenu3Title3Info2" xml:space="preserve">
     <value>3개월 미만 단수 입국: USD 30</value>
   </data>
-	<data name="HandbookMenu3Title3Info3" xml:space="preserve">
+  <data name="HandbookMenu3Title3Info3" xml:space="preserve">
     <value>3개월 이상 1회 입장: USD 50</value>
   </data>
-	<data name="HandbookMenu3Title3Info4" xml:space="preserve">
+  <data name="HandbookMenu3Title3Info4" xml:space="preserve">
     <value>6개월 이내 2회 연속 응모 시: 60 USD</value>
   </data>
-	<data name="HandbookMenu3Title3Info5" xml:space="preserve">
+  <data name="HandbookMenu3Title3Info5" xml:space="preserve">
     <value>복수 입장 : USD 80</value>
   </data>
-	<data name="HandbookMenu3Title4" xml:space="preserve">
+  <data name="HandbookMenu3Title4" xml:space="preserve">
     <value>메모:</value>
   </data>
-	<data name="HandbookMenu3Title4Info1" xml:space="preserve">
+  <data name="HandbookMenu3Title4Info1" xml:space="preserve">
     <value>신청 서비스 수수료: 390,000 VND/신청(비자 발급 수수료 제외)</value>
   </data>
-	<data name="HandbookMenu3Title4Info2" xml:space="preserve">
+  <data name="HandbookMenu3Title4Info2" xml:space="preserve">
     <value>비자 신청 수수료는 필수이며 비자 거부시 환불되지 않습니다.</value>
   </data>
-	<data name="HandbookMenu3Title5" xml:space="preserve">
+  <data name="HandbookMenu3Title5" xml:space="preserve">
     <value>한국 입국 시 비자 면제 사례(비자)</value>
   </data>
-	<data name="HandbookMenu3Title5Info1" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1" xml:space="preserve">
     <value>다음 중 하나에 해당하는 경우 비자 신청 없이 한국에 입국할 수 있습니다.</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_1" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_1" xml:space="preserve">
     <value>한국과 무비자 입국 협정을 체결한 국가의 국민</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_10" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_10" xml:space="preserve">
     <value>APEC 비즈니스 트래블 카드 있는 사람</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_2" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_2" xml:space="preserve">
     <value>무비자 입국 협정을 체결한 국가</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_3" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_3" xml:space="preserve">
     <value>비자 면제 입국자</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_4" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_4" xml:space="preserve">
     <value>한국에 정기적으로 입국하는 사람</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_5" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_5" xml:space="preserve">
     <value>다른 국가로의 환승을 기다리는 관광객</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_6" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_6" xml:space="preserve">
     <value>일본인 관광객</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_7" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_7" xml:space="preserve">
     <value>유럽으로의 환승을 기다리는 중국인 관광객</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_8" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_8" xml:space="preserve">
     <value>제주도에 우선적으로 입국하는 관광객</value>
   </data>
-	<data name="HandbookMenu3Title5Info1_9" xml:space="preserve">
+  <data name="HandbookMenu3Title5Info1_9" xml:space="preserve">
     <value>재입국 허가증 있는 사람</value>
   </data>
-	<data name="UniversityHeaderTitle" xml:space="preserve">
+  <data name="UniversityHeaderTitle" xml:space="preserve">
     <value>D2-1 유학</value>
   </data>
-	<data name="UniversityHeaderTitleSubject1" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject1" xml:space="preserve">
     <value>한국에서 어학연수 유학에 대한 개요</value>
   </data>
-	<data name="UniversityHeaderTitleSubject2_1" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject2_1" xml:space="preserve">
     <value>한국</value>
   </data>
-	<data name="UniversityHeaderTitleSubject2_2" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject2_2" xml:space="preserve">
     <value>대학에는 정규 한국어 과정이 있어 듣기, 말하기, 읽기, 쓰기를 1급부터 6급까지 교육한다. 한국어 뿐만 아니라 학생들은 한국 문화 체험 활동에도 참여할 수 있다.</value>
   </data>
-	<data name="UniversityHeaderTitleSubject3_1" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject3_1" xml:space="preserve">
     <value>강사들은</value>
   </data>
-	<data name="UniversityHeaderTitleSubject3_2" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject3_2" xml:space="preserve">
     <value>경험이 많고 한국어학과를 전공한 전문 강사이다. 학습 커리큘럼은 일반 한국어 커리큘럼이거나 표준으로 편찬된 학교의 커리큘럼이다.</value>
   </data>
-	<data name="UniversityHeaderTitleSubject4" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject4" xml:space="preserve">
     <value>최고의 교육성과를 거두기 위해 각 수업에는 약 10~25명만의 학생이 있다.</value>
   </data>
-	<data name="UniversityHeaderTitleSubject5" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject5" xml:space="preserve">
     <value>대부분의 대학에서 어학 연수 과정은 4학기로 나눈다.</value>
   </data>
-	<data name="UniversityHeaderTitleSubject5_1" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject5_1" xml:space="preserve">
     <value>봄학기: 3월 – 5월</value>
   </data>
-	<data name="UniversityHeaderTitleSubject5_2" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject5_2" xml:space="preserve">
     <value>여름 학기: 6월 – 8월</value>
   </data>
-	<data name="UniversityHeaderTitleSubject5_3" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject5_3" xml:space="preserve">
     <value>가을학기: 9월 – 11월</value>
   </data>
-	<data name="UniversityHeaderTitleSubject5_4" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject5_4" xml:space="preserve">
     <value>• 겨울학기: 12월 – 2월</value>
   </data>
-	<data name="UniversityHeaderTitleSubject5_5" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject5_5" xml:space="preserve">
     <value>5회 수업이 있으며, 각 수업은 4시간 동안 진행된다.</value>
   </data>
-	<data name="UniversityHeaderTitleSubject6_1" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject6_1" xml:space="preserve">
     <value>한 학기에</value>
   </data>
-	<data name="UniversityHeaderTitleSubject6_2" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject6_2" xml:space="preserve">
     <value>중간고사와 기말고사의 2개 시험이 있다. 과정 수료 증을 받고 진학하려면 학생들은70% 이상의 과목에서 평균 점수를 달성해야 하며 총 수업 수의 10% 이상을 결석하면 안 된다.</value>
   </data>
-	<data name="UniversityHeaderTitleSubject7_1" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject7_1" xml:space="preserve">
     <value>정규 한국어</value>
   </data>
-	<data name="UniversityHeaderTitleSubject7_2" xml:space="preserve">
+  <data name="UniversityHeaderTitleSubject7_2" xml:space="preserve">
     <value>수업 외에도 학교에서는 토픽 시험 준비 수업, 통번역 수업 등 전문 한국어 수업도 있다.</value>
   </data>
-	<data name="UniversityTitle1" xml:space="preserve">
+  <data name="UniversityTitle1" xml:space="preserve">
     <value>D4-1 비자는 무엇인가</value>
   </data>
-	<data name="UniversityTitle1Subject1Image" xml:space="preserve">
+  <data name="UniversityTitle1Subject1Image" xml:space="preserve">
     <value>어학원 유학 D4-1</value>
   </data>
-	<data name="UniversityTitle1Subject1_1" xml:space="preserve">
+  <data name="UniversityTitle1Subject1_1" xml:space="preserve">
     <value>먼저</value>
   </data>
-	<data name="UniversityTitle1Subject1_2" xml:space="preserve">
+  <data name="UniversityTitle1Subject1_2" xml:space="preserve">
     <value>D4-1 비자가 무엇인지 알아보겠다. 현재 한국 유학 비자에는 다양한 유형이 있으며, 각 비자 유형은 서로 다른 한국 유학 유형에 해당하다. D4-1 비자를 통해 학생들은 한국에 있는 대학에서 어학연수 과정부터 입학하게 될 수 있다.</value>
   </data>
-	<data name="UniversityTitle1Subject2_1" xml:space="preserve">
+  <data name="UniversityTitle1Subject2_1" xml:space="preserve">
     <value>한국 대학에서</value>
   </data>
-	<data name="UniversityTitle1Subject2_2" xml:space="preserve">
+  <data name="UniversityTitle1Subject2_2" xml:space="preserve">
     <value>유학하려면 TOPIK 3급 이상의 자격증이 필요하다. 따라서 이 비자는 TOPIK 3급을 아직 따지 않아도 학생들이 유학을 할 수 있는 비자이다. 3~6개월의 기초 한국어 과정만 이수하면 된다.</value>
   </data>
-	<data name="UniversityTitle1Subject3_1" xml:space="preserve">
+  <data name="UniversityTitle1Subject3_1" xml:space="preserve">
     <value>수업 과정을</value>
   </data>
-	<data name="UniversityTitle1Subject3_2" xml:space="preserve">
+  <data name="UniversityTitle1Subject3_2" xml:space="preserve">
     <value>마친 후 TOPIK 2급을 취득하면 전문대학에 진학할 수 있다. TOPIK 3급을 취득하면 한국의 대학에 진학하여 전공을 공부할 수 있다. 그리고 TOPIK 2급을 취득하지 못하면 본국으로 돌아가야 된다.</value>
   </data>
-	<data name="UniversityTitle2" xml:space="preserve">
+  <data name="UniversityTitle2" xml:space="preserve">
     <value>D4-1 비자로 유학생 모집 조건</value>
   </data>
-	<data name="UniversityTitle2Subject1" xml:space="preserve">
+  <data name="UniversityTitle2Subject1" xml:space="preserve">
     <value>연령: 18~25</value>
   </data>
-	<data name="UniversityTitle2Subject10" xml:space="preserve">
+  <data name="UniversityTitle2Subject10" xml:space="preserve">
     <value>한국어 자격증 필요없음 (TOPIK3급이 있는 경우 어학연수 과정 없이 진학할 수 있다)</value>
   </data>
-	<data name="UniversityTitle2Subject2" xml:space="preserve">
+  <data name="UniversityTitle2Subject2" xml:space="preserve">
     <value>고등학교나 전문대학, 대학교 졸업</value>
   </data>
-	<data name="UniversityTitle2Subject3" xml:space="preserve">
+  <data name="UniversityTitle2Subject3" xml:space="preserve">
     <value>지원한 학교에 따라 요청한 고등학교 평균 GPA가 다르다 (보통 6.5 이상)</value>
   </data>
-	<data name="UniversityTitle2Subject4" xml:space="preserve">
+  <data name="UniversityTitle2Subject4" xml:space="preserve">
     <value>고등학교, 전문대학교, 대학교를 졸업한 후 3년이 넘지 않는다</value>
   </data>
-	<data name="UniversityTitle2Subject5" xml:space="preserve">
+  <data name="UniversityTitle2Subject5" xml:space="preserve">
     <value>폐결핵 간염 및 기타 전염병 불가</value>
   </data>
-	<data name="UniversityTitle2Subject6" xml:space="preserve">
+  <data name="UniversityTitle2Subject6" xml:space="preserve">
     <value>범죄경력 불가</value>
   </data>
-	<data name="UniversityTitle2Subject7" xml:space="preserve">
+  <data name="UniversityTitle2Subject7" xml:space="preserve">
     <value>한국에 불법 체류하는 친족 불가</value>
   </data>
-	<data name="UniversityTitle2Subject8" xml:space="preserve">
+  <data name="UniversityTitle2Subject8" xml:space="preserve">
     <value>10 000 USD 이상의 신청일로부터 6개월 이상 은행에 예금한 예금통장을 보유</value>
   </data>
-	<data name="UniversityTitle2Subject9" xml:space="preserve">
+  <data name="UniversityTitle2Subject9" xml:space="preserve">
     <value>보증인은 안정적인 직업과 월 3천만 동 이상의 수입을 입증.</value>
   </data>
-	<data name="UniversityTitle3" xml:space="preserve">
+  <data name="UniversityTitle3" xml:space="preserve">
     <value>D4-1비자 필요한 서류</value>
   </data>
-	<data name="UniversityTitle3Subject1" xml:space="preserve">
+  <data name="UniversityTitle3Subject1" xml:space="preserve">
     <value>여권</value>
   </data>
-	<data name="UniversityTitle3Subject10" xml:space="preserve">
+  <data name="UniversityTitle3Subject10" xml:space="preserve">
     <value>학교 사업등록증명서</value>
   </data>
-	<data name="UniversityTitle3Subject11" xml:space="preserve">
+  <data name="UniversityTitle3Subject11" xml:space="preserve">
     <value>학교 시간표</value>
   </data>
-	<data name="UniversityTitle3Subject12" xml:space="preserve">
+  <data name="UniversityTitle3Subject12" xml:space="preserve">
     <value>이력서</value>
   </data>
-	<data name="UniversityTitle3Subject13" xml:space="preserve">
+  <data name="UniversityTitle3Subject13" xml:space="preserve">
     <value>주민등록증</value>
   </data>
-	<data name="UniversityTitle3Subject14" xml:space="preserve">
+  <data name="UniversityTitle3Subject14" xml:space="preserve">
     <value>호적</value>
   </data>
-	<data name="UniversityTitle3Subject15" xml:space="preserve">
+  <data name="UniversityTitle3Subject15" xml:space="preserve">
     <value>재정증명서: 직업확인서, 소득확인서, 토지 또는 주택 등기부 등본, ...</value>
   </data>
-	<data name="UniversityTitle3Subject16" xml:space="preserve">
+  <data name="UniversityTitle3Subject16" xml:space="preserve">
     <value>예금통장</value>
   </data>
-	<data name="UniversityTitle3Subject17" xml:space="preserve">
+  <data name="UniversityTitle3Subject17" xml:space="preserve">
     <value>부모의 재정 보증 서약서</value>
   </data>
-	<data name="UniversityTitle3Subject18" xml:space="preserve">
+  <data name="UniversityTitle3Subject18" xml:space="preserve">
     <value />
   </data>
-	<data name="UniversityTitle3Subject2" xml:space="preserve">
+  <data name="UniversityTitle3Subject2" xml:space="preserve">
     <value>비자 발급 신청서</value>
   </data>
-	<data name="UniversityTitle3Subject3" xml:space="preserve">
+  <data name="UniversityTitle3Subject3" xml:space="preserve">
     <value>증명사진</value>
   </data>
-	<data name="UniversityTitle3Subject4" xml:space="preserve">
+  <data name="UniversityTitle3Subject4" xml:space="preserve">
     <value>정보 신고서</value>
   </data>
-	<data name="UniversityTitle3Subject5" xml:space="preserve">
+  <data name="UniversityTitle3Subject5" xml:space="preserve">
     <value>정보등록양식</value>
   </data>
-	<data name="UniversityTitle3Subject6" xml:space="preserve">
+  <data name="UniversityTitle3Subject6" xml:space="preserve">
     <value>건강 증명서</value>
   </data>
-	<data name="UniversityTitle3Subject7" xml:space="preserve">
+  <data name="UniversityTitle3Subject7" xml:space="preserve">
     <value>고등학교 성적증명서, 성적표, 졸업장</value>
   </data>
-	<data name="UniversityTitle3Subject8" xml:space="preserve">
+  <data name="UniversityTitle3Subject8" xml:space="preserve">
     <value>자기소개서 및 학습계획서</value>
   </data>
-	<data name="UniversityTitle3Subject9" xml:space="preserve">
+  <data name="UniversityTitle3Subject9" xml:space="preserve">
     <value>학교 입학 허가서</value>
   </data>
-	<data name="UniversityTitle4" xml:space="preserve">
+  <data name="UniversityTitle4" xml:space="preserve">
     <value>한국유학의 장점</value>
   </data>
-	<data name="UniversityTitle4_1" xml:space="preserve">
+  <data name="UniversityTitle4_1" xml:space="preserve">
     <value>간단한 조건</value>
   </data>
-	<data name="UniversityTitle4_1Subject" xml:space="preserve">
+  <data name="UniversityTitle4_1Subject" xml:space="preserve">
     <value>위에서 언급한 조건을 살펴보면 절차 서류는 간단하다. 한국 유학 유형 중에서 제일 심플한 유형이라고 할 수 있다.</value>
   </data>
-	<data name="UniversityTitle4_2" xml:space="preserve">
+  <data name="UniversityTitle4_2" xml:space="preserve">
     <value>경제성</value>
   </data>
-	<data name="UniversityTitle4_2Subject" xml:space="preserve">
+  <data name="UniversityTitle4_2Subject" xml:space="preserve">
     <value>유학 첫 해에 드는 평균 비용은 약 1억 8천만~2억 5천만동이다. 이 비용은 유럽 국가나 일본, 싱가포르 등 아시아에서 동등한 교육을 받는 국가에 비해 저렴하고 합리적이다. 입학 후 6개월 후에 아르바이트를 하여 생활비를 내며 상당한 금액을 절약할 수 있다.</value>
   </data>
-	<data name="UniversityTitle4_3" xml:space="preserve">
+  <data name="UniversityTitle4_3" xml:space="preserve">
     <value>한국어 실력 빠르게 향상</value>
   </data>
-	<data name="UniversityTitle4_3Subject" xml:space="preserve">
+  <data name="UniversityTitle4_3Subject" xml:space="preserve">
     <value>유학생은 경험 많고 전문적인 원어민 선생님들과 함께 한국에서 한국어를 배우게 된다. 또한, 한국 친구 및 현지 사람들과 대화하고 생활해서 한국어 능력, 특히 듣기, 말하기 및 의사 소통 능력을 빠르게 향상시키는 데 도움이 될 것이다.</value>
   </data>
-	<data name="UniversityTitle4_4" xml:space="preserve">
+  <data name="UniversityTitle4_4" xml:space="preserve">
     <value>전공 진학을 위한 준비</value>
   </data>
-	<data name="UniversityTitle4_4Subject" xml:space="preserve">
+  <data name="UniversityTitle4_4Subject" xml:space="preserve">
     <value>전공 진학을 위해 중요한 필수 조건 중 하나는 Topik 3급 이상을 따는 것이다. 그래서 어학연수 과정은 여러분이 대학 진학하기 위해 꼭 필요한 준비이다.</value>
   </data>
-	<data name="UniversityTitle4_5" xml:space="preserve">
+  <data name="UniversityTitle4_5" xml:space="preserve">
     <value>다양한 직업 선택</value>
   </data>
-	<data name="UniversityTitle4_5Subject1" xml:space="preserve">
+  <data name="UniversityTitle4_5Subject1" xml:space="preserve">
     <value>한국에서 어학연수 과정이 끝난 후, 대학에 진학하지 않으면 베트남으로 귀국해야 한다. 1년 동안 유학하면 최소 Topik 4급을 딸 수 있다.</value>
   </data>
-	<data name="UniversityTitle4_5Subject2" xml:space="preserve">
+  <data name="UniversityTitle4_5Subject2" xml:space="preserve">
     <value>베트남으로 돌아와서 Lotte, CJ, 삼성, 현대, 금호, 효성, 대우, LG 등의 한국 기업에 취업할 수 있다. 학교 졸업하고Topik 4 자격증 소지자의 급여는 월 평균 1,000만 동 정도에 시작된다.</value>
   </data>
-	<data name="UniversityTitle5" xml:space="preserve">
+  <data name="UniversityTitle5" xml:space="preserve">
     <value>어학연수 장학금</value>
   </data>
-	<data name="UniversityTitle5Subject1" xml:space="preserve">
+  <data name="UniversityTitle5Subject1" xml:space="preserve">
     <value>한국에서 어학 유학 학생들을 위한 장학금은 많지 않다. 장학금은 주로 대학 유학할 때 기회가 많아진다.</value>
   </data>
-	<data name="UniversityTitle5Subject2_1" xml:space="preserve">
+  <data name="UniversityTitle5Subject2_1" xml:space="preserve">
     <value>입학장학금</value>
   </data>
-	<data name="UniversityTitle5Subject2_2" xml:space="preserve">
+  <data name="UniversityTitle5Subject2_2" xml:space="preserve">
     <value>본교에서 별도의 면접이나 시험을 거쳐야 한다.</value>
   </data>
-	<data name="UniversityTitle5Subject3_1" xml:space="preserve">
+  <data name="UniversityTitle5Subject3_1" xml:space="preserve">
     <value>재학장학금(2학기부터)</value>
   </data>
-	<data name="UniversityTitle5Subject3_2" xml:space="preserve">
+  <data name="UniversityTitle5Subject3_2" xml:space="preserve">
     <value>전학기 성적을 기준으로 장학금 지급 여부를 결정한다.</value>
   </data>
-	<data name="UniversityTitle6" xml:space="preserve">
+  <data name="UniversityTitle6" xml:space="preserve">
     <value>왜 지금이 한국 유학에 가장 좋은 시기인가요</value>
   </data>
-	<data name="UniversityTitle6_1" xml:space="preserve">
+  <data name="UniversityTitle6_1" xml:space="preserve">
     <value>한국으로 가는 베트남 유학생이 늘고 있다.</value>
   </data>
-	<data name="UniversityTitle6_1Subject1" xml:space="preserve">
+  <data name="UniversityTitle6_1Subject1" xml:space="preserve">
     <value>따라서 경쟁률이 높아지고 있으며 학교에서도 입학기준을 높이고 있습니다</value>
   </data>
-	<data name="UniversityTitle6_1Subject2" xml:space="preserve">
+  <data name="UniversityTitle6_1Subject2" xml:space="preserve">
     <value>전에는 KIPA가 GPA 6.0 미만이면 한국 유학 서류를 처리했지만 이제는 GPA 6.5 이상이 돼야 유학 학교를 선택할 수 있다</value>
   </data>
-	<data name="UniversityTitle6_1Subject3" xml:space="preserve">
+  <data name="UniversityTitle6_1Subject3" xml:space="preserve">
     <value>전에는 졸업할 때부터 5년 이상 되어도 유학 선택이 많았는데 이제는 3년 이상이면 학교 선택이 어렵다</value>
   </data>
-	<data name="UniversityTitle6_2" xml:space="preserve">
+  <data name="UniversityTitle6_2" xml:space="preserve">
     <value>유학 서류에 대한 요구가 복잡해지고 있다</value>
   </data>
-	<data name="UniversityTitle6_2Subject1" xml:space="preserve">
+  <data name="UniversityTitle6_2Subject1" xml:space="preserve">
     <value>출입국, 대사관, 영사관과 같은 비자 승인 기관에서는 서류에 대해 복잡하게 요구하고 있다</value>
   </data>
-	<data name="UniversityTitle6_2Subject2" xml:space="preserve">
+  <data name="UniversityTitle6_2Subject2" xml:space="preserve">
     <value>x전에 직업확인은 인민위원회의 확인이 있으면 되지만, 이제는 확인을 강화하기 위해 관련 서류와 이미지를 추가로 요구하게 된다</value>
   </data>
-	<data name="UniversityTitle6_2Subject3" xml:space="preserve">
+  <data name="UniversityTitle6_2Subject3" xml:space="preserve">
     <value>학교 및 영사관에 서류 신청 요건은 학기마다 업데이트되므로 전문가의 도움이 없으면 신청 과정에서 실수가 발생할 수도 있다</value>
   </data>
-	<data name="UniversityTitle6_3" xml:space="preserve">
+  <data name="UniversityTitle6_3" xml:space="preserve">
     <value>인증된 학교 수가 점점 줄어들고 있다</value>
   </data>
-	<data name="UniversityTitle6_3Subject1" xml:space="preserve">
+  <data name="UniversityTitle6_3Subject1" xml:space="preserve">
     <value>2021년: 대학교 88개, 전문대학 17개, 대학원 11개</value>
   </data>
-	<data name="UniversityTitle6_3Subject2" xml:space="preserve">
+  <data name="UniversityTitle6_3Subject2" xml:space="preserve">
     <value>2022년: 대학교 92개, 전문대학 4개, 대학원 10개</value>
   </data>
-	<data name="UniversityTitle6_3Subject3" xml:space="preserve">
+  <data name="UniversityTitle6_3Subject3" xml:space="preserve">
     <value>2023년: 대학교 60개, 전문대학 2개, 대학원 1개</value>
   </data>
-	<data name="UniversityTitle6_4" xml:space="preserve">
+  <data name="UniversityTitle6_4" xml:space="preserve">
     <value>국내 TOP 1 대학에 포함된 학교 수도 급감</value>
   </data>
-	<data name="UniversityTitle6_4Subject1" xml:space="preserve">
+  <data name="UniversityTitle6_4Subject1" xml:space="preserve">
     <value>2021년: 대학교 23개, 전문대학 2개, 대학원 3개</value>
   </data>
-	<data name="UniversityTitle6_4Subject2" xml:space="preserve">
+  <data name="UniversityTitle6_4Subject2" xml:space="preserve">
     <value>2022년: 대학교 19개, 전문대학 1개, 대학원 5개</value>
   </data>
-	<data name="UniversityTitle6_4Subject3" xml:space="preserve">
+  <data name="UniversityTitle6_4Subject3" xml:space="preserve">
     <value>2023년: 대학교 9개, 전문대학 0개, 대학원 4개</value>
   </data>
-	<data name="UniversityTitle6_5" xml:space="preserve">
+  <data name="UniversityTitle6_5" xml:space="preserve">
     <value>이는 학교 선택 결정에도 큰 영향을 미친다. K-study 예금보증증명이 없는 경우, 인증된 학교 명단에서 학교만 선택할 수 있다.</value>
   </data>
-	<data name="UniversityTitle6__6" xml:space="preserve">
+  <data name="UniversityTitle6__6" xml:space="preserve">
     <value>따라서 모든 조건을 갖춘다면 지금은 유학을 가는 가장 좋은 시기이다!</value>
   </data>
-	<data name="UniversityTitle7" xml:space="preserve">
+  <data name="UniversityTitle7" xml:space="preserve">
     <value>한국대학 Top Ranking(D4-1)</value>
   </data>
-	<data name="D2VisaHeaderTitle" xml:space="preserve">
+  <data name="D2VisaHeaderTitle" xml:space="preserve">
     <value>D2 비자</value>
   </data>
-	<data name="D2VisaTitle1" xml:space="preserve">
+  <data name="D2VisaTitle1" xml:space="preserve">
     <value>한국 D2 비자란 무엇인가</value>
   </data>
-	<data name="D2VisaTitle1Subject" xml:space="preserve">
+  <data name="D2VisaTitle1Subject" xml:space="preserve">
     <value>D2 비자는 한국어 과정을 이수하거나 TOPIK 3 이상을 취득한 후, 한국 내대학에서 특정 전공을 공부하도록 승인받은 학생에게 발급되는 비자이다</value>
   </data>
-	<data name="D2VisaTitle2" xml:space="preserve">
+  <data name="D2VisaTitle2" xml:space="preserve">
     <value>한국 D2 비자 신청 조건</value>
   </data>
-	<data name="D2VisaTitle2Subject1_1" xml:space="preserve">
+  <data name="D2VisaTitle2Subject1_1" xml:space="preserve">
     <value>건강이 좋아야 하며 결핵이나 기타 전염병이 없어야 한다</value>
   </data>
-	<data name="D2VisaTitle2Subject1_2" xml:space="preserve">
+  <data name="D2VisaTitle2Subject1_2" xml:space="preserve">
     <value>범죄경력이 없어야 한다</value>
   </data>
-	<data name="D2VisaTitle2Subject1_3" xml:space="preserve">
+  <data name="D2VisaTitle2Subject1_3" xml:space="preserve">
     <value>신청일로부터 6개월 이내에 한국비자를 불허 경력이 없는 사람</value>
   </data>
-	<data name="D2VisaTitle2Subject1_4" xml:space="preserve">
+  <data name="D2VisaTitle2Subject1_4" xml:space="preserve">
     <value>최소 3개월 전에 은행에 미화 10,000달러 이상의 저축 통장이 예치되어 있어야 한다</value>
   </data>
-	<data name="D2VisaTitle2Subject1_5" xml:space="preserve">
+  <data name="D2VisaTitle2Subject1_5" xml:space="preserve">
     <value>보증인은 월 3천만~7천만 VND의 평균 소득에 대한 입증자료 재출</value>
   </data>
-	<data name="D2VisaTitle2Subject2_1" xml:space="preserve">
+  <data name="D2VisaTitle2Subject2_1" xml:space="preserve">
     <value>D2-1, D2-2 비자의 경우</value>
   </data>
-	<data name="D2VisaTitle2Subject2_2" xml:space="preserve">
+  <data name="D2VisaTitle2Subject2_2" xml:space="preserve">
     <value>고등학교/중학교/전문대학/대학교를 졸업</value>
   </data>
-	<data name="D2VisaTitle2Subject2_3" xml:space="preserve">
+  <data name="D2VisaTitle2Subject2_3" xml:space="preserve">
     <value>평균 GPA 6.5 이상</value>
   </data>
-	<data name="D2VisaTitle2Subject2_4" xml:space="preserve">
+  <data name="D2VisaTitle2Subject2_4" xml:space="preserve">
     <value>TOPIK 3급 이상 한국어 성적 증명서</value>
   </data>
-	<data name="D2VisaTitle2Subject3_1" xml:space="preserve">
+  <data name="D2VisaTitle2Subject3_1" xml:space="preserve">
     <value>D2-3 비자의 경우</value>
   </data>
-	<data name="D2VisaTitle2Subject3_2" xml:space="preserve">
+  <data name="D2VisaTitle2Subject3_2" xml:space="preserve">
     <value>대학 졸업</value>
   </data>
-	<data name="D2VisaTitle2Subject3_3" xml:space="preserve">
+  <data name="D2VisaTitle2Subject3_3" xml:space="preserve">
     <value>최소 GPA 7.0</value>
   </data>
-	<data name="D2VisaTitle2Subject3_4" xml:space="preserve">
+  <data name="D2VisaTitle2Subject3_4" xml:space="preserve">
     <value>TOPIK 4급 이상 또는 한국어 성적 증명서</value>
   </data>
-	<data name="D2VisaTitle2Subject4_1" xml:space="preserve">
+  <data name="D2VisaTitle2Subject4_1" xml:space="preserve">
     <value>D2-4 비자의 경우</value>
   </data>
-	<data name="D2VisaTitle2Subject4_2" xml:space="preserve">
+  <data name="D2VisaTitle2Subject4_2" xml:space="preserve">
     <value>석사 학위 졸업</value>
   </data>
-	<data name="D2VisaTitle2Subject4_3" xml:space="preserve">
+  <data name="D2VisaTitle2Subject4_3" xml:space="preserve">
     <value>TOPIK 4급 이상의 한국어 성적 증명서</value>
   </data>
-	<data name="D2VisaTitle3" xml:space="preserve">
+  <data name="D2VisaTitle3" xml:space="preserve">
     <value>한국 D2 비자</value>
   </data>
-	<data name="D2VisaTitle4" xml:space="preserve">
+  <data name="D2VisaTitle4" xml:space="preserve">
     <value>한국 비자의 유효기간</value>
   </data>
-	<data name="D2VisaTitle5" xml:space="preserve">
+  <data name="D2VisaTitle5" xml:space="preserve">
     <value>한국 D2 비자 신청</value>
   </data>
-	<data name="D2VisaTitle5Subject1" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1" xml:space="preserve">
     <value>일반서류</value>
   </data>
-	<data name="D2VisaTitle5Subject1_1" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_1" xml:space="preserve">
     <value>비자 신청</value>
   </data>
-	<data name="D2VisaTitle5Subject1_2" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_2" xml:space="preserve">
     <value>여권 원본 + 사본</value>
   </data>
-	<data name="D2VisaTitle5Subject1_3" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_3" xml:space="preserve">
     <value>증명사진 1장 (흰색 배경 3.5*4.5cm)</value>
   </data>
-	<data name="D2VisaTitle5Subject1_4" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_4" xml:space="preserve">
     <value>입학허가서</value>
   </data>
-	<data name="D2VisaTitle5Subject1_5" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_5" xml:space="preserve">
     <value>연수장소 사업자등록증 사본</value>
   </data>
-	<data name="D2VisaTitle5Subject1_6" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_6" xml:space="preserve">
     <value>신분증/CCCD 사본</value>
   </data>
-	<data name="D2VisaTitle5Subject1_7" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_7" xml:space="preserve">
     <value>결핵검사 결과서 (대사관 지정 병원 발행 필수)</value>
   </data>
-	<data name="D2VisaTitle5Subject1_8" xml:space="preserve">
+  <data name="D2VisaTitle5Subject1_8" xml:space="preserve">
     <value>비자 신청자 정보 등록 양식</value>
   </data>
-	<data name="D2VisaTitle5Subject2" xml:space="preserve">
+  <data name="D2VisaTitle5Subject2" xml:space="preserve">
     <value>학업 성적 입증 서류</value>
   </data>
-	<data name="D2VisaTitle5Subject3" xml:space="preserve">
+  <data name="D2VisaTitle5Subject3" xml:space="preserve">
     <value>본인 소개와 학업 계획</value>
   </data>
-	<data name="D2VisaTitle5Subject4" xml:space="preserve">
+  <data name="D2VisaTitle5Subject4" xml:space="preserve">
     <value>재원 입증 서류 : 최소 요구되는 저축 장부는 신청일로부터 최소 3개월 동안 은행에 10,000 USD를 예치해야 하며 소득, 직업, 급여, 주택 서류, 토지, 자동차 등을 확인해야 합니다</value>
   </data>
-	<data name="D2VisaTitle5Subject5" xml:space="preserve">
+  <data name="D2VisaTitle5Subject5" xml:space="preserve">
     <value>부모의 재정 보증 서약서</value>
+  </data>
+  <data name="D2VisaTitle1Image" xml:space="preserve">
+    <value>Học sinh KIPA trong buổi học tại trường ĐH Dongkuk</value>
+  </data>
+  <data name="D2VisaTitle2Image" xml:space="preserve">
+    <value>Giấy chứng nhận topik của học sinh nhà Kipa.</value>
+  </data>
+  <data name="D2VisaTitle3Image" xml:space="preserve">
+    <value>Chuyến công tác thăm trường của nhân viên Kipa.</value>
+  </data>
+  <data name="D2VisaTitle3TableHeader1" xml:space="preserve">
+    <value>비자 종류 D2</value>
+  </data>
+  <data name="D2VisaTitle3TableHeader2" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="D2VisaTitle3TableHeader3" xml:space="preserve">
+    <value>메모</value>
+  </data>
+  <data name="D2VisaTitle3TableRow1Col2" xml:space="preserve">
+    <value>전문 대학생</value>
+  </data>
+  <data name="D2VisaTitle3TableRow1Col3" xml:space="preserve">
+    <value>토픽 2급 이상</value>
+  </data>
+  <data name="D2VisaTitle3TableRow2Col2" xml:space="preserve">
+    <value>대학생</value>
+  </data>
+  <data name="D2VisaTitle3TableRow2Col3" xml:space="preserve">
+    <value>토픽 3,4급 이상</value>
+  </data>
+  <data name="D2VisaTitle3TableRow3Col2" xml:space="preserve">
+    <value>석사 유학</value>
+  </data>
+  <data name="D2VisaTitle3TableRow3Col3" xml:space="preserve">
+    <value>토픽 4급 이상</value>
+  </data>
+  <data name="D2VisaTitle3TableRow4Col2" xml:space="preserve">
+    <value>박사유학</value>
+  </data>
+  <data name="D2VisaTitle3TableRow4Col3" xml:space="preserve">
+    <value>석사 학위 이상</value>
+  </data>
+  <data name="D2VisaTitle3TableRow5Col2" xml:space="preserve">
+    <value>연구유학</value>
+  </data>
+  <data name="D2VisaTitle3TableRow5Col3" xml:space="preserve">
+    <value>박사 학위 이상</value>
+  </data>
+  <data name="D2VisaTitle3TableRow6Col2" xml:space="preserve">
+    <value>교환학생</value>
+  </data>
+  <data name="D2VisaTitle3TableRow7Col2" xml:space="preserve">
+    <value>일 학습연계 유학</value>
+  </data>
+  <data name="D2VisaTitle3TableRow8Col2" xml:space="preserve">
+    <value>단기유학</value>
+  </data>
+  <data name="D2VisaTitle4TableHeader1" xml:space="preserve">
+    <value>비자별</value>
+  </data>
+  <data name="D2VisaTitle4TableHeader2" xml:space="preserve">
+    <value>최소 유호</value>
+  </data>
+  <data name="D2VisaTitle4TableRow1Col1" xml:space="preserve">
+    <value>전문 대학생(D-2-1)/ 대학생(D-2-2)</value>
+  </data>
+  <data name="D2VisaTitle4TableRow1Col2" xml:space="preserve">
+    <value>1년</value>
+  </data>
+  <data name="D2VisaTitle4TableRow2Col1" xml:space="preserve">
+    <value>석사 유학(D-2-3)/ 박사 유학(D-2-4)</value>
+  </data>
+  <data name="D2VisaTitle4TableRow2Col2" xml:space="preserve">
+    <value>1년</value>
+  </data>
+  <data name="D2VisaTitle4TableRow3Col1" xml:space="preserve">
+    <value>연구 유학(D-2-5)</value>
+  </data>
+  <data name="D2VisaTitle4TableRow4Col1" xml:space="preserve">
+    <value>교환학생(D-2-6)</value>
+  </data>
+  <data name="D2VisaTitle4TableRow5Col1" xml:space="preserve">
+    <value>단기유학  (D-2-8)</value>
+  </data>
+  <data name="D2VisaTitle5Image" xml:space="preserve">
+    <value>Hộ chiếu ảnh minh họa.</value>
+  </data>
+  <data name="D2VisaTitle6" xml:space="preserve">
+    <value>한국 D2 비자 신청 절차</value>
+  </data>
+  <data name="D2VisaTitle6Subject1" xml:space="preserve">
+    <value>1단계:  문서 공증</value>
+  </data>
+  <data name="D2VisaTitle6Subject2" xml:space="preserve">
+    <value>2단계: 영사부 – 외교부 공증</value>
+  </data>
+  <data name="D2VisaTitle6Subject2_1" xml:space="preserve">
+    <value>Bạn cần phải xin tem và dấu hợp pháp hóa các giấy tờ sau</value>
+  </data>
+  <data name="D2VisaTitle6Subject2_1_1" xml:space="preserve">
+    <value>고등학교 성적증명서(원본+번역본)</value>
+  </data>
+  <data name="D2VisaTitle6Subject2_1_2" xml:space="preserve">
+    <value>3급 수료증(원본+번역)</value>
+  </data>
+  <data name="D2VisaTitle6Subject2_1_3" xml:space="preserve">
+    <value>건강 증명서</value>
+  </data>
+  <data name="D2VisaTitle6Subject2_1_4" xml:space="preserve">
+    <value>법죄경력증명서</value>
+  </data>
+  <data name="D2VisaTitle6Subject2_1_5" xml:space="preserve">
+    <value>결혼 증명서(있는 경우)</value>
+  </data>
+  <data name="D2VisaTitle6Subject3" xml:space="preserve">
+    <value>3단계: 영사관 - 한국대사관에 가서 서류신청</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_1" xml:space="preserve">
+    <value>Tiếp đến, bạn tới đây lấy số hẹn rồi nộp hồ sơ gồm</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_1_1" xml:space="preserve">
+    <value>고등학교 성적증명서(원본+번역본)</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_1_2" xml:space="preserve">
+    <value>3급 수료증(원본+번역)</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_2" xml:space="preserve">
+    <value>한국대사관 영사확인 후 필요 서류</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_2_1" xml:space="preserve">
+    <value>베트남 영사부에 공증</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_2_2" xml:space="preserve">
+    <value>건강 증명서 공증</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_2_3" xml:space="preserve">
+    <value>공증 번역 사본</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_2_4" xml:space="preserve">
+    <value>01 신분증 또는 여권 사본</value>
+  </data>
+  <data name="D2VisaTitle6Subject3_2_5" xml:space="preserve">
+    <value>성적 증명서 및 졸업장 사본</value>
+  </data>
+  <data name="D2VisaTitle6Subject4" xml:space="preserve">
+    <value>4단계: 지원서를 제출하고 학교로부터 초청장 발급</value>
+  </data>
+  <data name="D2VisaTitle6Subject4_1" xml:space="preserve">
+    <value>초대장은 우편이나 이메일로 발송. 그 이후에는 사전에 소정의 수업료를 임시로 납부. 학교에서 이메일이나 우편으로 입학허가서를 발행. 이 확인서는 대사관에서 비자를 신청하는 데 사용</value>
+  </data>
+  <data name="D2VisaTitle6Subject5" xml:space="preserve">
+    <value>5단계: 비자 신청서 제출 진행</value>
+  </data>
+  <data name="D2VisaTitle6Subject5_1" xml:space="preserve">
+    <value>입학 허가서를 받은 후, 대사관에 가서 비자 신청서를 작성하여 D2 한국 학생 비자 신청을 위한 예약을 요청</value>
+  </data>
+  <data name="D2VisaTitle6Subject6" xml:space="preserve">
+    <value>6단계: 대사관에서 비자 인터뷰</value>
+  </data>
+  <data name="D2VisaTitle6Subject6_1" xml:space="preserve">
+    <value>지원서 검토 후, 서류가 요구사항을 충족할 경우, 구체적인 인터뷰 일정을 통보</value>
+  </data>
+  <data name="D2VisaTitle6Subject6_2" xml:space="preserve">
+    <value>인터뷰 후 대사관에서 비자를 발급해 드립니다. 학교에 통보하고 학교가 정한 입학 일정에 따라 항공편을 예약합니다</value>
+  </data>
+  <data name="D2VisaTitle7" xml:space="preserve">
+    <value>Visa D2 코리아의 장점</value>
+  </data>
+  <data name="D2VisaTitle7Subject1" xml:space="preserve">
+    <value>D2 비자가 곧 만료될 때 베트남으로 돌아가지 않고도 연장할 수 있도록 인턴을 하는 학교나 기관의 지원을 받는다. 이는 시간, 노력 및 비용을 최대한 절약하는 데 도움이 되는 장점 중 하나이다</value>
+  </data>
+  <data name="D2VisaTitle7Subject2" xml:space="preserve">
+    <value>한국 유학시에는 주당 최대 20시간까지 일할 수 있다. 특히 토,일,휴일에는 시간제한 없이 자유롭게 초과근무가 가능한다. 다만,업무는 법의 허용 범위 내에서 이루어져야 한다</value>
+  </data>
+  <data name="D2VisaTitle7Subject3" xml:space="preserve">
+    <value>아버지, 어머니, 형제, 자매가 C-3-9 비자로 한국을 여행할 수 있도록 후원하거나 한국에 장기 체류하려면 F-1-15 비자를 신청한다. 이 혜택은 D2 학생 비자에만 적용되며, D4 한국 학생 비자에는 적용되지 않다</value>
+  </data>
+  <data name="D2VisaTitle7Subject4" xml:space="preserve">
+    <value>과정 수료 후 한국에 체류하여 취업을 원하는 경우 6개월간 D-10 비자로 전환된다</value>
+  </data>
+  <data name="D2VisaTitle7Subject5" xml:space="preserve">
+    <value>특히 D-2-1, D-2-2 비자, D-2-3, D-2-4 비자의 경우, 졸업 후 해당 비자 레벨에 따라 고등교육에 등록할 수 있다. 이때에는 한국에 장기근속하거나 정착할 가능성이 높아진다</value>
+  </data>
+  <data name="D2VisaTitle7Subject6" xml:space="preserve">
+    <value>졸업 후 E-7비자 필드코드로 후원이 승인된 경우, 연수를 마친 후 E-7비자로 전환된다</value>
+  </data>
+  <data name="D2VisaTitle7Subject7" xml:space="preserve">
+    <value>석사 이상의 학위를 취득하고 한국의 특정 기업에 근무하는 경우, D2 비자에서 F-2 비자(한국에서는 정착 비자라고도 함)로 전환할 수 있는 기회가 주어진다</value>
+  </data>
+  <data name="CompanyOption" xml:space="preserve">
+    <value>기업에서 한국어 교육 프로그램</value>
+  </data>
+  <data name="EnterName" xml:space="preserve">
+    <value>이름을 입력하십시오</value>
+  </data>
+  <data name="EnterPhone" xml:space="preserve">
+    <value>전화번호를 입력하십시오</value>
+  </data>
+  <data name="EnterQuestion" xml:space="preserve">
+    <value>상담 줄문을 입력하십시오</value>
+  </data>
+  <data name="StudyOption" xml:space="preserve">
+    <value>유학</value>
   </data>
 </root>
