@@ -1,4 +1,5 @@
 ﻿using Module.Data.DataAccess;
+using Module.Data.DataAccess.Domain;
 using Module.Repository.Shared;
 using System;
 using System.Collections.Generic;
@@ -67,6 +68,27 @@ namespace Module.Repository
             get
             {
                 return new Repository<AppDictionary>(_context);
+            }
+        }
+        public IRepository<AppEmployee> AppEmployees
+        {
+            get
+            {
+                return new Repository<AppEmployee>(_context);
+            }
+        }
+        public IRepository<AppEmployeeExperience> AppEmployeeExperiences
+        {
+            get
+            {
+                return new Repository<AppEmployeeExperience>(_context);
+            }
+        }
+        public IRepository<AppContactSupport> AppContactSupports
+        {
+            get
+            {
+                return new Repository<AppContactSupport>(_context);
             }
         }
 
