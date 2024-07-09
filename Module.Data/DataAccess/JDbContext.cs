@@ -18,6 +18,7 @@ namespace Module.Data.DataAccess
         public virtual DbSet<AbpUserRole> AbpUserRoles { get; set; }
         public virtual DbSet<AbpUser> AbpUsers { get; set; }
         public virtual DbSet<AppDictionary> AppDictionaries { get; set; }
+        public virtual DbSet<AppTinTuc> AppTinTucs { get; set; }
         public virtual DbSet<AppEmployee> AppEmployees { get; set; }
         public virtual DbSet<AppContactSupport> AppContactSupport { get; set; }
         public virtual DbSet<AppEmployeeExperience> AppEmployeeExperience { get; set; }

@@ -81,6 +81,10 @@
     <Compile Include="Migrations\202407091710424_create-employee.designer.cs">
       <DependentUpon>202407091710424_create-employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407091717087_add-apptintuc.cs" />
+    <Compile Include="Migrations\202407091717087_add-apptintuc.designer.cs">
+      <DependentUpon>202407091717087_add-apptintuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407091710424_create-employee.resx">
       <DependentUpon>202407091710424_create-employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407091717087_add-apptintuc.resx">
+      <DependentUpon>202407091717087_add-apptintuc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
