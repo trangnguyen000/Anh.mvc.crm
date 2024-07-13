@@ -24,8 +24,6 @@ namespace Module.BusinessLogic.Shared
 
         Task<object> GetChiTietTinTucById(int id);
 
-
-
         Task<object> GetChiTietTinTucPageById();
 
 

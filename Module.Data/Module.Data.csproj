@@ -97,6 +97,10 @@
     <Compile Include="Migrations\202407130208068_update-study-program.designer.cs">
       <DependentUpon>202407130208068_update-study-program.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407130902379_update-study-name.cs" />
+    <Compile Include="Migrations\202407130902379_update-study-name.designer.cs">
+      <DependentUpon>202407130902379_update-study-name.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -126,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407130208068_update-study-program.resx">
       <DependentUpon>202407130208068_update-study-program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130902379_update-study-name.resx">
+      <DependentUpon>202407130902379_update-study-name.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

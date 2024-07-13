@@ -9,5 +9,6 @@ namespace Module.BusinessLogic.Dto.Filter
     public class ContactSupportFIlterDto: FilterDto
     {
         public int? StudyProgramId { get; set; }
+        public short? Status { get; set; }
     }
 }

@@ -30,6 +30,8 @@ namespace Module.Data.DataAccess.Domain
 
         public int? StudyProgramId { get; set; }
 
+        public string StudyProgramName { get; set; }
+
         public string SupportEmployeeName { get; set; }
 
         [StringLength(500)]

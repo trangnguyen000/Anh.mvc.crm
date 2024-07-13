@@ -70,12 +70,13 @@ namespace Module.BusinessLogic.SharedCore
             {
                 var result = new ResultDto();
                 var data = uow.AppContactSupports.Query(o => o.IsDeleted == false)
-                                                .Where(c=> filter.StudyProgramId == null || filter.StudyProgramId == 0 || c.StudyProgramId == filter.StudyProgramId);
+                                                   .Where(c => filter.Status == null || filter.Status == 0 || c.Status == filter.Status);
                 if (!string.IsNullOrWhiteSpace(filter.Filter))
                 {
-                   var textFilter = filter.Filter.Trim().ToUpper();
+                    var textFilter = filter.Filter.Trim().ToUpper();
                     data = data.Where(o => (!string.IsNullOrEmpty(o.CustomerName) && o.CustomerName.ToUpper().Contains(textFilter))
                                             || (!string.IsNullOrEmpty(o.SupportEmployeeName) && o.SupportEmployeeName.ToUpper().Contains(textFilter))
+                                             || (!string.IsNullOrEmpty(o.StudyProgramName) && o.StudyProgramName.ToUpper().Contains(textFilter))
                                              || (!string.IsNullOrEmpty(o.EmailAddress) && o.EmailAddress.ToUpper().Contains(textFilter))
                                               || (!string.IsNullOrEmpty(o.PhoneNumber) && o.PhoneNumber.ToUpper().Contains(textFilter)));
                 }
@@ -83,14 +84,12 @@ namespace Module.BusinessLogic.SharedCore
                 var listId = await data.OrderByDescending(o => o.CreationTime)
                                       .Skip((filter.PageIndex - 1) * filter.PageSize).Take(filter.PageSize)
                                       .Select(o => o.Id).ToListAsync();
-                var resultData = await (from t in uow.AppContactSupports.Query(o => listId.Any(c => c == o.Id))
-                                        join d in uow.Dictionarys.Query(c => c.GroupCode == KeyCodeDictionary.StudyProgram) on t.StudyProgramId equals d.Id into dis
-                                        from di in dis.DefaultIfEmpty()
+                var resultData = await (from t in uow.AppContactSupports.Query(o => listId.Any(c => c == o.Id)).OrderByDescending(o => o.CreationTime)
                                         select new ContactSuportViewDto
                                         {
                                             Id = t.Id,
                                             StudyProgramId = t.StudyProgramId,
-                                            StudyProgramName = di != null ? di.DisplayName : string.Empty,
+                                            StudyProgramName = t.StudyProgramName,
                                             PhoneNumber = t.PhoneNumber,
                                             CustomerName = t.CustomerName,
                                             EmailAddress = t.EmailAddress,
@@ -113,7 +112,7 @@ namespace Module.BusinessLogic.SharedCore
         {
             using (IUnitOfWork uow = base.unitOfWork.New())
             {
-                return await uow.Dictionarys.Query(c => c.IsDeleted == false && c.GroupCode == key).OrderBy(c=>c.DisplayName).ToListAsync();
+                return await uow.Dictionarys.Query(c => c.IsDeleted == false && c.GroupCode == key).OrderBy(c => c.DisplayName).ToListAsync();
             }
         }
 

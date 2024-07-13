@@ -88,14 +88,6 @@ namespace Module.BusinessLogic.SharedCore
                      .OrderBy(o => o.DisplayName).ToList();
             }
         }
-        public async Task<string> GetStudyProgramById(int? id)
-        {
-            using (IUnitOfWork uow = base.unitOfWork.New())
-            {
-                var result = await uow.Dictionarys.Query(o => o.Id == id).FirstOrDefaultAsync();
-                return result!=null? result.DisplayName : null;
-            }
-        }
 
         public AppDictionary GetChuyenMucById(int? id)
         {

@@ -78,12 +78,12 @@ namespace Anh.mvc.crm.Controllers
                     CustomerName = model.name,
                     Description = model.subject,
                     EmailAddress = model.Email,
-                    StudyProgramId = model.country,
+                    StudyProgramName = model.country,
                     PhoneNumber = model.phoneNumber,
                     Status = (short)Common.StatusContactSupport.New,
                 };
                 await _businessLogic.SaveContractSupport(modelContractSupport, null);
-                var studyProgramName = await _frontEndLogic.GetStudyProgramById(model.country);
+
                 var message = new MimeMessage();
                 message.From.Add(new MailboxAddress("Form mail", "trangmy2909@gmail.com"));
                 message.To.Add(new MailboxAddress("To mail", "hoanglinh23vp@gmail.com"));
@@ -95,7 +95,7 @@ namespace Anh.mvc.crm.Controllers
                            Thông tin người đăng ký:
                            Họ và tên:{model.name},
                            Số điện thoại: {model.phoneNumber},
-                           Chương trình quan tâm: {studyProgramName},
+                           Chương trình quan tâm: {model.country},
                            Câu hỏi: {model.subject},"
                 };
 

@@ -24,7 +24,7 @@ var app = new Vue({
             Status: 1
         },
         listStudyProgram: [],
-        listStudyProgramFilter:[],
+        listStatusFilter:[],
         listStatus: [],
         bootstrapPaginationClasses: {
             ul: 'pagination pagination-sm m-0 float-right',
@@ -62,7 +62,7 @@ var app = new Vue({
                     "Filter": self.search,
                     "PageIndex": self.currentPage,
                     "PageSize": self.pageSize,
-                    "StudyProgramId": $('.selectStudyProgramFilter').val()
+                    "Status": $('.selectStatusFilter').val()
                 },
                 success: function (result) {
                     self.data = result.Data;
@@ -78,25 +78,15 @@ var app = new Vue({
         getDanhMuc: function () {
             var self = this;
             $.ajax({
-                url: '/api/ApiBusiness/GetSuggestDanhMuc?key=KeyChuongTrinhHoc',
-                contentType: "application/json; charset=utf-8",
-                method: 'GET',
-                success: function (result) {
-                    self.listStudyProgram = result;
-                    self.listStudyProgramFilter = [...result];
-                    self.listStudyProgramFilter.unshift({ Id: 0, DisplayName: "Tất cả" });
-                },
-                error: function (xhr, status, error) {
-                    console.log(xhr);
-                }
-            });
-            $.ajax({
                 url: '/api/ApiBusiness/GetStatus?key=KeyChuongTrinhHoc',
                 contentType: "application/json; charset=utf-8",
                 method: 'GET',
                 success: function (result) {
-                    if (result.Success)
+                    if (result.Success) {
                         self.listStatus = result.Data;
+                        self.listStatusFilter = [...result.Data]; debugger
+                        self.listStatusFilter.unshift({ Key: 0, Value: "Tất cả" });
+                    }
                     else
                         self.listStatus = [];
                 },
@@ -115,6 +105,7 @@ var app = new Vue({
                     CustomerName: item.CustomerName,
                     PhoneNumber: item.PhoneNumber,
                     EmailAddress: item.EmailAddress,
+                    StudyProgramName: item.StudyProgramName,
                     Description: item.Description,
                     FromDataSourceId: item.FromDataSourceId,
                     StudyProgramId: item.StudyProgramId,
@@ -122,7 +113,6 @@ var app = new Vue({
                     Note: item.Note,
                     Status: item.Status
                 };
-                $('.selectStudyProgram').val(item.StudyProgramId).trigger('change');
                 $('.selectStatus').val(item.Status).trigger('change');
             }
             else {
@@ -170,7 +160,6 @@ var app = new Vue({
             var self = this;
             self.submit = true;
             if (self.modelEdit.CustomerName || self.modelEdit.PhoneNumber) {
-                self.modelEdit.StudyProgramId = $('.selectStudyProgram').val();
                 self.modelEdit.Status = $('.selectStatus').val();
                 $.ajax({
                     url: '/api/ApiBusiness/SaveContractSupport',
@@ -225,11 +214,10 @@ var app = new Vue({
     },
 });
 $(document).ready(function () {
-    $('.selectStudyProgram').select2();
     $('.selectStatus').select2();
-    $('.selectStudyProgramFilter').select2();
+    $('.selectStatusFilter').select2();
 
-    $('.selectStudyProgramFilter').on('change', function (e) {
+    $('.selectStatusFilter').on('change', function (e) {
         app.searchData();
     });
 });

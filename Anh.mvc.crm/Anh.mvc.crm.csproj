@@ -1537,6 +1537,10 @@
     <Content Include="Theme-FrontEnd\assets\Content\toggle.png" />
     <Content Include="Theme-FrontEnd\assets\Content\vananh.png" />
     <Content Include="Theme-FrontEnd\assets\Content\Vector.png" />
+    <Content Include="Theme-FrontEnd\assets\Content\VisaD2_1.png" />
+    <Content Include="Theme-FrontEnd\assets\Content\VisaD2_2.png" />
+    <Content Include="Theme-FrontEnd\assets\Content\VisaD2_3.png" />
+    <Content Include="Theme-FrontEnd\assets\Content\VisaD2_4.png" />
     <Content Include="Theme-FrontEnd\assets\Content\visaD4.jpg" />
     <Content Include="Theme-FrontEnd\assets\Content\yen.png" />
     <Content Include="Theme-FrontEnd\assets\Content\Yeoju.jpg" />

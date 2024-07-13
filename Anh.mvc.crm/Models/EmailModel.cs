@@ -14,7 +14,7 @@ namespace Anh.mvc.Models
         public string name { get; set; }
 
         public string phoneNumber { get; set; }
-        public int? country { get; set; }
+        public string country { get; set; }
         public string subject { get; set; }
         public string Email { get; set; }
     }
