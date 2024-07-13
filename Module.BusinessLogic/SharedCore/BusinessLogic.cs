@@ -23,8 +23,10 @@ namespace Module.BusinessLogic.SharedCore
 {
     public class BusinessLogic : BaseLogic, Shared.IBusinessLogic
     {
+        private readonly IMapper _mapper;
         public BusinessLogic(IUnitOfWork uow) : base(uow)
         {
+            _mapper = AutoMapperConfig.GetMapper();
         }
 
         public async Task<ResultDto> GetDanhSachTinTuc(int? typePage, string filter, int page, int pageSize)
@@ -64,7 +66,34 @@ namespace Module.BusinessLogic.SharedCore
             }
         }
 
-        public async Task<ResultDto> GetDanhSachLienHe(ContactSupportFIlterDto filter)
+        public async Task<ResultDto> GetEmployeeByPaging(string filter, int page, int pageSize)
+        {
+            using (IUnitOfWork uow = base.unitOfWork.New())
+            {
+                var result = new ResultDto();
+                var data = uow.AppEmployees.Query(o => o.IsDeleted == false);
+                if (!string.IsNullOrWhiteSpace(filter))
+                {
+                    var textFilter = filter.Trim().ToUpper();
+                    data = data.Where(o => (!string.IsNullOrEmpty(o.FullName) && o.FullName.ToUpper().Contains(textFilter))
+                                            || (!string.IsNullOrEmpty(o.EmailAddress) && o.EmailAddress.ToUpper().Contains(textFilter))
+                                             || (!string.IsNullOrEmpty(o.PhoneNumber) && o.PhoneNumber.ToUpper().Contains(textFilter))
+                                             || (!string.IsNullOrEmpty(o.PlaceOfOrigin) && o.PlaceOfOrigin.ToUpper().Contains(textFilter))
+                                              || (!string.IsNullOrEmpty(o.PhoneNumber) && o.PhoneNumber.ToUpper().Contains(textFilter)));
+                }
+                result.Total = await data.CountAsync();
+                var listId = await data.OrderByDescending(o => o.CreationTime)
+                                      .Skip((page - 1) * pageSize).Take(pageSize)
+                                      .Select(o => o.Id).ToListAsync();
+                var resultData = await (from t in uow.AppEmployees.Query(o => listId.Any(c => c == o.Id)).OrderByDescending(o => o.CreationTime)
+                                        select  t).ToListAsync();
+
+                result.Data = _mapper.Map<List<EmployeeViewDto>>(resultData);
+                return result;
+            }
+        }
+
+        public async Task<ResultDto> GetDanhSachLienHe(ContactSupportFilterDto filter)
         {
             using (IUnitOfWork uow = base.unitOfWork.New())
             {
@@ -88,7 +117,6 @@ namespace Module.BusinessLogic.SharedCore
                                         select new ContactSuportViewDto
                                         {
                                             Id = t.Id,
-                                            StudyProgramId = t.StudyProgramId,
                                             StudyProgramName = t.StudyProgramName,
                                             PhoneNumber = t.PhoneNumber,
                                             CustomerName = t.CustomerName,
@@ -330,7 +358,6 @@ namespace Module.BusinessLogic.SharedCore
         {
             using (IUnitOfWork uow = base.unitOfWork.New())
             {
-                var _mapper = AutoMapperConfig.GetMapper();
                 if (model.Id == null)
                 {
                     var entity = _mapper.Map<CreateOrUpdateContactSuportDto, AppContactSupport>(model);
@@ -352,6 +379,38 @@ namespace Module.BusinessLogic.SharedCore
                         entityUpdate.LastModificationTime = DateTime.Now;
                         entityUpdate.LastModifierUserId = userId;
                         uow.AppContactSupports.Update(entityUpdate);
+                        uow.Complete();
+                    }
+                }
+                return 1;
+            }
+        }
+
+        public async Task<int> SaveEmployee(CreateOrUpdateEmployeeDto model, int? userId)
+        {
+            using (IUnitOfWork uow = base.unitOfWork.New())
+            {
+                if (model.Id == null)
+                {
+                    var entity = _mapper.Map<CreateOrUpdateEmployeeDto, AppEmployee>(model);
+
+                    entity.CreationTime = DateTime.Now;
+                    entity.CreatorUserId = userId;
+                    entity.LastModificationTime = DateTime.Now;
+                    entity.LastModifierUserId = userId;
+                    entity.IsDeleted = false;
+                    uow.AppEmployees.Add(entity);
+                    uow.Complete();
+                }
+                else
+                {
+                    var entityUpdate = await uow.AppEmployees.Query(o => o.Id == model.Id).FirstOrDefaultAsync();
+                    if (entityUpdate != null)
+                    {
+                        _mapper.Map(model, entityUpdate);
+                        entityUpdate.LastModificationTime = DateTime.Now;
+                        entityUpdate.LastModifierUserId = userId;
+                        uow.AppEmployees.Update(entityUpdate);
                         uow.Complete();
                     }
                 }

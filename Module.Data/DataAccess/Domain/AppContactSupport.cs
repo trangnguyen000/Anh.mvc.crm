@@ -28,7 +28,6 @@ namespace Module.Data.DataAccess.Domain
 
         public int? FromDataSourceId { get; set; }
 
-        public int? StudyProgramId { get; set; }
 
         public string StudyProgramName { get; set; }
 

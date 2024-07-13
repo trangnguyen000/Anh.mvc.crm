@@ -303,7 +303,7 @@ var app = new Vue({
         },
         titleModal: {
             get: function () {
-                return this.modelEdit.Id ? 'Cập nhật nhân sự' : 'Thêm mới nhân sự'
+                return this.modelEdit.Id ? 'Cập nhật tài khoản người dùng' : 'Thêm mới tài khoản người dùng'
             }
         },
         numberPage: {

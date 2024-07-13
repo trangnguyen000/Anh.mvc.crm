@@ -255,6 +255,7 @@
     <Content Include="Assets\Js\bConfig.js" />
     <Content Include="Assets\Js\bContactSupport.js" />
     <Content Include="Assets\Js\bDanhMuc.js" />
+    <Content Include="Assets\Js\bEmployee.js" />
     <Content Include="Assets\Js\bLogin.js" />
     <Content Include="Assets\Js\bTinTuc.js" />
     <Content Include="Assets\Js\bTinTucEdit.js" />
@@ -1377,6 +1378,7 @@
     </Content>
     <Content Include="libman.json" />
     <Content Include="Areas\Admin\Views\Home\ContactSupport.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Employee.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3580,6 +3582,9 @@
       <Project>{77b4ee5f-2510-44cf-afae-1456623748c1}</Project>
       <Name>Module.Repository</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -77,13 +77,6 @@ namespace Module.Repository
                 return new Repository<AppEmployee>(_context);
             }
         }
-        public IRepository<AppEmployeeExperience> AppEmployeeExperiences
-        {
-            get
-            {
-                return new Repository<AppEmployeeExperience>(_context);
-            }
-        }
         public IRepository<AppContactSupport> AppContactSupports
         {
             get

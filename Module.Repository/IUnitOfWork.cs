@@ -18,7 +18,6 @@ namespace Module.Repository.Shared
         IRepository<AppTinTuc> TinTucs { get; }
         IRepository<AppDictionary> Dictionarys { get; }
         IRepository<AppEmployee> AppEmployees { get; }
-        IRepository<AppEmployeeExperience> AppEmployeeExperiences { get; }
         IRepository<AppContactSupport> AppContactSupports { get; }
         int Complete();
         Database GetDatabase();

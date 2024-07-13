@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Module.BusinessLogic.Helper.CommonHelper;
 
-namespace Module.Data.DataAccess.Domain
+namespace Module.BusinessLogic.Dto
 {
-    public class AppEmployee
+    public class CreateOrUpdateEmployeeDto
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [StringLength(255)]
         public string FullName { get; set; }
@@ -36,24 +35,11 @@ namespace Module.Data.DataAccess.Domain
         [StringLength(2000)]
         public string Note { get; set; }
 
+        public bool? IsActive { get; set; }
+
         public int? No { get; set; }
 
         [StringLength(15)]
         public string Language { get; set; }
-
-        [Column(TypeName = "datetime2")]
-        public DateTime? LastModificationTime { get; set; }
-
-        public int? LastModifierUserId { get; set; }
-
-        [Column(TypeName = "datetime2")]
-        public DateTime? CreationTime { get; set; }
-
-        public int? CreatorUserId { get; set; }
-
-        public bool? IsDeleted { get; set; }
-
-        public bool? IsActive { get; set; }
-
     }
 }

@@ -62,11 +62,13 @@
   <ItemGroup>
     <Compile Include="Dto\CreateOrUpdateContactSuportDto.cs" />
     <Compile Include="Dto\CreateOrUpdateDictionaryModel.cs" />
-    <Compile Include="Dto\Filter\ContactSupportFIlterDto.cs" />
+    <Compile Include="Dto\CreateOrUpdateEmployeeDto.cs" />
+    <Compile Include="Dto\Filter\ContactSupportFilterDto.cs" />
     <Compile Include="Dto\Filter\FilterDto.cs" />
     <Compile Include="Dto\TinTucModelDto.cs" />
     <Compile Include="Dto\TinTucViewHomeDto.cs" />
     <Compile Include="Dto\view\ContactSuportViewDto.cs" />
+    <Compile Include="Dto\view\EmployeeViewDto.cs" />
     <Compile Include="Helper\AutoMapperConfig.cs" />
     <Compile Include="Helper\Common.cs" />
     <Compile Include="Helper\KeyCodeDictionary.cs" />

@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-md-12">
-                    <h1 class="m-0 title-head">Nhân sự</h1>
+                    <h1 class="m-0 title-head">Tài khoản người dùng</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -26,8 +26,13 @@
         <div class="card card-custom">
             <div class="card-header">
                 <div class="col-md-12 form-head">
-                    <div class="col-md-9 form-head_Left">
-                        <input class="form-control" type="text" placeholder="Tìm kiếm nhân sự" v-model="search" v-on:keyup="keymonitor">
+                    <div class="col-md-6 form-head_Left">
+                        <form onkeydown="return event.key != 'Enter';">
+                            <input class="form-control" type="text" placeholder="Tìm kiếm" v-model="search" v-on:keyup="keymonitor">
+                        </form>
+                    </div>
+                    <div class="col-md-3 form-head_Left">
+                       
                     </div>
                     <div class="col-md-3 form-head_right">
                         @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_Create))

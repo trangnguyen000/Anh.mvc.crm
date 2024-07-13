@@ -66,7 +66,6 @@
     <Compile Include="DataAccess\AppTinTuc.cs" />
     <Compile Include="DataAccess\Domain\AppContactSupport.cs" />
     <Compile Include="DataAccess\Domain\AppEmployee.cs" />
-    <Compile Include="DataAccess\Domain\AppEmployeeExperience.cs" />
     <Compile Include="DataAccess\JDbContext.cs" />
     <Compile Include="Helper\Permissions.cs" />
     <Compile Include="Migrations\202405050737311_InitialCreate.cs" />
@@ -101,6 +100,18 @@
     <Compile Include="Migrations\202407130902379_update-study-name.designer.cs">
       <DependentUpon>202407130902379_update-study-name.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407131408225_update-table-employee.cs" />
+    <Compile Include="Migrations\202407131408225_update-table-employee.Designer.cs">
+      <DependentUpon>202407131408225_update-table-employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131639184_update-table-employee-no.cs" />
+    <Compile Include="Migrations\202407131639184_update-table-employee-no.Designer.cs">
+      <DependentUpon>202407131639184_update-table-employee-no.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131659453_update-table-employee-language.cs" />
+    <Compile Include="Migrations\202407131659453_update-table-employee-language.designer.cs">
+      <DependentUpon>202407131659453_update-table-employee-language.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -133,6 +144,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407130902379_update-study-name.resx">
       <DependentUpon>202407130902379_update-study-name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131408225_update-table-employee.resx">
+      <DependentUpon>202407131408225_update-table-employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131639184_update-table-employee-no.resx">
+      <DependentUpon>202407131639184_update-table-employee-no.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131659453_update-table-employee-language.resx">
+      <DependentUpon>202407131659453_update-table-employee-language.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

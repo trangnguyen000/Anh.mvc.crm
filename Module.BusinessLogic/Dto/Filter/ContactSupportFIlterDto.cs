@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Module.BusinessLogic.Dto.Filter
 {
-    public class ContactSupportFIlterDto: FilterDto
+    public class ContactSupportFilterDto: FilterDto
     {
-        public int? StudyProgramId { get; set; }
         public short? Status { get; set; }
     }
 }

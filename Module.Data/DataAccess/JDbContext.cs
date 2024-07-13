@@ -21,7 +21,6 @@ namespace Module.Data.DataAccess
         public virtual DbSet<AppTinTuc> AppTinTucs { get; set; }
         public virtual DbSet<AppEmployee> AppEmployees { get; set; }
         public virtual DbSet<AppContactSupport> AppContactSupport { get; set; }
-        public virtual DbSet<AppEmployeeExperience> AppEmployeeExperience { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

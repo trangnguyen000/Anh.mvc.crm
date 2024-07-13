@@ -21,13 +21,18 @@ namespace Module.BusinessLogic.Helper
             Complete = 3,
             Cancel = 4
         }
+        public enum Gender
+        {
+            Male = 1,
+            Female = 2,
+        }
 
         public static Dictionary<short, string> StatusContactSupports = new Dictionary<short, string>
         {
              { (short)StatusContactSupport.New, "Mới" },
              { (short)StatusContactSupport.Inprogress, "Đang hỗ trợ" },
-               { (short)StatusContactSupport.Complete, "Hoàn thành" },
-                 { (short)StatusContactSupport.Cancel, "Hủy" },
+             { (short)StatusContactSupport.Complete, "Hoàn thành" },
+              { (short)StatusContactSupport.Cancel, "Hủy" },
         };
 
 

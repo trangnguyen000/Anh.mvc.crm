@@ -27,8 +27,6 @@ namespace Module.BusinessLogic.Dto
 
         public int? FromDataSourceId { get; set; }
 
-        public int? StudyProgramId { get; set; }
-
         public string StudyProgramName { get; set; }
 
         public string SupportEmployeeName { get; set; }
