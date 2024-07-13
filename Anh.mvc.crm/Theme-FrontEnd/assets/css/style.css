@@ -143,7 +143,6 @@ header {
     right: 0;
     top: 2%;
     width: 68%;
-
 }
 
 .logo-kipa {
@@ -151,6 +150,9 @@ header {
     right: 0;
     top: 50%;
     width: 68%;
+}
+.image-DH-footer{
+    width:85%
 }
 
 .image-logo-footer {
@@ -434,6 +436,7 @@ header {
     margin: 20px auto;
     padding: 30px;
     color: #411C6B;
+    position: relative
 }
 
 .card-progame-study {
@@ -986,7 +989,7 @@ input[type=submit] {
 
 .card-teachers {
     padding: 20px;
-    width: 33%
+    /*    width: 33%*/
 }
 
 .p-20 {
@@ -1138,7 +1141,7 @@ input[type=submit] {
 
 .sub-menu-li {
     display: inline-block;
-    width: 45%;
+    width: 40%;
     vertical-align: top;
     padding: 15px 28px;
 }
@@ -1443,7 +1446,17 @@ tr:nth-child(even) {
 }
 
 .left-high-school {
-    width: 25%
+    width: 25%;
+    position: sticky;
+    top: 150px;
+    position: sticky;
+    /* top: 0px; */
+    /* width: 300px; */
+    height: 100vh;
+    /* padding: 20px; */
+    /* background-color: #597aa9; */
+    /* color: #597aa9; */
+    overflow: hidden;
 }
 
 .center-high-school {
@@ -1453,13 +1466,45 @@ tr:nth-child(even) {
 .right-high-school {
     width: 17%
 }
-.image-DH-footer{
+
+.image-DH-footer {
     width: 100%
+}
+
+@media screen and (min-width:1367px) {
+    .card-teacher-subject {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .card-teachers {
+        width: 33.33%
+    }
+}
+
+@media screen and (min-width:1367px) and (max-width:1682px) {
+    .team-teachers {
+        width: 85%;
+    }
+
+    .card-teacher-subject {
+        width: 50%;
+        flex: 0 0 50%;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
     .navbar-expand-lg > .container-fluid {
         padding-left: 25px
+    }
+
+    .card-teachers {
+        width: 50%
+    }
+
+    .card-teacher-subject {
+        width: 50%;
+        flex: 0 0 50%;
     }
 
     header {
@@ -1487,7 +1532,7 @@ tr:nth-child(even) {
     }
 
     .team-teachers {
-        width: 100%;
+        width: 90%;
         padding-left: 20px;
     }
 
@@ -1510,8 +1555,13 @@ tr:nth-child(even) {
         width: 90%;
     }
 
+    .navbar-brand {
+        height: 75%;
+        margin-left: -8px !important
+    }
+
     .navbar-expand-lg .offcanvas.offcanvas-custom .offcanvas-body .navbar-nav .nav-link {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .card-partner {
@@ -1543,7 +1593,12 @@ tr:nth-child(even) {
     }
 
     .sub-menu-li {
-        width: 45%
+        width: 45%;
+        padding: 10px
+    }
+
+    .sub-menu-a {
+        font-size: 16px
     }
 
     .progame-info-kipa {
@@ -1599,10 +1654,6 @@ tr:nth-child(even) {
         overflow-x: hidden;
     }
 
-    iframe {
-        height: 80%
-    }
-
     .address-info {
         padding: 0 40px !important;
         margin-top: -10px
@@ -1634,6 +1685,11 @@ tr:nth-child(even) {
         margin: 0 50px !important;
     }
 
+    .card-teacher-subject {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
     .card-teachers {
         width: 50%
     }
@@ -1656,7 +1712,7 @@ tr:nth-child(even) {
     }
 
     .font-korean .navbar-nav .nav-link {
-        margin: 0 13px !important;
+        margin: 0 8px !important;
         padding: 35px 0;
         font-size: 13px
     }
@@ -1823,7 +1879,7 @@ tr:nth-child(even) {
     .logo-Royal {
         overflow: hidden;
         top: 7%;
-        width:80%;
+        width: 100%;
     }
 
     .image-DH-footer {
@@ -1835,7 +1891,7 @@ tr:nth-child(even) {
     .logo-kipa {
         top: 15%;
         overflow: hidden;
-        width: 80%;
+        width: 100%;
     }
 
     .image-logo-footer {
@@ -1860,17 +1916,38 @@ tr:nth-child(even) {
     .item-slide-kipa {
         height: 100%
     }
+
     .footer-logo {
         width: 25%
     }
-/*    .footer-logo {
-width: 45%
-    }*/
+    .address-info {
+        width: 46%;
+        padding: 20px !important
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .offcanvas-title {
         color: #ffffff;
+    }
+
+    .card-teacher-subject {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .image-teacher {
+        width: 160px;
+        height: 160px;
+    }
+
+    .team-teachers {
+        width: 100%;
+    }
+
+    .card-teachers {
+        width: 50%
     }
     /*    .footer-map {
         width:1
@@ -2077,13 +2154,16 @@ width: 45%
     .item-slide-kipa {
         height: 100%
     }
-    .address-info{
+
+    .address-info {
         width: 55%
     }
+
     .footer-icon-network {
         width: 25%
     }
-    .footer-logo{
+
+    .footer-logo {
         width: 25%
     }
 }
@@ -2091,6 +2171,23 @@ width: 45%
 @media screen and (min-width: 391px) and (max-width: 768px) {
     .progame-info-kipa {
         height: 110vh !important
+    }
+
+    .card-teachers {
+        width: 100%
+    }
+
+    .team-teachers {
+        width: 95%;
+    }
+
+    .image-teacher {
+        margin: 0 auto;
+    }
+
+    .card-teacher-subject {
+        width: 100%;
+        flex: 0 0 100%;
     }
 
     body {
@@ -2374,9 +2471,17 @@ width: 45%
         height: 111vh !important
     }
 
+    .card-teacher-subject {
+        width: 100%
+    }
+
     header {
         right: 0;
         height: 90px
+    }
+
+    .img-logo-header {
+        height: 85%;
     }
 
     body {
