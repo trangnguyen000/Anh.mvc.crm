@@ -23,6 +23,7 @@ namespace Module.BusinessLogic.Shared
         List<AppTinTuc> GetTopTinTuc(int? top = 3);
 
         List<AppDictionary> GetChuyenMuc(string type);
+        Task<string> GetStudyProgramById(int? id);
 
         AppDictionary GetChuyenMucById(int? id);
 

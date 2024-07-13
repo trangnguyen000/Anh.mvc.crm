@@ -85,6 +85,18 @@
     <Compile Include="Migrations\202407091717087_add-apptintuc.designer.cs">
       <DependentUpon>202407091717087_add-apptintuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407130056396_update-employeename.cs" />
+    <Compile Include="Migrations\202407130056396_update-employeename.designer.cs">
+      <DependentUpon>202407130056396_update-employeename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407130157222_update-name-customer.cs" />
+    <Compile Include="Migrations\202407130157222_update-name-customer.designer.cs">
+      <DependentUpon>202407130157222_update-name-customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407130208068_update-study-program.cs" />
+    <Compile Include="Migrations\202407130208068_update-study-program.designer.cs">
+      <DependentUpon>202407130208068_update-study-program.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +117,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407091717087_add-apptintuc.resx">
       <DependentUpon>202407091717087_add-apptintuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130056396_update-employeename.resx">
+      <DependentUpon>202407130056396_update-employeename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130157222_update-name-customer.resx">
+      <DependentUpon>202407130157222_update-name-customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130208068_update-study-program.resx">
+      <DependentUpon>202407130208068_update-study-program.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

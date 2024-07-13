@@ -62,7 +62,7 @@ var app = new Vue({
         },
         showEdit: function (modal, item = undefined) {
             if (item) {
-                this.titleModal = "Cập nhật chuyên mục";
+                this.titleModal = "Cập nhật " + this.title;
                 this.modelEdit = {
                     Id: item.Id,
                     DisplayName: item.DisplayName,
@@ -70,7 +70,7 @@ var app = new Vue({
                 }
             }
             else {
-                this.titleModal = "Thêm mới chuyên mục";
+                this.titleModal = "Thêm mới " + this.title;
                 this.modelEdit = {
                     Id: null,
                     DisplayName: '',
@@ -161,7 +161,7 @@ var app = new Vue({
             get: function () {
                 return Swal.mixin({
                     toast: true,
-                    position: 'bottom-end',
+                    position: 'top-end',
                     showConfirmButton: false,
                     timer: 3000
                 })
@@ -181,18 +181,12 @@ var app = new Vue({
     beforeMount() {
         this.keyDanhMuc = $('#KeyDanhMuc').val();
         this.getData();
-        this.title = "Danh mục";
+        this.title = "";
         if (this.keyDanhMuc == 'KeyChuyenMucTinTuc') {
-            this.title += " tin tức";
+            this.title += "chuyên mục";
         }
-        else if (this.keyDanhMuc == 'KeyDonVi') {
-            this.title += " đơn vị";
-        }
-        else if (this.keyDanhMuc == 'KeyCoQuanBanHanh') {
-            this.title += " cơ quan ban hành";
-        }
-        else if (this.keyDanhMuc == 'KeyVanBan') {
-            this.title += " loại văn bản";
+        else{
+            this.title += "chương trình học";
         }
     },
 });

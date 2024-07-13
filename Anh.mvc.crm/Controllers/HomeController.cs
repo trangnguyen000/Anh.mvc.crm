@@ -18,18 +18,21 @@ using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
 using System.Web.Services.Description;
-
+using System.Threading.Tasks;
 
 namespace Anh.mvc.crm.Controllers
 {
     public class HomeController : BaseController
     {
         private readonly IFrontEndLogic _frontEndLogic;
+        private readonly IBusinessLogic _businessLogic;
         private readonly ConfigCurent _config;
         public HomeController()
         {
             _config = new ConfigCurent();
-            _frontEndLogic = new FrontEndLogic(new UnitOfWork());
+            var unitOfwork = new UnitOfWork();
+            _frontEndLogic = new FrontEndLogic(unitOfwork);
+            _businessLogic = new BusinessLogic(unitOfwork);
         }
         public ActionResult Index()
         {
@@ -49,11 +52,11 @@ namespace Anh.mvc.crm.Controllers
 
         public ActionResult Contact()
         {
-
+            ViewBag.StudyPrograms = _frontEndLogic.GetChuyenMuc(KeyCodeDictionary.StudyProgram);
             return View();
         }
         [HttpPost]
-        public ActionResult SendEmail(ContactFormModel model)
+        public async Task<ActionResult> SendEmail(ContactFormModel model)
         {
             if (model.name is null || model.phoneNumber is null)
             {
@@ -68,7 +71,19 @@ namespace Anh.mvc.crm.Controllers
                 return View("Contact");
 
             }
-            try {
+            try
+            {
+                var modelContractSupport = new CreateOrUpdateContactSuportDto()
+                {
+                    CustomerName = model.name,
+                    Description = model.subject,
+                    EmailAddress = model.Email,
+                    StudyProgramId = model.country,
+                    PhoneNumber = model.phoneNumber,
+                    Status = (short)Common.StatusContactSupport.New,
+                };
+                await _businessLogic.SaveContractSupport(modelContractSupport, null);
+                var studyProgramName = await _frontEndLogic.GetStudyProgramById(model.country);
                 var message = new MimeMessage();
                 message.From.Add(new MailboxAddress("Form mail", "trangmy2909@gmail.com"));
                 message.To.Add(new MailboxAddress("To mail", "hoanglinh23vp@gmail.com"));
@@ -80,7 +95,7 @@ namespace Anh.mvc.crm.Controllers
                            Thông tin người đăng ký:
                            Họ và tên:{model.name},
                            Số điện thoại: {model.phoneNumber},
-                           Chương trình quan tâm: {model.country},
+                           Chương trình quan tâm: {studyProgramName},
                            Câu hỏi: {model.subject},"
                 };
 
@@ -92,16 +107,18 @@ namespace Anh.mvc.crm.Controllers
                     client.Disconnect(true);
                 }
                 TempData["AlertMessage"] = "Đăng ký tư vấn thành công! Chúng tôi sẽ sớm liên hệ lại với bạn!";
-                TempData["AlertType"] = "alert-success"; 
-                return RedirectToAction("Contact", "Home");
-            } catch (Exception ex)
-            {
-                TempData["AlertMessage"] = $"Xảy ra lỗi {ex}";
-                TempData["AlertType"] = "alert-danger"; 
+                TempData["AlertType"] = "alert-success";
                 return RedirectToAction("Contact", "Home");
             }
-            
+            catch (Exception ex)
+            {
+                TempData["AlertMessage"] = $"Xảy ra lỗi {ex}";
+                TempData["AlertType"] = "alert-danger";
+                return RedirectToAction("Contact", "Home");
+            }
+
         }
+    
         public ActionResult Master()
         {
             return View();

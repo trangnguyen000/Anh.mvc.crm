@@ -1,6 +1,7 @@
 ﻿using Anh.mvc.crm.Authentication;
 using Anh.mvc.crm.Helper;
 using Module.BusinessLogic.Dto;
+using Module.BusinessLogic.Dto.Filter;
 using Module.BusinessLogic.Shared;
 using Module.BusinessLogic.SharedCore;
 using Module.Repository;
@@ -20,7 +21,7 @@ namespace Anh.mvc.crm.Api
 {
     [RoutePrefix("api/ApiBusiness")]
     [CustomAuthentication]
-    public class ApiBusinessController : ApiController
+    public class ApiBusinessController : ApiBaseController
     {
         private readonly IBusinessLogic _businessLogic;
 
@@ -36,6 +37,14 @@ namespace Anh.mvc.crm.Api
         public async Task<IHttpActionResult> GetDanhSachTinTuc(int? typePage,string filter, int? page, int? pageSize )
         {
             var data = await _businessLogic.GetDanhSachTinTuc(typePage,filter ?? "", page ?? 1, pageSize??10);
+            return Ok(data);
+        }
+
+        [HttpPost]
+        [Route("GetDanhSachLienHe")]
+        public async Task<IHttpActionResult> GetDanhSachLienHe([FromBody] ContactSupportFIlterDto filter)
+        {
+            var data = await _businessLogic.GetDanhSachLienHe( filter);
             return Ok(data);
         }
 
@@ -113,9 +122,20 @@ namespace Anh.mvc.crm.Api
             var data = await _businessLogic.SaveDanhMuc(model, _config.CurrentUser.Id);
             return Ok(data);
         }
+        [HttpPost]
+        [Route("SaveContractSupport")]
+        public async Task<IHttpActionResult> SaveContractSupport(CreateOrUpdateContactSuportDto model )
+        {
+            var data = await _businessLogic.SaveContractSupport(model, _config.CurrentUser.Id);
+            return Ok(data);
+        }
 
-      
-
+        [HttpPost]
+        [Route("DeleteContractSupport")]
+        public async Task DeleteContractSupport(CreateOrUpdateContactSuportDto model)
+        {
+            await _businessLogic.DeleteContractSupport(model.Id, _config.CurrentUser.Id);
+        }
 
         [HttpPost]
         [Route("BackUpData")]

@@ -69,6 +69,36 @@
             </li>
         }
 
+        @if (CurrentUser.CheckRoleUser(Permissions.Admin_Contact_Support_View))
+        {
+            string contactCategoryUrl = "/Admin/Home/DanhMuc/" + KeyCodeDictionary.StudyProgram;
+            string contactSupportUrl = "/Admin/Home/ContactSupport" ;
+
+            <li class="nav-item nav-item-parent  @Html.SetClassOpen(contactSupportUrl+","+contactCategoryUrl)">
+                <a href="#" class="nav-link nav-link-parent @Html.SetClassActive(contactSupportUrl+","+contactCategoryUrl)">
+                    <i class="nav-icon fas fa-address-card"></i>
+                    <p>
+                        Liên hệ hỗ trợ
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview nav-treeview-child">
+                    <li class="nav-item @Html.SetClassActive(contactSupportUrl)">
+                        <a href="@contactSupportUrl" class="nav-link   @Html.SetClassActive(contactSupportUrl)">
+                            <p>Danh sách</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @Html.SetClassActive(@contactCategoryUrl)">
+                        <a href="@contactCategoryUrl" class="nav-link   @Html.SetClassActive(contactCategoryUrl)">
+                            <p>Chương trình học</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        }
+
 
         @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_View) || CurrentUser.CheckRoleUser(Permissions.Admin_Role_View))
         {

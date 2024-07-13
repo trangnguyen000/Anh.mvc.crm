@@ -44,6 +44,11 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             return View();
         }
 
+        public ActionResult ContactSupport()
+        {
+            return View();
+        }
+
         [CustomAuthorizeAttribute(Roles = Permissions.Admin_Slider_View)]
         public ActionResult PageSlider()
         {

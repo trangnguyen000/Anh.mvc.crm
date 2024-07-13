@@ -29,7 +29,7 @@ namespace Module.BusinessLogic.SharedCore
                             .OrderByDescending(o => o.CreationTime).ToList();
                 data.TinTucHomes.AddRange(list);
                 var banners = uow.TinTucs
-                           .Query(o => o.IsDeleted == false && o.TypePage ==(int)CommonHelper.TypePage.Silder)
+                           .Query(o => o.IsDeleted == false && o.TypePage == (int)CommonHelper.TypePage.Silder)
                            .OrderByDescending(o => o.LastModificationTime).ToList();
                 data.Banners = banners;
                 return data;
@@ -85,7 +85,15 @@ namespace Module.BusinessLogic.SharedCore
             using (IUnitOfWork uow = base.unitOfWork.New())
             {
                 return uow.Dictionarys.Query(o => o.IsDeleted == false && o.GroupCode == type)
-                      .OrderBy(o => o.ValueId).ThenByDescending(o => o.CreationTime).ToList();
+                     .OrderBy(o => o.DisplayName).ToList();
+            }
+        }
+        public async Task<string> GetStudyProgramById(int? id)
+        {
+            using (IUnitOfWork uow = base.unitOfWork.New())
+            {
+                var result = await uow.Dictionarys.Query(o => o.Id == id).FirstOrDefaultAsync();
+                return result!=null? result.DisplayName : null;
             }
         }
 
@@ -109,7 +117,7 @@ namespace Module.BusinessLogic.SharedCore
         {
             using (IUnitOfWork uow = base.unitOfWork.New())
             {
-                return uow.TinTucs.Query(o => o.IsDeleted == false ).FirstOrDefault();
+                return uow.TinTucs.Query(o => o.IsDeleted == false).FirstOrDefault();
             }
         }
 

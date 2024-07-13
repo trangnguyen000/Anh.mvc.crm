@@ -1,4 +1,5 @@
 ﻿using Module.BusinessLogic.Dto;
+using Module.BusinessLogic.Dto.Filter;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Module.BusinessLogic.Shared
     {
         Task<ResultDto> GetDanhSachTinTuc(int? typePage,string filter, int page, int pageSize);
 
+        Task<ResultDto> GetDanhSachLienHe(ContactSupportFIlterDto filter);
 
         Task<object> GetSuggestDanhMuc(string key);
 
@@ -29,16 +31,16 @@ namespace Module.BusinessLogic.Shared
 
         Task<int> SaveTinTuc(TinTucModelDto model, long? userId);
 
-   
+        Task<int> SaveContractSupport(CreateOrUpdateContactSuportDto model, int? userId);
 
         Task DeleteTinTuc(int id, long? userId);
 
-     
 
         Task<int> SaveDanhMuc(CreateOrUpdateDictionaryModel model, long? userId);
 
         Task DeleteDanhMuc(int id, long? userId);
 
+        Task DeleteContractSupport(int? id, int? userId);
 
         Task BackUpDatabase(string filePath, string databaseName);
 

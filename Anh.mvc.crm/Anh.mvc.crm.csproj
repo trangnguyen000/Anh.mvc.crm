@@ -253,6 +253,7 @@
     <Content Include="Assets\img\backdound-login.jpg" />
     <Content Include="Assets\img\kipa-logo.png" />
     <Content Include="Assets\Js\bConfig.js" />
+    <Content Include="Assets\Js\bContactSupport.js" />
     <Content Include="Assets\Js\bDanhMuc.js" />
     <Content Include="Assets\Js\bLogin.js" />
     <Content Include="Assets\Js\bTinTuc.js" />
@@ -1375,6 +1376,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="libman.json" />
+    <Content Include="Areas\Admin\Views\Home\ContactSupport.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
