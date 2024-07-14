@@ -1,4 +1,6 @@
-﻿using Module.BusinessLogic.Dto;
+﻿using AutoMapper;
+using Module.BusinessLogic.Dto;
+using Module.BusinessLogic.Dto.view;
 using Module.BusinessLogic.Helper;
 using Module.Data.DataAccess;
 using Module.Repository.Shared;
@@ -6,6 +8,7 @@ using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +17,10 @@ namespace Module.BusinessLogic.SharedCore
 {
     public class FrontEndLogic : BaseLogic, Shared.IFrontEndLogic
     {
+        private readonly IMapper _mapper;
         public FrontEndLogic(IUnitOfWork uow) : base(uow)
         {
+            _mapper = AutoMapperConfig.GetMapper();
         }
 
         public TinTucViewHomeDto GetTinTucByHome()
@@ -33,6 +38,18 @@ namespace Module.BusinessLogic.SharedCore
                            .OrderByDescending(o => o.LastModificationTime).ToList();
                 data.Banners = banners;
                 return data;
+            }
+
+        }
+
+        public async Task<List<EmployeeViewDto>> GetEmployeeByAbout(string language)
+        {
+            using (IUnitOfWork uow = base.unitOfWork.New())
+            {
+                var list = await uow.AppEmployees
+                            .Query(o => o.IsDeleted == false && o.IsActive == true && o.Language == language)
+                            .OrderBy(o => o.No).ToListAsync();
+                return _mapper.Map<List<EmployeeViewDto>>(list);
             }
 
         }

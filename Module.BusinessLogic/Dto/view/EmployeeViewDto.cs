@@ -39,7 +39,9 @@ namespace Module.BusinessLogic.Dto.view
 
         public int? No { get; set; }
 
-        [StringLength(15)]
         public string Language { get; set; }
+
+        public string Description { get; set; }
+
     }
 }

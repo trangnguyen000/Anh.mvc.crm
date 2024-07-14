@@ -152,7 +152,13 @@ namespace Anh.mvc.crm.Api
         {
             await _businessLogic.DeleteContractSupport(model.Id, _config.CurrentUser.Id);
         }
-
+        [HttpPost]
+        [Route("DeleteEmployee")]
+        public async Task DeleteEmployee(CreateOrUpdateEmployeeDto model)
+        {
+            await _businessLogic.DeleteEmployee(model.Id, _config.CurrentUser.Id);
+        }
+        
         [HttpPost]
         [Route("BackUpData")]
         public async Task<IHttpActionResult> BackUp(CreateOrUpdateDictionaryModel model)

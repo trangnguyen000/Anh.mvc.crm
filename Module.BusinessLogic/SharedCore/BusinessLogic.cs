@@ -433,6 +433,23 @@ namespace Module.BusinessLogic.SharedCore
                 }
             }
         }
+
+        public async Task DeleteEmployee(int? id, int? userId)
+        {
+            using (IUnitOfWork uow = base.unitOfWork.New())
+            {
+                var model = await uow.AppEmployees.Query(o => o.Id == id).FirstOrDefaultAsync();
+                if (model != null)
+                {
+                    model.IsDeleted = true;
+                    model.LastModificationTime = DateTime.Now;
+                    model.LastModifierUserId = userId;
+                    uow.AppEmployees.Update(model);
+                    uow.Complete();
+                }
+            }
+        }
+
         public async Task BackUpDatabase(string filePath, string databaseName)
         {
             string fileName = "Database.bak";

@@ -41,5 +41,9 @@ namespace Module.BusinessLogic.Dto
 
         [StringLength(15)]
         public string Language { get; set; }
+
+        [StringLength(500)]
+        public string Description { get; set; }
+
     }
 }

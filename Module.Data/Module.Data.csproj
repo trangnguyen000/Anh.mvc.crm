@@ -112,6 +112,10 @@
     <Compile Include="Migrations\202407131659453_update-table-employee-language.designer.cs">
       <DependentUpon>202407131659453_update-table-employee-language.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407140323347_update-employe-description.cs" />
+    <Compile Include="Migrations\202407140323347_update-employe-description.designer.cs">
+      <DependentUpon>202407140323347_update-employe-description.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -153,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407131659453_update-table-employee-language.resx">
       <DependentUpon>202407131659453_update-table-employee-language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407140323347_update-employe-description.resx">
+      <DependentUpon>202407140323347_update-employe-description.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

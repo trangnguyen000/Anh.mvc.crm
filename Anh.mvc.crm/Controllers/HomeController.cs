@@ -41,11 +41,14 @@ namespace Anh.mvc.crm.Controllers
             return View(data);
         }
 
-        public ActionResult About()
+        public async Task<ActionResult> About()
         {
             ViewBag.Message = "Your application description page.";
-            if (Thread.CurrentThread.CurrentCulture.Name == "vi-VN")
-                return View();
+            if (Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName == "vie")
+            {
+                var data = await _frontEndLogic.GetEmployeeByAbout(Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName);
+                return View(data);
+            }
             else
                 return RedirectToAction("CompanyKorea", "Home");
         }
@@ -118,7 +121,7 @@ namespace Anh.mvc.crm.Controllers
             }
 
         }
-    
+
         public ActionResult Master()
         {
             return View();
@@ -137,10 +140,13 @@ namespace Anh.mvc.crm.Controllers
             }
             return View(data);
         }
-        public ActionResult CompanyKorea()
+        public async Task<ActionResult> CompanyKorea()
         {
-            if (Thread.CurrentThread.CurrentCulture.Name != "vi-VN")
-                return View();
+            if (Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName != "vie")
+            {
+                var data = await _frontEndLogic.GetEmployeeByAbout(Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName);
+                return View(data);
+            }
             else
                 return RedirectToAction("About", "Home");
         }

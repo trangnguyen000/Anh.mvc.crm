@@ -52,11 +52,12 @@
                         <tr>
                             <th style="width: 30px" class="text-center">STT</th>
                             <th class="text-center" style="width:120px">Ảnh</th>
-                            <th class="text-left" style="width: 220px">Nhân sự</th>
-                            <th class="text-left" style="width: 260px">Liên hệ</th>
+                            <th class="text-left" style="width: 200px">Nhân sự</th>
+                            <th class="text-left" style="width: 250px">Liên hệ</th>
+                            <th class="text-left" style="width: 220px">Nổi bật</th>
                             <th class="text-left">Mô tả</th>
                             <th class="text-center" style="width:125px">Trạng thái</th>
-                            <th class="text-center" style="width: 135px">#</th>
+                            <th class="text-center" style="width: 75px">#</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,12 +66,13 @@
                                 {{ ((currentPage - 1) *10) +index+1 }}
                             </td>
                             <td>
-                                <img v-bind:src="item.Image" width="120" height="110" />
+                                <img v-bind:src="item.Image" class="profile-user-img img-fluid" style="width: 110px; height: 100px; border-radius: 10%;" />
                             </td>
                             <td>
                                 <p class="m-0">   <i class="fas fa-user mr-2"></i>{{ item.FullName }}</p>
                                 <p class="m-0" v-if="item.DateOfBirthText"> <i class="fas fa-birthday-cake mr-2"></i>{{ item.DateOfBirthText }}</p>
                                 <p class="m-0" v-if="item.GenderName"> <i class="fas fa-genderless mr-3"></i>{{ item.GenderName }}</p>
+                                <p class="m-0" v-if="item.GenderName"> <i class="fas fa-list-ol mr-3"></i>{{ item.No }}</p>
                             </td>
                             <td>
                                 <p class="m-0"> <i class="fas fa-phone-alt mr-2"></i>{{ item.PhoneNumber }}</p>
@@ -78,7 +80,10 @@
                                 <p class="m-0" v-if="item.PlaceOfOrigin"> <i class="fas fa-location-arrow mr-2"></i>{{ item.PlaceOfOrigin }}</p>
                             </td>
                             <td>
-                                <div v-html="item.Note"></div>
+                                <div  v-html="item.DescriptionHtml"></div>
+                            </td>
+                            <td>
+                                <div class="ul-li-style" v-html="item.Note"></div>
                             </td>
                             <td>
                                 <span class="right badge badge-success fs-status" v-if="item.IsActive"> Đang hoạt động</span>
@@ -87,7 +92,7 @@
                             <td>
                                 @if (CurrentUser.CheckRoleUser(Permissions.Admin_Contact_Support_Edit))
                                 {
-                                    <a class="btn btn-info btn-sm btn-edit" href="javascript:void(0)" v-on:click="showEdit('#modal-lg',item)">
+                                    <a class="btn btn-info btn-sm btn-edit mb-2" href="javascript:void(0)" v-on:click="showEdit('#modal-lg',item)">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Sửa
@@ -95,7 +100,7 @@
                                 }
                                 @if (CurrentUser.CheckRoleUser(Permissions.Admin_Contact_Support_DeLete))
                                 {
-                                    <a class="btn btn-danger btn-sm btn-edit" href="javascript:void(0)" v-on:click="deleteContact(item)">
+                                    <a class="btn btn-danger btn-sm btn-edit" href="javascript:void(0)" v-on:click="deleteEmployee(item)">
                                         <i class="fas fa-trash">
                                         </i>
                                         Xóa
@@ -122,7 +127,7 @@
 
 
         <div class="modal fade" id="modal-lg">
-            <div class="modal-dialog modal-xl">
+            <div class="modal-dialog modal-xl modal-dialog-full">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">{{ titleModal}}</h4>
@@ -133,48 +138,61 @@
                     <div class="modal-body">
                         <div class="card-body card-body-modal">
                             <div class="col-md-12">
-                                <form onkeydown="return event.key != 'Enter';">
+                                <form >
                                     <div class="row">
 
-                                        <div class="col-sm-6">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <label class="lb-full-name">Họ và tên<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" name="full-name" placeholder="Họ và tên" autocomplete="off"
-                                                               v-bind:class="{ 'validate-error': !modelEdit.FullName &&  submit }"
-                                                               v-model="modelEdit.FullName">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-5">
-                                                    <div class="form-group">
-                                                        <label class="lb-phone">Số điện thoại</label>
-                                                        <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" autocomplete="off"
-                                                               v-model="modelEdit.PhoneNumber">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-7">
-                                                    <div class="form-group">
-                                                        <label class="lb-email">Email</label>
-                                                        <input type="text" class="form-control" name="email" placeholder="Email" autocomplete="off"
-                                                               v-model="modelEdit.EmailAddress">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <label class="lb-place">Quê quán</label>
-                                                        <textarea rows="2" type="text" class="form-control" name="place-of-origin" placeholder="Quê quán" autocomplete="off"
-                                                                  v-model="modelEdit.PlaceOfOrigin"></textarea>
-                                                    </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <div class="my-custom-file">
+                                                    <input type="file" class="custom-file-input d-none" id="exampleInputFile">
+                                                    <label class="label-file-form" for="exampleInputFile" style="width: 100%; cursor: pointer; height:245px">
+                                                        <i class="fas fa-image" style="font-size: 50px" v-if="!isShowImage"></i>
+                                                        <img v-if="isShowImage" v-bind:src="modelEdit.Image" class="img-thumbnail">
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-9">
                                             <div class="row">
-                                                <div class="col-sm-6">
+
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="lb-full-name">Họ và tên<span style="color:red">*</span></label>
+                                                                <input type="text" class="form-control" name="full-name" placeholder="Họ và tên" autocomplete="off"
+                                                                       v-bind:class="{ 'validate-error': !modelEdit.FullName &&  submit }"
+                                                                       v-model="modelEdit.FullName">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-5">
+                                                            <div class="form-group">
+                                                                <label class="lb-phone">Số điện thoại</label>
+                                                                <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" autocomplete="off"
+                                                                       v-model="modelEdit.PhoneNumber">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <div class="form-group">
+                                                                <label class="lb-email">Email</label>
+                                                                <input type="text" class="form-control" name="email" placeholder="Email" autocomplete="off"
+                                                                       v-model="modelEdit.EmailAddress">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="lb-place">Quê quán</label>
+                                                                <textarea rows="1" type="text" class="form-control" name="place-of-origin" placeholder="Quê quán" autocomplete="off"
+                                                                          v-model="modelEdit.PlaceOfOrigin"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
                                                     <div class="row">
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
@@ -221,17 +239,12 @@
 
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <div class="my-custom-file">
-                                                            <input type="file" class="custom-file-input d-none" id="exampleInputFile">
-                                                            <label class="label-file-form" for="exampleInputFile" style="width: 100%; cursor: pointer; height:245px">
-                                                                <i class="fas fa-image" style="font-size: 50px" v-if="!modelEdit.Image"></i>
-                                                                <img v-if="modelEdit.Image" v-bind:src="modelEdit.Image" class="img-thumbnail">
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="lb-description"> Thông tin nổi bật</label>
+                                                <textarea rows="2" type="text" class="form-control" v-model="modelEdit.Description" name="description"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">

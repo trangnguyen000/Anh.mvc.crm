@@ -36,6 +36,9 @@ namespace Module.Data.DataAccess.Domain
         [StringLength(2000)]
         public string Note { get; set; }
 
+        [StringLength(500)]
+        public string Description { get; set; }
+
         public int? No { get; set; }
 
         [StringLength(15)]

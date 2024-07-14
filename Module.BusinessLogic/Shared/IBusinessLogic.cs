@@ -44,6 +44,8 @@ namespace Module.BusinessLogic.Shared
 
         Task DeleteContractSupport(int? id, int? userId);
 
+        Task DeleteEmployee(int? id, int? userId);
+
         Task BackUpDatabase(string filePath, string databaseName);
 
     }

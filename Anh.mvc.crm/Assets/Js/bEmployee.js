@@ -10,10 +10,11 @@ var app = new Vue({
         currentPage: 1,
         modal: null,
         titleModal: '',
+        isShowImage: false,
         modelEdit: {},
         listGenders: [{ Key: 1, Value: 'Nam' }, { Key: 2, Value: 'Nữ' }],
         listActives: [{ Key: 1, Value: 'Đang Làm việc' }, { Key: 0, Value: 'Đã nghỉ' }],
-        listlanguages: [{ Key: 'vi', Value: 'Vietnam' }, { Key: 'eng', Value: 'Korea' }],
+        listlanguages: [{ Key: 'vie', Value: 'Vietnam' }, { Key: 'eng', Value: 'Korea' }],
         bootstrapPaginationClasses: {
             ul: 'pagination pagination-sm m-0 float-right',
             li: 'page-item',
@@ -49,9 +50,10 @@ var app = new Vue({
                 method: 'GET',
                 success: function (result) {
                     self.data = result.Data;
-                    self.data.filter(o => o.DateOfBirth).map(o => {
-                        o.DateOfBirthText = moment(o.DateOfBirth).format('DD/MM/YYYY');
+                    self.data.map(o => {
+                        o.DateOfBirthText = o.DateOfBirth? moment(o.DateOfBirth).format('DD/MM/YYYY'):'';
                         o.GenderName = self.listGenders.filter(c => c.Key == o.Gender)[0].Value;
+                        o.DescriptionHtml = o.Description ? o.Description.replace(/\n/g, '<br>') : '';
                     });
                     self.total = result.Total;
                 },
@@ -64,9 +66,12 @@ var app = new Vue({
         getDanhMuc: function () {
 
         },
+
         changeImage: function (image) {
             this.modelEdit.Image = image;
+            this.isShowImage = true;
         },
+
         showEdit: function (modal, item = undefined) {
             if (item) {
                 this.titleModal = "Cập nhật nhân sự";
@@ -79,6 +84,7 @@ var app = new Vue({
                     $('#dateOfBirth').data('daterangepicker').setStartDate(date);
                 }
                 setTimeout(function () { CKEDITOR.instances['description'].setData(item.Note); }, 500);
+                this.isShowImage = true;
             }
             else {
                 this.titleModal = "Thêm mới nhân sự";
@@ -87,24 +93,25 @@ var app = new Vue({
                 $('.selectlanguage').val('vi').trigger('change');
                 $('.selectGender').val(1).trigger('change');
                 setTimeout(function () { CKEDITOR.instances['description'].setData(''); }, 500);
+                this.isShowImage = false;
             }
             this.submit = false;
             this.modal = modal;
             $(modal).modal('show');
         },
 
-        deleteContact: function (item) {
+        deleteEmployee: function (item) {
             var self = this;
             $.confirm({
                 title: '',
-                content: '<div >Bạn có chắc chắn muốn xóa thông tin khách hàng <h5 style="color:#17a2b8" class="text-center" >' + item.CustomerName + '</h5></div>',
+                content: '<div >Bạn có chắc chắn muốn xóa thông tin nhân sự <h5 style="color:#17a2b8" class="text-center" >' + item.FullName + '</h5></div>',
                 buttons: {
                     tryAgain: {
                         text: 'Đồng ý',
                         btnClass: 'btn-red',
                         action: function () {
                             $.ajax({
-                                url: '/api/ApiBusiness/DeleteContractSupport',
+                                url: '/api/ApiBusiness/DeleteEmployee',
                                 method: 'POST',
                                 data: {
                                     "Id": item.Id
@@ -159,6 +166,7 @@ var app = new Vue({
                 });
             }
         },
+
         convertDate: function (date) {
             if (date) {
                 var list = date.split("/");
@@ -202,7 +210,7 @@ $(function () {
         };
         ckfinder.popup();
     });
-    CKEDITOR.replace("description", { customConfig: "/Content/ckeditor/config.js", height: 450 });
+    CKEDITOR.replace("description", { customConfig: "/Content/ckeditor/config.js", height: 400 });
 })
 $(document).ready(function () {
     $('.selectGender').select2();
