@@ -58,6 +58,8 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center
 }
 
 .title-header-detail {
@@ -66,14 +68,14 @@ header {
     color: #FFFFFF;
     position: absolute;
     top: 50%;
-    left: 40%;
+   /* left: 40%;*/
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .des-header-detail {
     position: absolute;
     top: 73%;
-    left: 38%;
+  /*  left: 38%;*/
     color: #FFFFFF;
     font-size: 24px;
 }
@@ -186,9 +188,11 @@ header {
         left: 32%;
         font-size: 30px
     }
-
-    .des-header-detail {
-        left: 13%
+    .navbar-brand {
+        /*height: 90px !important;*/
+        margin: auto;
+        padding-left: 20px !important;
+        margin-left: 15px !important
     }
 }
 
@@ -207,7 +211,10 @@ header {
     }
 
     .navbar {
-        height: 90px !important
+        height: 90px !important;
+    }
+    .navbar-brand {
+        margin: auto 
     }
 
     .header-detail {
@@ -215,11 +222,12 @@ header {
     }
 
     .title-header-detail {
-        left: 32%;
-        font-size: 30px
+     /*   left: 28%;*/
+        font-size: 28px
     }
 
     .des-header-detail {
-        left: 13%
+    /*    left: 10%;*/
+        font-size: 20px
     }
 }
