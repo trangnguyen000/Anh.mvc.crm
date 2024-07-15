@@ -18,6 +18,7 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public ActionResult Login(string ReturnUrl = "")
         {

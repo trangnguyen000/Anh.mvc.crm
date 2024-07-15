@@ -64,6 +64,8 @@
     <Compile Include="DataAccess\AbpUserRole.cs" />
     <Compile Include="DataAccess\AppDictionary.cs" />
     <Compile Include="DataAccess\AppTinTuc.cs" />
+    <Compile Include="DataAccess\Domain\AppContactSupport.cs" />
+    <Compile Include="DataAccess\Domain\AppEmployee.cs" />
     <Compile Include="DataAccess\JDbContext.cs" />
     <Compile Include="Helper\Permissions.cs" />
     <Compile Include="Migrations\202405050737311_InitialCreate.cs" />
@@ -74,6 +76,46 @@
     <Compile Include="Migrations\202405091448006_update_news.designer.cs">
       <DependentUpon>202405091448006_update_news.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407091710424_create-employee.cs" />
+    <Compile Include="Migrations\202407091710424_create-employee.designer.cs">
+      <DependentUpon>202407091710424_create-employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407091717087_add-apptintuc.cs" />
+    <Compile Include="Migrations\202407091717087_add-apptintuc.designer.cs">
+      <DependentUpon>202407091717087_add-apptintuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407130056396_update-employeename.cs" />
+    <Compile Include="Migrations\202407130056396_update-employeename.designer.cs">
+      <DependentUpon>202407130056396_update-employeename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407130157222_update-name-customer.cs" />
+    <Compile Include="Migrations\202407130157222_update-name-customer.designer.cs">
+      <DependentUpon>202407130157222_update-name-customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407130208068_update-study-program.cs" />
+    <Compile Include="Migrations\202407130208068_update-study-program.designer.cs">
+      <DependentUpon>202407130208068_update-study-program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407130902379_update-study-name.cs" />
+    <Compile Include="Migrations\202407130902379_update-study-name.designer.cs">
+      <DependentUpon>202407130902379_update-study-name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131408225_update-table-employee.cs" />
+    <Compile Include="Migrations\202407131408225_update-table-employee.Designer.cs">
+      <DependentUpon>202407131408225_update-table-employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131639184_update-table-employee-no.cs" />
+    <Compile Include="Migrations\202407131639184_update-table-employee-no.Designer.cs">
+      <DependentUpon>202407131639184_update-table-employee-no.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131659453_update-table-employee-language.cs" />
+    <Compile Include="Migrations\202407131659453_update-table-employee-language.designer.cs">
+      <DependentUpon>202407131659453_update-table-employee-language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407140323347_update-employe-description.cs" />
+    <Compile Include="Migrations\202407140323347_update-employe-description.designer.cs">
+      <DependentUpon>202407140323347_update-employe-description.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,15 +123,43 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccess\DataBusiness\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202405050737311_InitialCreate.resx">
       <DependentUpon>202405050737311_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405091448006_update_news.resx">
       <DependentUpon>202405091448006_update_news.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407091710424_create-employee.resx">
+      <DependentUpon>202407091710424_create-employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407091717087_add-apptintuc.resx">
+      <DependentUpon>202407091717087_add-apptintuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130056396_update-employeename.resx">
+      <DependentUpon>202407130056396_update-employeename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130157222_update-name-customer.resx">
+      <DependentUpon>202407130157222_update-name-customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130208068_update-study-program.resx">
+      <DependentUpon>202407130208068_update-study-program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407130902379_update-study-name.resx">
+      <DependentUpon>202407130902379_update-study-name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131408225_update-table-employee.resx">
+      <DependentUpon>202407131408225_update-table-employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131639184_update-table-employee-no.resx">
+      <DependentUpon>202407131639184_update-table-employee-no.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131659453_update-table-employee-language.resx">
+      <DependentUpon>202407131659453_update-table-employee-language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407140323347_update-employe-description.resx">
+      <DependentUpon>202407140323347_update-employe-description.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

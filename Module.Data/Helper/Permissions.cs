@@ -26,6 +26,12 @@ namespace Module.Data.Helper
         public const string Admin_TinTuc_Edit = "Admin.TinTuc.Edit";
         public const string Admin_TinTuc_DeLete = "Admin.TinTuc.DeLete";
 
+        public const string Admin_Contact_Support = "Admin.Contact.Support";
+        public const string Admin_Contact_Support_View = "Admin.Contact.Support.View";
+        public const string Admin_Contact_Support_Create = "Admin.Contact.Support.Create";
+        public const string Admin_Contact_Support_Edit = "Admin.Contact.Support.Edit";
+        public const string Admin_Contact_Support_DeLete = "Admin.Contact.Support.DeLete";
+
         public const string Admin_Slider = "Admin.Slider";
         public const string Admin_Slider_View = "Admin.Slider.View";
         public const string Admin_Slider_Create = "Admin.Slider.Create";
@@ -54,7 +60,6 @@ namespace Module.Data.Helper
                     new RolePermissions(){ KeyValue = Admin_User_DeLete,ParentValue =Admin_User , DisplayName = "Xóa"}
                 }
            },
-
              new RolePermissions(){
                  KeyValue = Admin_Role,
                  DisplayName = "Vai trò",
@@ -64,6 +69,17 @@ namespace Module.Data.Helper
                         new RolePermissions(){ KeyValue = Admin_Role_Create,ParentValue =Admin_Role , DisplayName = "Thêm"},
                         new RolePermissions(){ KeyValue = Admin_Role_Edit,ParentValue =Admin_Role , DisplayName = "Sửa"},
                         new RolePermissions(){ KeyValue = Admin_Role_DeLete,ParentValue =Admin_Role , DisplayName = "Xóa"}
+                    }
+             },
+               new RolePermissions(){
+                 KeyValue = Admin_Contact_Support,
+                 DisplayName = "Liên hệ hỗ trợ",
+                  Children = new List<RolePermissions>()
+                    {
+                        new RolePermissions(){ KeyValue = Admin_Contact_Support_View,ParentValue =Admin_Contact_Support , DisplayName = "Xem"},
+                        new RolePermissions(){ KeyValue = Admin_Contact_Support_Create,ParentValue =Admin_Contact_Support , DisplayName = "Thêm"},
+                        new RolePermissions(){ KeyValue = Admin_Contact_Support_Edit,ParentValue =Admin_Contact_Support , DisplayName = "Sửa"},
+                        new RolePermissions(){ KeyValue = Admin_Contact_Support_DeLete,ParentValue =Admin_Contact_Support , DisplayName = "Xóa"}
                     }
              },
              new RolePermissions(){

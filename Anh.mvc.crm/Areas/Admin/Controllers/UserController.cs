@@ -38,7 +38,6 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             return View();
         }
 
-
         [HttpGet]
         public ActionResult GetPermissions()
         {
@@ -51,7 +50,6 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             var data = await _userLogic.GetRoleAll();
             return Json(data, JsonRequestBehavior.AllowGet);
         }
-
 
         [HttpGet]
         public async Task<ActionResult> GetDanhSachUser( string filter, int? page)
@@ -103,7 +101,6 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             return Json(data);
         }
 
-
         [HttpPost]
         public ActionResult CreateOfUpdateRole(CreateOrUpdateRoleModel model)
         {
@@ -116,6 +113,7 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
                 return UpdateRole(model);
             }
         }
+      
         [HttpPost]
         public ActionResult UpdatePassWord(CreateOrUpdateUserModel model)
         {
@@ -130,14 +128,12 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             return Json(data);
         }
 
-
         [CustomAuthorizeAttribute(Roles = Permissions.Admin_Role_Edit)]
         private ActionResult UpdateRole(CreateOrUpdateRoleModel model)
         {
             var data = _userLogic.CreateOfUpdateRole(model, _config.CurrentUser.Id);
             return Json(data);
         }
-
 
         [CustomAuthorizeAttribute(Roles = Permissions.Admin_Role_DeLete)]
         [HttpPost]
@@ -146,7 +142,6 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             var data = _userLogic.DeleteRole(id, _config.CurrentUser.Id);
             return Json(data);
         }
-
 
         [CustomAuthorizeAttribute(Roles = Permissions.Admin_User_DeLete)]
         [HttpPost]

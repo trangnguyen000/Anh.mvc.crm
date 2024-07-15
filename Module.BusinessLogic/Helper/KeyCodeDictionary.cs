@@ -15,6 +15,7 @@ namespace Module.BusinessLogic.Helper
         public const string ChuyenMucTinTuc = "KeyChuyenMucTinTuc";
         public const string LienKetWebsite = "KeyConfigWebsite";
         public const string LinkThuDienThu = "KeyLinkThuDienTu";
+        public const string StudyProgram = "KeyChuongTrinhHoc";
     }
 
     public static class CommonHelper

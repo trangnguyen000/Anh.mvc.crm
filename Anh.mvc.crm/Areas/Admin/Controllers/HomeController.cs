@@ -37,9 +37,19 @@ namespace Anh.mvc.crm.Areas.Admin.Controllers
             ViewBag.KeyDanhMuc = id;
             return View();
         }
-
      
         public ActionResult PageStatic()
+        {
+            return View();
+        }
+
+        public ActionResult Employee()
+        {
+            return View();
+        }
+
+        [CustomAuthorizeAttribute(Roles = Permissions.Admin_Contact_Support_View)]
+        public ActionResult ContactSupport()
         {
             return View();
         }

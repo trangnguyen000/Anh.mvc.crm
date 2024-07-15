@@ -30,7 +30,9 @@
             <div class="card-header">
                 <div class="col-md-12 form-head">
                     <div class="col-md-5 form-head_Left">
-                        <input id="searchnews" autocomplete="off" class="form-control" type="text" placeholder="Tìm kiếm tin tức" v-model="search" v-on:keyup="keymonitor" />
+                        <form onkeydown="return event.key != 'Enter';">
+                            <input id="searchnews" autocomplete="off" class="form-control" type="text" placeholder="Tìm kiếm" v-model="search" v-on:keyup="keymonitor" />
+                        </form>
                     </div>
                     <div class="col-md-3 form-head_right">
 

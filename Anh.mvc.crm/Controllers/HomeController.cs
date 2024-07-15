@@ -18,18 +18,21 @@ using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
 using System.Web.Services.Description;
-
+using System.Threading.Tasks;
 
 namespace Anh.mvc.crm.Controllers
 {
     public class HomeController : BaseController
     {
         private readonly IFrontEndLogic _frontEndLogic;
+        private readonly IBusinessLogic _businessLogic;
         private readonly ConfigCurent _config;
         public HomeController()
         {
             _config = new ConfigCurent();
-            _frontEndLogic = new FrontEndLogic(new UnitOfWork());
+            var unitOfwork = new UnitOfWork();
+            _frontEndLogic = new FrontEndLogic(unitOfwork);
+            _businessLogic = new BusinessLogic(unitOfwork);
         }
         public ActionResult Index()
         {
@@ -38,22 +41,25 @@ namespace Anh.mvc.crm.Controllers
             return View(data);
         }
 
-        public ActionResult About()
+        public async Task<ActionResult> About()
         {
             ViewBag.Message = "Your application description page.";
-            if (Thread.CurrentThread.CurrentCulture.Name == "vi-VN")
-                return View();
+            if (Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName == "vie")
+            {
+                var data = await _frontEndLogic.GetEmployeeByAbout(Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName);
+                return View(data);
+            }
             else
                 return RedirectToAction("CompanyKorea", "Home");
         }
 
         public ActionResult Contact()
         {
-
+            ViewBag.StudyPrograms = _frontEndLogic.GetChuyenMuc(KeyCodeDictionary.StudyProgram);
             return View();
         }
         [HttpPost]
-        public ActionResult SendEmail(ContactFormModel model)
+        public async Task<ActionResult> SendEmail(ContactFormModel model)
         {
             if (model.name is null || model.phoneNumber is null)
             {
@@ -70,6 +76,17 @@ namespace Anh.mvc.crm.Controllers
             }
             try
             {
+                var modelContractSupport = new CreateOrUpdateContactSuportDto()
+                {
+                    CustomerName = model.name,
+                    Description = model.subject,
+                    EmailAddress = model.Email,
+                    StudyProgramName = model.country,
+                    PhoneNumber = model.phoneNumber,
+                    Status = (short)Common.StatusContactSupport.New,
+                };
+                await _businessLogic.SaveContractSupport(modelContractSupport, null);
+
                 var message = new MimeMessage();
                 message.From.Add(new MailboxAddress("rnituyensinh", "rnituyensinh@gmail.com"));
                 message.To.Add(new MailboxAddress("rnituyensinh", "kipavninfo@gmail.com"));
@@ -119,6 +136,7 @@ namespace Anh.mvc.crm.Controllers
             text = text.Replace("  ", " &nbsp;");
             return text;
         }
+
         public ActionResult Master()
         {
             return View();
@@ -137,10 +155,13 @@ namespace Anh.mvc.crm.Controllers
             }
             return View(data);
         }
-        public ActionResult CompanyKorea()
+        public async Task<ActionResult> CompanyKorea()
         {
-            if (Thread.CurrentThread.CurrentCulture.Name != "vi-VN")
-                return View();
+            if (Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName != "vie")
+            {
+                var data = await _frontEndLogic.GetEmployeeByAbout(Thread.CurrentThread.CurrentCulture.ThreeLetterISOLanguageName);
+                return View(data);
+            }
             else
                 return RedirectToAction("About", "Home");
         }

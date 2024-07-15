@@ -7,6 +7,7 @@
     var alertType = TempData["AlertType"] as string;
     var ValidateName = TempData["ValidateName"] as string;
     var ValidatePhone = TempData["ValidatePhone"] as string;
+    var studyPrograms = (List<Module.Data.DataAccess.AppDictionary>)ViewBag.StudyPrograms;
 }
 @section scripts {
 
@@ -84,6 +85,6 @@
             </div>
         </form>
 
+        </div>
     </div>
-</div>
 </div>

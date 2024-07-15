@@ -1,3 +1,4 @@
+using Module.Data.DataAccess.Domain;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
@@ -18,6 +19,8 @@ namespace Module.Data.DataAccess
         public virtual DbSet<AbpUser> AbpUsers { get; set; }
         public virtual DbSet<AppDictionary> AppDictionaries { get; set; }
         public virtual DbSet<AppTinTuc> AppTinTucs { get; set; }
+        public virtual DbSet<AppEmployee> AppEmployees { get; set; }
+        public virtual DbSet<AppContactSupport> AppContactSupport { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

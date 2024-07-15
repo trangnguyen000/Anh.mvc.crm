@@ -323,3 +323,21 @@ a.disabled {
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
 }
+.bg-customer {
+    background: #dee2e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+.fs-status{
+    font-size:14px;
+}
+.ul-li-style ul li {
+    list-style-type: inherit;
+}
+.modal-dialog-full {
+    height: 100%;
+    margin: 0 auto;
+}
+textarea {
+    white-space: pre-wrap; /* Cho phép xuống dòng trong văn bản */
+}
