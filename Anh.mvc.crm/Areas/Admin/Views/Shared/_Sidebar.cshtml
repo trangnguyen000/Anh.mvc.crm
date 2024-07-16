@@ -69,12 +69,72 @@
             </li>
         }
 
+        @if (CurrentUser.CheckRoleUser(Permissions.Admin_Contact_Support_View))
+        {
+            string contactCategoryUrl = "/Admin/Home/DanhMuc/" + KeyCodeDictionary.StudyProgram;
+            string contactSupportUrl = "/Admin/Home/ContactSupport";
+
+            <li class="nav-item nav-item-parent  @Html.SetClassOpen(contactSupportUrl+","+contactCategoryUrl)">
+                <a href="#" class="nav-link nav-link-parent @Html.SetClassActive(contactSupportUrl+","+contactCategoryUrl)">
+                    <i class="nav-icon fas fa-address-card"></i>
+                    <p>
+                        Liên hệ hỗ trợ
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview nav-treeview-child">
+                    <li class="nav-item @Html.SetClassActive(contactSupportUrl)">
+                        <a href="@contactSupportUrl" class="nav-link   @Html.SetClassActive(contactSupportUrl)">
+                            <p>Danh sách</p>
+                        </a>
+                    </li>
+
+                    @*<li class="nav-item @Html.SetClassActive(@contactCategoryUrl)">
+                        <a href="@contactCategoryUrl" class="nav-link   @Html.SetClassActive(contactCategoryUrl)">
+                            <p>Chương trình học</p>
+                        </a>
+                    </li>*@
+
+                </ul>
+            </li>
+        }
+
+        @if (CurrentUser.CheckRoleUser(Permissions.Admin_Contact_Support_View))
+        {
+            string contactCategoryUrl = "/Admin/Home/DanhMuc/" + KeyCodeDictionary.StudyProgram;
+            string employeeUrl = "/Admin/Home/Employee";
+
+            <li class="nav-item nav-item-parent  @Html.SetClassOpen(employeeUrl+","+contactCategoryUrl)">
+                <a href="#" class="nav-link nav-link-parent @Html.SetClassActive(employeeUrl+","+contactCategoryUrl)">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Đội ngũ nhân sự
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview nav-treeview-child">
+                    <li class="nav-item @Html.SetClassActive(employeeUrl)">
+                        <a href="@employeeUrl" class="nav-link   @Html.SetClassActive(employeeUrl)">
+                            <p>Danh sách</p>
+                        </a>
+                    </li>
+
+                    @*<li class="nav-item @Html.SetClassActive(@contactCategoryUrl)">
+                        <a href="@contactCategoryUrl" class="nav-link   @Html.SetClassActive(contactCategoryUrl)">
+                            <p>Chương trình học</p>
+                        </a>
+                    </li>*@
+
+                </ul>
+            </li>
+        }
+
 
         @if (CurrentUser.CheckRoleUser(Permissions.Admin_User_View) || CurrentUser.CheckRoleUser(Permissions.Admin_Role_View))
         {
             <li class="nav-item nav-item-parent @Html.SetClassOpen("/Admin/User/Index,/Admin/User/VaiTro")">
                 <a href="#" class="nav-link nav-link-parent @Html.SetClassActive("/Admin/User/Index,/Admin/User/VaiTro")">
-                    <i class="nav-icon fas fa-users-cog"></i>
+                    <i class="nav-icon fas fa-user-shield"></i>
                     <p>
                         Quản trị
                         <i class="right fas fa-angle-left"></i>
@@ -85,7 +145,7 @@
                     {
                         <li class="nav-item @Html.SetClassActive("/Admin/User/Index")">
                             <a href="/Admin/User/Index" class="nav-link @Html.SetClassActive("/Admin/User/Index")">
-                                <p>Nhân sự</p>
+                                <p>Tài khoản người dùng</p>
                             </a>
                         </li>
                     }

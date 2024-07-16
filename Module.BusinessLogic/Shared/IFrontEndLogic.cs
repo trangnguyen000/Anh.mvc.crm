@@ -1,4 +1,5 @@
 ﻿using Module.BusinessLogic.Dto;
+using Module.BusinessLogic.Dto.view;
 using Module.Data.DataAccess;
 using PagedList;
 using System;
@@ -13,7 +14,7 @@ namespace Module.BusinessLogic.Shared
     {
         TinTucViewHomeDto GetTinTucByHome();
 
-
+        Task<List<EmployeeViewDto>> GetEmployeeByAbout(string language);
         IPagedList<AppTinTuc> GetTinTucByChuyenMuc(int? chuyenmucId, int? page);
 
         IPagedList<AppTinTuc> GetTinTucPhanTrang(int? page);

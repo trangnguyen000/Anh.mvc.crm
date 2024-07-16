@@ -1,5 +1,6 @@
 ﻿using Anh.mvc.crm.Authentication;
 using Anh.mvc.crm.Models;
+using Module.BusinessLogic.Helper;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ namespace Anh.mvc.crm
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AutoMapperConfig.Configure();
         }
 
         protected void Application_PostAuthenticateRequest(Object sender, EventArgs e)

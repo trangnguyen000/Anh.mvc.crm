@@ -1,6 +1,7 @@
 ﻿using Anh.mvc.crm.Authentication;
 using Anh.mvc.crm.Helper;
 using Module.BusinessLogic.Dto;
+using Module.BusinessLogic.Dto.Filter;
 using Module.BusinessLogic.Shared;
 using Module.BusinessLogic.SharedCore;
 using Module.Repository;
@@ -20,7 +21,7 @@ namespace Anh.mvc.crm.Api
 {
     [RoutePrefix("api/ApiBusiness")]
     [CustomAuthentication]
-    public class ApiBusinessController : ApiController
+    public class ApiBusinessController : ApiBaseController
     {
         private readonly IBusinessLogic _businessLogic;
 
@@ -33,9 +34,25 @@ namespace Anh.mvc.crm.Api
 
         [HttpGet]
         [Route("GetDanhSachTinTuc")]
-        public async Task<IHttpActionResult> GetDanhSachTinTuc(int? typePage,string filter, int? page, int? pageSize )
+        public async Task<IHttpActionResult> GetDanhSachTinTuc(int? typePage, string filter, int? page, int? pageSize)
         {
-            var data = await _businessLogic.GetDanhSachTinTuc(typePage,filter ?? "", page ?? 1, pageSize??10);
+            var data = await _businessLogic.GetDanhSachTinTuc(typePage, filter ?? "", page ?? 1, pageSize ?? 10);
+            return Ok(data);
+        }
+
+        [HttpGet]
+        [Route("GetEmployeeByPaging")]
+        public async Task<IHttpActionResult> GetEmployeeByPaging(string filter, int? page, int? pageSize)
+        {
+            var data = await _businessLogic.GetEmployeeByPaging(filter ?? "", page ?? 1, pageSize ?? 10);
+            return Ok(data);
+        }
+
+        [HttpPost]
+        [Route("GetDanhSachLienHe")]
+        public async Task<IHttpActionResult> GetDanhSachLienHe([FromBody] ContactSupportFilterDto filter)
+        {
+            var data = await _businessLogic.GetDanhSachLienHe(filter);
             return Ok(data);
         }
 
@@ -52,7 +69,7 @@ namespace Anh.mvc.crm.Api
         [Route("GetDanhMuc")]
         public async Task<IHttpActionResult> GetDanhMuc(string key, string filter, int? page)
         {
-            var data = await _businessLogic.GetDanhMuc(key,filter ?? "", page);
+            var data = await _businessLogic.GetDanhMuc(key, filter ?? "", page);
             return Ok(data);
         }
         [HttpGet]
@@ -70,7 +87,7 @@ namespace Anh.mvc.crm.Api
             return Ok(data);
         }
 
-      
+
         [HttpGet]
         [Route("GetChiTietTinTucPageById")]
         public async Task<IHttpActionResult> GetChiTietTinTucPageById()
@@ -78,8 +95,8 @@ namespace Anh.mvc.crm.Api
             var data = await _businessLogic.GetChiTietTinTucPageById();
             return Ok(data);
         }
-        
-      
+
+
         [HttpPost]
         [Route("SaveTinTuc")]
         public async Task<IHttpActionResult> SaveTinTuc(TinTucModelDto model)
@@ -105,7 +122,7 @@ namespace Anh.mvc.crm.Api
             await _businessLogic.DeleteDanhMuc(model.Id, _config.CurrentUser.Id);
         }
 
-      
+
         [HttpPost]
         [Route("SaveDanhMuc")]
         public async Task<IHttpActionResult> SaveDanhMuc(CreateOrUpdateDictionaryModel model)
@@ -113,10 +130,35 @@ namespace Anh.mvc.crm.Api
             var data = await _businessLogic.SaveDanhMuc(model, _config.CurrentUser.Id);
             return Ok(data);
         }
+        [HttpPost]
+        [Route("SaveContractSupport")]
+        public async Task<IHttpActionResult> SaveContractSupport(CreateOrUpdateContactSuportDto model)
+        {
+            var data = await _businessLogic.SaveContractSupport(model, _config.CurrentUser.Id);
+            return Ok(data);
+        }
 
-      
+        [HttpPost]
+        [Route("SaveEmployee")]
+        public async Task<IHttpActionResult> SaveEmployee(CreateOrUpdateEmployeeDto model)
+        {
+            var data = await _businessLogic.SaveEmployee(model, _config.CurrentUser.Id);
+            return Ok(data);
+        }
 
-
+        [HttpPost]
+        [Route("DeleteContractSupport")]
+        public async Task DeleteContractSupport(CreateOrUpdateContactSuportDto model)
+        {
+            await _businessLogic.DeleteContractSupport(model.Id, _config.CurrentUser.Id);
+        }
+        [HttpPost]
+        [Route("DeleteEmployee")]
+        public async Task DeleteEmployee(CreateOrUpdateEmployeeDto model)
+        {
+            await _businessLogic.DeleteEmployee(model.Id, _config.CurrentUser.Id);
+        }
+        
         [HttpPost]
         [Route("BackUpData")]
         public async Task<IHttpActionResult> BackUp(CreateOrUpdateDictionaryModel model)

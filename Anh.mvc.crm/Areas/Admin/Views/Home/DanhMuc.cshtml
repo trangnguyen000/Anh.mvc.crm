@@ -3,6 +3,7 @@
     ViewBag.Title = "Danh mục";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+@using Module.BusinessLogic.Helper;
 @section scripts {
     <script src="~/Assets/Js/bDanhMuc.js"></script>
 
@@ -13,7 +14,15 @@
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-md-9">
-                    <h1 class="m-0 title-head">Danh sách chuyên mục</h1>
+                    @{string title = "Danh sách chuyên mục";}
+                    @if ((string)ViewBag.KeyDanhMuc == KeyCodeDictionary.StudyProgram)
+                    {
+                        title = "Chương trình học";
+                    }
+
+                    <h1 class="m-0 title-head">
+                       @title
+                    </h1>
                 </div><!-- /.col -->
                 <div class="col-md-3">
                     <button type="button" class="btn btn-block bg-gradient-primary btn-custom btn-filter" v-on:click="showEdit('#modal-lg')">
@@ -28,8 +37,10 @@
             <div class="card-header">
                 <div class="col-md-12 form-head">
                     <div class="col-md-5 form-head_Left">
-                        <input class="form-control" type="text" placeholder="Tìm kiếm" v-model="search" v-on:keyup="keymonitor">
-                    </div>
+                            <form onkeydown="return event.key != 'Enter';">
+                                <input class="form-control" type="text" placeholder="Tìm kiếm" v-model="search" v-on:keyup="keymonitor">
+                            </form>
+                        </div>
                     <div class="col-md-3 form-head_right">
 
                     </div>
@@ -102,20 +113,20 @@
                     <div class="modal-body">
                         <div class="card-body card-body-modal">
                             <div class="col-md-12">
+                                <form onkeydown="return event.key != 'Enter';">
+                                    <div class="row">
 
-                                <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="lb-normal">Tên mục<span style="color:red">*</span></label>
+                                                <input type="text" class="form-control" name="name-category" placeholder="Tên mục" autocomplete="off"
+                                                       v-bind:class="{ 'validate-error': !modelEdit.DisplayName &&  submit }"
+                                                       v-model="modelEdit.DisplayName">
+                                            </div>
 
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label class="lb-normal">Tên mục<span style="color:red">*</span></label>
-                                            <input type="text" class="form-control" placeholder="Tên mục"
-                                                   v-bind:class="{ 'validate-error': !modelEdit.DisplayName &&  submit }"
-                                                   v-model="modelEdit.DisplayName">
                                         </div>
-
                                     </div>
-                                </div>
-
+                                    </form>
 
                             </div>
                             <!-- /.card -->
