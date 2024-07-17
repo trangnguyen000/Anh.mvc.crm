@@ -29,7 +29,8 @@ header {
     height: 110px;
     position: fixed;
     left: 0;
-    right: 10%
+    right: 10%;
+    top: 0
 }
 
 .navbar-brand {
@@ -300,7 +301,17 @@ header {
     font-weight: 700;
     color: #411C6B;
 }
+.alert-send-mail {
+    display: flex;
+    justify-content: center;
+}
 
+.alert-text {
+    padding: 16px;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+}
 .header-view-partner {
     /*    background-color: #2d124df5; */
     background: linear-gradient(30deg, rgb(148 73 172), rgb(50 50 148), rgb(103 56 205));
@@ -1958,6 +1969,13 @@ tr:nth-child(even) {
         width: 78%;
         height: 99%
     }
+    .carousel-inner .item {
+        height: 500px !important
+    }
+
+    .carousel.slide {
+        margin-top: 90px
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -2253,6 +2271,14 @@ tr:nth-child(even) {
     .name-teacher{
         margin-top: 0
     }
+    .carousel-inner .item {
+        height: 400px !important
+    }
+
+    .carousel.slide {
+        margin-top: 90px
+    }
+
 }
 
 @media screen and (min-width: 391px) and (max-width: 768px) {
@@ -2697,6 +2723,13 @@ tr:nth-child(even) {
     .connect-footer {
         margin-top: -29px !important
     }
+    .carousel-inner .item {
+        height: 240px !important
+    }
+
+    .carousel.slide {
+        margin-top: 90px
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -3136,6 +3169,12 @@ tr:nth-child(even) {
 
     .order-number-title {
         font-size: 18px
+    }
+    .carousel-inner .item{
+        height:200px !important
+    }
+    .carousel.slide{
+        margin-top:90px
     }
 }
 

@@ -95,7 +95,7 @@ namespace Anh.mvc.crm.Controllers
                 bodyBuilder.HtmlBody = "<b>This is some html text</b>";
                 //bodyBuilder.TextBody = "This is some plain text";
                 var subjectNew = "";
-                if (!string.IsNullOrEmpty(model.subject.ToString()))
+                if (model.subject != null)
                 {
                     subjectNew = TextToHtml(model.subject);
                 }
@@ -115,6 +115,8 @@ namespace Anh.mvc.crm.Controllers
                     client.Send(message);
                     client.Disconnect(true);
                 }
+
+
                 TempData["AlertMessage"] = "Đăng ký tư vấn thành công! Chúng tôi sẽ sớm liên hệ lại với bạn!";
                 TempData["AlertType"] = "alert-success";
                 return RedirectToAction("Contact", "Home");
