@@ -19,7 +19,7 @@ namespace Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option or rebuild the Visual Studio project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class SharedResource {
@@ -61,7 +61,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Về KIPA.
+        ///   Looks up a localized string similar to Về R&amp;I.
         /// </summary>
         internal static string AboutCompany {
             get {
@@ -135,7 +135,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to học viên được KIPA đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
+        ///   Looks up a localized string similar to học viên được R&amp;I đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
         ///                    được trau dồi thêm cả văn hóa ứng xử doanh nghiệp nói chung và văn hóa Hàn Quốc nói riêng..
         /// </summary>
         internal static string BusinessKorean14 {
@@ -163,8 +163,8 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kipa luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
-        ///  đang và sẽ tin tưởng và đồng hành cùng KIPA..
+        ///   Looks up a localized string similar to R&amp;I luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
+        ///  đang và sẽ tin tưởng và đồng hành cùng R&amp;I..
         /// </summary>
         internal static string BusinessKorean17 {
             get {
@@ -184,7 +184,7 @@ namespace Resources {
         /// <summary>
         ///   Looks up a localized string similar to đối tác chiến lược toàn diện vì vậy các tập đoàn lớn nhỏ đang ngày càng mở rộng và khai thác thị trường Việt Nam.
         ///                Chính vì lẽ đó, nhu cầu đào tạo tiếng Hàn cho công nhân viên chức ngày càng tăng cao. Với mục tiêu giúp cho công nhân viên chức có thể giao tiếp và hiểu được chỉ thị của sếp người Hàn cũng như am hiểu hơn trong lĩnh vực công tác.
-        ///                Để đáp ứng nhu cầu đó, KIPA đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu..
+        ///                Để đáp ứng nhu cầu đó, R&amp;I đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu..
         /// </summary>
         internal static string BusinessKorean3 {
             get {
@@ -211,10 +211,10 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to mới công nghệ sản xuất chất bán dẫn Test Socket cần thử nghiệm chất bán dẫn IC chip sử dụng trong IT, BT,
+        ///   Looks up a localized string similar to  mới công nghệ sản xuất chất bán dẫn Test Socket cần thử nghiệm chất bán dẫn IC chip sử dụng trong IT, BT,
         ///                    Ô Tô và linh kiện điện tử, SKC phát triển đa dạng các loại sản phẩm được tối ưu hóa trong thời gian ngắn theo từng loại gói bán dẫn và cung cấp giải
         ///                    pháp tốt nhất cho khách hàng với đội ngũ nhân sự, quản lý cấp cao, kỹ sư là người Hàn Quốc. Nhận thấy yêu cầu tiếng Hàn với công nhân viên là cần thiết nên công ty SKC
-        ///                    đã gửi gắm niềm tin cho KI [rest of string was truncated]&quot;;.
+        ///                    đã gửi gắm niềm tin cho R&amp; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string BusinessKorean6 {
             get {
@@ -223,7 +223,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh và thầy cô KIPA nhân ngày 20/11.
+        ///   Looks up a localized string similar to Học sinh và thầy cô R&amp;I nhân ngày 20/11.
         /// </summary>
         internal static string BusinessKorean7 {
             get {
@@ -334,7 +334,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cảm nhận về Kipa.
+        ///   Looks up a localized string similar to Cảm nhận về R&amp;I.
         /// </summary>
         internal static string Comment {
             get {
@@ -370,7 +370,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chuyên gia tư vấn tại KIPA.
+        ///   Looks up a localized string similar to Chuyên gia tư vấn tại R&amp;I.
         /// </summary>
         internal static string Counselors {
             get {
@@ -397,7 +397,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh KIPA trong buổi học tại trường ĐH Dongkuk.
+        ///   Looks up a localized string similar to Học sinh R&amp;I trong buổi học tại trường ĐH Dongkuk.
         /// </summary>
         internal static string D2VisaTitle1Image {
             get {
@@ -424,7 +424,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Giấy chứng nhận topik của học sinh nhà Kipa..
+        ///   Looks up a localized string similar to Giấy chứng nhận topik của học sinh nhà R&amp;I..
         /// </summary>
         internal static string D2VisaTitle2Image {
             get {
@@ -586,7 +586,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chuyến công tác thăm trường của nhân viên Kipa..
+        ///   Looks up a localized string similar to Chuyến công tác thăm trường của nhân viên R&amp;I..
         /// </summary>
         internal static string D2VisaTitle3Image {
             get {
@@ -1333,7 +1333,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh kipa du học chương trình E-VISA.
+        ///   Looks up a localized string similar to Học sinh R&amp;I du học chương trình E-VISA.
         /// </summary>
         internal static string D2_3_Condition16 {
             get {
@@ -1693,7 +1693,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8. Hình ảnh sinh viên KIPA học tập thạc sỹ tại Hàn Quốc.
+        ///   Looks up a localized string similar to 8. Hình ảnh sinh viên R&amp;I học tập thạc sỹ tại Hàn Quốc.
         /// </summary>
         internal static string D2_3_Image {
             get {
@@ -1927,7 +1927,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vì vậy hãy cùng KIPA tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp..
+        ///   Looks up a localized string similar to Vì vậy hãy cùng R&amp;I tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp..
         /// </summary>
         internal static string D2_3_Reson9 {
             get {
@@ -2350,7 +2350,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh KIPA trong tiết học cùng với các sinh viên khác tại Hàn Quốc.
+        ///   Looks up a localized string similar to Học sinh R&amp;I trong tiết học cùng với các sinh viên khác tại Hàn Quốc.
         /// </summary>
         internal static string D2_3_Time2 {
             get {
@@ -2404,7 +2404,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sinh viên Kipa trong chương trình hoạt động ngoại khóa tại trường.
+        ///   Looks up a localized string similar to Sinh viên R&amp;I trong chương trình hoạt động ngoại khóa tại trường.
         /// </summary>
         internal static string D2_3_Time8 {
             get {
@@ -2476,7 +2476,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc.
+        ///   Looks up a localized string similar to R&amp;I tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc.
         /// </summary>
         internal static string DesLinkSchool {
             get {
@@ -2485,7 +2485,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc..
+        ///   Looks up a localized string similar to R&amp;I với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc..
         /// </summary>
         internal static string DesReson1 {
             get {
@@ -2641,11 +2641,11 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nguồn nhân lực Hàn Quốc(HRDK) và Trung tâm COLAB dành cho người lao động về nước làm việc, 
-        ///                    KIPA vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
+        ///   Looks up a localized string similar to  Nguồn nhân lực Hàn Quốc(HRDK) và Trung tâm COLAB dành cho người lao động về nước làm việc, 
+        ///                    R&amp;I vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
         ///                    Khóa đào tạo được thực hiện với đối tượng là các lao động Việt Nam đã hoàn thành hợp đồng lao động tại Hàn Quốc và trở về Việt Nam.
         ///                    Mục tiêu của khóa đào tạo là giúp cho người lao động trở về từ Hàn Quốc có thể tìm kiếm việc làm thành công tại các công ty Hàn Quốc tại
-        ///           [rest of string was truncated]&quot;;.
+        ///            [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string e9_6 {
             get {
@@ -2727,7 +2727,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA Hà Nội, Hội viên R&amp;I
+        ///   Looks up a localized string similar to R&amp;I Hà Nội, Hội viên R&amp;I
         ///Institute, Giảng viên tại VNJ, Giảng viên tại SKC, Giảng
         ///viên Cơ quan phát triển nguồn nhân lực Hàn Quốc
         ///HRDK.
@@ -2739,7 +2739,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA Hà Nội, Hội viên R&amp;I Institute,
+        ///   Looks up a localized string similar to R&amp;I Hà Nội, Hội viên R&amp;I Institute,
         ///Thông dịch, Biên dịch, Giảng viên tiếng Hàn.
         /// </summary>
         internal static string Exteacher2 {
@@ -2749,7 +2749,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA Hà Nội, Hội viên R&amp;I
+        ///   Looks up a localized string similar to R&amp;I Hà Nội, Hội viên R&amp;I
         ///Institute, Giảng viên tại SKC, Giảng viên tiếng Hàn.
         /// </summary>
         internal static string Exteacher3 {
@@ -5162,7 +5162,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trường đại học Hàn Quốc tốt nhất 2024 được KIPA tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ KIPA để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp..
+        ///   Looks up a localized string similar to Trường đại học Hàn Quốc tốt nhất 2024 được R&amp;I tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ R&amp;I để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp..
         /// </summary>
         internal static string HandbookMenu2Title4Info1_2 {
             get {
@@ -8130,7 +8130,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Kipa kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec).
+        ///   Looks up a localized string similar to Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm R&amp;I kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec).
         /// </summary>
         internal static string LearnFree2 {
             get {
@@ -8433,7 +8433,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bạn hãy để lại thông tin tại đây để Kipa liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!.
+        ///   Looks up a localized string similar to Bạn hãy để lại thông tin tại đây để R&amp;I liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!.
         /// </summary>
         internal static string PleaseContact {
             get {
@@ -8487,7 +8487,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TẠI SAO CHỌN KIPA ?.
+        ///   Looks up a localized string similar to TẠI SAO CHỌN R&amp;I ?.
         /// </summary>
         internal static string Reson {
             get {
@@ -8541,7 +8541,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Giám đốc K.I.P.A Hà Nội.
+        ///   Looks up a localized string similar to Giám đốc R&amp;I Hà Nội.
         /// </summary>
         internal static string Seo1 {
             get {
@@ -8560,7 +8560,7 @@ namespace Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Giám đốc Viện văn hóa quốc gia Hàn Quốc
-        ///khu vực Đông Nam Á, Giám đốc K.I.P.A Hà Nội, Giám đốc điều
+        ///khu vực Đông Nam Á, Giám đốc R&amp;I Hà Nội, Giám đốc điều
         ///hành R&amp;I Institute, Trưởng phòng Ecommerce law Division,
         ///Macquarie investment Bank Analyst.
         /// </summary>
@@ -8652,7 +8652,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DU HỌC KIPA.
+        ///   Looks up a localized string similar to DU HỌC R&amp;I.
         /// </summary>
         internal static string TitleHeader {
             get {
@@ -9358,7 +9358,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trước đây GPA &lt; 6.0 thì KIPA vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học.
+        ///   Looks up a localized string similar to Trước đây GPA &lt; 6.0 thì R&amp;I vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học.
         /// </summary>
         internal static string UniversityTitle6_1Subject2 {
             get {
