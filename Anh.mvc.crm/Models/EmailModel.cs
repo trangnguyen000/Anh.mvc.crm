@@ -22,6 +22,7 @@ namespace Anh.mvc.Models
         public string country { get; set; }
         [RegularExpression(@"^[\p{L}\p{N}\s\.\,\!\?'\-]+$",  ErrorMessage = "Câu hỏi có chứa ký tự không hợp lý")]
         public string subject { get; set; }
+        [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$",  ErrorMessage = "Email không đúng định dạng")]
         public string Email { get; set; }
     }
 }
