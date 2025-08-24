@@ -19,7 +19,7 @@ namespace Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option or rebuild the Visual Studio project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class SharedResource {
@@ -61,7 +61,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Về KIPA.
+        ///   Looks up a localized string similar to Về R&amp;I.
         /// </summary>
         internal static string AboutCompany {
             get {
@@ -135,7 +135,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to học viên được KIPA đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
+        ///   Looks up a localized string similar to học viên được R&amp;I đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
         ///                    được trau dồi thêm cả văn hóa ứng xử doanh nghiệp nói chung và văn hóa Hàn Quốc nói riêng..
         /// </summary>
         internal static string BusinessKorean14 {
@@ -163,8 +163,8 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kipa luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
-        ///  đang và sẽ tin tưởng và đồng hành cùng KIPA..
+        ///   Looks up a localized string similar to R&amp;I luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
+        ///  đang và sẽ tin tưởng và đồng hành cùng R&amp;I..
         /// </summary>
         internal static string BusinessKorean17 {
             get {
@@ -184,7 +184,7 @@ namespace Resources {
         /// <summary>
         ///   Looks up a localized string similar to đối tác chiến lược toàn diện vì vậy các tập đoàn lớn nhỏ đang ngày càng mở rộng và khai thác thị trường Việt Nam.
         ///                Chính vì lẽ đó, nhu cầu đào tạo tiếng Hàn cho công nhân viên chức ngày càng tăng cao. Với mục tiêu giúp cho công nhân viên chức có thể giao tiếp và hiểu được chỉ thị của sếp người Hàn cũng như am hiểu hơn trong lĩnh vực công tác.
-        ///                Để đáp ứng nhu cầu đó, KIPA đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu..
+        ///                Để đáp ứng nhu cầu đó, R&amp;I đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu..
         /// </summary>
         internal static string BusinessKorean3 {
             get {
@@ -211,10 +211,10 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to mới công nghệ sản xuất chất bán dẫn Test Socket cần thử nghiệm chất bán dẫn IC chip sử dụng trong IT, BT,
+        ///   Looks up a localized string similar to  mới công nghệ sản xuất chất bán dẫn Test Socket cần thử nghiệm chất bán dẫn IC chip sử dụng trong IT, BT,
         ///                    Ô Tô và linh kiện điện tử, SKC phát triển đa dạng các loại sản phẩm được tối ưu hóa trong thời gian ngắn theo từng loại gói bán dẫn và cung cấp giải
         ///                    pháp tốt nhất cho khách hàng với đội ngũ nhân sự, quản lý cấp cao, kỹ sư là người Hàn Quốc. Nhận thấy yêu cầu tiếng Hàn với công nhân viên là cần thiết nên công ty SKC
-        ///                    đã gửi gắm niềm tin cho KI [rest of string was truncated]&quot;;.
+        ///                    đã gửi gắm niềm tin cho R&amp; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string BusinessKorean6 {
             get {
@@ -223,7 +223,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh và thầy cô KIPA nhân ngày 20/11.
+        ///   Looks up a localized string similar to Học sinh và thầy cô R&amp;I nhân ngày 20/11.
         /// </summary>
         internal static string BusinessKorean7 {
             get {
@@ -334,11 +334,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cảm nhận về Kipa.
+        ///   Looks up a localized string similar to Cảm nhận về R&amp;I.
         /// </summary>
         internal static string Comment {
             get {
                 return ResourceManager.GetString("Comment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tiếng hàn doanh nghiệp.
+        /// </summary>
+        internal static string CompanyOption {
+            get {
+                return ResourceManager.GetString("CompanyOption", resourceCulture);
             }
         }
         
@@ -361,7 +370,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chuyên gia tư vấn tại KIPA.
+        ///   Looks up a localized string similar to Chuyên gia tư vấn tại R&amp;I.
         /// </summary>
         internal static string Counselors {
             get {
@@ -388,6 +397,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Học sinh R&amp;I trong buổi học tại trường ĐH Dongkuk.
+        /// </summary>
+        internal static string D2VisaTitle1Image {
+            get {
+                return ResourceManager.GetString("D2VisaTitle1Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Visa D2 là loại thị thực cấp cho học sinh, sinh viên được một trường cao đẳng hoặc đại học ở Hàn Quốc chấp thuận vào học một chuyên ngành cụ thể nào đó sau khi đã đào tạo xong khóa học tiếng Hàn hoặc có topik 3 trở lên.
         /// </summary>
         internal static string D2VisaTitle1Subject {
@@ -402,6 +420,15 @@ namespace Resources {
         internal static string D2VisaTitle2 {
             get {
                 return ResourceManager.GetString("D2VisaTitle2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giấy chứng nhận topik của học sinh nhà R&amp;I..
+        /// </summary>
+        internal static string D2VisaTitle2Image {
+            get {
+                return ResourceManager.GetString("D2VisaTitle2Image", resourceCulture);
             }
         }
         
@@ -559,6 +586,159 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Chuyến công tác thăm trường của nhân viên R&amp;I..
+        /// </summary>
+        internal static string D2VisaTitle3Image {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Các loại visa D2.
+        /// </summary>
+        internal static string D2VisaTitle3TableHeader1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableHeader1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đối tượng.
+        /// </summary>
+        internal static string D2VisaTitle3TableHeader2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableHeader2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ghi chú.
+        /// </summary>
+        internal static string D2VisaTitle3TableHeader3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableHeader3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sinh viên Cao Đẳng.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow1Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow1Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yêu cầu có chứng chỉ tiếng Hàn TOPIK 2.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow1Col3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow1Col3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sinh viên Đại học.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow2Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow2Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yêu cầu có chứng chỉ tiếng Hàn TOPIK 3 hoặc 4.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow2Col3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow2Col3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thạc sĩ.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow3Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow3Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yêu cầu có chứng chỉ tiếng Hàn TOPIK 4.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow3Col3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow3Col3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nghiên cứu sinh Tiến sĩ.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow4Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow4Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yêu cầu có bằng Thạc sĩ trở lên.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow4Col3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow4Col3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nghiên cứu sinh.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow5Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow5Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yêu cầu học từ tiến sĩ trở lên.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow5Col3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow5Col3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sinh viên trao đổi.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow6Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow6Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du học kết hợp làm việc.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow7Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow7Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du học ngắn hạn.
+        /// </summary>
+        internal static string D2VisaTitle3TableRow8Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle3TableRow8Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Visa Hàn Quốc có thời hạn bao lâu.
         /// </summary>
         internal static string D2VisaTitle4 {
@@ -568,11 +748,101 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Loại visa.
+        /// </summary>
+        internal static string D2VisaTitle4TableHeader1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableHeader1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thời gian lưu trú tối đa.
+        /// </summary>
+        internal static string D2VisaTitle4TableHeader2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableHeader2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visa du học cao đẳng (D-2-1)/ đại học (D-2-2).
+        /// </summary>
+        internal static string D2VisaTitle4TableRow1Col1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow1Col1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 năm dành cho các trường không nằm trong diện ưu tiên.
+        /// </summary>
+        internal static string D2VisaTitle4TableRow1Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow1Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visa du học thạc sĩ (D-2-3)/ tiến sĩ (D-2-4).
+        /// </summary>
+        internal static string D2VisaTitle4TableRow2Col1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow2Col1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 năm.
+        /// </summary>
+        internal static string D2VisaTitle4TableRow2Col2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow2Col2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visa du học nghiên cứu (D-2-5).
+        /// </summary>
+        internal static string D2VisaTitle4TableRow3Col1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow3Col1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visa du học trao đổi (D-2-6).
+        /// </summary>
+        internal static string D2VisaTitle4TableRow4Col1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow4Col1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visa du học ngắn hạn (D-2-8).
+        /// </summary>
+        internal static string D2VisaTitle4TableRow5Col1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle4TableRow5Col1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hồ sơ xin visa D2 Hàn Quốc.
         /// </summary>
         internal static string D2VisaTitle5 {
             get {
                 return ResourceManager.GetString("D2VisaTitle5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hộ chiếu ảnh minh họa..
+        /// </summary>
+        internal static string D2VisaTitle5Image {
+            get {
+                return ResourceManager.GetString("D2VisaTitle5Image", resourceCulture);
             }
         }
         
@@ -694,6 +964,312 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Thủ tục xin visa D2 Hàn Quốc.
+        /// </summary>
+        internal static string D2VisaTitle6 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bước 1: Trước tiên, bạn cần dịch thuật công chứng hồ sơ.
+        /// </summary>
+        internal static string D2VisaTitle6Subject1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bước 2: Đến tại Cục Lãnh sự – Bộ Ngoại giao để hợp pháp hóa.
+        /// </summary>
+        internal static string D2VisaTitle6Subject2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bạn cần phải xin tem và dấu hợp pháp hóa các giấy tờ sau.
+        /// </summary>
+        internal static string D2VisaTitle6Subject2_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Học bạ cấp 3 (Bản gốc + bản dịch).
+        /// </summary>
+        internal static string D2VisaTitle6Subject2_1_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2_1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bằng cấp 3 (Bản gốc + bản dịch).
+        /// </summary>
+        internal static string D2VisaTitle6Subject2_1_2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2_1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giấy khám sức khỏe.
+        /// </summary>
+        internal static string D2VisaTitle6Subject2_1_3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lý lịch tư pháp.
+        /// </summary>
+        internal static string D2VisaTitle6Subject2_1_4 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giấy tình trạng hôn nhân (Nếu có).
+        /// </summary>
+        internal static string D2VisaTitle6Subject2_1_5 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bước 3: Đến tại Phòng Lãnh Sự- Đại sứ quán Hàn Quốc để tiếp tục hợp pháp hóa hồ sơ.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tiếp đến, bạn tới đây lấy số hẹn rồi nộp hồ sơ gồm.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Học bạ cấp 3 (Bản gốc + bản dịch).
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_1_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bằng cấp 3 (Bản gốc + bản dịch).
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_1_2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yêu cầu các giấy tờ sau khi hợp pháp hóa lãnh sự tại Đại sứ quán Hàn Quốc.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bản dịch đã được hợp pháp hóa của Cục lãnh sự Việt Nam.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_2_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giấy khám sức khỏe có tem và dấu hợp pháp hóa.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_2_2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bản photo của bản dịch đã hợp pháp hóa.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_2_3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 01 bản photo chứng minh thư nhân dân hoặc hộ chiếu.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_2_4 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bản photo học bạ, bằng cấp.
+        /// </summary>
+        internal static string D2VisaTitle6Subject3_2_5 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject3_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bước 4: Gửi hồ sơ và nhận thư mời của trường.
+        /// </summary>
+        internal static string D2VisaTitle6Subject4 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thư mời sẽ được gửi qua bưu điện hoặc qua mail. Sau đó, bạn sẽ được yêu cầu tạm đóng trước một khoản học phí theo quy định. Rồi trường sẽ gửi giấy xác nhận được nhập học qua e-mail hoặc bưu điện cho bạn. Bạn sẽ dùng giấy xác nhận đó để xin visa tại Đại sứ quán.
+        /// </summary>
+        internal static string D2VisaTitle6Subject4_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject4_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bước 5: Tiến hành nộp hồ sơ xin visa.
+        /// </summary>
+        internal static string D2VisaTitle6Subject5 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khi đã có giấy xác nhận nhập học, bạn đến Đại sứ quán và điền vào tờ xin visa để xin giấy hẹn nộp hồ sơ xin visa du học D2 Hàn Quốc.
+        /// </summary>
+        internal static string D2VisaTitle6Subject5_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject5_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bước 6: Phỏng vấn xin thị thực tại Đại sứ quán.
+        /// </summary>
+        internal static string D2VisaTitle6Subject6 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khi xét duyệt hồ sơ xong, nếu giấy tờ đạt yêu cầu, bạn sẽ được báo lịch phỏng vấn cụ thể.
+        /// </summary>
+        internal static string D2VisaTitle6Subject6_1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject6_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sau khi phỏng vấn, Đại sứ quán sẽ cấp visa cho bạn. Bạn cần thông tin lại với trường và đặt lịch bay theo đúng lịch nhập học mà trường quy định.
+        /// </summary>
+        internal static string D2VisaTitle6Subject6_2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle6Subject6_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quyền lợi của Visa D2 Hàn Quốc.
+        /// </summary>
+        internal static string D2VisaTitle7 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Được nhà trường hoặc các cơ quan mà bạn thực tập hỗ trợ gia hạn khi visa D2 sắp hết hạn mà không cần quay về Việt Nam. Đây là một trong những lợi thế giúp bạn tiết kiệm tối đa thời gian, công sức và chi phí.
+        /// </summary>
+        internal static string D2VisaTitle7Subject1 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du học Hàn Quốc, bạn được phép đi làm thêm tối đa 20 giờ mỗi tuần. Riêng thứ bảy, chủ nhật và các kỳ nghỉ sẽ được thoải mái làm thêm mà không bị giới hạn về thời gian. Tuy nhiên, những công việc bạn làm phải nằm trong phạm vi cho phép.
+        /// </summary>
+        internal static string D2VisaTitle7Subject2 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Được bảo lãnh bố, mẹ, anh, chị, em đến Hàn Quốc du lịch theo diện C-3-9 hoặc xin visa F-1-15 lưu trú dài hạn tại Hàn Quốc. Quyền lợi này chỉ dành riêng cho visa du học D2, không áp dụng với visa du học Hàn Quốc D4.
+        /// </summary>
+        internal static string D2VisaTitle7Subject3 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sau khi kết thúc khóa học, nếu muốn ở lại Hàn Quốc làm việc, bạn sẽ được chuyển đổi sang visa D-10 với thời hạn 6 tháng.
+        /// </summary>
+        internal static string D2VisaTitle7Subject4 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Riêng với visa D-2-1, D-2-2, visa D-2-3 và D-2-4, khi tốt nghiệp bạn có thể đăng ký học lên bậc học cao hơn với cấp visa tương ứng. Lúc này, cơ hội được làm việc lâu dài hoặc định cư tại Hàn Quốc của bạn cũng sẽ cao hơn.
+        /// </summary>
+        internal static string D2VisaTitle7Subject5 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khi tốt nghiệp, nếu bạn được chấp nhận bảo lãnh với mã ngành học thuộc visa E-7 thì sẽ được chuyển sang thị thực E-7 sau khi kết thúc đào tạo.
+        /// </summary>
+        internal static string D2VisaTitle7Subject6 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Những ai tốt nghiệp Thạc sĩ trở lên và làm cho một công ty cụ thể nào đó ở Hàn Quốc, bạn sẽ có cơ hội chuyển từ visa D2 sang visa F-2 (hay còn gọi là visa định cư tại Hàn Quốc).
+        /// </summary>
+        internal static string D2VisaTitle7Subject7 {
+            get {
+                return ResourceManager.GetString("D2VisaTitle7Subject7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1. Điều kiện để đi du học thạc sĩ tại Hàn Quốc.
         /// </summary>
         internal static string D2_3_Condition1 {
@@ -757,7 +1333,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh kipa du học chương trình E-VISA.
+        ///   Looks up a localized string similar to Học sinh R&amp;I du học chương trình E-VISA.
         /// </summary>
         internal static string D2_3_Condition16 {
             get {
@@ -1117,7 +1693,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8. Hình ảnh sinh viên KIPA học tập thạc sỹ tại Hàn Quốc.
+        ///   Looks up a localized string similar to 8. Hình ảnh sinh viên R&amp;I học tập thạc sỹ tại Hàn Quốc.
         /// </summary>
         internal static string D2_3_Image {
             get {
@@ -1351,7 +1927,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vì vậy hãy cùng KIPA tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp..
+        ///   Looks up a localized string similar to Vì vậy hãy cùng R&amp;I tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp..
         /// </summary>
         internal static string D2_3_Reson9 {
             get {
@@ -1774,7 +2350,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Học sinh KIPA trong tiết học cùng với các sinh viên khác tại Hàn Quốc.
+        ///   Looks up a localized string similar to Học sinh R&amp;I trong tiết học cùng với các sinh viên khác tại Hàn Quốc.
         /// </summary>
         internal static string D2_3_Time2 {
             get {
@@ -1828,7 +2404,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sinh viên Kipa trong chương trình hoạt động ngoại khóa tại trường.
+        ///   Looks up a localized string similar to Sinh viên R&amp;I trong chương trình hoạt động ngoại khóa tại trường.
         /// </summary>
         internal static string D2_3_Time8 {
             get {
@@ -1900,7 +2476,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc.
+        ///   Looks up a localized string similar to R&amp;I tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc.
         /// </summary>
         internal static string DesLinkSchool {
             get {
@@ -1909,7 +2485,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc..
+        ///   Looks up a localized string similar to R&amp;I với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc..
         /// </summary>
         internal static string DesReson1 {
             get {
@@ -2065,11 +2641,11 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nguồn nhân lực Hàn Quốc(HRDK) và Trung tâm COLAB dành cho người lao động về nước làm việc, 
-        ///                    KIPA vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
+        ///   Looks up a localized string similar to  Nguồn nhân lực Hàn Quốc(HRDK) và Trung tâm COLAB dành cho người lao động về nước làm việc, 
+        ///                    R&amp;I vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
         ///                    Khóa đào tạo được thực hiện với đối tượng là các lao động Việt Nam đã hoàn thành hợp đồng lao động tại Hàn Quốc và trở về Việt Nam.
         ///                    Mục tiêu của khóa đào tạo là giúp cho người lao động trở về từ Hàn Quốc có thể tìm kiếm việc làm thành công tại các công ty Hàn Quốc tại
-        ///           [rest of string was truncated]&quot;;.
+        ///            [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string e9_6 {
             get {
@@ -2106,11 +2682,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập tên.
+        /// </summary>
+        internal static string EnterName {
+            get {
+                return ResourceManager.GetString("EnterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhập số điện thoại.
+        /// </summary>
+        internal static string EnterPhone {
+            get {
+                return ResourceManager.GetString("EnterPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TIẾNG HÀN DOANH NGHIỆP.
         /// </summary>
         internal static string Enterprise {
             get {
                 return ResourceManager.GetString("Enterprise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhập câu hỏi cần tư vấn.
+        /// </summary>
+        internal static string EnterQuestion {
+            get {
+                return ResourceManager.GetString("EnterQuestion", resourceCulture);
             }
         }
         
@@ -2124,7 +2727,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA Hà Nội, Hội viên R&amp;I
+        ///   Looks up a localized string similar to R&amp;I Hà Nội, Hội viên R&amp;I
         ///Institute, Giảng viên tại VNJ, Giảng viên tại SKC, Giảng
         ///viên Cơ quan phát triển nguồn nhân lực Hàn Quốc
         ///HRDK.
@@ -2136,7 +2739,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA Hà Nội, Hội viên R&amp;I Institute,
+        ///   Looks up a localized string similar to R&amp;I Hà Nội, Hội viên R&amp;I Institute,
         ///Thông dịch, Biên dịch, Giảng viên tiếng Hàn.
         /// </summary>
         internal static string Exteacher2 {
@@ -2146,7 +2749,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KIPA Hà Nội, Hội viên R&amp;I
+        ///   Looks up a localized string similar to R&amp;I Hà Nội, Hội viên R&amp;I
         ///Institute, Giảng viên tại SKC, Giảng viên tiếng Hàn.
         /// </summary>
         internal static string Exteacher3 {
@@ -4559,7 +5162,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trường đại học Hàn Quốc tốt nhất 2024 được KIPA tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ KIPA để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp..
+        ///   Looks up a localized string similar to Trường đại học Hàn Quốc tốt nhất 2024 được R&amp;I tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ R&amp;I để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp..
         /// </summary>
         internal static string HandbookMenu2Title4Info1_2 {
             get {
@@ -7527,7 +8130,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Kipa kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec).
+        ///   Looks up a localized string similar to Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm R&amp;I kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec).
         /// </summary>
         internal static string LearnFree2 {
             get {
@@ -7830,7 +8433,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bạn hãy để lại thông tin tại đây để Kipa liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!.
+        ///   Looks up a localized string similar to Bạn hãy để lại thông tin tại đây để R&amp;I liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!.
         /// </summary>
         internal static string PleaseContact {
             get {
@@ -7884,7 +8487,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TẠI SAO CHỌN KIPA ?.
+        ///   Looks up a localized string similar to TẠI SAO CHỌN R&amp;I ?.
         /// </summary>
         internal static string Reson {
             get {
@@ -7938,7 +8541,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Giám đốc K.I.P.A Hà Nội.
+        ///   Looks up a localized string similar to Giám đốc R&amp;I Hà Nội.
         /// </summary>
         internal static string Seo1 {
             get {
@@ -7957,7 +8560,7 @@ namespace Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Giám đốc Viện văn hóa quốc gia Hàn Quốc
-        ///khu vực Đông Nam Á, Giám đốc K.I.P.A Hà Nội, Giám đốc điều
+        ///khu vực Đông Nam Á, Giám đốc R&amp;I Hà Nội, Giám đốc điều
         ///hành R&amp;I Institute, Trưởng phòng Ecommerce law Division,
         ///Macquarie investment Bank Analyst.
         /// </summary>
@@ -7991,6 +8594,15 @@ namespace Resources {
         internal static string Study {
             get {
                 return ResourceManager.GetString("Study", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du học.
+        /// </summary>
+        internal static string StudyOption {
+            get {
+                return ResourceManager.GetString("StudyOption", resourceCulture);
             }
         }
         
@@ -8040,7 +8652,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DU HỌC KIPA.
+        ///   Looks up a localized string similar to DU HỌC R&amp;I.
         /// </summary>
         internal static string TitleHeader {
             get {
@@ -8058,7 +8670,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du học Đại Học D2-1.
+        ///   Looks up a localized string similar to Du học Đại Học D4-1.
         /// </summary>
         internal static string UniversityHeaderTitle {
             get {
@@ -8746,7 +9358,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trước đây GPA &lt; 6.0 thì KIPA vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học.
+        ///   Looks up a localized string similar to Trước đây GPA &lt; 6.0 thì R&amp;I vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học.
         /// </summary>
         internal static string UniversityTitle6_1Subject2 {
             get {

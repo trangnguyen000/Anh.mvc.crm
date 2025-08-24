@@ -23,67 +23,69 @@
 <div class="connect-form" data-aos="fade-up">
     @if (!string.IsNullOrEmpty(alertMessage))
     {
-        <div class="alert @alertType">
-            @alertMessage
+        <div class="alert-send-mail">
+            <div class="alert alert-text @alertType">
+                @alertMessage
+            </div>
         </div>
     }
-<div class="main-form-connect row">
-    <div class="left-form-connect">
-        <img class="image-member" src="~/Theme-FrontEnd/assets/Content/member.png">
-        <div class="des-image-member">@Resources.SharedResource.Counselors</div>
-    </div>
-    <div class="right-form-connect">
-        <div class="title-form-connect">@Resources.SharedResource.PleaseContactNow</div>
-        <form class="form-connect-submit" action="/Home/SendEmail" method="post">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">@Resources.SharedResource.Name</label>
+    <div class="main-form-connect row">
+        <div class="left-form-connect">
+            <img class="image-member" src="~/Theme-FrontEnd/assets/Content/member.png">
+            <div class="des-image-member">@Resources.SharedResource.Counselors</div>
+        </div>
+        <div class="right-form-connect">
+            <div class="title-form-connect">@Resources.SharedResource.PleaseContactNow</div>
+            <form class="form-connect-submit" action="/Home/SendEmail" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">@Resources.SharedResource.Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="@Resources.SharedResource.EnterName">
+                        @if (!string.IsNullOrEmpty(ValidateName))
+                        {
+                            <span class="text-red pl-1" asp-validation-for="name">@ValidateName</span>
+
+                        }
+                        <span asp-validation-for="name"></span>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="name" name="name" placeholder="@Resources.SharedResource.EnterName">
-                    @if (!string.IsNullOrEmpty(ValidateName))
-                    {
-                        <span class="text-red pl-1" asp-validation-for="name">@ValidateName</span>
-                       
-                    }
-                    <span asp-validation-for="name"></span>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">@Resources.SharedResource.Phone</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="@Resources.SharedResource.EnterPhone">
+                        @if (!string.IsNullOrEmpty(ValidatePhone))
+                        {
+                            <span class="text-red pl-1" asp-validation-for="name">@ValidatePhone</span>
+                        }
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">@Resources.SharedResource.Phone</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">@Resources.SharedResource.ProgramCare</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="@Resources.SharedResource.StudyOption">@Resources.SharedResource.StudyOption</option>
+                            <option value="@Resources.SharedResource.CompanyOption">@Resources.SharedResource.CompanyOption</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="@Resources.SharedResource.EnterPhone">
-                    @if (!string.IsNullOrEmpty(ValidatePhone))
-                    {
-                        <span class="text-red pl-1" asp-validation-for="name">@ValidatePhone</span>
-                    }
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">@Resources.SharedResource.Question</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="@Resources.SharedResource.EnterQuestion.." style="height:150px"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">@Resources.SharedResource.ProgramCare</label>
+                <div class="row submit-btn">
+                    <input type="submit" value=@Resources.SharedResource.Send>
                 </div>
-                <div class="col-75">
-                    <select id="country" name="country">
-                        <option value="@Resources.SharedResource.StudyOption">@Resources.SharedResource.StudyOption</option>
-                        <option value="@Resources.SharedResource.CompanyOption">@Resources.SharedResource.CompanyOption</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">@Resources.SharedResource.Question</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="@Resources.SharedResource.EnterQuestion.." style="height:150px"></textarea>
-                </div>
-            </div>
-            <div class="row submit-btn">
-                <input type="submit" value=@Resources.SharedResource.Send>
-            </div>
-        </form>
+            </form>
 
         </div>
     </div>

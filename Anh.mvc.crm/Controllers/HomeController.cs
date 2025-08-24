@@ -95,27 +95,35 @@ namespace Anh.mvc.crm.Controllers
                 await _businessLogic.SaveContractSupport(modelContractSupport, null);
 
                 var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("Form mail", "trangmy2909@gmail.com"));
-                message.To.Add(new MailboxAddress("To mail", "hoanglinh23vp@gmail.com"));
+                message.From.Add(new MailboxAddress("rnituyensinh", "rnituyensinh@gmail.com"));
+                message.To.Add(new MailboxAddress("rnituyensinh", "kipavninfo@gmail.com"));
                 message.Subject = $"[Đăng ký tư vấn] {model.name}";
-
-                message.Body = new TextPart("plain")
+                var bodyBuilder = new BodyBuilder();
+                bodyBuilder.HtmlBody = "<b>This is some html text</b>";
+                //bodyBuilder.TextBody = "This is some plain text";
+                var subjectNew = "";
+                if (model.subject != null)
                 {
-                    Text = $@"Thông báo đăng ký tư vấn:
-                           Thông tin người đăng ký:
-                           Họ và tên:{model.name},
-                           Số điện thoại: {model.phoneNumber},
-                           Chương trình quan tâm: {model.country},
-                           Câu hỏi: {model.subject},"
+                    subjectNew = TextToHtml(model.subject);
+                }
+                message.Body = new TextPart("html")
+                {
+                    Text = $@"<div style=""font-size:22px;color: #000000;font-weight: 700;"">Thông tin người đăng ký:</div>
+                        <div><span style=""font-size: 14px;color: #000000;font-weight: 600;padding-left: 40px;"">Họ và tên: </span><span style=""color: #000000;font-weight: 500;font-size: 18px;"">{model.name},</span></div>
+                        <div><span style=""font-size: 14px;color: #000000;font-weight: 600;padding-left: 40px;"">Số điện thoại: </span><span style=""color: #000000;font-weight: 500;font-size: 18px;"">{model.phoneNumber},</span></div>
+                        <div><span style=""font-size: 14px;color: #000000;font-weight: 600;padding-left: 40px;"">Chương trình quan tâm: </span><span style=""color: #000000;font-weight: 500;font-size: 18px;"">{model.country},</span></div>
+                        <div><span style=""font-size: 14px;color: #000000;font-weight: 600;padding-left: 40px;"">Câu hỏi: </span><span style=""color: #000000;display: inline-grid;font-weight: 500;font-size: 18px;"">{subjectNew}</span></div>"
                 };
 
                 using (var client = new SmtpClient())
                 {
                     client.Connect("smtp.gmail.com", 587, false);
-                    client.Authenticate("trangmy2909@gmail.com", "owxy itfr uhql dufn");
+                    client.Authenticate("rnituyensinh@gmail.com", "bsnn fjza yksg adhi");
                     client.Send(message);
                     client.Disconnect(true);
                 }
+
+
                 TempData["AlertMessage"] = "Đăng ký tư vấn thành công! Chúng tôi sẽ sớm liên hệ lại với bạn!";
                 TempData["AlertType"] = "alert-success";
                 return RedirectToAction("Contact", "Home");
@@ -127,6 +135,15 @@ namespace Anh.mvc.crm.Controllers
                 return RedirectToAction("Contact", "Home");
             }
 
+        }
+        public static string TextToHtml(string text)
+        {
+            text = HttpUtility.HtmlEncode(text);
+            text = text.Replace("\r\n", "\r");
+            text = text.Replace("\n", "\r");
+            text = text.Replace("\r", "<br>\r\n");
+            text = text.Replace("  ", " &nbsp;");
+            return text;
         }
 
         public ActionResult Master()

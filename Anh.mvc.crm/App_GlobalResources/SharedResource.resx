@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutCompany" xml:space="preserve">
-    <value>Về KIPA</value>
+    <value>Về R&amp;I</value>
   </data>
   <data name="AddressCo" xml:space="preserve">
     <value>Địa chỉ: số 25, Lô A20, Khu geleximco, An Khánh, Hoài</value>
@@ -144,7 +144,7 @@
     <value>Không chỉ dừng lại ở đó,</value>
   </data>
   <data name="BusinessKorean14" xml:space="preserve">
-    <value>học viên được KIPA đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
+    <value>học viên được R&amp;I đào tạo còn có thể tự tin giao tiếp hơn với đội ngũ nhân sự Hàn Quốc,
                     được trau dồi thêm cả văn hóa ứng xử doanh nghiệp nói chung và văn hóa Hàn Quốc nói riêng.</value>
   </data>
   <data name="BusinessKorean15" xml:space="preserve">
@@ -154,8 +154,8 @@
     <value>Với phương châm:“ Dạy thật, học thật, không chạy theo kết quả.”</value>
   </data>
   <data name="BusinessKorean17" xml:space="preserve">
-    <value>Kipa luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
-  đang và sẽ tin tưởng và đồng hành cùng KIPA.</value>
+    <value>R&amp;I luôn tự tin có thể tiếp tục đồng hành với SKC cũng như các doanh nghiệp Hàn Quốc khác hơn nữa chúng tôi luôn cố gắng phát triển để có thể mang lại kết quả tốt nhất đối với người học cũng như các đơn vị đối tác đã,
+  đang và sẽ tin tưởng và đồng hành cùng R&amp;I.</value>
   </data>
   <data name="BusinessKorean2" xml:space="preserve">
     <value>Việt Nam và Hàn Quốc đang dần trở thành</value>
@@ -163,7 +163,7 @@
   <data name="BusinessKorean3" xml:space="preserve">
     <value>đối tác chiến lược toàn diện vì vậy các tập đoàn lớn nhỏ đang ngày càng mở rộng và khai thác thị trường Việt Nam.
                 Chính vì lẽ đó, nhu cầu đào tạo tiếng Hàn cho công nhân viên chức ngày càng tăng cao. Với mục tiêu giúp cho công nhân viên chức có thể giao tiếp và hiểu được chỉ thị của sếp người Hàn cũng như am hiểu hơn trong lĩnh vực công tác.
-                Để đáp ứng nhu cầu đó, KIPA đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu.</value>
+                Để đáp ứng nhu cầu đó, R&amp;I đã đồng hành với doanh nghiệp bằng chương trình đào tạo tiếng Hàn chuyên sâu.</value>
   </data>
   <data name="BusinessKorean4" xml:space="preserve">
     <value>1.Chương trình đào tạo tiếng hàn tại công ty SKC</value>
@@ -175,10 +175,10 @@
     <value>mới công nghệ sản xuất chất bán dẫn Test Socket cần thử nghiệm chất bán dẫn IC chip sử dụng trong IT, BT,
                     Ô Tô và linh kiện điện tử, SKC phát triển đa dạng các loại sản phẩm được tối ưu hóa trong thời gian ngắn theo từng loại gói bán dẫn và cung cấp giải
                     pháp tốt nhất cho khách hàng với đội ngũ nhân sự, quản lý cấp cao, kỹ sư là người Hàn Quốc. Nhận thấy yêu cầu tiếng Hàn với công nhân viên là cần thiết nên công ty SKC
-                    đã gửi gắm niềm tin cho KIPA từ năm 2020 với mục tiêu đào tạo tiếng Hàn, phát triển khả năng giao tiếp với đội ngũ nhân sự Hàn Quốc.</value>
+                    đã gửi gắm niềm tin cho R&amp;I từ năm 2020 với mục tiêu đào tạo tiếng Hàn, phát triển khả năng giao tiếp với đội ngũ nhân sự Hàn Quốc.</value>
   </data>
   <data name="BusinessKorean7" xml:space="preserve">
-    <value>Học sinh và thầy cô KIPA nhân ngày 20/11</value>
+    <value>Học sinh và thầy cô R&amp;I nhân ngày 20/11</value>
   </data>
   <data name="BusinessKorean8" xml:space="preserve">
     <value>Học sinh cùng thầy cô, lãnh đạo công ty chụp hình lưu niệm cuối khóa.</value>
@@ -217,7 +217,7 @@ C&amp;C Partners</value>
     <value>Chungwoon University</value>
   </data>
   <data name="Comment" xml:space="preserve">
-    <value>Cảm nhận về Kipa</value>
+    <value>Cảm nhận về R&amp;I</value>
   </data>
   <data name="Contact" xml:space="preserve">
     <value>Liên hệ tư vấn</value>
@@ -247,7 +247,7 @@ C&amp;C Partners</value>
     <value>1.2. Chương trình du học E- VISA</value>
   </data>
   <data name="D2_3_Condition16" xml:space="preserve">
-    <value>Học sinh kipa du học chương trình E-VISA</value>
+    <value>Học sinh R&amp;I du học chương trình E-VISA</value>
   </data>
   <data name="D2_3_Condition17" xml:space="preserve">
     <value>ƯU ĐIỂM:</value>
@@ -367,7 +367,7 @@ C&amp;C Partners</value>
     <value>Hộ khẩu</value>
   </data>
   <data name="D2_3_Image" xml:space="preserve">
-    <value>8. Hình ảnh sinh viên KIPA học tập thạc sỹ tại Hàn Quốc</value>
+    <value>8. Hình ảnh sinh viên R&amp;I học tập thạc sỹ tại Hàn Quốc</value>
   </data>
   <data name="D2_3_Money1" xml:space="preserve">
     <value>4. Học phí du học thạc sĩ Hàn Quốc</value>
@@ -445,7 +445,7 @@ C&amp;C Partners</value>
     <value>Số giờ làm thêm CAO NHẤT trong các hệ du học tại Hàn Quốc.</value>
   </data>
   <data name="D2_3_Reson9" xml:space="preserve">
-    <value>Vì vậy hãy cùng KIPA tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp.</value>
+    <value>Vì vậy hãy cùng R&amp;I tìm hiểu du học Hàn Quốc hệ thạc sĩ qua bài viết sau đây thì cần những điều kiện gì? chi phí ra sao? và nên chọn ngành gì học thì phù hợp.</value>
   </data>
   <data name="D2_3_Route1" xml:space="preserve">
     <value>5. Lộ trình Du học Thạc sĩ ở Hàn Quốc</value>
@@ -586,7 +586,7 @@ C&amp;C Partners</value>
     <value>• Kỳ nghỉ đông: Từ tháng 1 đến tháng 2</value>
   </data>
   <data name="D2_3_Time2" xml:space="preserve">
-    <value>Học sinh KIPA trong tiết học cùng với các sinh viên khác tại Hàn Quốc</value>
+    <value>Học sinh R&amp;I trong tiết học cùng với các sinh viên khác tại Hàn Quốc</value>
   </data>
   <data name="D2_3_Time3" xml:space="preserve">
     <value>Chương trình học Thạc sĩ tại Hàn Quốc thường có thời gian đào tạo tối thiểu là 2 năm. Với từng chuyên ngành thì số lượng tín chỉ cũng như chương trình học khác nhau nhưng nhìn chung bạn thường phải hoàn thành khoảng 24 tín chỉ (tương đương 48 tín chỉ ECTS).</value>
@@ -604,7 +604,7 @@ C&amp;C Partners</value>
     <value>Kỳ 2: Từ tháng 9 đến tháng 12</value>
   </data>
   <data name="D2_3_Time8" xml:space="preserve">
-    <value>Sinh viên Kipa trong chương trình hoạt động ngoại khóa tại trường</value>
+    <value>Sinh viên R&amp;I trong chương trình hoạt động ngoại khóa tại trường</value>
   </data>
   <data name="D2_3_Time9" xml:space="preserve">
     <value>Mỗi năm có 2 kỳ nghỉ chính:</value>
@@ -619,10 +619,10 @@ C&amp;C Partners</value>
     <value>Người bạn đồng hành tin cậy nhất</value>
   </data>
   <data name="DesLinkSchool" xml:space="preserve">
-    <value>KIPA tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc</value>
+    <value>R&amp;I tự hào là đối tác tuyển sinh và có mối quan hệ hợp tác với các trường đại học uy tín Hàn Quốc</value>
   </data>
   <data name="DesReson1" xml:space="preserve">
-    <value>KIPA với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc.</value>
+    <value>R&amp;I với kinh nghiệm nhiều năm trong lĩnh vực đào tạo tiếng Hàn cho nhiều đối tác là doanh nghiệp Hàn Quốc cùng với sự am hiểu sâu sắc về môi trường doanh nghiệp Việt Nam và Hàn Quốc.</value>
   </data>
   <data name="DesReson2" xml:space="preserve">
     <value>Giáo viên có kinh nghiệm giảng dạy nhiều năm, được đào tạo bài bản, kỹ lưỡng, nhiệt tình, tâm huyết trong công việc giảng day. Đặc biệt, với sự chuẩn bị kỹ càng về mặt kiến thức cũng như giáo trình chúng tôi tin rằng có thể làm hài lòng tới tận người học khó tính nhất.</value>
@@ -677,7 +677,7 @@ ngôn ngữ Hàn Quốc</value>
   </data>
   <data name="e9_6" xml:space="preserve">
     <value>Nguồn nhân lực Hàn Quốc(HRDK) và Trung tâm COLAB dành cho người lao động về nước làm việc, 
-                    KIPA vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
+                    R&amp;I vinh dự được kết hợp trở thành cơ quan đào tạo cho những lao động này. 
                     Khóa đào tạo được thực hiện với đối tượng là các lao động Việt Nam đã hoàn thành hợp đồng lao động tại Hàn Quốc và trở về Việt Nam.
                     Mục tiêu của khóa đào tạo là giúp cho người lao động trở về từ Hàn Quốc có thể tìm kiếm việc làm thành công tại các công ty Hàn Quốc tại
                     Việt Nam bằng những kinh nghiệm đã tích lũy trong thời gian làm việc tại Hàn Quốc và những kiến thức được giảng dạy thông qua khóa đào tạo này. 
@@ -701,17 +701,17 @@ ngôn ngữ Hàn Quốc</value>
     <value>Kinh nghiệm làm việc</value>
   </data>
   <data name="Exteacher1" xml:space="preserve">
-    <value>KIPA Hà Nội, Hội viên R&amp;I
+    <value>R&amp;I Hà Nội, Hội viên R&amp;I
 Institute, Giảng viên tại VNJ, Giảng viên tại SKC, Giảng
 viên Cơ quan phát triển nguồn nhân lực Hàn Quốc
 HRDK</value>
   </data>
   <data name="Exteacher2" xml:space="preserve">
-    <value>KIPA Hà Nội, Hội viên R&amp;I Institute,
+    <value>R&amp;I Hà Nội, Hội viên R&amp;I Institute,
 Thông dịch, Biên dịch, Giảng viên tiếng Hàn</value>
   </data>
   <data name="Exteacher3" xml:space="preserve">
-    <value>KIPA Hà Nội, Hội viên R&amp;I
+    <value>R&amp;I Hà Nội, Hội viên R&amp;I
 Institute, Giảng viên tại SKC, Giảng viên tiếng Hàn</value>
   </data>
   <data name="Functional" xml:space="preserve">
@@ -1093,7 +1093,7 @@ hội chuyên gia xã hội nhân dân Hàn Quốc</value>
     <value>Chương trình du học</value>
   </data>
   <data name="Reson" xml:space="preserve">
-    <value>TẠI SAO CHỌN KIPA ?</value>
+    <value>TẠI SAO CHỌN R&amp;I ?</value>
   </data>
   <data name="Reson1" xml:space="preserve">
     <value>THƯƠNG HIỆU UY TÍN</value>
@@ -1108,14 +1108,14 @@ hội chuyên gia xã hội nhân dân Hàn Quốc</value>
     <value>Seo Suk Yong - 1970</value>
   </data>
   <data name="Seo1" xml:space="preserve">
-    <value>Giám đốc K.I.P.A Hà Nội</value>
+    <value>Giám đốc R&amp;I Hà Nội</value>
   </data>
   <data name="Seo2" xml:space="preserve">
     <value>Thạc sĩ khoa Kinh tế học tại N.S.W University</value>
   </data>
   <data name="Seo3" xml:space="preserve">
     <value>Giám đốc Viện văn hóa quốc gia Hàn Quốc
-khu vực Đông Nam Á, Giám đốc K.I.P.A Hà Nội, Giám đốc điều
+khu vực Đông Nam Á, Giám đốc R&amp;I Hà Nội, Giám đốc điều
 hành R&amp;I Institute, Trưởng phòng Ecommerce law Division,
 Macquarie investment Bank Analyst</value>
   </data>
@@ -1144,7 +1144,7 @@ Macquarie investment Bank Analyst</value>
     <value>Công ty cổ phần giao lưu văn hóa Hoàng gia Hàn – Việt R&amp;I</value>
   </data>
   <data name="TitleHeader" xml:space="preserve">
-    <value>DU HỌC KIPA</value>
+    <value>DU HỌC R&amp;I</value>
   </data>
   <data name="University" xml:space="preserve">
     <value>DU HỌC ĐẠI HỌC D2-1</value>
@@ -1171,7 +1171,7 @@ Macquarie investment Bank Analyst</value>
     <value>Yeonsei University</value>
   </data>
   <data name="PleaseContact" xml:space="preserve">
-    <value>Bạn hãy để lại thông tin tại đây để Kipa liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!</value>
+    <value>Bạn hãy để lại thông tin tại đây để R&amp;I liên hệ tư vấn chính xác và cụ thể nhất cho bạn về đào tạo tiếng Hàn, du học Hàn Quốc nhé!</value>
   </data>
   <data name="PleaseContactNow" xml:space="preserve">
     <value>ĐĂNG KÝ TƯ VẤN MIỄN PHÍ NGAY</value>
@@ -1189,7 +1189,7 @@ Macquarie investment Bank Analyst</value>
     <value>Gửi</value>
   </data>
   <data name="Counselors" xml:space="preserve">
-    <value>Chuyên gia tư vấn tại KIPA</value>
+    <value>Chuyên gia tư vấn tại R&amp;I</value>
   </data>
   <data name="LearnFree1" xml:space="preserve">
     <value>CHƯƠNG TRÌNH ĐÀO TẠO TIẾNG HÀN MIỄN PHÍ</value>
@@ -1228,7 +1228,7 @@ Macquarie investment Bank Analyst</value>
     <value>Giáo viên</value>
   </data>
   <data name="LearnFree2" xml:space="preserve">
-    <value>Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Kipa kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec)</value>
+    <value>Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm Chương trình đào tạo tiếng Hàn miễn phí do chính phủ Hàn Quốc hỗ trợ được tổ chức bởi trung tâm R&amp;I kết hợp với Trung tâm giáo dục tỉnh Jeollabuk-Do(Jvec)</value>
   </data>
   <data name="LearnFree20" xml:space="preserve">
     <value>Giáo viên giàu kinh nghiệm, nhệt tình( Topik 5-6)</value>
@@ -2068,7 +2068,7 @@ Macquarie investment Bank Analyst</value>
     <value>Bảng xếp hạng (BXH) Top 100</value>
   </data>
   <data name="HandbookMenu2Title4Info1_2" xml:space="preserve">
-    <value>Trường đại học Hàn Quốc tốt nhất 2024 được KIPA tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ KIPA để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp.</value>
+    <value>Trường đại học Hàn Quốc tốt nhất 2024 được R&amp;I tham khảo từ University Guru và các bảng xếp hạng từ các tổ chức đánh giá giáo dục trên thế giới. Bảng xếp hạng là công cụ để tham khảo, tra cứu những trường đại học tại Hàn Quốc. Nếu chưa biết chọn Trường đại học Hàn Quốc nào, bạn cũng đừng ngần ngại liên hệ R&amp;I để được tư vấn, hỗ trợ thông tin chi tiết và đăng ký nhập học tại Trường đại học Hàn Quốc phù hợp.</value>
   </data>
   <data name="HandbookMenu2Title4Note1_1" xml:space="preserve">
     <value>Bảng xếp hạng 100 Trường đại học tốt nhất Hàn Quốc chỉ dùng để tham khảo.
@@ -2846,7 +2846,7 @@ Macquarie investment Bank Analyst</value>
     <value>Giấy tờ cam kết bảo lãnh tài chính của bố mẹ</value>
   </data>
   <data name="UniversityHeaderTitle" xml:space="preserve">
-    <value>Du học Đại Học D2-1</value>
+    <value>Du học Đại Học D4-1</value>
   </data>
   <data name="UniversityHeaderTitleSubject1" xml:space="preserve">
     <value>Giới thiệu chung về chương trình du học tiếng Hàn tại Hàn Quốc</value>
@@ -3078,7 +3078,7 @@ Mức lương dành cho người có chứng chỉ Topik 4 tiếng Hàn mới ra
     <value>Vậy nên tỉ lệ cạnh tranh càng ngày càng nhiều nên các trường cũng nâng tiêu chí tuyển sinh khó hơn</value>
   </data>
   <data name="UniversityTitle6_1Subject2" xml:space="preserve">
-    <value>Trước đây GPA &lt; 6.0 thì KIPA vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học</value>
+    <value>Trước đây GPA &lt; 6.0 thì R&amp;I vẫn xử lý đi du học Hàn Quốc hệ du học tiếng được thì nay các bạn có GPA &gt; 6.5 mới bắt đầu có sự lựa chọn về trường để đi du học</value>
   </data>
   <data name="UniversityTitle6_1Subject3" xml:space="preserve">
     <value>Trước đây hồ sơ có thời gian trống trên 5 năm vẫn có nhiều sự lựa chọn, thì giờ hồ sơ trống quá 3 năm cũng khó chọn trường rồi</value>
@@ -3129,13 +3129,13 @@ Mức lương dành cho người có chứng chỉ Topik 4 tiếng Hàn mới ra
     <value>Các trường đại học nổi tiếng về chất lượng đào tạo tiếng Hàn(D4-1)</value>
   </data>
   <data name="D2VisaTitle1Image" xml:space="preserve">
-    <value>Học sinh KIPA trong buổi học tại trường ĐH Dongkuk</value>
+    <value>Học sinh R&amp;I trong buổi học tại trường ĐH Dongkuk</value>
   </data>
   <data name="D2VisaTitle2Image" xml:space="preserve">
-    <value>Giấy chứng nhận topik của học sinh nhà Kipa.</value>
+    <value>Giấy chứng nhận topik của học sinh nhà R&amp;I.</value>
   </data>
   <data name="D2VisaTitle3Image" xml:space="preserve">
-    <value>Chuyến công tác thăm trường của nhân viên Kipa.</value>
+    <value>Chuyến công tác thăm trường của nhân viên R&amp;I.</value>
   </data>
   <data name="D2VisaTitle3TableHeader1" xml:space="preserve">
     <value>Các loại visa D2</value>

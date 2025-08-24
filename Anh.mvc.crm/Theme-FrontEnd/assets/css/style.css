@@ -29,7 +29,8 @@ header {
     height: 110px;
     position: fixed;
     left: 0;
-    right: 10%
+    right: 10%;
+    top: 0
 }
 
 .navbar-brand {
@@ -142,17 +143,18 @@ header {
     position: absolute;
     right: 0;
     top: 2%;
-    width: 68%;
+    width: 60%;
 }
 
 .logo-kipa {
     position: absolute;
     right: 0;
     top: 50%;
-    width: 68%;
+    width: 60%;
 }
-.image-DH-footer{
-    width:85%
+
+.image-DH-footer {
+    width: 85%
 }
 
 .image-logo-footer {
@@ -299,7 +301,17 @@ header {
     font-weight: 700;
     color: #411C6B;
 }
+.alert-send-mail {
+    display: flex;
+    justify-content: center;
+}
 
+.alert-text {
+    padding: 16px;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+}
 .header-view-partner {
     /*    background-color: #2d124df5; */
     background: linear-gradient(30deg, rgb(148 73 172), rgb(50 50 148), rgb(103 56 205));
@@ -1141,7 +1153,7 @@ input[type=submit] {
 
 .sub-menu-li {
     display: inline-block;
-    width: 40%;
+    width: 43%;
     vertical-align: top;
     padding: 15px 28px;
 }
@@ -1288,7 +1300,7 @@ input[type=submit] {
 }
 
 .image-staff {
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
     display: flex;
     align-content: center;
@@ -1384,8 +1396,8 @@ input[type=submit] {
 }
 
 .info-staff-infomation {
-    padding: 30px;
-    height: 65vh;
+    padding: 10px 30px;
+    height: auto;
     background-color: rgb(132 92 171 / 15%);
 }
 
@@ -1452,11 +1464,12 @@ tr:nth-child(even) {
     position: sticky;
     /* top: 0px; */
     /* width: 300px; */
-    height: 100vh;
-    /* padding: 20px; */
+    height: auto;
+    padding: 20px;
     /* background-color: #597aa9; */
     /* color: #597aa9; */
     overflow: hidden;
+    margin-bottom: 20px
 }
 
 .center-high-school {
@@ -1621,18 +1634,20 @@ tr:nth-child(even) {
 
     .logo-Royal {
         overflow: hidden;
-        top: 7%
+        top: 7%;
+        width: 90%
     }
 
     .image-DH-footer {
-        width: 80%;
+        width: 100%;
         height: auto;
         object-fit: cover;
     }
 
     .logo-kipa {
         top: 42%;
-        overflow: hidden
+        overflow: hidden;
+        width: 90%
     }
 
     .image-logo-footer {
@@ -1656,7 +1671,8 @@ tr:nth-child(even) {
 
     .address-info {
         padding: 0 40px !important;
-        margin-top: -10px
+        margin-top: -10px;
+        width: 50%
     }
 
     .left-form-connect {
@@ -1677,6 +1693,14 @@ tr:nth-child(even) {
 
     .right-high-school {
         width: 17%
+    }
+
+    .footer-logo {
+        width: 25%
+    }
+
+    .footer-icon-network {
+        width: 25%
     }
 }
 
@@ -1821,8 +1845,10 @@ tr:nth-child(even) {
     }
 
     .card-img-superior {
-        /*      height: 300px;
-        width: 300px*/
+        width: 43%;
+        height: 320px;
+        margin: 30px auto;
+        padding: 0 45px
     }
 
     .team-teachers {
@@ -1834,9 +1860,9 @@ tr:nth-child(even) {
         width: 100%;
     }
 
-    .info-staff-infomation {
+    /*.info-staff-infomation {
         height: 42vh;
-    }
+    }*/
 
     .image-carousel-company {
         margin: 10px;
@@ -1920,11 +1946,36 @@ tr:nth-child(even) {
     .footer-logo {
         width: 25%
     }
+
     .address-info {
         width: 46%;
         padding: 20px !important
     }
 
+    .card-des-work-bottom {
+        font-size: 17px;
+    }
+
+    .name-card-img-superior {
+        top: 340px;
+        font-size: 17px
+    }
+
+    .info-staff {
+        height: 105vh
+    }
+
+    .dess-card-img-superior {
+        width: 78%;
+        height: 99%
+    }
+    .carousel-inner .item {
+        height: 500px !important
+    }
+
+    .carousel.slide {
+        margin-top: 90px
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -2117,18 +2168,21 @@ tr:nth-child(even) {
 
     .logo-Royal {
         overflow: hidden;
-        top: 7%
+        top: 7%;
+        width: 100%;
+        right: -10px !important
     }
 
     .image-DH-footer {
-        width: 80%;
+        width: 95%;
         height: auto;
         object-fit: cover;
     }
 
     .logo-kipa {
         top: 30%;
-        overflow: hidden
+        overflow: hidden;
+        width: 95%
     }
 
     .image-logo-footer {
@@ -2139,12 +2193,12 @@ tr:nth-child(even) {
 
     .footer-web {
         height: 30vh;
-        padding: 20px
+        padding: 10px !important
     }
 
     iframe {
-        height: 100%;
-        width: 120%
+        height: 88%;
+        width: 100%
     }
 
     .slide-kipa {
@@ -2156,7 +2210,8 @@ tr:nth-child(even) {
     }
 
     .address-info {
-        width: 55%
+        width: 50%;
+        padding: 20px !important
     }
 
     .footer-icon-network {
@@ -2164,8 +2219,66 @@ tr:nth-child(even) {
     }
 
     .footer-logo {
-        width: 25%
+        width: 25%;
+        margin-top: 20px
     }
+
+    .left-high-school {
+        width: 100%;
+        position: static;
+    }
+
+    .center-high-school {
+        width: 100%
+    }
+
+    .right-high-school {
+        width: 100%;
+        display: flex
+    }
+
+    .card-progame-study {
+        width: 47%;
+        margin: auto;
+        margin-top: 0 !important
+    }
+
+    .img-logo-header {
+        height: 99%
+    }
+
+    .card-des-work-bottom {
+        top: 320px
+    }
+
+    .card-img-superior:first-child {
+        margin-top: 0
+    }
+
+    .card-img-superior {
+        margin-top: 60px
+    }
+
+        .card-img-superior:nth-child(2) {
+            margin-top: 0
+        }
+    .content-result-company{
+        width: 100%
+    }
+    .title-content{
+        padding: 20px
+    }
+    .name-teacher{
+        margin-top: 0
+    }
+    .carousel-inner .item {
+        height: 400px !important
+    }
+
+    .carousel.slide {
+        margin-top: 90px
+    }
+
 }
 
 @media screen and (min-width: 391px) and (max-width: 768px) {
@@ -2181,13 +2294,13 @@ tr:nth-child(even) {
         width: 95%;
     }
 
-    .image-teacher {
+    /* .image-teacher {
         margin: 0 auto;
-    }
+    }*/
 
     .card-teacher-subject {
-        width: 100%;
-        flex: 0 0 100%;
+        width: 56%;
+        flex: 1 0 56%;
     }
 
     body {
@@ -2301,7 +2414,8 @@ tr:nth-child(even) {
 
     .main-partner {
         padding: 40px;
-        top: 20%
+        top: 20%;
+        overflow: visible
     }
 
     .view-partner {
@@ -2339,7 +2453,7 @@ tr:nth-child(even) {
     }
 
     .image-DH-footer {
-        width: 80%;
+        width: 90%;
         height: auto;
         object-fit: cover;
     }
@@ -2359,7 +2473,7 @@ tr:nth-child(even) {
     .footer-web {
         height: 80vh !important;
         height: auto;
-        padding: 20px
+        padding: 20px 20px 20px 30px
     }
 
     iframe {
@@ -2368,12 +2482,12 @@ tr:nth-child(even) {
     }
 
     .footer-logo {
-        width: 100%;
+        width: 40%;
         height: 170px
     }
 
     .address-info {
-        width: 100%;
+        width: 60%;
         padding: 0 !important
     }
 
@@ -2382,11 +2496,13 @@ tr:nth-child(even) {
     }
 
     .title-company-footer {
-        font-size: 21px
+        font-size: 21px;
+        padding-top: 12px
     }
 
     .des-address {
-        font-size: 19px
+        font-size: 19px;
+        margin-top: 0 !important
     }
 
     .content-left {
@@ -2401,7 +2517,7 @@ tr:nth-child(even) {
         width: 100%;
         padding: 20px;
         margin: 0;
-        height: 110vh !important
+        height: 95vh !important
     }
 
     .des-company {
@@ -2446,11 +2562,12 @@ tr:nth-child(even) {
     }
 
     .center-high-school {
-        width: 100%
+        width: 100%;
     }
 
     .right-high-school {
-        width: 100%
+        width: 100%;
+        display: flex
     }
 
     .span-link-signin {
@@ -2464,6 +2581,155 @@ tr:nth-child(even) {
     .item-slide-kipa {
         height: 100%
     }
+
+    .info-staff {
+        padding: 25px
+    }
+
+    .image-staff {
+        width: 100%
+    }
+
+    .title-company {
+        font-size: 26px
+    }
+
+    .title-choose {
+        font-size: 24px
+    }
+
+    .card-img-LeeWon:last-child {
+        margin-top: 130px
+    }
+
+    .des-work-staff {
+        /*font-size: 22px*/
+    }
+
+    .team-teachers {
+        width: 100%;
+        padding: 10px 0 10px 20px;
+    }
+
+    .card-teachers {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px
+    }
+
+    /* .card-teacher-subject {
+        width: 56%
+    }*/
+
+    .image-teacher {
+        width: 150px
+    }
+
+    .name-teacher {
+        margin-top: 0
+    }
+
+    .info-staff-infomation {
+        padding: 15px;
+        /*height: 85vh*/
+    }
+
+    .content-result-company {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        /*height: 104vh;*/
+    }
+
+    .title-content {
+        font-size: 22px
+    }
+    /*  .owl-carousel{
+        height: 220px
+    }*/
+    .image-carousel-company {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .owl-item {
+        height: 250px !important
+    }
+
+    .content-result-company-small {
+        /*height: 50vh !important*/
+    }
+
+    .service-company {
+        width: 100%;
+    }
+
+    .card-service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .div-null {
+        height: 164px;
+        width: 170px;
+    }
+
+    .imgage-service {
+        height: 165px;
+        width: 165px;
+    }
+
+    .info-infrastructure {
+        padding: 15px
+    }
+
+    .des-info-company {
+        font-size: 18px;
+    }
+
+    .card-img-superior {
+        margin-top: 65px
+    }
+
+        .card-img-superior:first-child {
+            margin-top: 0
+        }
+
+    .margin-top {
+        margin-top: 80px
+    }
+
+    .title-page {
+        font-size: 26px
+    }
+
+    .order-number-title {
+        font-size: 18px
+    }
+
+    .content-table-scroll {
+        overflow: auto
+    }
+
+    .card-progame-study {
+        width: 47%;
+        margin: auto;
+        margin-top: 0 !important
+    }
+
+    .total-phone {
+        margin-top: -29px
+    }
+
+    .connect-footer {
+        margin-top: -29px !important
+    }
+    .carousel-inner .item {
+        height: 240px !important
+    }
+
+    .carousel.slide {
+        margin-top: 90px
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -2471,9 +2737,10 @@ tr:nth-child(even) {
         height: 111vh !important
     }
 
-    .card-teacher-subject {
-        width: 100%
+    .content-table-scroll {
+        overflow: auto
     }
+
 
     header {
         right: 0;
@@ -2764,7 +3031,8 @@ tr:nth-child(even) {
     }
 
     .left-high-school {
-        width: 100%
+        width: 100%;
+        /* height: 45vh;*/
     }
 
     .center-high-school {
@@ -2777,6 +3045,136 @@ tr:nth-child(even) {
 
     .span-link-signin {
         font-size: 21px
+    }
+
+    .info-staff {
+        padding: 25px
+    }
+
+    .image-staff {
+        width: 100%
+    }
+
+    .title-company {
+        font-size: 26px
+    }
+
+    .title-choose {
+        font-size: 24px
+    }
+
+    .card-img-LeeWon:last-child {
+        margin-top: 130px
+    }
+
+    .des-work-staff {
+        /*font-size: 22px*/
+    }
+
+    .team-teachers {
+        width: 100%;
+        padding: 10px 0 10px 20px;
+    }
+
+    .card-teachers {
+        width: 100%;
+        padding: 10px 0 10px 10px;
+        margin-bottom: 10px
+    }
+
+    .card-teacher-subject {
+        width: 56%
+    }
+
+    .image-teacher {
+        width: 150px
+    }
+
+    .name-teacher {
+        margin-top: 0
+    }
+
+    .info-staff-infomation {
+        padding: 15px;
+        /*height: 97vh*/
+    }
+
+    .content-result-company {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        /*height: 104vh;*/
+    }
+
+    .title-content {
+        font-size: 22px
+    }
+    /*  .owl-carousel{
+        height: 220px
+    }*/
+    .image-carousel-company {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .owl-item {
+        height: 250px !important
+    }
+
+    .content-result-company-small {
+        /*height: 50vh !important*/
+    }
+
+    .service-company {
+        width: 100%;
+    }
+
+    .card-service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .div-null {
+        height: 164px;
+        width: 170px;
+    }
+
+    .imgage-service {
+        height: 165px;
+        width: 165px;
+    }
+
+    .info-infrastructure {
+        padding: 15px
+    }
+
+    .des-info-company {
+        font-size: 18px;
+    }
+
+    .card-img-superior {
+        margin-top: 65px
+    }
+
+        .card-img-superior:first-child {
+            margin-top: 0
+        }
+
+    .margin-top {
+        margin-top: 80px
+    }
+
+    .title-page {
+        font-size: 26px
+    }
+
+    .order-number-title {
+        font-size: 18px
+    }
+    .carousel-inner .item{
+        height:200px !important
+    }
+    .carousel.slide{
+        margin-top:90px
     }
 }
 
