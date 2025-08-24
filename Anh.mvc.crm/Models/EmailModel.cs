@@ -10,11 +10,17 @@ namespace Anh.mvc.Models
 {
     public class ContactFormModel
     {
-        [Required]
+        [Required(ErrorMessage = "Họ và tên là bắt buộc")]
+        [RegularExpression(@"^[\p{L}\p{N}\s\.\,\!\?'\-]+$", ErrorMessage = "Họ tên có chứa ký tự không hợp lý")]
         public string name { get; set; }
 
+        [Required(ErrorMessage = "Số điện thoại là bắt buộc")]
+        [RegularExpression(@"^\+?[0-9]{7,15}$", ErrorMessage = "Số điện thoại không đúng")]
         public string phoneNumber { get; set; }
+        [Required(ErrorMessage = "Chương trình quan tâm  là bắt buộc")]
+        [RegularExpression(@"^[\p{L}\p{N}\s\.\,\!\?'\-]+$",  ErrorMessage = "Chương trình quan tâm có chứa ký tự không hợp lý")]
         public string country { get; set; }
+        [RegularExpression(@"^[\p{L}\p{N}\s\.\,\!\?'\-]+$",  ErrorMessage = "Câu hỏi có chứa ký tự không hợp lý")]
         public string subject { get; set; }
         public string Email { get; set; }
     }

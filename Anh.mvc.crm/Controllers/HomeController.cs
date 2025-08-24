@@ -61,6 +61,13 @@ namespace Anh.mvc.crm.Controllers
         [HttpPost]
         public async Task<ActionResult> SendEmail(ContactFormModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                var listTextError = ModelState.Where(c => c.Value.Errors.Count > 0).Select(c => c.Value.Errors).SelectMany(c => c.Select(d => d.ErrorMessage)).ToList();
+                TempData["AlertMessage"] = $"Thông tin nội dung không đúng: "+(string.Join(", ", listTextError));
+                TempData["AlertType"] = "alert-danger";
+                return RedirectToAction("Contact", "Home");
+            }
             if (model.name is null || model.phoneNumber is null)
             {
                 if (model.name is null)

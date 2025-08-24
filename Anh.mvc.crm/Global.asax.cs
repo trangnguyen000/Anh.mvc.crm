@@ -1,9 +1,12 @@
 ﻿using Anh.mvc.crm.Authentication;
 using Anh.mvc.crm.Models;
 using Module.BusinessLogic.Helper;
+using Module.Data.DataAccess;
+using Module.Data.Migrations;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Globalization;
 using System.Linq;
 using System.Threading;
@@ -26,6 +29,12 @@ namespace Anh.mvc.crm
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfig.Configure();
+            // Khởi tạo dữ liệu
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<JDbContext, Module.Data.Migrations.Configuration>());
+            using (var context = new JDbContext())
+            {
+                DbSeeder.Seed(context);
+            }
         }
 
         protected void Application_PostAuthenticateRequest(Object sender, EventArgs e)
